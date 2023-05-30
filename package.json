@@ -1,9 +1,8 @@
 {
-  "name": "eleventy-excellent",
-  "version": "1.5.4",
-  "description": "Eleventy starter based on the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
+  "name": "unlockopen.com-v4",
+  "version": "4.0.0",
+  "description": "UnlockOpen website v4",
   "author": "Lene Saile",
-  "license": "ISC",
   "main": ".eleventy.js",
   "engines": {
     "node": ">=16.x.x"
@@ -18,7 +17,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/unlockopen/www.unlockopen.com-v4.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.0",
