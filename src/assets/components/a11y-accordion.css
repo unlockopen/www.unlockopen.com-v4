@@ -1,0 +1,26 @@
+[data-accordion] > button {
+  background: transparent;
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0;
+  margin-block: var(--space-xs-s);
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+/**
+ * Show expand/collapse icons
+ */
+[data-accordion] > button[aria-expanded='true']::after {
+  position: absolute;
+  right: 0;
+  content: ' –';
+}
+
+[data-accordion] > button[aria-expanded='false']::after {
+  content: ' +';
+  right: 0;
+  position: absolute;
+}

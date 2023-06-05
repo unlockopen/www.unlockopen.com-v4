@@ -53,6 +53,7 @@ const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
+const pluginWebc = require('@11ty/eleventy-plugin-webc');
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -61,6 +62,7 @@ module.exports = eleventyConfig => {
 
   // --------------------- layout aliases -----------------------
   eleventyConfig.addLayoutAlias('base', 'base.njk');
+  eleventyConfig.addLayoutAlias('base-font', 'base-font.njk');
   eleventyConfig.addLayoutAlias('page', 'page.njk');
   eleventyConfig.addLayoutAlias('home', 'home.njk');
   eleventyConfig.addLayoutAlias('blog', 'blog.njk');
@@ -113,6 +115,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(bundlerPlugin);
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: 'src/_includes/webc/*.webc',
+    useTransform: true
+  });
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
@@ -120,21 +127,23 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy(path)
   );
 
-  // social icons to root directory
   eleventyConfig.addPassthroughCopy({
-    'src/assets/images/favicon/*': '/'
-  });
+    // social icons to root directory
+    'src/assets/images/favicon/*': '/',
 
-  eleventyConfig.addPassthroughCopy({
-    'src/assets/css/global.css': 'src/_includes/global.css'
+    // WebC assets
+    'src/assets/components/*.{css,js}': `assets/components/`,
+
+    // External modules
+    'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/components/`
   });
 
   // 	--------------------- general config -----------------------
   return {
     // Pre-process *.md, *.html and global data files files with: (default: `liquid`)
-    markdownTemplateEngine: 'njk',
+    templateFormats: ['md', 'njk', 'liquid', 'html', '11ty.js'],
     htmlTemplateEngine: 'njk',
-    dataTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
 
     // Optional (default is set): If your site deploys to a subdirectory, change `pathPrefix`, for example with with GitHub pages
     pathPrefix: '/',

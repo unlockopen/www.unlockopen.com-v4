@@ -1,1 +1,29 @@
 /* A blank block because there is *always* a button */
+
+button,
+.button {
+  --_color: var(--color, var(--color-dark));
+  --_bgcolor: var(--bgcolor, transparent);
+  --_bordercolor: var(--bordercolor, var(--_color));
+  border: 0.1em solid var(--_bordercolor);
+  background-color: var(--_bgcolor);
+  color: var(--_color);
+  padding: var(--space-xs) var(--space-m-l);
+  border-radius: var(--border-radius);
+  transition-property: color, border;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+button:where(:hover),
+.button:where(:hover) {
+  --color: var(--color-light);
+  --bgcolor: var(--color-dark);
+  --bordercolor: var(--color-dark);
+  /* box-shadow: 0 0 0 2em var(--_color) inset; */
+}
+
+button.simple,
+.button.simple {
+  --bordercolor: transparent;
+}

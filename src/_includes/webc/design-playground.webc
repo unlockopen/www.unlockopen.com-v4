@@ -1,0 +1,280 @@
+<!-- a font tester web component with a dropdown, where the embedded fonts from fonts.googleapis.com can be tested -->
+
+<is-land on:visible>
+  <div class="grid">
+    <div class="font-display">
+      <strong>Display font</strong>
+      <select>
+        <option value="">Select a font</option>
+        <option value="Asap">Asap</option>
+        <option value="Catamaran">Catamaran</option>
+        <option value="Gudea">Gudea</option>
+        <option value="Hind">Hind</option>
+        <option value="Monda">Monda</option>
+        <option value="Niramit">Niramit</option>
+        <option value="Palanquin">Palanquin</option>
+        <option value="Recursive">Recursive</option>
+        <option value="Overpass">Overpass</option>
+        <option value="Saira">Saira</option>
+        <option value="Fauna One">Fauna One</option>
+        <option value="Gelasio">Gelasio</option>
+      </select>
+
+      <div class="font-display-paragraph">Font description</div>
+    </div>
+
+    <div class="font-body">
+      <strong>Body font</strong>
+      <select>
+        <option value="">Select a font</option>
+        <option value="Asap">Asap</option>
+        <option value="Gudea">Gudea</option>
+        <option value="Hind">Hind</option>
+        <option value="Niramit">Niramit</option>
+        <option value="Palanquin">Palanquin</option>
+        <option value="Recursive">Recursive</option>
+        <option value="Overpass">Overpass</option>
+      </select>
+
+      <div class="font-body-paragraph">Font description</div>
+    </div>
+
+    <div class="colorscheme">
+      <strong>Color scheme</strong>
+
+      <select>
+        <option value="">Select a color scheme</option>
+        <option value="unlock">Unlock Open</option>
+        <option value="happy">Happy</option>
+        <option value="sunny">Sunny</option>
+        <option value="aqua">Aqua</option>
+        <option value="lila">Lila</option>
+      </select>
+
+      <div class="grid" style="--gutter: 0.3rem">
+        <div class="box" style="--color-bg: var(--color-primary)"></div>
+        <div class="box" style="--color-bg: var(--color-secondary)"></div>
+        <div class="box" style="--color-bg: var(--color-tertiary)"></div>
+        <div class="box" style="--color-bg: var(--color-quaternary)"></div>
+        <div class="box" style="--color-bg: var(--color-quinary)"></div>
+      </div>
+    </div>
+  </div>
+</is-land>
+
+<script>
+  const fontBody = document.querySelector('.font-body');
+  const fontBodySelect = fontBody.querySelector('select');
+
+  fontBodySelect.addEventListener('change', e => {
+    const font = e.target.value;
+    document.documentElement.style.setProperty('--font-base', font);
+
+    const fontBodyParagraph = document.querySelector('.font-body-paragraph');
+
+    infoSwitch(font, fontBodyParagraph);
+  });
+
+  const fontDisplay = document.querySelector('.font-display');
+  const fontDisplaySelect = fontDisplay.querySelector('select');
+
+  fontDisplaySelect.addEventListener('change', e => {
+    const font = e.target.value;
+    document.documentElement.style.setProperty('--font-display', font);
+
+    const fontDisplayParagraph = document.querySelector('.font-display-paragraph');
+
+    infoSwitch(font, fontDisplayParagraph);
+  });
+
+  const infoSwitch = (font, target) => {
+    switch (font) {
+      case 'Asap':
+        target.innerHTML = `
+        Feeling: clean and soft.
+        9 weights + italics.
+        variable font.`;
+        break;
+      case 'Catamaran':
+        target.innerHTML = `
+        Feeling: friendly and approachable.
+        9 weights, no italics.
+        variable font.
+        `;
+        break;
+      case 'Gudea':
+        target.innerHTML = `
+        Feeling: friendly and clean.
+        2 weights + italics.
+        `;
+        break;
+      case 'Hind':
+        target.innerHTML = `
+        feeling: clean and approachable
+        5 weights, no italics.
+        `;
+        break;
+      case 'Monda':
+        target.innerHTML = `
+        feeling: techy and strict
+        2 weights, no italics.
+        `;
+        break;
+      case 'Niramit':
+        target.innerHTML = `
+        feeling: friendly and organic.
+        6 weights + italics.
+        `;
+        break;
+      case 'Palanquin':
+        target.innerHTML = `
+        feeling: clean and approachable.
+        7 weights, no italics.
+        `;
+        break;
+      case 'Recursive':
+        target.innerHTML = `
+        feeling: mechanical and expressive.
+        8 weights + italics.
+        variable font.
+        `;
+        break;
+      case 'Overpass':
+        target.innerHTML = `
+        feeling: simple and unique.
+        9 weights + italics.
+        variable font.
+        `;
+        break;
+      case 'Saira':
+        target.innerHTML = `
+        feeling: techy and plain
+        9 weights + italics.
+        variable font.
+        `;
+        break;
+      case 'Fauna One':
+        target.innerHTML = `
+        feeling: airy, elegang ant friendly
+        1 weight, no italics.
+        `;
+        break;
+      case 'Gelasio':
+        target.innerHTML = `
+        feeling: classic, a nicer Georgia
+        4 weigha + italics.
+        `;
+        break;
+
+      default:
+        target.innerHTML = 'Select a font for the text';
+    }
+  };
+
+  const colors = {
+    unlock: {
+      primary: '#AFC51D',
+      secondary: '#B00056',
+      tertiary: '#4DAADB',
+      quaternary: '#11506D',
+      quinary: '#cccccc',
+      light: '#ffffff',
+      lightSection: '#fafafa',
+      lightSectionBox: '#eeeeee',
+      dark: 'rgb(74, 85, 104)'
+    },
+    happy: {
+      primary: '#ff6e6c',
+      secondary: '#67568c',
+      tertiary: '#fbdd74',
+      quaternary: '#1f1235',
+      quinary: '#cccccc',
+      light: '#FFFFFF',
+      lightSection: '#f4effc',
+      lightSectionBox: '#e2daeb',
+      dark: '#1f1235'
+    },
+    sunny: {
+      primary: '#ffd803',
+      secondary: '#e3f6f5',
+      tertiary: '#bae8e8',
+      quaternary: '#272343',
+      quinary: '#cccccc',
+      light: '#fffffe',
+      lightSection: '#e3f6f5',
+      lightSectionBox: '#fffffe',
+      dark: '#272343'
+    },
+    aqua: {
+      primary: '#00ebc7',
+      secondary: '#ff5470',
+      tertiary: '#fde24f',
+      quaternary: '#00214d',
+      quinary: '#cccccc',
+      light: '#fffffe',
+      lightSection: '#f2f4f6',
+      lightSectionBox: '#fffffe',
+      dark: '#00214d'
+    },
+    lila: {
+      primary: '#4fc4cf',
+      secondary: '#994ff3',
+      tertiary: '#fbdd74',
+      quaternary: '#2e2e2e',
+      quinary: '#cccccc',
+      light: '#fffffe',
+      lightSection: '#f6efef',
+      lightSectionBox: '#f0e2e1',
+      light: '#f5f5f5',
+      dark: '#181818'
+    }
+  };
+
+  const colorScheme = document.querySelector('.colorscheme');
+  const colorSchemeSelect = colorScheme.querySelector('select');
+
+  colorSchemeSelect.addEventListener('change', e => {
+    const color = e.target.value;
+
+    document.documentElement.style.setProperty('--color-primary', colors[color].primary);
+    document.documentElement.style.setProperty(
+      '--color-secondary',
+      colors[color].secondary
+    );
+    document.documentElement.style.setProperty(
+      '--color-tertiary',
+      colors[color].tertiary
+    );
+    document.documentElement.style.setProperty(
+      '--color-quaternary',
+      colors[color].quaternary
+    );
+    document.documentElement.style.setProperty('--color-quinary', colors[color].quinary);
+    document.documentElement.style.setProperty('--color-light', colors[color].light);
+    document.documentElement.style.setProperty(
+      '--color-light-section',
+      colors[color].lightSection
+    );
+    document.documentElement.style.setProperty(
+      '--color-light-section-box',
+      colors[color].lightSectionBox
+    );
+    document.documentElement.style.setProperty('--color-dark', colors[color].dark);
+  });
+</script>
+
+<style>
+  .font-display-paragraph,
+  .font-body-paragraph {
+    font-size: var(--size-step-0);
+    padding: var(--space-xs);
+    border: 1px solid var(--color-dark);
+  }
+
+  select {
+    font-size: var(--size-step-0);
+    background: var(--color-light);
+    border: 1px solid var(--color-dark);
+    width: 100%;
+  }
+</style>

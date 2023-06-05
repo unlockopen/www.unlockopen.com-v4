@@ -1,0 +1,9 @@
+.box {
+  --color-bg: var(--color-light)
+  --color-dark: #222;
+  color: var(--color-dark);
+  background-color: var(--color-bg);
+  padding: var(--space-xs);
+  outline: 0.125rem solid transparent;
+  outline-offset: -0.125rem;
+}

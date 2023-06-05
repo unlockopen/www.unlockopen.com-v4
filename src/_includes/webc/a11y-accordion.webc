@@ -1,0 +1,24 @@
+<script webc:setup>
+  function getString(title) {
+    title = title.replace(/^\s+|\s+$/g, ''); // trim leading/trailing white space
+    title = title.toLowerCase(); // convert string to lowercase
+    title = title
+      .replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
+      .replace(/\s+/g, '-') // replace spaces with hyphens
+      .replace(/-+/g, '-'); // remove consecutive hyphens
+    return title;
+  }
+</script>
+
+<is-land on:visible>
+  <a11y-accordion>
+    <h3 :data-accordion="getString(title)" :data-testtest="title" @text="title"></h3>
+
+    <div :id="getString(title)"><slot>Fallback slot content</slot></div>
+  </a11y-accordion>
+
+  <template data-island="once" webc:raw>
+    <link rel="stylesheet" href="/assets/components/a11y-accordion.css" />
+    <script src="/assets/components/a11y-accordion.js"></script>
+  </template>
+</is-land>

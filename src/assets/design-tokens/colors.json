@@ -10,6 +10,17 @@
       "name": "Light",
       "value": "#F3F3F3"
     },
+
+    {
+      "name": "Light Section",
+      "value": "#e6e3e3"
+    },
+
+    {
+      "name": "Light Section Box",
+      "value": "#cac9c9"
+    },
+
     {
       "name": "Light Glare",
       "value": "#FFFFFF"
@@ -29,6 +40,18 @@
     {
       "name": "Secondary Glare",
       "value": "#D8E2F4"
+    },
+    {
+      "name": "Tertiary",
+      "value": "#1471bb"
+    },
+    {
+      "name": "Quaternary",
+      "value": "#ff8b59"
+    },
+    {
+      "name": "Quinary",
+      "value": "#c569bc"
     }
   ]
 }

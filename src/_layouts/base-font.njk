@@ -1,0 +1,140 @@
+{% set assetHash = global.random() %}
+
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}">
+  <head>
+    <!-- charset/http-equiv/viewport -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
+    <title>
+      {% if seo.title %} {{ seo.title }}
+      {% elif title %}
+      {{ title }}
+      {% else %}
+      {{ meta.siteName }}
+      {% endif %}
+    </title>
+
+    <!-- css -->
+
+    <link rel="stylesheet" href="/assets/css/global.css?{{ assetHash }}" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,700;1,400&family=Catamaran:wght@400;700&family=Gudea:ital,wght@0,400;0,700;1,400&family=Hind:wght@400;700&family=Monda:wght@400;700&family=Niramit:ital,wght@0,400;0,700;1,400&family=Palanquin:wght@400;700&family=Recursive:wght@400;700&family=Saira:wght@400;700&family=Fauna+One&family=Overpass:wght@400;700&family=Gelasio:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- preloads in page data -->
+    {% if preloads -%}
+    <!-- prettier-ignore -->
+    <link rel="preload"
+            href="{{ preloads.href }}"
+            as="{{ preloads.as }}"
+            {% if preloads.type %}type={{ preloads.type }}{% endif %}{% if preloads.imagesrcset %}imagesrcset="{{ preloads.imagesrcset }}" {% endif %}
+            {% if preloads.crossorigin %}crossorigin{% endif %} />
+    {% endif %}
+
+    <!-- defered js  -->
+    <!-- general js -->
+    <script type="module" src="/assets/scripts/app.js?{{ assetHash }}" defer></script>
+    <!-- is-land -->
+    <script
+      type="module"
+      src="/assets/scripts/defer-mod.js?{{ assetHash }}"
+      defer
+    ></script>
+
+    <!-- everything else: meta tags, icons, open graph etc.  -->
+    {% include "partials/meta-info.njk" %}
+  </head>
+
+  <body>
+    <!-- header -->
+    {% include "partials/header.njk" %}
+
+    <!-- content slot -->
+    <main id="main" class="flow">
+      <article class="region page">
+        <div class="wrapper flow prose mb-m-l">
+          <design-playground></design-playground>
+        </div>
+
+        <div class="center">
+          <svg
+            class="my-l-xl"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="78 92 145 115"
+            style="width: 100%; display: block; block-size: 10ex"
+          >
+            <g>
+              <path
+                fill="var(--color-primary)"
+                d="M130.7,115.8V93.9l-0.3,0c-13.4,1-26,6.8-35.6,16.3s-15.3,22.2-16.3,35.6l0,0.3h21.9l0-0.3c1.9-15.8,14.3-28.1,30-30L130.7,115.8z"
+              ></path>
+              <path
+                fill="var(--color-tertiary)"
+                d="M130.7,206.1v-21.9l-0.3,0c-15.8-1.9-28.1-14.3-30-30l0-0.3H78.5l0,0.3c1,13.4,6.8,26,16.3,35.6c9.5,9.5,22.2,15.3,35.6,16.3L130.7,206.1z"
+              ></path>
+              <path
+                fill="var(--color-quaternary)"
+                d="M190.8,153.9l0,0.3c-1,13.4-6.8,26-16.3,35.6c-9.5,9.5-22.2,15.3-35.6,16.3l-0.3,0v-21.9l0.3,0c15.8-1.9,28.1-14.3,30-30l0-0.3H190.8z"
+              ></path>
+              <path
+                fill="var(--color-secondary)"
+                d="M221,93.9v21.9l-0.3,0c-15.8,1.9-28.1,14.3-30,30l0,0.3h-21.9l0-0.3c1-13.4,6.8-26,16.3-35.6s22.2-15.3,35.6-16.3L221,93.9z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+
+        <div class="wrapper flow prose" contenteditable="true">
+          {{ content | safe }}
+
+          {% include "svg/scribble-1.svg" %}
+        </div>
+
+        <div class="py-m my-l" style="background-color: var(--color-light-section)">
+          <ul
+            class="wrapper grid mt-l-xl"
+            role="list"
+            data-rows="masonry"
+            data-layout="50-50"
+          >
+            {% set postslist = collections.posts %} {% for post in postslist.slice(0, 4)
+            %}
+
+            <li class="card flow overflow-hidden">
+              <h3>
+                <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+              </h3>
+              {% set definedDate = post.date %} {% include "partials/date.njk" %}
+              <p>{{ post.data.description }}</p>
+            </li>
+
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="wrapper flow prose">
+          {% renderFile "./src/_includes/markdown-example.md" %}
+        </div>
+      </article>
+    </main>
+
+    <!-- footer -->
+    {% include "partials/footer.njk" %}
+
+    <!-- youtube if actvated in yaml -->
+    {% if youtube %}
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.min.js"
+    ></script>
+    {% endif %}
+  </body>
+</html>

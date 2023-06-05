@@ -1,0 +1,37 @@
+<script webc:setup>
+  function getPosterImage(slug) {
+    return `https://i1.ytimg.com/vi/${slug}/hqdefault.jpg`;
+    // return `https://i.ytimg.com/vi/${slug}/maxresdefault.jpg`;
+  }
+</script>
+<is-land
+  on:visible
+  import="/assets/components/lite-yt-embed.js"
+  class="fluid-width-video-wrapper"
+>
+  <lite-youtube
+    :videoid="slug"
+    :params="start ? `start=${start}` : false"
+    :playlabel="`Play${label ? `: ${label}` : ''}`"
+    :style="`background-image:url('${poster || getPosterImage(slug)}'); max-width: 100%`"
+  >
+    <a
+      :href="`https://youtube.com/watch?v=${slug}`"
+      class="lty-playbtn"
+      title="Play Video"
+      ><span
+        class="lyt-visually-hidden"
+        @html="`Play Video${label ? `: ${label}` : ''}`"
+      ></span
+    ></a>
+  </lite-youtube>
+  <template data-island="once" webc:raw>
+    <style>
+      /* Plugin bug: clicking the red youtube play icon in the center would navigate to youtube.com */
+      lite-youtube:defined .lty-playbtn {
+        pointer-events: none;
+      }
+    </style>
+    <link rel="stylesheet" href="/assets/components/lite-yt-embed.css" />
+  </template>
+</is-land>

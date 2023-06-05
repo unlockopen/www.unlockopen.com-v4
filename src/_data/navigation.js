@@ -1,20 +1,12 @@
 module.exports = {
   top: [
     {
-      text: 'About',
-      url: '/about/'
+      text: 'Playground',
+      url: '/playground/'
     },
     {
-      text: 'Get started',
-      url: '/get-started/'
-    },
-    {
-      text: 'Built with',
-      url: '/built-with/'
-    },
-    {
-      text: 'Blog',
-      url: '/blog/'
+      text: 'webc demo',
+      url: '/webc/'
     }
   ],
   bottom: [
