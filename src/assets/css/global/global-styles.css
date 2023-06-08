@@ -7,10 +7,10 @@
 body {
   color: var(--color-dark);
   background: var(--color-light);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
   font-family: var(--font-base);
-  line-height: 1.4;
-  letter-spacing: var(--tracking);
+  line-height: 1.5;
+  /* letter-spacing: var(--tracking); */
 }
 
 /* Base typesetting */
@@ -23,7 +23,7 @@ h3 {
 }
 
 h1 {
-  font-size: var(--size-step-5);
+  font-size: var(--size-step-4);
 }
 
 h2 {
@@ -38,13 +38,13 @@ h3 {
 p,
 li,
 blockquote:not([class]) {
-  max-inline-size: 50ch;
+  max-inline-size: 70ch;
 }
 
 h1,
 h2,
 h3 {
-  max-inline-size: 30ch;
+  max-inline-size: 40ch;
 }
 
 blockquote {

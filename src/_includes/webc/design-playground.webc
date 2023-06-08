@@ -1,11 +1,16 @@
-<!-- a font tester web component with a dropdown, where the embedded fonts from fonts.googleapis.com can be tested -->
-
 <is-land on:visible>
   <div class="grid">
     <div class="font-display">
       <strong>Display font</strong>
       <select>
         <option value="">Select a font</option>
+        <option value="Inter">Inter</option>
+        <option value="Redhat">Redhat</option>
+        <option value="Merriweather Sans">Merriweather Sans</option>
+        <option value="Merriweather">Merriweather</option>
+        <option value="Fira Sans">Fira Sans</option>
+        <option value="Figtree">Figtree</option>
+        <option value="Literata">Literata</option>
         <option value="Asap">Asap</option>
         <option value="Catamaran">Catamaran</option>
         <option value="Gudea">Gudea</option>
@@ -27,6 +32,12 @@
       <strong>Body font</strong>
       <select>
         <option value="">Select a font</option>
+        <option value="Inter">Inter</option>
+        <option value="Merriweather Sans">Merriweather Sans</option>
+        <option value="Merriweather">Merriweather</option>
+        <option value="Fira Sans">Fira Sans</option>
+        <option value="Figtree">Figtree</option>
+        <option value="Literata">Literata</option>
         <option value="Asap">Asap</option>
         <option value="Gudea">Gudea</option>
         <option value="Hind">Hind</option>
@@ -63,6 +74,8 @@
 </is-land>
 
 <script>
+  // font switcher
+
   const fontBody = document.querySelector('.font-body');
   const fontBodySelect = fontBody.querySelector('select');
 
@@ -89,87 +102,116 @@
 
   const infoSwitch = (font, target) => {
     switch (font) {
+      case 'Merriweather':
+        target.innerHTML = `
+          Feeling: traditional.
+          readable at very small sizes.`;
+        break;
+      case 'Merriweather Sans':
+        target.innerHTML = `
+        Feeling: traditional.
+          readable at very small sizes.`;
+        break;
+      case 'Fira sans':
+        target.innerHTML = `
+          Feeling: elegant, very readable.
+      `;
+        break;
+      case 'Figtree':
+        target.innerHTML = `
+          Feeling:  friendly, soft, clean. Works for body and display.
+          7 weights.
+          variable font.`;
+        break;
       case 'Asap':
         target.innerHTML = `
-        Feeling: clean and soft.
-        9 weights + italics.
-        variable font.`;
+          Feeling: clean and soft.
+          9 weights + italics.
+          variable font.`;
         break;
       case 'Catamaran':
         target.innerHTML = `
-        Feeling: friendly and approachable.
-        9 weights, no italics.
-        variable font.
-        `;
+          Feeling: friendly and approachable.
+          9 weights, no italics.
+          variable font.
+          `;
         break;
       case 'Gudea':
         target.innerHTML = `
-        Feeling: friendly and clean.
-        2 weights + italics.
-        `;
+          Feeling: friendly and clean.
+          2 weights + italics.
+          `;
         break;
       case 'Hind':
         target.innerHTML = `
-        feeling: clean and approachable
-        5 weights, no italics.
-        `;
+          feeling: clean and approachable.
+          5 weights, no italics.
+          `;
         break;
       case 'Monda':
         target.innerHTML = `
-        feeling: techy and strict
-        2 weights, no italics.
-        `;
+          feeling: techy and strict.
+          2 weights, no italics.
+          `;
         break;
       case 'Niramit':
         target.innerHTML = `
-        feeling: friendly and organic.
-        6 weights + italics.
-        `;
+          feeling: friendly and organic.
+          6 weights + italics.
+          `;
         break;
       case 'Palanquin':
         target.innerHTML = `
-        feeling: clean and approachable.
-        7 weights, no italics.
-        `;
+          feeling: clean and approachable.
+          7 weights, no italics. Good for smaller sizes.
+          `;
         break;
       case 'Recursive':
         target.innerHTML = `
-        feeling: mechanical and expressive.
-        8 weights + italics.
-        variable font.
-        `;
+          feeling: mechanical and expressive.
+          8 weights + italics.
+          variable font.
+          `;
         break;
       case 'Overpass':
         target.innerHTML = `
-        feeling: simple and unique.
-        9 weights + italics.
-        variable font.
-        `;
+          feeling: simple and unique.
+          9 weights + italics.
+          variable font.
+          `;
         break;
       case 'Saira':
         target.innerHTML = `
-        feeling: techy and plain
-        9 weights + italics.
-        variable font.
-        `;
+          feeling: techy and plain.
+          9 weights + italics.
+          variable font.
+          `;
         break;
       case 'Fauna One':
         target.innerHTML = `
-        feeling: airy, elegang ant friendly
-        1 weight, no italics.
-        `;
+          feeling: airy, elegant, friendly.
+          1 weight, no italics.
+          `;
         break;
       case 'Gelasio':
         target.innerHTML = `
-        feeling: classic, a nicer Georgia
-        4 weigha + italics.
-        `;
+          feeling: classic, a nice Georgia variant. Works for body and display. Made by the designer of Merriweather! Special feature: compatible metrics with Georgia, no reflow!
+          4 weights + italics.
+          `;
+        break;
+      case 'Literata':
+        target.innerHTML = `
+          feeling: an old soul wrapped in the modern trappings. Designed for long-form reading.
+          9 weights + italics.
+          `;
         break;
 
       default:
         target.innerHTML = 'Select a font for the text';
     }
   };
+
+  // color switcher
 
   const colors = {
     unlock: {
@@ -232,6 +274,8 @@
 
   const colorScheme = document.querySelector('.colorscheme');
   const colorSchemeSelect = colorScheme.querySelector('select');
+
+  // event handler
 
   colorSchemeSelect.addEventListener('change', e => {
     const color = e.target.value;
