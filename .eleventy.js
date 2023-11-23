@@ -1,20 +1,11 @@
-/**
- * I strive to keep the `.eleventy.js` file clean and uncluttered. Most adjustments must be made in:
- *  - `./config/collections/index.js`
- *  - `./config/filters/index.js`
- *  - `./config/plugins/index.js`
- *  - `./config/shortcodes/index.js`
- *  - `./config/transforms/index.js`
- */
-
 // JSDoc comment: Hint VS Code for eleventyConfig autocompletion. © Henry Desroches - https://gist.github.com/xdesro/69583b25d281d055cd12b144381123bf
 
 /**
  *  @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig
  */
 
-// get package.json
 const packageVersion = require('./package.json').version;
+const fs = require('fs');
 
 // module import filters
 const {
@@ -42,9 +33,6 @@ const {
 const {getAllPosts} = require('./config/collections/index.js');
 const {onlyMarkdown} = require('./config/collections/index.js');
 
-// module import events
-const {svgToJpeg} = require('./config/events/index.js');
-
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
 const {EleventyRenderPlugin} = require('@11ty/eleventy');
@@ -52,8 +40,8 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils');
 const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-const inclusiveLangPlugin = require('@11ty/eleventy-plugin-inclusive-language');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
+const EleventyPluginOgImage = require('eleventy-plugin-og-image');
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -105,16 +93,31 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
 
-  // 	--------------------- Events ---------------------
-  eleventyConfig.on('afterBuild', svgToJpeg);
-
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.setLibrary('md', markdownLib);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
   eleventyConfig.addPlugin(bundlerPlugin);
+
+  eleventyConfig.addPlugin(EleventyPluginOgImage, {
+    satoriOptions: {
+      fonts: [
+        {
+          name: 'Geologica',
+          data: fs.readFileSync('src/assets/fonts/geologica/geologica-bold.woff2'),
+          weight: 700,
+          style: 'normal'
+        },
+        {
+          name: 'Geologica',
+          data: fs.readFileSync('src/assets/fonts/geologica/geologica-regular.woff2'),
+          weight: 400,
+          style: 'normal'
+        }
+      ]
+    }
+  });
 
   // 	--------------------- Passthrough File Copy -----------------------
   // same path
