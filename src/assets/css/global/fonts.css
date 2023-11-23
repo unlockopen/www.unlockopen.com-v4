@@ -1,29 +1,41 @@
 @font-face {
-  font-family: Inter;
+  font-family: Geologica;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local(''), url(/assets/fonts/geologica/geologica-bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Geologica;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: local(''), url(/assets/fonts/geologica/geologica-semibold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Geologica;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local(''), url(/assets/fonts/geologica/geologica-medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: Geologica;
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-500.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-500.woff) format('woff');
+  src: local(''), url(/assets/fonts/geologica/geologica-light.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: Inter;
-  font-style: normal;
+  font-family: Geologica;
+  font-style: italic;
   font-display: swap;
-  font-weight: 700;
-  src: local(''), url(/assets/fonts/inter/inter-v7-latin-700.woff2) format('woff2'),
-    url(/assets/fonts/inter/inter-v7-latin-700.woff) format('woff');
-}
-
-@font-face {
-  font-family: Redhat;
-  font-style: normal;
-  font-display: swap;
-  font-weight: 700;
-  src: local(''),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2) format('woff2'),
-    url(/assets/fonts/redhat/red-hat-display-v7-latin-900.woff) format('woff');
+  font-weight: 400;
+  src: local(''), url(/assets/fonts/geologica/geologica-lightitalic.woff2) format('woff2');
 }
 
 @font-face {
@@ -31,8 +43,5 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: local(''),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2)
-      format('woff2'),
-    url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff) format('woff');
+  src: local(''), url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2);
 }

@@ -4,31 +4,103 @@
   "items": [
     {
       "name": "Dark",
-      "value": "#404040"
+      "value": "#161717"
+    },
+    {
+      "name": "Gray Dark",
+      "value": "#595C5C"
+    },
+    {
+      "name": "Gray",
+      "value": "#C9D0CF"
+    },
+    {
+      "name": "Gray Light",
+      "value": "#DFE7E6"
     },
     {
       "name": "Light",
-      "value": "#F3F3F3"
-    },
-    {
-      "name": "Light Glare",
       "value": "#FFFFFF"
     },
     {
-      "name": "Primary",
-      "value": "#dd4462"
+      "name": "Pink",
+      "value": "#C766A1"
     },
     {
-      "name": "Primary Glare",
-      "value": "#F4D0DF"
+      "name": "Pink Light",
+      "value": "#F9F0F6"
     },
     {
-      "name": "Secondary",
-      "value": "#0369A1"
+      "name": "Blush",
+      "value": "#F07392"
     },
     {
-      "name": "Secondary Glare",
-      "value": "#D8E2F4"
+      "name": "Blush Light",
+      "value": "#FEF1F4"
+    },
+    {
+      "name": "Salmon",
+      "value": "#FF8B7F"
+    },
+    {
+      "name": "Salmon Light",
+      "value": "#FFF3F2"
+    },
+    {
+      "name": "Tangerine",
+      "value": "#F49762"
+    },
+    {
+      "name": "Tangerine Light",
+      "value": "#FEF5EF"
+    },
+    {
+      "name": "Golden",
+      "value": "#FFD164"
+    },
+    {
+      "name": "Golden Light",
+      "value": "#FFFAF0"
+    },
+    {
+      "name": "Apple",
+      "value": "#A1D47B"
+    },
+    {
+      "name": "Apple Light",
+      "value": "#F6FBF2"
+    },
+    {
+      "name": "Caribbean",
+      "value": "#00C9A9"
+    },
+    {
+      "name": "Caribbean Light",
+      "value": "#E6FAF6"
+    },
+    {
+      "name": "Aqua",
+      "value": "#0084A3"
+    },
+    {
+      "name": "Aqua Light",
+      "value": "#E6F3F6"
+    },
+    {
+      "name": "Blue",
+      "value": "#0083CB"
+    },
+    {
+      "name": "Blue Light",
+      "value": "#E6F3FA"
+    },
+    {
+      "name": "Lavender",
+      "value": "#966FC4"
+    },
+    {
+      "name": "Lavender Light",
+      "value": "#F5F1F9"
     }
   ]
 }

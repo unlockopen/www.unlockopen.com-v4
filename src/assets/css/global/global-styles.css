@@ -7,7 +7,7 @@
 body {
   color: var(--color-dark);
   background-color: var(--color-light);
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
   font-family: var(--font-base);
   line-height: 1.4;
   letter-spacing: var(--tracking);
@@ -29,15 +29,15 @@ h3 {
 }
 
 h1 {
-  font-size: var(--size-step-5);
+  font-size: var(--size-step-6);
 }
 
 h2 {
-  font-size: var(--size-step-4);
+  font-size: var(--size-step-3);
 }
 
 h3 {
-  font-size: var(--size-step-3);
+  font-size: var(--size-step-2);
 }
 
 /* Set line lengths */
@@ -66,7 +66,7 @@ blockquote > * + * {
 blockquote :last-child {
   font-family: var(--font-base);
   font-style: normal;
-  font-size: var(--size-step-1);
+  font-size: var(--size-step-0);
 }
 
 svg {
