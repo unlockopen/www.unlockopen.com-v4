@@ -1,0 +1,9 @@
+---
+layout: 'base'
+classnames: 'prose'
+theme: 'golden'
+---
+
+<h1 text="title"></h1>
+
+<template @raw="content" webc:nokeep></template>

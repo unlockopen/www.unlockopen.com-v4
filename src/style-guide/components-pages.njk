@@ -1,0 +1,51 @@
+---
+pagination:
+  data: components.components
+  size: 1
+  alias: component
+permalink: 'style-guide/components/{{ component.slug }}/'
+eleventyComputed:
+  title: '{{ component.title }}'
+layout: sg-wrapper
+---
+
+{%- macro c(path, name, params) -%} {% include "components/" + path + "/" + name + ".njk"
+ignore missing %} {%- endmacro -%} {% set fullPath = '/style-guide/components/full/' +
+component.slug %}
+
+<seven-minute-tabs class="sg-stretch">
+  <ol role="tablist" class="sg-tabs" aria-label="What does this tab chooser do?">
+    <li><a class="sg-link" href="#example-tab" role="tab">Demo</a></li>
+    <li><a class="sg-link" href="#code-tab" role="tab">HTML</a></li>
+    <li><a class="sg-link" href="#context-tab" role="tab">Context</a></li>
+    <li><a class="sg-link" href="{{ fullPath | url }}">Full Screen ↗</a></li>
+  </ol>
+
+  <div id="example-tab" role="tabpanel" class="sg-stretch">
+    <div class="sg-frame sg-stretch">
+      <iframe
+        class="sg-stretch"
+        src="{{ fullPath | url }}"
+        title="Component Frame"
+        sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+        style=""
+        marginwidth="0"
+        marginheight="0"
+        frameborder="0"
+        vspace="0"
+        hspace="0"
+        scrolling="yes"
+      ></iframe>
+    </div>
+  </div>
+
+  <div id="code-tab" role="tabpanel" class="sg-code sg-stretch">
+    {% highlight "html" %} {% set params = component.context %} {% include "components/" +
+    component.path + "/" + component.name + ".njk" ignore missing %} {% endhighlight %}
+  </div>
+
+  <div id="context-tab" role="tabpanel" class="sg-code sg-stretch">
+    {% highlight "js" %} {% brace %} c("{{ component.path }}", "{{ component.name }}",
+    {{ component.context | console | safe }}) {% endbrace %} {% endhighlight %}
+  </div>
+</seven-minute-tabs>

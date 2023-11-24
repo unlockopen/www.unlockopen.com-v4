@@ -71,14 +71,6 @@ const minifyJs = async (code, ...rest) => {
   }
 };
 
-/**
- * Render content as inline markdown if single line, or full
- * markdown if multiline. for md in yaml
- * @param {string} [content]
- * @param {import('markdown-it').Options} [opts]
- * @return {string|undefined}
- */
-
 const mdInline = (content, opts) => {
   if (!content) {
     return;
@@ -89,9 +81,6 @@ const mdInline = (content, opts) => {
   }
 
   let inline = !content.includes('\n');
-
-  // If there's quite a bit of content, we want to make sure
-  // it's marked up for readability purposes
   if (inline && content.length > 200) {
     inline = false;
   }
@@ -99,26 +88,8 @@ const mdInline = (content, opts) => {
   return inline ? md.renderInline(content) : md.render(content);
 };
 
-// source: https://github.com/bnijenhuis/bnijenhuis-nl/blob/main/.eleventy.js
-const splitlines = (input, maxCharLength) => {
-  const parts = input.split(' ');
-  const lines = parts.reduce(function (acc, cur) {
-    if (!acc.length) {
-      return [cur];
-    }
-
-    let lastOne = acc[acc.length - 1];
-
-    if (lastOne.length + cur.length > maxCharLength) {
-      return [...acc, cur];
-    }
-
-    acc[acc.length - 1] = lastOne + ' ' + cur;
-
-    return acc;
-  }, []);
-
-  return lines;
+const console = value => {
+  return JSON.stringify(value, null, 2);
 };
 
 module.exports = {
@@ -132,5 +103,5 @@ module.exports = {
   minifyCss,
   minifyJs,
   mdInline,
-  splitlines
+  console
 };

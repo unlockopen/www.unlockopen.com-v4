@@ -1,0 +1,24 @@
+<ul role="list" webc:root="override">
+  <li webc:for="item of $data.navigation.social">
+    <a class="social-link cluster" :href="item.url" target="_blank" rel="me">
+      <inline-svg
+        class="icon"
+        aria-hidden="true"
+        :src="`./src/assets/svg/${item.id}.svg`"
+      ></inline-svg>
+      <span @text="item.label" webc:nokeep></span>
+    </a>
+  </li>
+</ul>
+
+<style webc:scoped="social">
+  :host {
+    align-items: center;
+    display: flex;
+    gap: var(--space-s);
+    align-items: center;
+  }
+  .cluster {
+    --space: 0.2ex;
+  }
+</style>

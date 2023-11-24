@@ -1,0 +1,28 @@
+<script webc:setup>
+  const {bottom} = $data.navigation;
+</script>
+
+<footer class="wrapper" webc:root="override">
+  <p class="copyright">
+    © <strong @html="$data.meta.siteName"> </strong>
+    <span @text="new Date().getFullYear()" webc:nokeep></span>
+  </p>
+  <ul class="cluster" style="--gap: var(--space-2xs)" role="list">
+    <li webc:for="item of bottom">
+      <a
+        :href="item.url"
+        :aria-current="item.url === page.url ? 'page' : null"
+        @text="item.label"
+      ></a>
+    </li>
+  </ul>
+</footer>
+
+<style webc:scoped="site-footer">
+  :host {
+    margin-block-start: var(--space-l-xl);
+    padding: var(--space-s-m);
+    background: var(--color-accent);
+    color: var(--color-light);
+  }
+</style>

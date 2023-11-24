@@ -1,0 +1,18 @@
+---
+layout: base.webc
+---
+
+<h1 @text="title"></h1>
+
+<section class="flow prose">
+  <p class="intro" @text="intro"></p>
+  <template @raw="content" webc:nokeep></template>
+
+  <article-list webc:if="articles">This will render</article-list>
+</section>
+
+<style>
+  .intro {
+    font-size: var(--size-step-2);
+  }
+</style>

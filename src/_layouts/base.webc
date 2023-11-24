@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html :lang="meta.lang" :data-theme="`${theme ? `${theme}` : 'default'}`">
+  <head>
+    <!-- 1  base -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 2  title -->
+    <title @text="title || meta.siteName"></title>
+
+    <!-- 3 preconnect/async js / synchronous js / schema -->
+
+    <!-- 4 synchronous css / inline css  -->
+    <style @raw="getCss(page.url)" webc:keep></style>
+    <link
+      rel="stylesheet"
+      :href="url(`/assets/css/global.css?${global.random()}`)"
+      webc:keep
+    />
+
+    <!-- 5  preloads -->
+    <link
+      href="/assets/fonts/geologica/geologica-light.woff2"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <!-- 6 defered js  -->
+    <!-- <script type="module" src="/assets/scripts/app.js" defer></script> -->
+
+    <!-- 7 meta  -->
+    <base :href="page.url" />
+    <meta name="description" :content="description || meta.siteDescription" />
+    <meta name="theme-color" :content="meta.themeColor" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="generator" content="Eleventy" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="canonical" :href="meta.url + page.url" />
+    <link rel="author" content="humans.txt" />
+
+    <!-- 8 me stuff-->
+    <link webc:if="meta.mastodonProfile" rel="me" :href="meta.mastodonProfile" />
+    <link webc:if="meta.twitterProfile" rel="me" :href="meta.twitterProfile" />
+    <link webc:if="meta.gitHubProfile" rel="me" :href="meta.gitHubProfile" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      :href="`${meta.url}/feed.xml`"
+      :title="meta.blog.name"
+    />
+
+    <!-- 9 social  -->
+    <meta property="og:url" :content="meta.url + page.url" />
+    <meta property="og:type" :content="meta.siteType" />
+    <meta name="og:title" :content="title || meta.siteName" />
+    <meta name="og:description" :content="description || meta.siteDescription" />
+    <meta property="og:image" :content="ogImage || meta.ogDefault" />
+    <meta property="og:image:alt" :content="ogImageAlt || meta.ogDefaultAlt" />
+    <meta property="og:site_name" :content="meta.siteName" />
+    <meta property="og:locale" :content="meta.locale" />
+    <meta property="article:author" content=":meta.author" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" :content="title || meta.siteName" />
+    <meta name="twitter:description" :content="description || meta.siteDescription" />
+    <meta name="twitter:image" :content="ogImage || meta.ogImage" />
+    <meta name="twitter:dnt" content="on" />
+
+    <!-- 10 Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <script @raw="getBundle('js', 'critical')" webc:keep></script>
+    <site-header></site-header>
+    <main
+      :class="`wrapper flow ${classnames ? `${classnames}` : ''}`"
+      @raw="content"
+    ></main>
+    <site-footer></site-footer>
+    <script @raw="getJs(page.url)" webc:keep></script>
+  </body>
+</html>

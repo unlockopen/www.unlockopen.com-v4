@@ -1,0 +1,72 @@
+<script webc:setup>
+  const {top} = $data.navigation;
+</script>
+
+<header class="wrapper" webc:root="override">
+  <a class="logo" href="/">
+    <inline-svg
+      class="icon"
+      aria-hidden="true"
+      src="./src/assets/svg/logo.svg"
+    ></inline-svg>
+
+    <span class="logo" @html="$data.meta.siteName"> </span>
+  </a>
+
+  <nav class="cluster">
+    <ul class="cluster" role="list">
+      <li webc:for="item of top">
+        <a
+          :href="item.url"
+          :aria-current="item.url === $data.page.url ? 'page' : null"
+          @text="item.label"
+        ></a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style webc:scoped="site-head">
+  :host {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: var(--size-step-3);
+    margin-block: var(--space-xs);
+    display: flex;
+    align-items: baseline;
+    letter-spacing: var(--tracking-s);
+  }
+
+  .logo svg {
+    block-size: 3ex;
+    transform: translateX(0.2em);
+  }
+
+  @media (max-width: 40rem) {
+    nav {
+      --column-gap: clamp(var(--space-s), 5vw, var(--space-m));
+      --row-gap: var(--space-s);
+      --justify: space-between;
+
+      inline-size: 100%;
+    }
+  }
+
+  a {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    color: currentcolor;
+    text-decoration: none;
+  }
+
+  a:is(:hover, :focus-visible) {
+    color: var(--color-theme-offset);
+  }
+</style>

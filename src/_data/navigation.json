@@ -1,0 +1,53 @@
+{
+  "top": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "url": "/about/"
+    },
+    {
+      "id": "thinking",
+      "label": "Thinking",
+      "url": "/thinking/"
+    }
+  ],
+  "bottom": [
+    {
+      "id": "Imprint",
+      "label": "imprint",
+      "url": "/imprint/"
+    },
+    {
+      "id": "privacy",
+      "label": "Privacy",
+      "url": "/privacy/"
+    },
+    {
+      "id": "style-guide",
+      "label": "Style guide",
+      "url": "/style-guide/"
+    }
+  ],
+  "social": [
+    {
+      "id": "twitter",
+      "label": "Twitter",
+      "url": "https://twitter.com/tobie/"
+    },
+    {
+      "id": "mastodon",
+      "label": "Mastodon",
+      "url": "https://mastodon.social/@tobie"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tobielangel/"
+    }
+  ]
+}

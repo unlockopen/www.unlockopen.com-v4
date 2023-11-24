@@ -3,18 +3,16 @@ title: About
 permalink: /about/index.html
 description: About this starter
 layout: page
-youtube: true
+theme: apple
+intro: 'Tobie Langel is a prominent figure in the open-source software community, known for his work on web development and open standards. He is the founder of UnlockOpen.'
 ---
 
-Based on the [companion website](https://buildexcellentwebsit.es/) of Andy Bell's talk 'Be the browser’s mentor, not its micromanager'. It takes over a core functionality: Using Tailwind CSS to generate CSS variables based on design tokens.
+Tobie Langel is the founder of UnlockOpen, a boutique consulting firm that helps large organizations build a strong open source culture and leverage it to recruit, retain, and foster top software engineering talent, improve team efficiency, and boost innovation.
 
-Like buildexcellentwebsit.es, this starter uses modern CSS, fluid type & space, flexible Layouts and Progressive Enhancement, wrapped in a basic template, ideal for personal websites and other small projects.
+His clients include companies such as Google, Microsoft, Intel, Mozilla, or Airtable.
 
-The aim is to spread the idea and use of this _excellent_ workflow. To work with it efficiently you should be familiar with [cube.fyi](https://cube.fyi/), [utopia.fyi](https://utopia.fyi/) and [every-layout.dev](https://every-layout.dev/).
+Tobie is the facilitator of AMP’s Advisory Committee, a voting member of the OpenJS Foundation Cross Project Council, and sits on the Advisory Council of OASIS Open Projects.
+Previously, he was a member of Facebook’s Open Source and Web Standards team, and was Facebook’s Advisory Committee representative at W3C.
 
-- Find out more on https://buildexcellentwebsit.es/.
-- Remix the original: https://glitch.com/edit/#!/remix/build-excellent-websites
-
-## Watch the talk
-
-{% youtube 'JqnMI1AXl6w', 'Andy Bell – Be the browser’s mentor, not its micromanager' %}
+Tobie is known for having co-maintained the Prototype JavaScript Framework. He also edited a number of Web standards, including WebIDL, and led W3C’s Web platform testing effort.
+Previous speaking engagements include: QCON, JSConf.eu, Linux Foundation Open Source Summit, Open Source Strategy Forum, FOSDEM, OW2con, OpenExpo Europe, All Things Open.
