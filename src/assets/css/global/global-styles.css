@@ -5,14 +5,24 @@
   project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  color: var(--color-text);
+  background-color: var(--color-bg);
   font-size: var(--size-step-0);
   font-family: var(--font-base);
   line-height: 1.4;
   letter-spacing: var(--tracking);
   display: flex;
   flex-direction: column;
+}
+
+main {
+  flex: auto;
+}
+
+@media (prefers-contrast: less) {
+  body {
+    opacity: 0.8;
+  }
 }
 
 main {
@@ -50,17 +60,22 @@ blockquote:not([class]) {
 h1,
 h2,
 h3 {
-  max-inline-size: 20ch;
+  max-inline-size: 40ch;
+}
+
+.heading-anchor {
+  text-decoration: none;
 }
 
 blockquote {
-  border-inline-start: 0.8rem solid var(--color-primary);
-  padding: var(--space-m-l);
-  font-size: var(--size-step-2);
+  border-inline-start: 0.5rem solid var(--color-accent);
+  padding: var(--space-s-m);
+  font-style: italic;
+  color: var(--color-grey-dark);
 }
 
 blockquote > * + * {
-  margin-block-start: var(--space-m-l);
+  margin-block-start: var(--space-m);
 }
 
 blockquote :last-child {
@@ -125,8 +140,8 @@ article
 
 /* Base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-primary);
-  color: var(--color-light);
+  background: var(--color-accent);
+  color: var(--color-bg);
 }
 
 .preload-transitions * {

@@ -1,0 +1,11 @@
+---
+layout: base.webc
+---
+
+<h1 @text="title"></h1>
+
+<section class="flow prose">
+  <template @raw="content" webc:nokeep></template>
+
+  <social-media></social-media>
+</section>

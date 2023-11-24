@@ -1,0 +1,15 @@
+---
+pagination:
+  data: components.components
+  size: 1
+  alias: component
+permalink: 'style-guide/components/full/{{ component.slug }}/'
+eleventyComputed:
+  title: '{{ component.title }} Full Page'
+layout: base
+---
+
+<div class="flow {{ component.preview }}">
+  {% set params = component.context %} {% include "components/" + component.path + "/" +
+  component.name + ".njk" ignore missing %}
+</div>
