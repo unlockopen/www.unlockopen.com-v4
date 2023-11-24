@@ -1,5 +1,5 @@
 .prose {
-  --wrapper-width: 55rem;
+  max-inline-size: 55ch;
 }
 
 .prose :is(pre, pre + *, figure, figure + *) {
