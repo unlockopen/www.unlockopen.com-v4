@@ -6,6 +6,7 @@
 
 const packageVersion = require('./package.json').version;
 const fs = require('fs');
+const prettify = require('html-prettify');
 
 // module import filters
 const {
@@ -26,7 +27,6 @@ const {
 const {
   brace,
   imageShortcodePlaceholder,
-  includeRaw,
   liteYoutube
 } = require('./config/shortcodes/index.js');
 
@@ -50,7 +50,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addWatchTarget('./utils/*.js');
 
   // --------------------- layout aliases -----------------------
+  eleventyConfig.addLayoutAlias('plain', 'plain.webc');
   eleventyConfig.addLayoutAlias('base', 'base.webc');
+  eleventyConfig.addLayoutAlias('iframe', 'iframe.webc');
   eleventyConfig.addLayoutAlias('sg-wrapper', 'sg-wrapper.webc');
   eleventyConfig.addLayoutAlias('sg-static', 'sg-static.webc');
   eleventyConfig.addLayoutAlias('home', 'home.webc');
@@ -80,9 +82,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPairedShortcode('brace', brace);
   eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addShortcode('youtube', liteYoutube);
-  eleventyConfig.addShortcode('include_raw', includeRaw);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
+  eleventyConfig.addPairedShortcode('prettify', content => {
+    return prettify(content);
+  });
 
   // 	--------------------- Custom transforms ---------------------
   eleventyConfig.addPlugin(require('./config/transforms/html-config.js'));
@@ -135,6 +139,12 @@ module.exports = eleventyConfig => {
   // social icons to root directory
   eleventyConfig.addPassthroughCopy({
     'src/assets/images/favicon/*': '/'
+  });
+
+  // node_modules
+  eleventyConfig.addPassthroughCopy({
+    'node_modules/@zachleat/seven-minute-tabs/seven-minute-tabs.js':
+      'assets/scripts/seven-minute-tabs.js'
   });
 
   // 	--------------------- general config -----------------------
