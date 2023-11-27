@@ -10,6 +10,7 @@
 
 @import-glob 'blocks/*.css';
 @import-glob 'compositions/*.css';
+@import-glob 'components/*.css';
 @import-glob 'utilities/*.css';
 
 @import 'tailwindcss/utilities';
