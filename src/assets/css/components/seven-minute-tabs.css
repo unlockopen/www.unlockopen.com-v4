@@ -1,0 +1,40 @@
+seven-minute-tabs [role='tablist'] {
+  padding-inline: var(--space-xs);
+  margin: 0 -1rem;
+  font-size: 0.8125em; /* 13px /16 */
+  line-height: 1.8;
+  text-align: right;
+}
+seven-minute-tabs [role='tablist']:first-child {
+  margin-bottom: 0.5rem;
+}
+seven-minute-tabs [role='tablist']:last-child {
+  margin-top: 0.5rem;
+}
+seven-minute-tabs [role='tab'] {
+  display: inline-block;
+  font-weight: 500;
+  padding-inline: var(--space-xs);
+  margin: 0 0.1em;
+  text-decoration: none;
+  color: var(--color-bg);
+  background-color: var(--color-dark);
+  border-top: 0.4rem solid var(--color-grey);
+}
+seven-minute-tabs [role='tab'][aria-selected='true'] {
+  border-color: var(--color-accent);
+  background-color: var(--color-dark);
+}
+
+/* Code samples in tabs */
+seven-minute-tabs [role='tabpanel'] pre {
+  border-radius: 0;
+}
+seven-minute-tabs [role='tabpanel'] pre:last-child {
+  margin-bottom: 0;
+}
+
+seven-minute-tabs iframe {
+  inline-size: 100%;
+  min-block-size: 50vh;
+}

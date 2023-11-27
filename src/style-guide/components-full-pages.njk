@@ -6,10 +6,11 @@ pagination:
 permalink: 'style-guide/components/full/{{ component.slug }}/'
 eleventyComputed:
   title: '{{ component.title }} Full Page'
-layout: base
+layout: iframe
+theme: pink
 ---
 
-<div class="flow {{ component.preview }}">
+<div class="flow {{ component.preview }} asdf">
   {% set params = component.context %} {% include "components/" + component.path + "/" +
   component.name + ".njk" ignore missing %}
 </div>

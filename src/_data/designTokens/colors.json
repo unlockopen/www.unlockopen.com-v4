@@ -27,76 +27,76 @@
       "value": "#C766A1"
     },
     {
-      "name": "Pink Light",
-      "value": "#F9F0F6"
-    },
-    {
       "name": "Blush",
       "value": "#F07392"
-    },
-    {
-      "name": "Blush Light",
-      "value": "#FEF1F4"
     },
     {
       "name": "Salmon",
       "value": "#FF8B7F"
     },
     {
-      "name": "Salmon Light",
-      "value": "#FFF3F2"
-    },
-    {
       "name": "Tangerine",
       "value": "#F49762"
-    },
-    {
-      "name": "Tangerine Light",
-      "value": "#FEF5EF"
     },
     {
       "name": "Golden",
       "value": "#FFD164"
     },
     {
-      "name": "Golden Light",
-      "value": "#FFFAF0"
-    },
-    {
       "name": "Apple",
       "value": "#A1D47B"
-    },
-    {
-      "name": "Apple Light",
-      "value": "#F6FBF2"
     },
     {
       "name": "Caribbean",
       "value": "#00C9A9"
     },
     {
-      "name": "Caribbean Light",
-      "value": "#E6FAF6"
-    },
-    {
       "name": "Aqua",
       "value": "#0084A3"
-    },
-    {
-      "name": "Aqua Light",
-      "value": "#E6F3F6"
     },
     {
       "name": "Blue",
       "value": "#0083CB"
     },
     {
-      "name": "Blue Light",
-      "value": "#E6F3FA"
-    },
-    {
       "name": "Lavender",
       "value": "#966FC4"
+    },
+    {
+      "name": "Pink Light",
+      "value": "#F9F0F6"
+    },
+    {
+      "name": "Blush Light",
+      "value": "#FEF1F4"
+    },
+    {
+      "name": "Salmon Light",
+      "value": "#FFF3F2"
+    },
+    {
+      "name": "Tangerine Light",
+      "value": "#FEF5EF"
+    },
+    {
+      "name": "Golden Light",
+      "value": "#FFFAF0"
+    },
+    {
+      "name": "Apple Light",
+      "value": "#F6FBF2"
+    },
+    {
+      "name": "Caribbean Light",
+      "value": "#E6FAF6"
+    },
+    {
+      "name": "Aqua Light",
+      "value": "#E6F3F6"
+    },
+    {
+      "name": "Blue Light",
+      "value": "#E6F3FA"
     },
     {
       "name": "Lavender Light",
