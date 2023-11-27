@@ -9,24 +9,17 @@ body {
   background-color: var(--color-bg);
   font-size: var(--size-step-0);
   font-family: var(--font-base);
-  line-height: 1.4;
+  line-height: 1.5;
   letter-spacing: var(--tracking);
   display: grid;
   grid-template-columns: [logo-icon] min-content [logo-text] min-content [rest] auto;
-}
-
-main {
-  flex: auto;
+  grid-template-rows: [header] auto [main] 1fr [footer] auto;
 }
 
 @media (prefers-contrast: less) {
   body {
     opacity: 0.8;
   }
-}
-
-main {
-  flex: auto;
 }
 
 /* Base typesetting */
@@ -36,6 +29,7 @@ h3 {
   line-height: 1;
   letter-spacing: var(--tracking-s);
   font-family: var(--font-display);
+  font-weight: 500;
 }
 
 h1 {

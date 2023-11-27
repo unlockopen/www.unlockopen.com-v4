@@ -15,6 +15,8 @@ layout: plain
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
+    padding-block-start: var(--space-2xl);
+    grid-template-rows: auto 1fr;
   }
 
   :host > * {
