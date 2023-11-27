@@ -79,7 +79,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <slot name="head"></slot>
   </head>
-  <body>
+  <body class="wrapper">
     <x @raw="content" webc:nokeep></x>
     <script @raw="getJs(page.url)" webc:keep></script>
   </body>

@@ -20,9 +20,15 @@
 
 <style webc:scoped="site-footer">
   :host {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
     margin-block-start: var(--space-l-xl);
     padding: var(--space-s-m);
     background: var(--color-accent);
     color: var(--color-light);
+  }
+  :host > * {
+    grid-column: 1 / -1;
   }
 </style>

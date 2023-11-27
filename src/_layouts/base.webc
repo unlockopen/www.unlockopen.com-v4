@@ -4,10 +4,24 @@ layout: plain
 
 <site-header></site-header>
 <main
-  :class="`wrapper flow ${classnames ? `${classnames}` : ''}`"
+  :class="`flow ${classnames ? `${classnames}` : ''}`"
   @raw="content"
   webc:root="override"
 ></main>
 <site-footer></site-footer>
 
-<style webc:scoped="main"></style>
+<style webc:scoped="main">
+  :host {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: subgrid;
+  }
+
+  :host > * {
+    grid-column: 1 / -1;
+  }
+
+  :host > section {
+    grid-column: 2 / -1;
+  }
+</style>
