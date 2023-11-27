@@ -10,7 +10,7 @@
       src="./src/assets/svg/logo.svg"
     ></inline-svg>
 
-    <span class="logo" @html="$data.meta.siteName"> </span>
+    <span @html="$data.meta.siteName"> </span>
   </a>
 
   <nav class="cluster">
@@ -28,24 +28,40 @@
 
 <style webc:scoped="site-head">
   :host {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, min-content) 1fr;
     justify-content: space-between;
+    align-items: baseline;
+    border-block-end: 1px solid var(--color-grey);
   }
-
   .logo {
+    justify-self: start;
     font-weight: bold;
     font-size: var(--size-step-3);
     margin-block: var(--space-xs);
-    display: flex;
-    align-items: baseline;
+    /* display: flex;
+    align-items: baseline; */
     letter-spacing: var(--tracking-s);
+    display: grid;
+    grid-column: 1 / 3;
+    grid-template-columns: subgrid;
+    align-content: end;
+    align-items: baseline;
   }
 
   .logo svg {
     block-size: 3ex;
     transform: translateX(0.2em);
+  }
+
+  .logo span {
+    justify-self: start;
+    transform: translateY(0.4em);
+  }
+
+  nav {
+    justify-content: end;
+    transform: translateY(0.6em);
   }
 
   @media (max-width: 40rem) {
