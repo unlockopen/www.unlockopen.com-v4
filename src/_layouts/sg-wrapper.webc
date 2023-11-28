@@ -40,13 +40,26 @@ theme: pink
 <style>
   .sidebar {
     --sidebar-align: flex-start;
-    --sidebar-target-width: 12rem;
+    --sidebar-target-width: 14rem;
+    --sidebar-content-min-width: 70%;
     flex: auto;
     position: relative;
   }
 
   .sidebar > * {
     flex: auto;
+  }
+
+  .sidebar ul ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 50rem) {
+    .sidebar ul ul {
+      flex-direction: column;
+    }
   }
 
   .sg-title,
