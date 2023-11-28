@@ -47,7 +47,7 @@ const pluginWebc = require('@11ty/eleventy-plugin-webc');
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
   eleventyConfig.addWatchTarget('./src/assets');
-  eleventyConfig.addWatchTarget('./utils/*.js');
+  eleventyConfig.addWatchTarget('./src/_includes/**/*');
 
   // --------------------- layout aliases -----------------------
   eleventyConfig.addLayoutAlias('plain', 'plain.webc');
@@ -148,9 +148,9 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- general config -----------------------
   return {
-    markdownTemplateEngine: 'njk',
-    dataTemplateEngine: 'njk',
-    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'webc',
+    dataTemplateEngine: 'webc',
+    htmlTemplateEngine: 'webc',
     dir: {
       output: 'dist',
       input: 'src',

@@ -10,7 +10,7 @@ layout: sg-wrapper
 classnames: 'flex flex-col'
 ---
 
-{%- macro c(path, name, params) -%} {% include "components/" + path + "/" + name + ".njk"
+{%- macro c(path, name, params) -%} {% include "components/" + path + "/" + name + ".md"
 ignore missing %} {%- endmacro -%} {% set fullPath = '/style-guide/components/full/' +
 component.slug %}
 
@@ -39,7 +39,7 @@ component.slug %}
 
   <div id="code-tab" role="tabpanel" class="sg-code sg-stretch">
     {% highlight "html" %} {%- prettify -%} {% set params = component.context %} {%
-    include "components/" + component.path + "/" + component.name + ".njk" ignore missing
+    include "components/" + component.path + "/" + component.name + ".md" ignore missing
     %} {%- endprettify -%}{% endhighlight %}
   </div>
 
