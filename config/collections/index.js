@@ -13,8 +13,13 @@ const sgAtoms = collection => {
   return collection.getFilteredByGlob('**/style-guide/Atoms/**/*');
 };
 
+const sgComponents = collection => {
+  return collection.getFilteredByGlob('**/style-guide/Components/**/*');
+};
+
 module.exports = {
   getAllPosts,
   onlyMarkdown,
-  sgAtoms
+  sgAtoms,
+  sgComponents
 };

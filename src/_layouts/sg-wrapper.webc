@@ -27,9 +27,16 @@ theme: pink
           </li>
         </ul>
       </li>
-    </ul>
 
-    <sg-menu :@data-items="components.menu"></sg-menu>
+      <li>
+        <strong>Components</strong>
+        <ul role="list">
+          <li webc:for="(sgKey, sgItem) in collections.sgComponents">
+            <a :href="url(sgItem.url)" @html="sgItem.data.title"></a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </nav>
 
   <!-- TODO: add themes -->
@@ -118,9 +125,5 @@ theme: pink
     gap: var(--space-xs);
     margin-bottom: var(--space-s);
     padding-bottom: var(--space-s);
-  }
-
-  .sg-tabs li:last-child {
-    margin-left: auto;
   }
 </style>

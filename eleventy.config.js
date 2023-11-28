@@ -31,7 +31,12 @@ const {
 } = require('./config/shortcodes/index.js');
 
 // module import collections
-const {getAllPosts, onlyMarkdown, sgAtoms} = require('./config/collections/index.js');
+const {
+  getAllPosts,
+  onlyMarkdown,
+  sgAtoms,
+  sgComponents
+} = require('./config/collections/index.js');
 
 // plugins
 const markdownLib = require('./config/plugins/markdown.js');
@@ -98,6 +103,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addCollection('posts', getAllPosts);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
   eleventyConfig.addCollection('sgAtoms', sgAtoms);
+  eleventyConfig.addCollection('sgComponents', sgComponents);
 
   // 	--------------------- Plugins ---------------------
   eleventyConfig.addPlugin(EleventyRenderPlugin);
