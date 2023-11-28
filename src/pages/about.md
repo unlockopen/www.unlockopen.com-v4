@@ -1,8 +1,7 @@
 ---
 title: About
-permalink: /about/index.html
-description: About this starter
-layout: page
+description: About this page
+slugOverride: about
 theme: apple
 intro: 'Tobie Langel is a prominent figure in the open-source software community, known for his work on web development and open standards. He is the founder of UnlockOpen.'
 social: true
