@@ -3,6 +3,8 @@ title: Table
 layout: sg-wrapper
 ---
 
+<h3>Respsonsive Table</h3>
+
 <table-saw text-align>
 <table>
     <thead>
@@ -61,3 +63,96 @@ layout: sg-wrapper
     </tbody>
 </table>
 </table-saw>
+
+<h3>Standard Table</h3>
+
+<table>
+  <caption>
+    Table Caption
+  </caption>
+  <thead>
+    <tr>
+      <th scope="col">Table Heading 1</th>
+      <th scope="col">Table Heading 2</th>
+      <th scope="col">Table Heading 3</th>
+      <th scope="col">Table Heading 4</th>
+      <th scope="col">Table Heading 5</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td>Table Footer 1</td>
+      <td>Table Footer 2</td>
+      <td>Table Footer 3</td>
+      <td>Table Footer 4</td>
+      <td>Table Footer 5</td>
+    </tr>
+  </tfoot>
+  <tbody>
+    <tr>
+      <td>Table Cell 1</td>
+      <td>Table Cell 2</td>
+      <td>Table Cell 3</td>
+      <td>Table Cell 4</td>
+      <td>Table Cell 5</td>
+    </tr>
+    <tr>
+      <td>Table Cell 1</td>
+      <td>Table Cell 2</td>
+      <td>Table Cell 3</td>
+      <td>Table Cell 4</td>
+      <td>Table Cell 5</td>
+    </tr>
+    <tr>
+      <td>Table Cell 1</td>
+      <td>Table Cell 2</td>
+      <td>Table Cell 3</td>
+      <td>Table Cell 4</td>
+      <td>Table Cell 5</td>
+    </tr>
+    <tr>
+      <td>Table Cell 1</td>
+      <td>Table Cell 2</td>
+      <td>Table Cell 3</td>
+      <td>Table Cell 4</td>
+      <td>Table Cell 5</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr class="sg-hr" />
+<h3>Row-based Heading Table</h3>
+<table>
+  <tbody>
+    <tr>
+      <th scope="row">Table Heading 1</th>
+      <td>Table Cell 1</td>
+      <td>Table Cell 1</td>
+      <td>Table Cell 1</td>
+    </tr>
+    <tr>
+      <th scope="row">Table Heading 2</th>
+      <td>Table Cell 2</td>
+      <td>Table Cell 2</td>
+      <td>Table Cell 2</td>
+    </tr>
+    <tr>
+      <th scope="row">Table Heading 3</th>
+      <td>Table Cell 3</td>
+      <td>Table Cell 3</td>
+      <td>Table Cell 3</td>
+    </tr>
+    <tr>
+      <th scope="row">Table Heading 4</th>
+      <td>Table Cell 4</td>
+      <td>Table Cell 4</td>
+      <td>Table Cell 4</td>
+    </tr>
+    <tr>
+      <th scope="row">Table Heading 5</th>
+      <td>Table Cell 5</td>
+      <td>Table Cell 5</td>
+      <td>Table Cell 5</td>
+    </tr>
+  </tbody>
+</table>
