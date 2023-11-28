@@ -54,7 +54,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('base', 'base.webc');
   eleventyConfig.addLayoutAlias('iframe', 'iframe.webc');
   eleventyConfig.addLayoutAlias('sg-wrapper', 'sg-wrapper.webc');
-  eleventyConfig.addLayoutAlias('sg-static', 'sg-static.webc');
   eleventyConfig.addLayoutAlias('home', 'home.webc');
   eleventyConfig.addLayoutAlias('post', 'post.webc');
 
