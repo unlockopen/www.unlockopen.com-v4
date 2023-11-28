@@ -12,20 +12,22 @@ layout: sg-wrapper
   </ol>
 
 <div id="example-tab" role="tabpanel" class="iframe-container">
-	<alert-l @headline="Error Alert" :@type="error" @raw="content"></alert-l>
+	<custom-alert @headline="Error Alert" :@type="error" @raw="content">This is the Alert content</custom-alert>
 </div>
 
   <div id="html-tab" role="tabpanel" class="sg-code sg-stretch">
 
 ```html
-<alert-l @headline="Error Alert" :@type="error" @raw="content"></alert-l>
+<custom-alert @headline="Error Alert" :@type="error" @raw="content">
+  This is the Alert content</custom-alert
+>
 ```
 
   </div>
 
     <div id="usage-tab" role="tabpanel" class="sg-code sg-stretch">
 
-    &lt;alert-l @headline="Error Alert" :@type="error" @raw="content"></alert-l&gt;
+    &lt;custom-alert @headline="Error Alert" :@type="error" @raw="content"> This is the Alert content &lt;/custom-alert&gt;
 
 </div>
 
