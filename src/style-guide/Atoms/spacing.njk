@@ -1,0 +1,31 @@
+---
+title: Spacing
+layout: sg-wrapper
+---
+
+<h2>{{ designTokens.spacing.title }}</h2>
+<p>{{ designTokens.spacing.description }}</p>
+
+<table class="sg-spacing flow">
+  {%- for space in designTokens.spacing.items %}
+  <tr>
+    <th scope="row">
+      <h3>{{ space.name }}</h3>
+    </th>
+    <td>
+      <span class="flow">
+        <p>{{ space.min }}px to {{ space.max }}px</p>
+        <code>var(--space-{{ space.name | slugify }})</code>
+      </span>
+    </td>
+    <td>
+      <div
+        class="sg-space"
+        style="height:var(--space-{{ space.name | slugify }}); width:var(--space-{{
+          space.name | slugify
+        }});"
+      ></div>
+    </td>
+  </tr>
+  {%- endfor %}
+</table>

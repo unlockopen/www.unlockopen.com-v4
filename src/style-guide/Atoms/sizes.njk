@@ -1,0 +1,26 @@
+---
+title: Text sizes
+layout: sg-wrapper
+---
+
+<h2>{{ designTokens.sizes.title }}</h2>
+<p>{{ designTokens.sizes.description }}</p>
+
+<table class="sg-sizes flow">
+  {%- for size in designTokens.sizes.items %}
+  <tr>
+    <th scope="row">
+      <h3>{{ size.name }}</h3>
+    </th>
+    <td>
+      <span class="flow">
+        <p>{{ size.min }}px to {{ size.max }}px</p>
+        <code>var(--size-{{ size.name | slugify }})</code>
+      </span>
+    </td>
+    <td class="sg-sizes-example">
+      <p style="font-size:var(--size-{{ size.name | slugify }})">{{ size.name }}</p>
+    </td>
+  </tr>
+  {%- endfor %}
+</table>

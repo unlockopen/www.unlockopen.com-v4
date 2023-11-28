@@ -1,0 +1,20 @@
+---
+title: Colors
+layout: sg-wrapper
+---
+
+<h2>{{ designTokens.colors.title }}</h2>
+<p>{{ designTokens.colors.description }}</p>
+
+<ul class="grid" role="list">
+  {%- for color in designTokens.colors.items %}
+  <li
+    class="sg-swatch flow"
+    style="background-color: var(--color-{{ color.name | slugify }})"
+  >
+    <h3>{{ color.name }}</h3>
+    <code>var(--color-{{ color.name | slugify }})</code>
+    <code>{{ color.value }}</code>
+  </li>
+  {%- endfor %}
+</ul>

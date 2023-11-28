@@ -20,7 +20,7 @@ theme: pink
 
     <ul role="list">
       <li>
-        <strong>atoms</strong>
+        <strong>Atoms</strong>
         <ul role="list">
           <li webc:for="(sgKey, sgItem) in collections.sgAtoms">
             <a :href="url(sgItem.url)" @html="sgItem.data.title"></a>
