@@ -3,7 +3,7 @@ title: Table
 layout: sg-wrapper
 ---
 
-<h3>Respsonsive Table</h3>
+<h3>Responsive Table</h3>
 
 <table-saw text-align>
 <table>
