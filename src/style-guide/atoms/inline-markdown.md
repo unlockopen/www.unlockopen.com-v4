@@ -1,7 +1,5 @@
 ---
 title: Inline Markdown
-layout: sg-wrapper
-date: 2023-07-01
 ---
 
 A lot of markdown packages are installed to help you write your posts. You can configure them in `config/plugins/markdown.js`.

@@ -1,9 +1,8 @@
 ---
 title: Table
-layout: sg-wrapper
 ---
 
-<h3>Responsive Table</h3>
+<h2>Responsive Table</h2>
 
 <table-saw text-align>
 <table>
@@ -64,7 +63,7 @@ layout: sg-wrapper
 </table>
 </table-saw>
 
-<h3>Standard Table</h3>
+<h2>Standard Table</h2>
 
 <table>
   <caption>
@@ -121,7 +120,7 @@ layout: sg-wrapper
 </table>
 
 <hr class="sg-hr" />
-<h3>Row-based Heading Table</h3>
+<h2>Row-based Heading Table</h2>
 <table>
   <tbody>
     <tr>

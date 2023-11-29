@@ -10,11 +10,11 @@ const onlyMarkdown = collection => {
 };
 
 const sgAtoms = collection => {
-  return collection.getFilteredByGlob('**/style-guide/Atoms/**/*');
+  return collection.getFilteredByGlob('**/style-guide/atoms/**/*');
 };
 
 const sgComponents = collection => {
-  return collection.getFilteredByGlob('**/style-guide/Components/**/*');
+  return collection.getFilteredByGlob('**/style-guide/components/**/*');
 };
 
 module.exports = {

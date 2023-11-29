@@ -14,6 +14,7 @@ const {
   toHtml,
   where,
   toISOString,
+  rawComponent,
   formatDate,
   toAbsoluteUrl,
   stripHtml,
@@ -43,7 +44,6 @@ const markdownLib = require('./config/plugins/markdown.js');
 const {EleventyRenderPlugin} = require('@11ty/eleventy');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils/index.js');
-const {escape} = require('lodash');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const EleventyPluginOgImage = require('eleventy-plugin-og-image');
@@ -57,17 +57,18 @@ module.exports = eleventyConfig => {
   // --------------------- layout aliases -----------------------
   eleventyConfig.addLayoutAlias('plain', 'plain.webc');
   eleventyConfig.addLayoutAlias('base', 'base.webc');
-  eleventyConfig.addLayoutAlias('iframe', 'iframe.webc');
-  eleventyConfig.addLayoutAlias('sg-wrapper', 'sg-wrapper.webc');
   eleventyConfig.addLayoutAlias('home', 'home.webc');
   eleventyConfig.addLayoutAlias('post', 'post.webc');
+  eleventyConfig.addLayoutAlias('sg-wrapper', 'sg-wrapper.webc');
+  eleventyConfig.addLayoutAlias('sg-atom', 'sg-atom.webc');
+  eleventyConfig.addLayoutAlias('sg-component', 'sg-component.webc');
 
   // 	---------------------  Custom filters -----------------------
   eleventyConfig.addFilter('limit', limit);
   eleventyConfig.addFilter('where', where);
-  eleventyConfig.addFilter('escape', escape);
   eleventyConfig.addFilter('toHtml', toHtml);
   eleventyConfig.addFilter('toIsoString', toISOString);
+  eleventyConfig.addFilter('rawComponent', rawComponent);
   eleventyConfig.addFilter('formatDate', formatDate);
   eleventyConfig.addFilter('toAbsoluteUrl', toAbsoluteUrl);
   eleventyConfig.addFilter('stripHtml', stripHtml);

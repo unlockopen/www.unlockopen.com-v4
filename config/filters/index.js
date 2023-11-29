@@ -29,6 +29,15 @@ const stripHtml = str => {
   return str.replace(/<[^>]+>/g, '');
 };
 
+const rawComponent = str => {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+};
+
 /** Formats the given string as an absolute url. */
 const toAbsoluteUrl = url => {
   throwIfNotType(url, 'string');
@@ -100,6 +109,7 @@ module.exports = {
   formatDate,
   toAbsoluteUrl,
   stripHtml,
+  rawComponent,
   minifyCss,
   minifyJs,
   mdInline,
