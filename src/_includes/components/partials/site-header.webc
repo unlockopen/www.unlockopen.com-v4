@@ -32,12 +32,12 @@
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
     border-block-end: 1px solid var(--color-grey);
+    padding-block-start: var(--space-s-m);
   }
   .logo {
     justify-self: start;
     font-weight: bold;
     font-size: var(--size-step-3);
-    margin-block: var(--space-xs);
     letter-spacing: var(--tracking-s);
     display: grid;
     grid-column: 1 / 3;
@@ -47,17 +47,34 @@
 
   .logo svg {
     block-size: 3ex;
-    transform: translateX(0.2em);
+    transform: translateX(0.2em) translateY(-0.3em);
   }
 
   .logo span {
     justify-self: start;
-    transform: translateY(0.4em);
+    align-self: end;
   }
 
   nav {
+    grid-column: span 3;
     justify-content: end;
-    transform: translateY(0.6em);
+    align-self: end;
+  }
+
+  nav > ul {
+    margin: 0;
+  }
+
+  nav a {
+    border-block-end: 0.3em solid var(--border-color, transparent);
+    color: var(--nav-list-color, var(--color-text));
+    padding-block: 0.2em;
+    text-decoration: none;
+  }
+
+  nav a[aria-current='page'] {
+    --border-color: var(--nav-list-color, var(--color-bg));
+    --text-color: var(--nav-list-color, var(--color-text));
   }
 
   @media (max-width: 40rem) {

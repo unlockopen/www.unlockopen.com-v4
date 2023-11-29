@@ -7,5 +7,5 @@
 .wrapper {
   margin-inline: auto;
   position: relative;
-  inline-size: var(--wrapper-width, 85rem);
+  inline-size: var(--wrapper-width, 75rem);
 }

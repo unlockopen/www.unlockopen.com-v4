@@ -2,20 +2,22 @@
   const {bottom} = $data.navigation;
 </script>
 
-<footer class="wrapper" webc:root="override">
+<footer webc:root="override">
   <p class="copyright">
     © <strong @html="$data.meta.siteName"> </strong>
     <span @text="new Date().getFullYear()" webc:nokeep></span>
   </p>
-  <ul class="cluster" style="--gap: var(--space-2xs)" role="list">
-    <li webc:for="item of bottom">
-      <a
-        :href="item.url"
-        :aria-current="item.url === page.url ? 'page' : null"
-        @text="item.label"
-      ></a>
-    </li>
-  </ul>
+  <nav>
+    <ul class="cluster" style="--gap: var(--space-2xs)" role="list">
+      <li webc:for="item of bottom">
+        <a
+          :href="item.url"
+          :aria-current="item.url === $data.page.url ? 'page' : null"
+          @text="item.label"
+        ></a>
+      </li>
+    </ul>
+  </nav>
 </footer>
 
 <style webc:scoped="site-footer">
@@ -24,11 +26,22 @@
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
     margin-block-start: var(--space-l-xl);
-    padding: var(--space-s-m);
-    background: var(--color-accent);
-    color: var(--color-light);
+    color: var(--color-text);
+    align-items: center;
   }
-  :host > * {
-    grid-column: 1 / -1;
+  :host > p {
+    grid-column: 1 / 3;
+  }
+
+  :host > nav {
+    grid-column: 3 / -1;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav a[aria-current='page'] {
+    text-decoration: underline;
   }
 </style>

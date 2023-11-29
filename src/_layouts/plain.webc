@@ -79,8 +79,9 @@
     <link rel="manifest" href="/site.webmanifest" />
     <slot name="head"></slot>
   </head>
-  <body class="wrapper">
+  <body>
     <x @raw="content" webc:nokeep></x>
     <script @raw="getJs(page.url)" webc:keep></script>
+    <div class="decorative-element" webc:if="decorative"></div>
   </body>
 </html>
