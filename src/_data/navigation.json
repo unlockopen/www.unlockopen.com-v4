@@ -14,12 +14,17 @@
       "id": "thinking",
       "label": "Thinking",
       "url": "/thinking/"
+    },
+    {
+      "id": "services",
+      "label": "Services",
+      "url": "/services/"
     }
   ],
   "bottom": [
     {
-      "id": "Imprint",
-      "label": "imprint",
+      "id": "imprint",
+      "label": "Imprint",
       "url": "/imprint/"
     },
     {
