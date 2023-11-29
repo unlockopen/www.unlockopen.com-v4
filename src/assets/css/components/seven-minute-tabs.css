@@ -1,21 +1,21 @@
 seven-minute-tabs [role='tablist'] {
   padding-inline: var(--space-xs);
-  margin: 0 -1rem;
+  margin-inline: 0;
+  padding-inline: 0;
   font-size: 0.8125em; /* 13px /16 */
   line-height: 1.8;
   text-align: right;
 }
 seven-minute-tabs [role='tablist']:first-child {
-  margin-bottom: 0.5rem;
+  margin-block-end: 0.5rem;
 }
 seven-minute-tabs [role='tablist']:last-child {
-  margin-top: 0.5rem;
+  margin-block-start: 0.5rem;
 }
 seven-minute-tabs [role='tab'] {
   display: inline-block;
   font-weight: 500;
   padding-inline: var(--space-xs);
-  margin: 0 0.1em;
   text-decoration: none;
   color: var(--color-bg);
   background-color: var(--color-dark);
