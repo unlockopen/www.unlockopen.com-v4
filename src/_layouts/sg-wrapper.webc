@@ -1,6 +1,5 @@
 ---
 layout: base
-theme: pink
 ---
 
 <x slot="head" webc:nokeep>
@@ -13,17 +12,23 @@ theme: pink
 </x>
 
 <div class="sidebar">
-  <nav>
-    <h1 class="sg-title">
-      <a :href="url('/style-guide/')">Components</a>
-    </h1>
+  <nav :aria-label="meta.aria.menus.style">
+    <a
+      :href="url('/style-guide/')"
+      :aria-current="url('/style-guide/') === $data.page.url ? 'page' : null"
+      >Components</a
+    >
 
     <ul role="list">
       <li>
         <strong>Atoms</strong>
         <ul role="list">
           <li webc:for="(sgKey, sgItem) in collections.sgAtoms">
-            <a :href="url(sgItem.url)" @html="sgItem.data.title"></a>
+            <a
+              :href="url(sgItem.url)"
+              :aria-current="url(sgItem.url) === $data.page.url ? 'page' : null"
+              @text="sgItem.data.title"
+            ></a>
           </li>
         </ul>
       </li>
@@ -32,7 +37,11 @@ theme: pink
         <strong>Components</strong>
         <ul role="list">
           <li webc:for="(sgKey, sgItem) in collections.sgComponents">
-            <a :href="url(sgItem.url)" @html="sgItem.data.title"></a>
+            <a
+              :href="url(sgItem.url)"
+              :aria-current="url(sgItem.url) === $data.page.url ? 'page' : null"
+              @text="sgItem.data.title"
+            ></a>
           </li>
         </ul>
       </li>
@@ -58,15 +67,24 @@ theme: pink
   }
 
   .sidebar ul ul {
+    margin-block: 0.3em 1em;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.1rem;
   }
 
   @media (min-width: 50rem) {
     .sidebar ul ul {
       flex-direction: column;
     }
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav a[aria-current='page'] {
+    text-decoration: underline;
   }
 
   .sg-title,
@@ -82,7 +100,9 @@ theme: pink
 
   /* Components */
 
-  .sg-code {
+  .sg-code pre {
+    background-color: var(--color-text);
+    color: var(--color-bg);
     overflow: auto;
     padding: var(--space-s);
     font-size: var(--size-step-min-1);

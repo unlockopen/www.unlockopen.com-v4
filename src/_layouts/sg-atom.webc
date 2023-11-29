@@ -1,0 +1,8 @@
+---
+layout: 'sg-wrapper'
+theme: pink
+---
+
+<h1 @text="title"></h1>
+
+<template @raw="content" webc:nokeep></template>

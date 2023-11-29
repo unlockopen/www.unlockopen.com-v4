@@ -1,0 +1,32 @@
+---
+layout: 'sg-wrapper'
+theme: lavender
+---
+
+<h1 @text="title"></h1>
+
+<seven-minute-tabs>
+  <ol role="tablist" class="sg-tabs" aria-label="How to use">
+    <li><a href="#example-tab" role="tab">Demo</a></li>
+    <li><a href="#usage-tab" role="tab">Usage</a></li>
+    <li><a href="#html-tab" role="tab">HTML</a></li>
+  </ol>
+
+  <div id="example-tab" role="tabpanel" class="iframe-container">
+    <template @raw="content" webc:nokeep></template>
+  </div>
+
+  <div id="html-tab" role="tabpanel" class="sg-code sg-stretch">
+    <p>Output HTML from component</p>
+    <pre>
+			<code>
+     		<template @raw="rawComponent(content)" webc:nokeep></template>
+  		</code>
+		</pre>
+  </div>
+
+  <div id="usage-tab" role="tabpanel" class="sg-code sg-stretch">
+    <p>Raw component code. Haven't solved that yet. For now, look in src.</p>
+    <template @raw="rawComponent(content)"></template>
+  </div>
+</seven-minute-tabs>
