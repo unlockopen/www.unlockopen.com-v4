@@ -82,6 +82,7 @@
   <body>
     <x @raw="content" webc:nokeep></x>
     <script @raw="getJs(page.url)" webc:keep></script>
-    <div class="decorative-element" webc:if="decorative"></div>
+
+    <div :class="`decorative ${decorative ? `${decorative}` : ''}`"></div>
   </body>
 </html>

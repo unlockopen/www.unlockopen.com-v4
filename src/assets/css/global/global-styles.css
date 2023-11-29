@@ -5,15 +5,6 @@
   project: https://cube.fyi/css.html
 */
 
-.decorative-element {
-  background-color: var(--decorative-color, var(--color-accent));
-  inline-size: var(--decorative-width, 38%);
-  block-size: var(--decorative-height, 100%);
-  position: absolute;
-  right: 0;
-  z-index: -1;
-}
-
 html {
   display: grid;
   grid-template-columns:

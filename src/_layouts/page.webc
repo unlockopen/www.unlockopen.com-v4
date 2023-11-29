@@ -1,6 +1,6 @@
 ---
 layout: base
-decorative: true
+decorative: square
 ---
 
 <h1 @text="title"></h1>
