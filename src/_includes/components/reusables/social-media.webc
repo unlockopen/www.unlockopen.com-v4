@@ -5,8 +5,8 @@
         class="icon"
         aria-hidden="true"
         :src="`./src/assets/svg/${item.id}.svg`"
-      ></inline-svg>
-      <span @text="item.label" webc:nokeep></span>
+      ></inline-svg
+      ><span @text="item.label" webc:nokeep></span>
     </a>
   </li>
 </ul>

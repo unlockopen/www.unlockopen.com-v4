@@ -13,7 +13,7 @@
     <span @html="$data.meta.siteName"> </span>
   </a>
 
-  <nav class="cluster">
+  <nav class="cluster" :aria-label="$data.meta.aria.menus.main">
     <ul class="cluster" role="list">
       <li webc:for="item of top">
         <a

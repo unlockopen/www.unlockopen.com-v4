@@ -18,6 +18,14 @@ module.exports = {
   twitterProfile: 'https://twitter.com/tobie/',
   mastodonProfile: 'https://mastodon.social/@tobie',
   gitHubProfile: 'https://github.com/unlockopen',
+  aria: {
+    menus: {
+      main: 'Main',
+      footer: 'Complementary',
+      style: 'Components'
+    }
+  },
+
   blog: {
     // this is for the rss feed
     name: 'UnlockOpen Thinking',
