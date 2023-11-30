@@ -52,10 +52,15 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-img,
-picture {
+picture,
+img {
   max-inline-size: 100%;
-  display: block;
+  block-size: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
 }
 
 /* Inherit fonts for inputs and buttons */
