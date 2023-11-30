@@ -24,6 +24,7 @@ module.exports = {
   presets: [],
   theme: {
     screens: {
+      ltmd: {max: '49em'},
       md: '50em',
       lg: '80em'
     },

@@ -77,12 +77,11 @@
     --text-color: var(--nav-list-color, var(--color-text));
   }
 
-  @media (max-width: 40rem) {
+  @media screen(md) {
     nav {
       --column-gap: clamp(var(--space-s), 5vw, var(--space-m));
       --row-gap: var(--space-s);
       --justify: space-between;
-
       inline-size: 100%;
     }
   }

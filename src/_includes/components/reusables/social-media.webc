@@ -4,7 +4,7 @@
       <inline-svg
         class="icon"
         aria-hidden="true"
-        :src="`./src/assets/svg/${item.id}.svg`"
+        :src="`./src/assets/svg/social-${item.id}.svg`"
       ></inline-svg
       ><span @text="item.label" webc:nokeep></span>
     </a>

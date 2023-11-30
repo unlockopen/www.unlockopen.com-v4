@@ -1,0 +1,9 @@
+<script webc:setup>
+  if (!alerttype) {
+    alerttype = 'primary';
+  }
+</script>
+
+<div class="alert alert-${alerttype} ${type}" role="alert">
+  <slot></slot>
+</div>

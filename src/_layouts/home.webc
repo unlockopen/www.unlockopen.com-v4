@@ -7,4 +7,5 @@ decorative: tilted
 
 <section class="flow prose">
   <template @raw="content" webc:nokeep></template>
+  <client-icons></client-icons>
 </section>

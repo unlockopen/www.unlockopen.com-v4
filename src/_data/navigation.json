@@ -54,5 +54,43 @@
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/tobielangel/"
     }
+  ],
+  "clients": [
+    {
+      "id": "google",
+      "label": "Google"
+    },
+    {
+      "id": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "id": "mozilla",
+      "label": "Mozilla"
+    },
+    {
+      "id": "intel",
+      "label": "Intel"
+    },
+    {
+      "id": "cisco",
+      "label": "Cisco"
+    },
+    {
+      "id": "gitlab",
+      "label": "Gitlab"
+    },
+    {
+      "id": "airtable",
+      "label": "Airtable"
+    },
+    {
+      "id": "coil",
+      "label": "Coil"
+    },
+    {
+      "id": "w3c",
+      "label": "W3C"
+    }
   ]
 }
