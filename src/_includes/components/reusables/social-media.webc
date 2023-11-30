@@ -1,4 +1,4 @@
-<ul role="list" webc:root="override">
+<ul class="cluster" role="list" webc:root="override">
   <li webc:for="item of $data.navigation.social">
     <a class="social-link cluster" :href="item.url" target="_blank" rel="me">
       <inline-svg

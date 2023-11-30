@@ -26,6 +26,10 @@ seven-minute-tabs [role='tab'][aria-selected='true'] {
   background-color: var(--color-dark);
 }
 
+seven-minute-tabs [role='tabpanel'] {
+  margin-block: var(--space-m-l);
+}
+
 /* Code samples in tabs */
 seven-minute-tabs [role='tabpanel'] pre {
   border-radius: 0;

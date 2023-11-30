@@ -56,9 +56,16 @@
   }
 
   nav {
-    grid-column: span 3;
-    justify-content: end;
+    grid-column: 1 / -1;
+    justify-content: start;
     align-self: end;
+  }
+
+  @media (min-width: 50em) {
+    nav {
+      grid-column: span 3;
+      justify-content: end;
+    }
   }
 
   nav > ul {
@@ -70,6 +77,11 @@
     color: var(--nav-list-color, var(--color-text));
     padding-block: 0.2em;
     text-decoration: none;
+  }
+
+  nav a:hover {
+    --border-color: var(--nav-hover-color, var(--color-text));
+    --text-color: var(--nav-hover-color, var(--color-text));
   }
 
   nav a[aria-current='page'] {

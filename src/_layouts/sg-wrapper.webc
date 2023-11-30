@@ -55,6 +55,7 @@ layout: base
 
 <style>
   .sidebar {
+    --sidebar-gap: var(--space-s-m);
     --sidebar-align: flex-start;
     --sidebar-target-width: 14rem;
     --sidebar-content-min-width: 70%;
@@ -70,13 +71,12 @@ layout: base
     margin-block: 0.3em 1em;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.1rem;
+    gap: 0.6rem;
   }
 
-  @media screen(md) {
-    .sidebar ul ul {
-      flex-direction: column;
-    }
+  .sidebar ul ul li {
+    border: 1px solid var(--color-grey);
+    padding: 0.3rem var(--space-xs);
   }
 
   nav a {

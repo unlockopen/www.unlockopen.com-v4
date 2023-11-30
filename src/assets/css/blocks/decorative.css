@@ -10,7 +10,7 @@
 
 .tilted {
   transform: skew(var(--decorative-skew, 3deg))
-    translateX(var(--decorative-translate-x, 2rem));
+    translateX(var(--decorative-translate-x, 2.5rem));
 }
 
 .circle {

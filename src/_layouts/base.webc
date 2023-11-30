@@ -24,6 +24,14 @@ layout: plain
   }
 
   :host > section {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
+    display: grid;
+    column-gap: var(--section-column-gap, 0);
+  }
+
+  @media (min-width: 30em) {
+    :host > section {
+      grid-column: 2 / -1;
+    }
   }
 </style>
