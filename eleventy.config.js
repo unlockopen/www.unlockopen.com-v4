@@ -48,6 +48,8 @@ const pluginRss = require('@11ty/eleventy-plugin-rss');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
 const EleventyPluginOgImage = require('eleventy-plugin-og-image');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
+const imageConfig = require('./config/plugins/image.js');
+const {eleventyImagePlugin} = require('@11ty/eleventy-img');
 
 module.exports = eleventyConfig => {
   // 	--------------------- Custom Watch Targets -----------------------
@@ -99,6 +101,7 @@ module.exports = eleventyConfig => {
   // 	--------------------- Custom Template Languages ---------------------
   eleventyConfig.addPlugin(require('./config/template-languages/css-config.js'));
   eleventyConfig.addPlugin(require('./config/template-languages/js-config.js'));
+  eleventyConfig.addPlugin(eleventyImagePlugin, imageConfig);
 
   // 	--------------------- Custom collections -----------------------
   eleventyConfig.addCollection('posts', getAllPosts);
