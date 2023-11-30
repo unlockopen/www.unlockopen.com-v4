@@ -1,11 +1,10 @@
 ---
-layout: base.webc
+layout: base
+decorative: tilted
 ---
 
 <h1 @text="title"></h1>
 
 <section class="flow prose">
   <template @raw="content" webc:nokeep></template>
-
-  <social-media></social-media>
 </section>

@@ -1,7 +1,7 @@
 ---
 title: 'Helping organizations thrive in open tech ecosystems'
 description: 'Tobie Langel is a world-leading expert and international speaker on open source and standardization.'
-layout: page
+layout: home
 theme: 'aqua'
 ---
 

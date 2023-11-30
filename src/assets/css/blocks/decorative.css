@@ -1,17 +1,19 @@
 .decorative {
+  overflow: hidden;
   position: absolute;
-  right: 0;
+  inset: 0;
   z-index: -1;
+  grid-column: var(--decorative-grid-column, 4/-1);
+  grid-row: var(--decorative-grid-row, 1/-1);
+  background-color: var(--decorative-color, var(--color-accent));
 }
 
-.square {
-  background-color: var(--decorative-color, var(--color-accent));
-  inline-size: var(--decorative-width, 38%);
-  block-size: var(--decorative-height, 100%);
+.tilted {
+  transform: skew(var(--decorative-skew, 3deg))
+    translateX(var(--decorative-translate-x, 2rem));
 }
 
 .circle {
-  background-color: var(--decorative-color, var(--color-accent));
   inline-size: var(--decorative-width, 48vw);
   block-size: var(--decorative-height, 48vw);
   border-radius: 100%;
