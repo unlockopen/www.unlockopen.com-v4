@@ -36,7 +36,6 @@
     "cssnano": "^6.0.0",
     "dayjs": "^1.11.5",
     "dotenv": "^16.0.3",
-    "eleventy-plugin-og-image": "^2.1.1",
     "esbuild": "^0.19.0",
     "html-minifier-terser": "^7.1.0",
     "html-prettify": "^1.0.7",

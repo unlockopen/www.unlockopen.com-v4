@@ -46,7 +46,6 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const {slugifyString} = require('./config/utils/index.js');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const bundlerPlugin = require('@11ty/eleventy-plugin-bundle');
-const EleventyPluginOgImage = require('eleventy-plugin-og-image');
 const pluginWebc = require('@11ty/eleventy-plugin-webc');
 const imageConfig = require('./config/plugins/image.js');
 const {eleventyImagePlugin} = require('@11ty/eleventy-img');
@@ -118,25 +117,6 @@ module.exports = eleventyConfig => {
 
   eleventyConfig.addPlugin(pluginWebc, {
     components: ['src/_includes/**/*.webc', 'npm:@11ty/eleventy-img/*.webc']
-  });
-
-  eleventyConfig.addPlugin(EleventyPluginOgImage, {
-    satoriOptions: {
-      fonts: [
-        {
-          name: 'Geologica',
-          data: fs.readFileSync('src/assets/fonts/geologica/geologica-bold.woff2'),
-          weight: 700,
-          style: 'normal'
-        },
-        {
-          name: 'Geologica',
-          data: fs.readFileSync('src/assets/fonts/geologica/geologica-light.woff2'),
-          weight: 400,
-          style: 'normal'
-        }
-      ]
-    }
   });
 
   // 	--------------------- Passthrough File Copy -----------------------
