@@ -1,10 +1,7 @@
-<a
-  webc:root="override"
-  href="&#109;a&#105;lto&#58;&#104;%65y&#64;%72%79&#37;61%6E&#37;6D%75&#37;&#54;Clig%61&#110;&#46;&#100;&#101;v?subject=You are wonderful and I had to tell you"
-  target="_blank"
-  rel="noopener"
-  >Say hello!</a
->&nbsp;<span aria-hidden="true">👋</span>
+<a webc:root="override" href="#" target="_blank" rel="noopener">Say hello!</a>&nbsp;<span
+  aria-hidden="true"
+  >👋</span
+>
 
 <style webc:scoped="say-hey-hey">
   :host:is(:hover, :focus) + span {
