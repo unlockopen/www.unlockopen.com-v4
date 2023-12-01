@@ -1,0 +1,11 @@
+<div class="flow" webc:root="override">
+  <h2 webc:if="title" slot="title" @raw="title"></h2>
+  <p>
+    <slot> Fallback slot content </slot>
+  </p>
+  <a webc:if="button" class="button" :href="target" slot="button" @raw="button"
+    >Learn More</a
+  >
+</div>
+
+<style webc:scoped="cta"></style>
