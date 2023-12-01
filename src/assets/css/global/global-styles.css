@@ -77,23 +77,6 @@ h3 {
   text-decoration: none;
 }
 
-blockquote {
-  border-inline-start: 0.5rem solid var(--color-accent);
-  padding: var(--space-s-m);
-  font-style: italic;
-  color: var(--color-grey-dark);
-}
-
-blockquote > * + * {
-  margin-block-start: var(--space-m);
-}
-
-blockquote :last-child {
-  font-family: var(--font-base);
-  font-style: normal;
-  font-size: var(--size-step-0);
-}
-
 svg {
   block-size: 2ex;
   inline-size: auto;

@@ -9,10 +9,6 @@ date: 2019-01-16
 
 <say-hello></say-hello>
 
-## webc in md test 2:
-
-<say-name></say-name>
-
 ## Note: blockquotes in markdown currently broken.
 
 Yesterday, Stratechery's Ben Thompson wrote a [thought provoking article](https://stratechery.com/2019/aws-mongodb-and-the-economic-realities-of-open-source/) about the current AWS / MongoDB kerfuffle that's been keeping the open source community's echo chamber humming for the past couple of weeks.

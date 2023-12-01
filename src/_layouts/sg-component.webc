@@ -29,7 +29,7 @@ theme: lavender
   </div>
 
   <div id="usage-tab" role="tabpanel" class="sg-code">
-    <p>Raw component code. Haven't solved that yet. For now, look in src.</p>
+    <p>Raw component code.</p>
     <pre @text="usage"></pre>
   </div>
 

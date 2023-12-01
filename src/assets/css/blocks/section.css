@@ -3,7 +3,6 @@
 }
 
 .section__inner {
-  background: var(--spot-color, var(--color-text));
   color: var(--color-bg);
 }
 
