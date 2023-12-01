@@ -83,9 +83,22 @@
     <x @raw="content" webc:nokeep></x>
     <script @raw="getJs(page.url)" webc:keep></script>
 
-    <div
+    <!-- <div
       webc:if="decorative"
       :class="`${decorative ? `decorative ${decorative}` : ''}`"
-    ></div>
+    ></div> -->
+
+    <inline-svg
+      webc:if="decorative"
+      class="decorative"
+      aria-hidden="true"
+      :src="`./src/assets/svg/decorative-${decorative}.svg`"
+      :style="`
+			${decorativeHeight ? `--decorative-height: ${decorativeHeight}` : ''};
+			${decorativeWidth ? `--decorative-width: ${decorativeWidth}` : ''};
+			${decorativeColor ? `--decorative-color: ${decorativeColor}` : ''};
+			${decorativeColumn ? `--decorative-grid-column: ${decorativeColumn}` : ''};
+			${decorativeRow ? `--decorative-grid-row: ${decorativeRow}` : ''}`"
+    ></inline-svg>
   </body>
 </html>

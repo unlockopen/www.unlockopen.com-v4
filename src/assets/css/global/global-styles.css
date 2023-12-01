@@ -6,7 +6,6 @@
 */
 
 html {
-  overflow-x: clip;
   position: relative;
   display: grid;
   grid-template-columns: 1fr repeat(3, clamp(1rem, 30vw, 25rem)) 1fr;

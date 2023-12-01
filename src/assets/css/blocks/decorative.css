@@ -1,22 +1,11 @@
 .decorative {
-  overflow: hidden;
+  display: block;
+  block-size: var(--decorative-height, 100%);
+  inline-size: var(--decorative-width, 100%);
+  fill: var(--decorative-color, var(--color-accent));
   position: absolute;
   inset: 0;
   z-index: -1;
   grid-column: var(--decorative-grid-column, 4/-1);
   grid-row: var(--decorative-grid-row, 1/-1);
-  background-color: var(--decorative-color, var(--color-accent));
-}
-
-.tilted {
-  transform: skew(var(--decorative-skew, 3deg))
-    translateX(var(--decorative-translate-x, 2.5rem));
-}
-
-.circle {
-  inline-size: var(--decorative-width, 48vw);
-  block-size: var(--decorative-height, 48vw);
-  border-radius: 100%;
-  transform: translateY(var(--decorative-y-offset, -20%))
-    translateX(var(--decorative-x-offset, 15%));
 }
