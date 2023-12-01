@@ -57,7 +57,7 @@ layout: base
   .sidebar {
     --sidebar-gap: var(--space-s-m);
     --sidebar-align: flex-start;
-    --sidebar-target-width: 14rem;
+    --sidebar-target-width: 19rem;
     --sidebar-content-min-width: 70%;
     flex: auto;
     position: relative;
