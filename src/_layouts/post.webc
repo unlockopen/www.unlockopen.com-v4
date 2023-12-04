@@ -1,9 +1,25 @@
 ---
 layout: 'base'
-classnames: 'prose'
 theme: 'golden'
+decorative: pizza
+decorativeHeight: '50rem'
 ---
 
-<h1 @text="title"></h1>
+<article class="flow prose" webc:root="override">
+  <h1 @text="title"></h1>
 
-<template @raw="content" webc:nokeep></template>
+  <p webc:if="intro" class="intro" @text="intro"></p>
+  <template @raw="content" webc:nokeep></template>
+</article>
+
+<style webc:scoped>
+  :host > * {
+    grid-column: 2 / -1;
+  }
+
+  .intro {
+    font-size: var(--size-step-2);
+    line-height: 1.3;
+    font-weight: 500;
+  }
+</style>
