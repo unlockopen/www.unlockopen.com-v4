@@ -1,20 +1,35 @@
 ---
 layout: base
-decorative: rectangle
+decorative: 'rectangle'
 ---
 
-<h1 @text="title"></h1>
+<h1 webc:if="titleHidden" class="sr-only" @text="title"></h1>
+<h1 webc:else @text="title"></h1>
 
-<section class="flow prose">
+<section class="flow prose page">
+  <eleventy-image
+    webc:if="image"
+    :src="image.src"
+    width="image.width"
+    height="image.height"
+    alt="image.alt"
+    loading="eager"
+  ></eleventy-image>
+
   <p webc:if="intro" class="intro" @text="intro"></p>
   <template @raw="content" webc:nokeep></template>
 
-  <article-list webc:if="articles"></article-list>
   <social-media webc:if="social"></social-media>
 </section>
 
-<style>
+<style webc:scoped="page">
   .intro {
-    font-size: var(--size-step-2);
+    font-size: var(--size-step-3);
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  picture {
+    filter: sepia(28%) grayscale(95%);
   }
 </style>
