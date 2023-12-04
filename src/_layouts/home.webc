@@ -1,6 +1,7 @@
 ---
 layout: base
-decorative: tilted
+classnames: 'flow'
+decorative: 'tilted'
 ---
 
 <h1 @text="title"></h1>
