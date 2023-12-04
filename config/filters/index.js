@@ -53,7 +53,7 @@ const toAbsoluteUrl = url => {
 const toISOString = dateString => dayjs(dateString).toISOString();
 
 /** Formats a date using dayjs's conventions: https://day.js.org/docs/en/display/format */
-const formatDate = (date, format) => dayjs(date).format(format);
+const formatDate = (date, format) => dayjs(date).format('MMM DD, YYYY');
 
 const minifyCss = code => new CleanCSS({}).minify(code).styles;
 
