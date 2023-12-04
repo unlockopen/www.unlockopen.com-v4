@@ -1,0 +1,50 @@
+---
+title: Thinking
+description: 'All blog posts can be found here'
+slugOverride: thinking
+theme: golden
+decorative: pizza
+decorativeHeight: '50%'
+layout: base
+classnames: 'post'
+---
+
+<div class="grid header gutter-xl" data-layout="50-50">
+  <h1 @text="title"></h1>
+  <p class="about">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio et massa aliquam
+    tincidunt eget ac odio. Mauris non tempor massa, ac consectetur lectus.
+  </p>
+</div>
+
+<section class="flow">
+  <p webc:if="intro" class="intro" @text="intro"></p>
+  <template @raw="content" webc:nokeep></template>
+
+  <article-list></article-list>
+</section>
+
+<style webc:scoped="post">
+  section {
+    margin-block-start: var(--space-xl);
+  }
+
+  h1 {
+    font-size: var(--size-step-9);
+    line-height: 1.2;
+    font-weight: 500;
+  }
+
+  .about {
+    font-size: var(--size-step-1);
+    font-weight: 500;
+  }
+
+  picture {
+    filter: sepia(28%) grayscale(95%);
+  }
+
+  .grid.header {
+    align-items: center;
+  }
+</style>
