@@ -4,7 +4,7 @@ layout: plain
 
 <site-header></site-header>
 <main
-  :class="`${classnames ? `${classnames}` : ''}`"
+  :class="`${mainclass ? `${mainclass}` : ''}`"
   @raw="content"
   webc:root="override"
 ></main>
