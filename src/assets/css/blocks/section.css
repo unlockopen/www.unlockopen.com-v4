@@ -3,7 +3,12 @@
 }
 
 .section__inner {
-  color: var(--color-bg);
+  padding-inline: var(--section-padding, var(--space-s));
+  color: var(--section-color, var(--color-text));
+  background-color: var(
+    --spot-color,
+    color-mix(in oklab, var(--color-accent) 20%, var(--color-bg))
+  );
 }
 
 .section blockquote {
