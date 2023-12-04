@@ -31,9 +31,18 @@
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
-    border-block-end: 1px solid var(--color-grey);
+    /* border-block-end: 1px solid var(--color-grey-dark); */
     padding-block-start: var(--space-s-m);
   }
+
+  :host:after {
+    content: '';
+    display: block;
+    border-block-end: 1px solid var(--color-text);
+    mix-blend-mode: soft-light;
+    grid-column: 1 / -1;
+  }
+
   .logo {
     justify-self: start;
     font-weight: bold;
@@ -80,12 +89,15 @@
   }
 
   nav a:hover {
-    --border-color: var(--nav-hover-color, var(--color-text));
+    --border-color: var(
+      --nav-hover-color,
+      color-mix(in oklab, var(--color-accent) 90%, var(--color-text))
+    );
     --text-color: var(--nav-hover-color, var(--color-text));
   }
 
   nav a[aria-current='page'] {
-    --border-color: var(--nav-list-color, var(--color-bg));
+    --border-color: var(--nav-list-color, var(--color-text));
     --text-color: var(--nav-list-color, var(--color-text));
   }
 
