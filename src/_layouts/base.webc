@@ -4,7 +4,7 @@ layout: plain
 
 <site-header></site-header>
 <main
-  :class="`flow ${classnames ? `${classnames}` : ''}`"
+  :class="`${classnames ? `${classnames}` : ''}`"
   @raw="content"
   webc:root="override"
 ></main>
@@ -15,7 +15,7 @@ layout: plain
     display: grid;
     grid-column: 1 / -1;
     grid-template-columns: subgrid;
-    padding-block-start: var(--space-2xl);
+    padding-block-start: var(--space-l-2xl);
     grid-template-rows: auto 1fr;
   }
 
@@ -23,14 +23,16 @@ layout: plain
     grid-column: 1 / -1;
   }
 
-  :host > section {
+  :host > section,
+  :host > article {
     grid-column: 1 / -1;
     display: grid;
     column-gap: var(--section-column-gap, 0);
   }
 
   @media (min-width: 30em) {
-    :host > section {
+    :host > section,
+    :host > article {
       grid-column: 2 / -1;
     }
   }
