@@ -1,15 +1,15 @@
 ---
-title: Thinking
+title: Articles
 description: 'All blog posts can be found here'
-slugOverride: thinking
+slugOverride: articles
 theme: golden
 decorative: pizza
 decorativeHeight: '50%'
 layout: base
-classnames: 'post'
+mainclass: 'post'
 ---
 
-<div class="grid header gutter-xl" data-layout="50-50">
+<div class="grid header" data-layout="50-50">
   <h1 @text="title"></h1>
   <p class="about">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio et massa aliquam

@@ -11,9 +11,9 @@
       "url": "/about/"
     },
     {
-      "id": "thinking",
-      "label": "Thinking",
-      "url": "/thinking/"
+      "id": "articles",
+      "label": "Articles",
+      "url": "/articles/"
     },
     {
       "id": "services",
