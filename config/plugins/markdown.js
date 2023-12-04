@@ -11,7 +11,7 @@ const {slugifyString} = require('../utils');
 
 const markdownLib = markdownIt({
   html: true,
-  breaks: false,
+  breaks: true,
   linkify: true,
   typographer: true
 })
