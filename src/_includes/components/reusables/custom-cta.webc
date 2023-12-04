@@ -1,11 +1,17 @@
-<div class="flow" webc:root="override">
-  <h2 webc:if="title" slot="title" @raw="title"></h2>
-  <p>
-    <slot> Fallback slot content </slot>
-  </p>
-  <a webc:if="button" class="button" :href="target" slot="button" @raw="button"
-    >Learn More</a
-  >
-</div>
+<div :class="`section${classnames ? ` ${classnames}` : ''}`" webc:root>
+  <div class="section__inner region">
+    <div class="flow">
+      <h1 webc:if="title && element == 'h1' " slot="title" @raw="title"></h1>
+      <h3 webc:elseif="title && element == 'h3' " slot="title" @raw="title"></h3>
+      <h2 webc:elseif="title" slot="title" @raw="title"></h2>
 
+      <p>
+        <slot> Fallback slot content </slot>
+      </p>
+      <a webc:if="button" class="button" :href="target" slot="button" @raw="button"
+        >Learn More</a
+      >
+    </div>
+  </div>
+</div>
 <style webc:scoped="cta"></style>
