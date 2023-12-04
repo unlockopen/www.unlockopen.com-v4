@@ -2,35 +2,57 @@
   const posts = $data.collections.posts.sort((a, b) => b.data.date - a.data.date);
 </script>
 
-<ul class="flow" role="list" webc:root="override">
-  <li webc:if="!count || index < count" webc:for="(post, index) of posts">
-    <!-- <time :datetime="dateToISO(post.data.date)" @text="postDate(post.data.date)"></time> -->
-    <a class="text-1 font-semibold" :href="post.url" @text="post.data.title"></a>
-  </li>
-</ul>
+<div class="grid" role="list" webc:root="override" data-layout="50-50">
+  <custom-card
+    :@headline="post.data.title"
+    :@link="post.url"
+    webc:if="!count || index < count"
+    webc:for="(post, index) of posts"
+  >
+    <!-- <eleventy-image
+        webc:if="post.data.image"
+        slot="image"
+        :src="post.data.image.src"
+        width="600"
+        alt="post.data.image.alt"
+        loading="eager"
+      ></eleventy-image> -->
+    <time
+      slot="date"
+      :datetime="toIsoString(post.data.date)"
+      @text="formatDate(post.data.date)"
+    ></time>
+
+    <x webc:nokeep webc:if="post.url" slot="link" @raw="post.url"></x>
+    <x
+      webc:nokeep
+      webc:if="post.data.description"
+      slot="content"
+      @raw="post.data.description"
+    ></x>
+  </custom-card>
+</div>
 
 <style webc:scoped="article-list">
   :host {
     --flow-space: var(--space-m);
+    align-items: start;
   }
 
   time {
+    --flow-space: var(--space-xs);
     display: block;
-    font-size: 0.7em;
+    font-size: var(--size-step-min-1);
     font-weight: var(--font-semibold);
     letter-spacing: -0.01em;
-  }
-
-  li:has(a:hover, a:focus-visible) time {
-    color: var(--color-theme-offset);
+    font-style: italic;
   }
 
   a {
     text-wrap: balance;
-    outline-offset: 3px;
   }
 
-  a:not(:hover, :focus-visible) {
-    text-decoration: none;
+  p {
+    --flow-space: var(--space-xs);
   }
 </style>
