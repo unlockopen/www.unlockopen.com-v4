@@ -53,22 +53,22 @@
     {
       "name": "S - M",
       "min": 16,
-      "max": 30
-    },
-    {
-      "name": "M - L",
-      "min": 24,
       "max": 40
     },
     {
-      "name": "L - XL",
+      "name": "M - L",
       "min": 32,
       "max": 60
     },
     {
+      "name": "L - XL",
+      "min": 48,
+      "max": 100
+    },
+    {
       "name": "L - 2xl",
-      "min": 32,
-      "max": 80
+      "min": 48,
+      "max": 150
     },
     {
       "name": "XL - 2XL",
