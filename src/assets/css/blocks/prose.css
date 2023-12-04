@@ -1,6 +1,6 @@
 .prose {
-  --flow-space: var(--space-m-l);
-  max-width: 55rem;
+  --flow-space: var(--space-s-m);
+  max-width: 60rem;
 }
 .prose > img,
 .prose > table {
@@ -24,8 +24,8 @@
 .prose :is(ol, ul:not(.cluster)) li + li {
   margin-top: var(--space-s);
 }
-.prose :is(pre, pre + *, figure, figure + *, h2, h3, h4) {
-  --flow-space: var(--space-l-xl);
+.prose :is(pre, pre + *, figure, figure + *, h2, h3, h4, .intro) {
+  --flow-space: var(--space-m-l);
 }
 .prose h1 + * {
   --flow-space: 0.5em;

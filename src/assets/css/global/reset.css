@@ -61,6 +61,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   shape-margin: 0.75rem;
+  border-radius: var(--border-radius);
 }
 
 /* Inherit fonts for inputs and buttons */

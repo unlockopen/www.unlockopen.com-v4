@@ -87,6 +87,16 @@ svg {
   padding: 0;
 }
 
+hr {
+  border: none;
+  --flow-space: var(--space-m-l);
+  border-block-start: 1px dashed var(--color-grey-dark);
+  margin-block-end: var(--space-s-m);
+  margin-inline: 0 !important;
+  max-width: 50ch;
+  transform: translateY(-1px);
+}
+
 /* Base interactive elements */
 
 a {
