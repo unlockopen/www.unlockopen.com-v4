@@ -5,8 +5,8 @@ description: ''
 slugOverride: services
 theme: caribbean
 mainclass: 'services flow'
-decorative: 'rectangle'
-decorativeRow: '1 / 2'
+decorative: 'tilted'
+decorativeHeight: '25%'
 ---
 
 <h1 @text="title"></h1>
@@ -16,7 +16,9 @@ decorativeRow: '1 / 2'
   efficiency, and boost innovation.
 </p>
 
-<div class="what-is prose flow">
+<p class="intro"><a class="button" href="#pricing">Pricing section</a></p>
+
+<div class="what-is prose flow region">
   <p>
     Expert On A Mission is a coaching program designed for independent experts who want to
     build a successful business that is also aligned with their mission. Making a
@@ -41,10 +43,79 @@ decorativeRow: '1 / 2'
   </div>
 </div>
 
+<div id="pricing" class="grid region" data-layout="50-50">
+  <custom-pricing
+    @title="Coaching"
+    @element="h2"
+    @description="The description of this offering. Few words."
+    @price="$1000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+  >
+    <ul>
+      <li>This is a feature</li>
+      <li>Something else this does</li>
+      <li>Such a good deal</li>
+      <li>Hello</li>
+    </ul>
+  </custom-pricing>
+  <custom-pricing
+    @title="Advisory"
+    @element="h2"
+    @description="The description of this offering. Few words. Contrary to popular belief, Lorem Ipsum is not simply random text"
+    @price="$2000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+  >
+    <p>
+      There can also be normal text. Solutions that help large organizations build a
+      strong open source culture and leverage it to recruit, retain, and foster top
+      software engineering talent, improve team efficiency, and boost innovation.
+    </p>
+  </custom-pricing>
+  <custom-pricing
+    @title="Team Advisory"
+    @element="h2"
+    @description="The passage, and going through the cites of the word in classical literature"
+    @price="$5000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+    @pricingclass="bg-grey"
+  >
+    <ul>
+      <li>This is a feature</li>
+      <li>Something else this does</li>
+      <li>Such a good deal</li>
+      <li>Atque dolorem consequatur deleniti.</li>
+    </ul>
+  </custom-pricing>
+  <custom-pricing
+    @title="Custom"
+    @element="h2"
+    @description="There are many variations of passages of Lorem Ipsum available."
+    @price="Let's talk"
+    @conditions="per month / billed annually"
+    @button="Contact"
+    @link="#"
+  >
+    <ul>
+      <li>This is a feature</li>
+      <li>Something else this does</li>
+      <li>Such a good deal</li>
+      <li>Hello</li>
+      <li>Lorem ipsum</li>
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </custom-pricing>
+</div>
+
 <custom-cta
   @title="Services"
   @element="h2"
-  :@classnames="text-center"
+  :@ctaclass="text-center"
   @button="Apply now"
   @target="#"
 >
@@ -67,17 +138,6 @@ decorativeRow: '1 / 2'
     justify-self: center;
   }
 
-  .what-is {
-    /* margin-block-start: var(--space-m-l);
-    grid-column: 3 / 5; */
-    column-count: 2;
-    gap: var(--gutter, var(--space-l-xl));
-    grid-column: 2 / -1;
-  }
-
-  .video {
-  }
-
   .video {
     --section-padding: var(--space-s-l);
   }
@@ -93,6 +153,12 @@ decorativeRow: '1 / 2'
   @media (min-width: 30em) {
     .cta {
       grid-column: 1 / 5;
+    }
+
+    .what-is {
+      column-count: 2;
+      gap: var(--gutter);
+      grid-column: 2 / -1;
     }
   }
 </style>

@@ -4,4 +4,8 @@ usage: '<custom-cta @button="button name" @title="A title" @target="/thinking/">
 instructions: ''
 ---
 
-<custom-cta @button="button name" @title="A title" @target="/thinking/">The content goes here</custom-cta>
+<custom-cta @button="button name" @title="Have a look at some of the projects I built!" @target="/thinking/">
+
+I love creating personalized web experiences that are fast, secure, accessible, environmentally friendly and privacy compliant.
+
+</custom-cta>

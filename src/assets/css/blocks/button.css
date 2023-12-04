@@ -11,6 +11,7 @@
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing);
   text-decoration: none;
+  text-align: center;
 }
 
 .button:hover {

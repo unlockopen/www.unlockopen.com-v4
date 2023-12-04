@@ -4,9 +4,9 @@ description: 'All blog posts can be found here'
 slugOverride: articles
 theme: golden
 decorative: pizza
-decorativeHeight: '50%'
+decorativeHeight: '70%'
 layout: base
-mainclass: 'post'
+mainclass: 'articles'
 ---
 
 <div class="grid header" data-layout="50-50">
@@ -24,7 +24,7 @@ mainclass: 'post'
   <article-list></article-list>
 </section>
 
-<style webc:scoped="post">
+<style webc:scoped="articles">
   section {
     margin-block-start: var(--space-xl);
   }
@@ -42,6 +42,11 @@ mainclass: 'post'
 
   picture {
     filter: sepia(28%) grayscale(95%);
+  }
+
+  img {
+    aspect-ratio: 2 / 1;
+    object-fit: cover;
   }
 
   .grid.header {

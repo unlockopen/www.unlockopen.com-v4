@@ -10,13 +10,13 @@
     webc:for="(post, index) of posts"
   >
     <!-- <eleventy-image
-        webc:if="post.data.image"
-        slot="image"
-        :src="post.data.image.src"
-        width="600"
-        alt="post.data.image.alt"
-        loading="eager"
-      ></eleventy-image> -->
+      webc:if="post.data.image"
+      slot="image"
+      :src="post.data.image.src"
+      width="600"
+      alt="post.data.image.alt"
+    ></eleventy-image> -->
+
     <time
       slot="date"
       :datetime="toIsoString(post.data.date)"

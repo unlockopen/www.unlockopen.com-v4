@@ -15,7 +15,7 @@ Open source sustainability became a major theme overnight. Stories of maintainer
 
 A few key projects received direct funding from top industry players, notably through the [Core Infrastructure Initiative](https://www.coreinfrastructure.org/) which was formed as a response to the Heartbleed crisis.
 
-!https://miro.medium.com/v2/resize:fit:522/1*3_ctK9Q0C5EvEF8IAokD_Q.jpeg
+<eleventy-image :src="`./src/assets/images/posts/1 3_ctK9Q0C5EvEF8IAokD_Q.jpg`" width="510" height="510" alt="Tobie Langel" loading="lazy"> </eleventy-image>
 
 “Gaius Maecenas Supporting the Arts”, Gerard de Lairesse, date unknown. Maecenas was a notable patron of poets, such as Horace and Virgil. Many languages still use the term “_mecenate”_—derived from Maecenas—for patronage.
 
@@ -39,7 +39,7 @@ When we think about the value of open source, we often focus on the code itself,
 
 This process trains developers. Spreads good practices. Keeps them up to date on current technology. Creates networks. Fosters leadership and empathy. It is so unique in its ability to level-up developers that the single most asked question to potential hires is:
 
-> “What’s your GitHub handle?” >
+<custom-pullquote>What’s your GitHub handle?</custom-pullquote>
 
 And while it’s obvious to companies that open source experience is paramount, the same companies are often oblivious to its corollary: Being able to practice open source _as part of their day job_ is critical to the very developers they want to hire. How else can they stay competitive? Burning the midnight oil only goes so far.
 

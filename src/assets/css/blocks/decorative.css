@@ -1,11 +1,13 @@
-.decorative {
-  display: block;
-  block-size: var(--decorative-height, 100%);
-  inline-size: var(--decorative-width, 100%);
-  fill: var(--decorative-color, var(--color-accent));
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  grid-column: var(--decorative-grid-column, 4/-1);
-  grid-row: var(--decorative-grid-row, 1/-1);
+@media (min-width: 30em) {
+  .decorative {
+    display: block;
+    block-size: var(--decorative-height, 100%);
+    inline-size: var(--decorative-width, 100%);
+    fill: var(--decorative-color, var(--color-accent));
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    grid-column: var(--decorative-grid-column, 4/-1);
+    grid-row: var(--decorative-grid-row, 1/-1);
+  }
 }

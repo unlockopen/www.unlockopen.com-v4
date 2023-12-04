@@ -1,0 +1,14 @@
+<p webc:root="override">
+  <slot>Fallback slot content</slot>
+</p>
+
+<style webc:scoped="pullquote">
+  :host {
+    --flow-space: var(--space-s-m);
+    border-inline-start: 0.8ex solid var(--color-accent);
+    font-size: var(--size-step-1);
+    padding-inline: var(--space-s-m);
+    padding-block: var(--space-xs);
+    background-color: color-mix(in oklab, var(--color-accent) 7%, var(--color-bg));
+  }
+</style>

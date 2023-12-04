@@ -1,6 +1,6 @@
 ---
 layout: base
-mainclass: 'flow'
+mainclass: 'flow home'
 decorative: 'tilted'
 ---
 
@@ -21,7 +21,7 @@ decorative: 'tilted'
   ></eleventy-image>
 </section>
 
-<style>
+<style webc:scoped="home">
   section {
     --section-column-gap: var(--space-m-l);
     --flow-space: var(--space-m-l);

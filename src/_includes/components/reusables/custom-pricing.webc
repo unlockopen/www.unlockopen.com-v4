@@ -1,0 +1,103 @@
+<div :class="`flow${pricingclass ? ` ${pricingclass}` : ''}`" webc:root>
+  <slot name="image"></slot>
+  <slot name="date"></slot>
+  <h1 webc:if="title && element == 'h1' " slot="title" @raw="title"></h1>
+  <h3 webc:elseif="title && element == 'h3' " slot="title" @raw="title"></h3>
+  <h2 webc:elseif="title" slot="title" @raw="title"></h2>
+
+  <p slot="description" @raw="description"></p>
+  <div class="price-wrapper">
+    <p slot="price" @raw="price"></p>
+    <p slot="conditions" @raw="conditions"></p>
+  </div>
+
+  <a webc:if="button" class="button" :href="link"
+    ><slot name="button" @raw="button"></slot
+  ></a>
+
+  <slot></slot>
+</div>
+
+<style webc:scoped="pricing">
+  :host {
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    padding: var(--space-s);
+    border-radius: var(--border-radius);
+    max-inline-size: unset;
+  }
+
+  @media (min-width: 30em) {
+    :host {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: var(--space-s);
+    }
+  }
+
+  :host::selection {
+    color: var(--color-dark);
+    background: var(--color-secondary);
+  }
+
+  [slot='description'] {
+    grid-column: 1;
+    font-size: var(--size-step-min-1);
+  }
+
+  .price-wrapper {
+    grid-column: 1 / 2;
+    font-weight: 500;
+    /* align-items: center; */
+    display: flex;
+    gap: var(--space-s);
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  [slot='price'] {
+    font-size: var(--size-step-3);
+    white-space: nowrap;
+  }
+
+  [slot='conditions'] {
+    font-size: var(--size-step-min-1);
+    line-height: 1.1;
+  }
+
+  .features {
+    grid-column: 2 / 2;
+    grid-row: 1 / -1;
+  }
+
+  .button {
+    grid-column: 1;
+  }
+
+  /* whatever comes after the button */
+  .button + * {
+    grid-row: 1 / span 5;
+    grid-column: 2 / 2;
+  }
+
+  @media (min-width: 30em) {
+    .button + * {
+      margin-block-start: 0;
+    }
+  }
+
+  ul,
+  li {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  li:before {
+    content: '\2713'; /* ASCII code for a checkmark */
+    padding-inline-end: 0.5rem;
+  }
+
+  .emphasize {
+    background-color: color-mix(in oklab, var(--color-accent) 20%, var(--color-bg));
+  }
+</style>

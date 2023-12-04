@@ -10,15 +10,14 @@
 <style webc:scoped="card">
   :host {
     border: 4px solid transparent;
-    /* background-color: color-mix(in oklab, var(--color-accent) 20%, var(--color-bg)); */
     color: var(--color-text);
-    /* padding: var(--space-xs); */
     padding: 0.1rem;
     border-radius: var(--border-radius);
     max-inline-size: unset;
+    display: grid;
   }
 
-  :host::selection {
+  :host ::selection {
     color: var(--color-dark);
     background: var(--color-secondary);
   }

@@ -1,4 +1,4 @@
-<div :class="`section${classnames ? ` ${classnames}` : ''}`" webc:root>
+<div :class="`section${ctaclass ? ` ${ctaclass}` : ''}`" webc:root>
   <div class="section__inner region">
     <div class="flow">
       <h1 webc:if="title && element == 'h1' " slot="title" @raw="title"></h1>

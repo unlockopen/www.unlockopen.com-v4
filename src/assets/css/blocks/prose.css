@@ -1,5 +1,5 @@
 .prose {
-  --flow-space: var(--space-s-m);
+  --flow-space: var(--space-s);
   max-width: 60rem;
 }
 .prose > img,
@@ -27,9 +27,9 @@
 .prose :is(pre, pre + *, figure, figure + *, h2, h3, h4, .intro) {
   --flow-space: var(--space-m-l);
 }
-.prose h1 + * {
+/* .prose h1 + * {
   --flow-space: 0.5em;
-}
+} */
 .prose :is(h2 + *, h3 + *, h4 + *) {
   --flow-space: var(--space-s);
 }
@@ -50,4 +50,13 @@
   .prose :is(ul, ol) {
     padding-inline-start: 0.15ch;
   }
+}
+
+/* overwrite spacing between multiple pullquotes */
+.pullquote + .pullquote {
+  margin-block: 0;
+}
+
+.pullquote + p:not(.pullquote) {
+  margin-block-start: var(--space-s-m);
 }
