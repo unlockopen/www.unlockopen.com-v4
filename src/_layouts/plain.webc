@@ -20,7 +20,7 @@
 
     <!-- 5  preloads -->
     <link
-      href="/assets/fonts/geologica/geologica-light.woff2"
+      href="/assets/fonts/geologica/geologica-variable.woff2"
       rel="preload"
       as="font"
       type="font/woff2"
