@@ -32,6 +32,18 @@ body {
   grid-template-rows: [header] auto [main] 1fr [footer] auto;
 }
 
+@supports not (font-variation-settings: normal) {
+  body {
+    font-weight: 400;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  body {
+    font-weight: 300;
+  }
+}
+
 @media (prefers-contrast: less) {
   body {
     opacity: 0.8;
@@ -71,6 +83,10 @@ h1,
 h2,
 h3 {
   max-inline-size: 40ch;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .heading-anchor {

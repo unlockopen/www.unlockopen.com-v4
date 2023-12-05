@@ -1,0 +1,3 @@
+.emphasize {
+  background-color: color-mix(in oklab, var(--color-accent) 20%, var(--color-bg));
+}

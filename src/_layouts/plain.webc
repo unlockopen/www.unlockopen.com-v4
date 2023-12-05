@@ -28,7 +28,9 @@
     />
 
     <!-- 6 defered js  -->
-    <!-- <script type="module" src="/assets/scripts/app.js" defer></script> -->
+
+    <script webc:keep type="module" src="/assets/scripts/is-land.js"></script>
+    <script webc:keep type="module" src="/assets/scripts/is-land-autoinit.js"></script>
 
     <!-- 7 meta  -->
     <base :href="page.url" />
