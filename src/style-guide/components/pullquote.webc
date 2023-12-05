@@ -1,0 +1,15 @@
+---
+title: Pullquote
+variations:
+  - component: '<custom-pullquote>...</custom-pullquote>'
+    description: ''
+instructions: 'emphasizes a quote in a post'
+---
+
+<custom-pullquote
+  >Still, you could argue that it would be in the long-run interest of the public cloud
+  providers to keep in mind the old Microsoft view of platforms: they are the most
+  successful when everyone is making money, not simply the platform provider. […] AWS is
+  better because software like Redis exists; is it in AWS’ long-run interest to
+  effectively take away Redis Labs’ revenue?</custom-pullquote
+>

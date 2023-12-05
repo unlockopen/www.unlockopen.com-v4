@@ -1,0 +1,34 @@
+---
+title: Pricing
+variations:
+  - component: '<custom-pricing @title="Coaching" @element="h2" @description="The description of this offering. Few words." @price="$1000" @conditions="per month / billed annually" @button="Get started" @link="#" > <ul> <li>This is a feature</li> <li>Something else this does</li> <li>Such a good deal</li> <li>Hello</li> </ul> </custom-pricing>'
+    description: 'single customizable pricing box'
+  - component: '<pricing-services></pricing-services>'
+    description: 'wrapper for fixed reusable pricing boxes'
+instructions: 'Usable as wrapper or as single pricing box (should be wrapped in layout class). Adding class="emphasize" adds a light background color in the current theme.'
+---
+
+<h2>Single component</h2>
+<p>Reusable blocks are stored in `components/blocks`</p>
+
+<custom-pricing
+  @title="Coaching"
+  @element="h2"
+  @description="The description of this offering. Few words."
+  @price="$1000"
+  @conditions="per month / billed annually"
+  @button="Get started"
+  @link="#"
+>
+  <ul>
+    <li>This is a feature</li>
+    <li>Something else this does</li>
+    <li>Such a good deal</li>
+    <li>Hello</li>
+  </ul>
+</custom-pricing>
+
+<h2>Wrapper for services</h2>
+<p>Reusable wrappers are stored in `components/reusable`</p>
+
+<pricing-services></pricing-services>

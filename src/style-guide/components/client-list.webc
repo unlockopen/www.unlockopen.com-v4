@@ -1,6 +1,9 @@
 ---
 title: Client list
 usage: '<client-list></client-list>'
+variations:
+  - component: '<client-list></client-list>'
+    description: 'wrapper for reusable client list'
 instructions: 'Order and contents defined in _data/navigation.json'
 ---
 

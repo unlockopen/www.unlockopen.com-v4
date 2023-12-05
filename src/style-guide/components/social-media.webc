@@ -1,6 +1,9 @@
 ---
 title: Social Media
-usage: '<social-media></social-media>'
+usage: ''
+variations:
+  - component: '<social-media></social-media>'
+    description: 'wrapper for reusable social media list'
 instructions: 'Order and contents defined in _data/navigation.json'
 ---
 

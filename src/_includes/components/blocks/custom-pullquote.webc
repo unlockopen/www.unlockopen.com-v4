@@ -11,4 +11,9 @@
     padding-block: var(--space-xs);
     background-color: color-mix(in oklab, var(--color-accent) 7%, var(--color-bg));
   }
+
+  :host:before,
+  :host:after {
+    content: '';
+  }
 </style>

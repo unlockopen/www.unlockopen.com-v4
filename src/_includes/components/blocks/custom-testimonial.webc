@@ -1,4 +1,5 @@
-<div :class="`region ${classnames ? `${classnames}` : ''}`" webc:root="override">
+<!-- <div :class="region this.class ? this.class : ''" webc:root="override"> -->
+<div :class="`region ${this.class ? `${this.class}` : ''}`" webc:root="override">
   <div class="container">
     <figure class="flow">
       <eleventy-image

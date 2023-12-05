@@ -15,7 +15,7 @@ theme: lavender
     </li>
   </ol>
 
-  <div id="example-tab" role="tabpanel">
+  <div class="flow" id="example-tab" role="tabpanel">
     <template @raw="content" webc:nokeep></template>
   </div>
 
@@ -28,12 +28,14 @@ theme: lavender
 		</pre>
   </div>
 
-  <div id="usage-tab" role="tabpanel" class="sg-code">
-    <p>Raw component code.</p>
-    <pre @text="usage"></pre>
+  <div id="usage-tab" role="tabpanel" class="sg-code flow">
+    <div webc:for="item of variations">
+      <pre @text="item.component"></pre>
+      <p @text="item.description"></p>
+    </div>
   </div>
 
   <div id="instructions-tab" role="tabpanel" class="sg-code">
-    <p @text="instructions"></p>
+    <p @raw="instructions"></p>
   </div>
 </seven-minute-tabs>

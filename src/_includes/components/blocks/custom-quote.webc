@@ -1,4 +1,4 @@
-<div :class="` ${classnames ? `${classnames}` : ''}`" webc:root="override">
+<div :class="this.class ? this.class : ''" webc:root="override">
   <figure class="flow flow-space-s ml-l">
     <blockquote>
       <p><slot>Fallback slot content</slot></p>

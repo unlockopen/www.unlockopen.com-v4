@@ -1,4 +1,4 @@
-<div :class="`flow${pricingclass ? ` ${pricingclass}` : ''}`" webc:root>
+<div :class="`flow ${this.class ? `${this.class}` : ''}`" webc:root>
   <slot name="image"></slot>
   <slot name="date"></slot>
   <h1 webc:if="title && element == 'h1' " slot="title" @raw="title"></h1>
@@ -95,9 +95,5 @@
   li:before {
     content: '\2713'; /* ASCII code for a checkmark */
     padding-inline-end: 0.5rem;
-  }
-
-  .emphasize {
-    background-color: color-mix(in oklab, var(--color-accent) 20%, var(--color-bg));
   }
 </style>
