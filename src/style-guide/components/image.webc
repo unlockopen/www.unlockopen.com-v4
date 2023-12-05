@@ -1,0 +1,14 @@
+---
+title: Image
+usage: ''
+variations:
+  - component: '<eleventy-image src="cat.jpg" alt="photo of my tabby cat" loading="lazy"></eleventy-image>'
+    description: ''
+instructions: 'The subtitle serves as a figcaption and is optional.'
+---
+
+<eleventy-image
+  src="./src/assets/images/pages/tobie-langel.jpg"
+  alt="Tobie Langel"
+  loading="lazy"
+></eleventy-image>

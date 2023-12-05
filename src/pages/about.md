@@ -8,9 +8,8 @@ social: false
 titleHidden: true
 image:
   src: './src/assets/images/pages/tobie-about.png'
-	width: "890"
-	height: "546"
-	alt: "Tobie Langel"
+  alt: 'Tobie Langel'
+	width: '400'
 ---
 
 Tobie Langel is the founder of UnlockOpen, a boutique consulting firm that helps large organizations build a strong open source culture and leverage it to recruit, retain, and foster top software engineering talent, improve team efficiency, and boost innovation.

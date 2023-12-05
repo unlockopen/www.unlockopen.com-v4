@@ -10,9 +10,7 @@ decorative: 'rectangle'
   <eleventy-image
     webc:if="image"
     :src="image.src"
-    width="image.width"
-    height="image.height"
-    alt="image.alt"
+    :alt="image.alt"
     loading="eager"
   ></eleventy-image>
 
