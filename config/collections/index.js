@@ -10,11 +10,19 @@ const onlyMarkdown = collection => {
 };
 
 const sgAtoms = collection => {
-  return collection.getFilteredByGlob('**/style-guide/atoms/**/*');
+  return collection.getFilteredByGlob('**/style-guide/atoms/**/*').sort((a, b) => {
+    if (b.data.title > a.data.title) return -1;
+    else if (b.data.title < a.data.title) return 1;
+    else return 0;
+  });
 };
 
 const sgComponents = collection => {
-  return collection.getFilteredByGlob('**/style-guide/components/**/*');
+  return collection.getFilteredByGlob('**/style-guide/components/**/*').sort((a, b) => {
+    if (b.data.title > a.data.title) return -1;
+    else if (b.data.title < a.data.title) return 1;
+    else return 0;
+  });
 };
 
 module.exports = {
