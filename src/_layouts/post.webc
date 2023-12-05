@@ -14,7 +14,17 @@ decorativeHeight: '50rem'
 
 <style webc:scoped>
   :host > * {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: 30em) {
+    :host > * {
+      grid-column: 2 / -1;
+    }
+  }
+
+  :host > :is(h1, h2, h3) {
+    grid-column: 1 / -1;
   }
 
   .intro {

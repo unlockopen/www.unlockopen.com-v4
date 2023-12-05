@@ -11,29 +11,33 @@ layout: plain
 <site-footer></site-footer>
 
 <style webc:scoped="main">
-  :host {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-template-columns: subgrid;
-    padding-block-start: var(--space-l-2xl);
-    grid-template-rows: auto 1fr;
-  }
+   :host {
+     display: grid;
+     grid-column: 1 / -1;
+     grid-template-columns: subgrid;
+     padding-block-start: var(--space-l-2xl);
+     grid-template-rows: auto 1fr;
+   }
 
-  :host > * {
-    grid-column: 1 / -1;
-  }
+   :host > * {
+     grid-column: 1 / -1;
+   }
 
-  :host > section,
+   :host > section {
+     grid-column: 1 / -1;
+     display: grid;
+     column-gap: var(--section-column-gap, 0);
+   }
+
   :host > article {
-    grid-column: 1 / -1;
-    display: grid;
-    column-gap: var(--section-column-gap, 0);
-  }
+     display: grid;
+     grid-column: 1 / -1;
+     grid-template-columns: subgrid;
+   }
 
-  @media (min-width: 30em) {
-    :host > section,
-    :host > article {
-      grid-column: 2 / -1;
-    }
-  }
+   @media (min-width: 30em) {
+     :host > section{
+       grid-column: 2 / -1;
+
+   }
 </style>
