@@ -1,12 +1,9 @@
 ---
 title: 'Developers’ appetite for open source fuels the cloud wars'
 description: 'Yesterday, Stratechery’s Ben Thompson wrote a thought provoking article about the current AWS / MongoDB kerfuffle that’s been keeping the open source community’s echo chamber humming for the past couple of weeks.'
-intro: ""
+intro: ''
 ogImage:
 date: 2019-01-16
-image:
-  src: './src/assets/images/posts/Paper.From_laggard_to_powerhouse.1.png'
-	alt: "Illustration"
 ---
 
 Yesterday, Stratechery’s Ben Thompson wrote a [thought provoking article](https://stratechery.com/2019/aws-mongodb-and-the-economic-realities-of-open-source/) about the current AWS / MongoDB kerfuffle that’s been keeping the open source community’s echo chamber humming for the past couple of weeks.
