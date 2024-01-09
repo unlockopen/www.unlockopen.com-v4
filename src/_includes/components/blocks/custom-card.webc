@@ -31,7 +31,8 @@
     text-decoration: none;
   }
 
-  :host:hover {
+  :host:hover,
+  :host:focus-within {
     background-color: color-mix(in oklab, var(--color-bg) 95%, var(--color-text));
   }
 
