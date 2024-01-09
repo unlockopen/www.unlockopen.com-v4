@@ -47,8 +47,10 @@
 @supports (font-variation-settings: normal) {
   @font-face {
     font-family: 'Geologica';
-    src: url('/assets/fonts/geologica/geologica-variable.woff2')
-      format('woff2-variations');
+    src: url('/assets/fonts/geologica/Geologica[CRSV,SHRP,slnt,wght].woff2')
+        format('woff2 supports variations'),
+      url('/assets/fonts/geologica/Geologica[CRSV,SHRP,slnt,wght].woff2')
+        format('woff2-variations');
     font-weight: 300 900;
     font-stretch: 25% 125%;
     font-style: oblique 0deg 12deg;

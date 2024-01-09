@@ -20,8 +20,8 @@
 
     <!-- 5  preloads -->
     <link
-      href="/assets/fonts/geologica/geologica-variable.woff2"
       rel="preload"
+      href="/assets/fonts/geologica/Geologica[CRSV,SHRP,slnt,wght].woff2"
       as="font"
       type="font/woff2"
       crossorigin
