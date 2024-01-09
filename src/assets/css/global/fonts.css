@@ -58,10 +58,5 @@
   }
 }
 
-@font-face {
-  font-family: 'RobotoMono';
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: local(''), url(/assets/fonts/robotomono/robotomono-variablefont_wght-webfont.woff2);
-}
+/* font-synthesis: none;
+font-variation-settings: 'ital' 1; */
