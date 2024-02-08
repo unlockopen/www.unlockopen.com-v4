@@ -5,6 +5,7 @@ layout: plain
 <site-header></site-header>
 <main
   :class="`${mainclass ? `${mainclass}` : ''}`"
+  :style="`${mainstyle ? `${mainstyle}` : ''}`"
   @raw="content"
   webc:root="override"
 ></main>
@@ -15,7 +16,7 @@ layout: plain
      display: grid;
      grid-column: 1 / -1;
      grid-template-columns: subgrid;
-     padding-block-start: var(--space-l-2xl);
+     padding-block-start: var(--main-block-start, var(--space-l-2xl));
      grid-template-rows: auto 1fr;
    }
 
