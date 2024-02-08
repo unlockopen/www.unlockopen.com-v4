@@ -134,7 +134,6 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy({
     'node_modules/@zachleat/seven-minute-tabs/seven-minute-tabs.js':
       'assets/scripts/seven-minute-tabs.js',
-    'node_modules/@zachleat/browser-window/browser-window.js': `assets/scripts/browser-window.js`,
     'node_modules/@11ty/is-land/is-land.js': `assets/scripts/is-land.js`,
     'node_modules/@11ty/is-land/is-land-autoinit.js': `assets/scripts/is-land-autoinit.js`,
     'node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}': `assets/scripts/`
