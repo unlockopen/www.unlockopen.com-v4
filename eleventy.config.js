@@ -86,7 +86,6 @@ module.exports = eleventyConfig => {
 
   // 	--------------------- Custom shortcodes ---------------------
   eleventyConfig.addPairedShortcode('brace', brace);
-  eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);
   eleventyConfig.addShortcode('youtube', liteYoutube);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`); // current year, stephanie eckles
   eleventyConfig.addShortcode('packageVersion', () => `v${packageVersion}`);
