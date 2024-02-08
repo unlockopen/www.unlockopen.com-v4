@@ -21,23 +21,7 @@
       "url": "/services/"
     }
   ],
-  "bottom": [
-    {
-      "id": "imprint",
-      "label": "Imprint",
-      "url": "/imprint/"
-    },
-    {
-      "id": "privacy",
-      "label": "Privacy",
-      "url": "/privacy/"
-    },
-    {
-      "id": "style-guide",
-      "label": "Style guide",
-      "url": "/style-guide/"
-    }
-  ],
+  "bottom": [],
   "social": [
     {
       "id": "twitter",
