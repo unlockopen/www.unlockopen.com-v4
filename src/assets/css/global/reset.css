@@ -58,6 +58,7 @@ img {
   block-size: auto;
   vertical-align: middle;
   font-style: italic;
+  font-style: oblique 12deg;
   background-repeat: no-repeat;
   background-size: cover;
   shape-margin: 0.75rem;

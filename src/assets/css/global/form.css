@@ -73,6 +73,7 @@ textarea {
   &::placeholder {
     color: var(--color-grey);
     font-style: italic;
+    font-style: oblique 12deg;
   }
 }
 
