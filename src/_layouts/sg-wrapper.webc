@@ -1,5 +1,6 @@
 ---
 layout: base
+mainstyle: '--main-block-start: 0'
 ---
 
 <x slot="head" webc:nokeep>
@@ -11,15 +12,9 @@ layout: base
   ></script>
 </x>
 
-<div class="sidebar">
+<div class="component-layout">
   <nav :aria-label="meta.aria.menus.style">
-    <a
-      :href="url('/style-guide/')"
-      :aria-current="url('/style-guide/') === $data.page.url ? 'page' : null"
-      >Components</a
-    >
-
-    <ul role="list">
+    <ul role="list" class="grid" data-layout="50-50">
       <li>
         <strong>Atoms</strong>
         <ul role="list">
@@ -54,29 +49,34 @@ layout: base
 </div>
 
 <style>
-  .sidebar {
-    --sidebar-gap: var(--space-s-m);
-    --sidebar-align: flex-start;
-    --sidebar-target-width: 19rem;
-    --sidebar-content-min-width: 70%;
+  .component-layout {
     flex: auto;
     position: relative;
   }
 
-  .sidebar > * {
+  .component-layout > * {
     flex: auto;
   }
 
-  .sidebar ul ul {
+  .component-layout > nav {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border-radius: var(--border-radius);
+    padding: var(--space-xs) var(--space-s);
+    margin-block-end: var(--space-m-l);
+  }
+
+  .component-layout ul ul {
     margin-block: 0.3em 1em;
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
   }
 
-  .sidebar ul ul li {
+  .component-layout ul ul li {
     border: 1px solid var(--color-grey);
     padding: 0.3rem var(--space-xs);
+    font-size: var(--size-step-min-1);
   }
 
   nav a {
