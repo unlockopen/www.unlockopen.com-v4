@@ -89,6 +89,12 @@ strong {
   font-weight: 600;
 }
 
+em {
+  font-style: italic;
+  font-style: oblique 12deg;
+  background-color: color-mix(in oklab, var(--color-accent) 7%, var(--color-bg));
+}
+
 .heading-anchor {
   text-decoration: none;
 }
