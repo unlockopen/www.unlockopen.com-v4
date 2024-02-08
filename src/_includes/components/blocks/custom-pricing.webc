@@ -1,38 +1,44 @@
-<div :class="`flow ${this.class ? `${this.class}` : ''}`" webc:root>
-  <slot name="image"></slot>
-  <slot name="date"></slot>
-  <h1 webc:if="title && element == 'h1' " slot="title" @raw="title"></h1>
-  <h3 webc:elseif="title && element == 'h3' " slot="title" @raw="title"></h3>
-  <h2 webc:elseif="title" slot="title" @raw="title"></h2>
+<div webc:root>
+  <div :class="`pricing-box | flow ${this.class ? `${this.class}` : ''}`">
+    <div class="pricing-contents | flow">
+      <h1 webc:if="title && element == 'h1' " slot="title" @raw="title"></h1>
+      <h3 webc:elseif="title && element == 'h3' " slot="title" @raw="title"></h3>
+      <h2 webc:elseif="title" slot="title" @raw="title"></h2>
 
-  <p slot="description" @raw="description"></p>
-  <div class="price-wrapper">
-    <p slot="price" @raw="price"></p>
-    <p slot="conditions" @raw="conditions"></p>
+      <p slot="description" @raw="description"></p>
+      <div class="price-wrapper">
+        <p slot="price" @raw="price"></p>
+        <p slot="conditions" @raw="conditions"></p>
+      </div>
+
+      <slot></slot>
+    </div>
+
+    <a webc:if="button" class="button" :href="link"
+      ><slot name="button" @raw="button"></slot
+    ></a>
   </div>
-
-  <a webc:if="button" class="button" :href="link"
-    ><slot name="button" @raw="button"></slot
-  ></a>
-
-  <slot></slot>
 </div>
 
 <style webc:scoped="pricing">
   :host {
-    border: 1px solid var(--color-text);
-    color: var(--color-text);
-    padding: var(--space-s);
-    border-radius: var(--border-radius);
-    max-inline-size: unset;
+    container-type: inline-size;
+    container-name: pricing-contents;
   }
 
-  @media (min-width: 30em) {
-    :host {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: var(--space-s);
-    }
+  .pricing-box {
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+    max-inline-size: unset;
+    padding: var(--space-s);
+    min-block-size: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-contents {
+    flex: auto;
   }
 
   :host::selection {
@@ -46,13 +52,7 @@
   }
 
   .price-wrapper {
-    grid-column: 1 / 2;
     font-weight: 500;
-    /* align-items: center; */
-    display: flex;
-    gap: var(--space-s);
-    justify-content: flex-start;
-    align-items: center;
   }
 
   [slot='price'] {
@@ -65,27 +65,9 @@
     line-height: 1.1;
   }
 
-  .features {
-    grid-column: 2 / 2;
-    grid-row: 1 / -1;
-  }
-
   .button {
     grid-column: 1;
   }
-
-  /* whatever comes after the button */
-  .button + * {
-    grid-row: 1 / span 5;
-    grid-column: 2 / 2;
-  }
-
-  @media (min-width: 30em) {
-    .button + * {
-      margin-block-start: 0;
-    }
-  }
-
   ul,
   li {
     list-style: none;
@@ -95,5 +77,30 @@
   li:before {
     content: '\2713'; /* ASCII code for a checkmark */
     padding-inline-end: 0.5rem;
+  }
+
+  @container (min-width: 25em) {
+    .pricing-contents {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-content: baseline;
+      column-gap: var(--space-s);
+    }
+
+    .price-wrapper {
+      grid-column: 1 / 2;
+      display: flex;
+      gap: var(--space-s);
+      justify-content: flex-start;
+    }
+
+    [slot='description'] {
+      grid-column: 1 / -1;
+      font-size: var(--size-step-0);
+    }
+
+    [slot='conditions'] {
+      margin-block-start: 1ch;
+    }
   }
 </style>

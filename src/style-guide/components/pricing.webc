@@ -8,6 +8,11 @@ variations:
 instructions: 'Usable as wrapper or as single pricing box (should be wrapped in layout class). Adding class="emphasize" adds a light background color in the current theme.'
 ---
 
+<h2>Wrapper for services</h2>
+<p>Reusable wrappers are stored in `components/reusable`</p>
+
+<pricing-services></pricing-services>
+
 <h2>Single component</h2>
 <p>Reusable blocks are stored in `components/blocks`</p>
 
@@ -28,7 +33,43 @@ instructions: 'Usable as wrapper or as single pricing box (should be wrapped in 
   </ul>
 </custom-pricing>
 
-<h2>Wrapper for services</h2>
-<p>Reusable wrappers are stored in `components/reusable`</p>
+<h2 class="mt-xl">Single components in grid</h2>
+<p>Reusable blocks are stored in `components/blocks`</p>
 
-<pricing-services></pricing-services>
+<div
+  class="grid"
+  data-layout="50-50"
+  style="--grid-min-item-size: 15rem; --gutter: var(--space-s)"
+>
+  <custom-pricing
+    @title="Coaching"
+    @element="h2"
+    @description="The description of this offering. Few words."
+    @price="$1000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+  >
+    <ul>
+      <li>This is a feature</li>
+      <li>Something else this does</li>
+      <li>Such a good deal</li>
+      <li>Hello</li>
+    </ul>
+  </custom-pricing>
+  <custom-pricing
+    @title="Advisory"
+    @element="h2"
+    @description="The description of this offering. Few words. Contrary to popular belief, Lorem Ipsum is not simply random text"
+    @price="$2000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+  >
+    <p>
+      There can also be normal text. Solutions that help large organizations build a
+      strong open source culture and leverage it to recruit, retain, and foster top
+      software engineering talent, improve team efficiency, and boost innovation.
+    </p>
+  </custom-pricing>
+</div>
