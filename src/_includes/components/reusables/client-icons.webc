@@ -6,7 +6,7 @@
         aria-hidden="true"
         :src="`./src/assets/svg/client-${item.id}.svg`"
       ></inline-svg
-      ><span @text="item.label" class="sr-only"></span>
+      ><span @text="item.label" class="visually-hidden"></span>
     </li>
   </ul>
 </div>

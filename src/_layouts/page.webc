@@ -3,7 +3,7 @@ layout: base
 decorative: 'rectangle'
 ---
 
-<h1 webc:if="titleHidden" class="sr-only" @text="title"></h1>
+<h1 webc:if="titleHidden" class="visually-hidden" @text="title"></h1>
 <h1 webc:else @text="title"></h1>
 
 <section class="flow prose page">
