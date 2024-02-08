@@ -1,69 +1,88 @@
-  <div id="pricing" :class="`grid region ${this.class ? `${this.class}` : ''}`" style="--grid-min-item-size: 15rem; --gutter: var(--space-s)">
-    <custom-pricing
-      @title="Coaching"
-      @element="h2"
-      @description="The description of this offering. Few words."
-      @price="$1000"
-      @conditions="per month / billed annually"
-      @button="Get started"
-      @link="#"
-    >
-      <ul>
-        <li>This is a feature</li>
-        <li>Something else this does</li>
-        <li>Such a good deal</li>
-        <li>Hello</li>
-      </ul>
-    </custom-pricing>
-    <custom-pricing
-      class="emphasize"
-      @title="Advisory"
-      @element="h2"
-      @description="The description of this offering. Few words. Contrary to popular belief, Lorem Ipsum is not simply random text"
-      @price="$2000"
-      @conditions="per month / billed annually"
-      @button="Get started"
-      @link="#"
-    >
-      <p>
-        There can also be normal text. Solutions that help large organizations build a
-        strong open source culture and leverage it to recruit, retain, and foster top
-        software engineering talent, improve team efficiency, and boost innovation.
-      </p>
-    </custom-pricing>
-    <custom-pricing
-      @title="Team Advisory"
-      @element="h2"
-      @description="The passage, and going through the cites of the word in classical literature"
-      @price="$5000"
-      @conditions="per month / billed annually"
-      @button="Get started"
-      @link="#"
-    >
-      <ul>
-        <li>This is a feature</li>
-        <li>Something else this does</li>
-        <li>Such a good deal</li>
-        <li>Atque dolorem consequatur deleniti.</li>
-      </ul>
-    </custom-pricing>
-    <custom-pricing
-      @title="Custom"
-      @element="h2"
-      @description="There are many variations of passages of Lorem Ipsum available."
-      @price="Let's talk"
-      @conditions=""
-      @button="Contact"
-      @link="#"
-    >
-      <ul>
-        <li>This is a feature</li>
-        <li>Something else this does</li>
-        <li>Such a good deal</li>
-        <li>Hello</li>
-        <li>Lorem ipsum</li>
-        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-      </ul>
-    </custom-pricing>
-  </div>
+<div id="pricing" :class="`grid region ${this.class ? `${this.class}` : ''}`" webc:root>
+  <custom-pricing
+    @title="Coaching"
+    @element="h2"
+    @description="The description of this offering. Few words."
+    @price="$1000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+  >
+    <ul>
+      <li>This is a feature</li>
+      <li>Something else this does</li>
+      <li>Such a good deal</li>
+      <li>Hello</li>
+    </ul>
+  </custom-pricing>
+  <custom-pricing
+    class="emphasize"
+    @title="Advisory"
+    @element="h2"
+    @description="The description of this offering. Few words. Contrary to popular belief, Lorem Ipsum is not simply random text"
+    @price="$2000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+  >
+    <p>
+      There can also be normal text. Solutions that help large organizations build a
+      strong open source culture and leverage it to recruit, retain, and foster top
+      software engineering talent, improve team efficiency, and boost innovation.
+    </p>
+  </custom-pricing>
+  <custom-pricing
+    @title="Team Advisory"
+    @element="h2"
+    @description="The passage, and going through the cites of the word in classical literature"
+    @price="$5000"
+    @conditions="per month / billed annually"
+    @button="Get started"
+    @link="#"
+  >
+    <ul>
+      <li>This is a feature</li>
+      <li>Something else this does</li>
+      <li>Such a good deal</li>
+      <li>Atque dolorem consequatur deleniti.</li>
+    </ul>
+  </custom-pricing>
+  <custom-pricing
+    @title="Custom"
+    @element="h2"
+    @description="There are many variations of passages of Lorem Ipsum available."
+    @price="Let's talk"
+    @conditions=""
+    @button="Contact"
+    @link="#"
+  >
+    <ul>
+      <li>This is a feature</li>
+      <li>Something else this does</li>
+      <li>Such a good deal</li>
+      <li>Hello</li>
+      <li>Lorem ipsum</li>
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+    </ul>
+  </custom-pricing>
 </div>
+
+<style webc:scoped="pricing-services">
+  :host {
+    --grid-min-item-size: 14rem;
+    --gutter: var(--space-s);
+  }
+
+  @media (min-width: 785px) and (max-width: 1059px) {
+    :host:has(> :nth-child(4)) {
+      /* make sure its 100, 2x50  or 4x25 */
+      --grid-min-item-size: 21rem;
+    }
+  }
+
+  @media (min-width: 1320px) {
+    :host:has(> :nth-child(4)) {
+      --grid-min-item-size: 16rem;
+    }
+  }
+</style>
