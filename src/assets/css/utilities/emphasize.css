@@ -1,3 +1,10 @@
 .emphasize {
   background-color: color-mix(in oklab, var(--color-accent) 20%, var(--color-bg));
 }
+
+@media (min-width: 75em) {
+  .emphasize {
+    transform: scale(103%) translateY(-0.5em);
+    margin-inline: 0.3ch;
+  }
+}

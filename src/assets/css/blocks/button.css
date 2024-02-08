@@ -7,25 +7,30 @@
   font: inherit;
   padding: 0.3rem var(--space-s);
   font-weight: 700;
-  transition-property: background-color, border;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing);
   text-decoration: none;
   text-align: center;
 }
 
-.button:hover {
+.button:hover,
+.button[aria-current='page'],
+.button[aria-pressed='true'],
+.button[data-state='active'] {
   --button-bg: var(--color-text);
   --button-text: var(--color-bg);
   --button-border: var(--color-text);
 }
+
+.button:active {
+  transform: scale(99%);
+}
+
 .button:where(:has(svg)) {
   display: flex;
   gap: 0.5em;
   align-items: center;
 }
 
-.button:where(:has(.sr-only)) {
+.button:where(:has(.visually-hidden)) {
   border-radius: 50%;
   padding: 0.5em;
 }
@@ -35,7 +40,7 @@
   min-inline-size: 10ch;
 }
 
-.button:where(:not(:has(.sr-only))) {
+.button:where(:not(:has(.visually-hidden))) {
   padding: var(--button-padding, 0.35em 1em);
   border-radius: 0;
 }
