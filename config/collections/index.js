@@ -1,6 +1,6 @@
-/** All blog posts as a collection. */
-const getAllPosts = collection => {
-  const projects = collection.getFilteredByGlob('./src/posts/*.md');
+/** All articles as a collection. */
+const getAllArticles = collection => {
+  const projects = collection.getFilteredByGlob('./src/articles/*.md');
   return projects.reverse();
 };
 
@@ -26,7 +26,7 @@ const sgComponents = collection => {
 };
 
 module.exports = {
-  getAllPosts,
+  getAllArticles,
   onlyMarkdown,
   sgAtoms,
   sgComponents

@@ -1,6 +1,6 @@
 ---
 title: Articles
-description: 'All blog posts can be found here'
+description: 'All articles can be found here'
 slugOverride: articles
 theme: golden
 decorative: pizza

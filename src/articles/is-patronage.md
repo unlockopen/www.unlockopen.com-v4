@@ -15,7 +15,7 @@ Open source sustainability became a major theme overnight. Stories of maintainer
 
 A few key projects received direct funding from top industry players, notably through the [Core Infrastructure Initiative](https://www.coreinfrastructure.org/) which was formed as a response to the Heartbleed crisis.
 
-<eleventy-image :src="`./src/assets/images/posts/1 3_ctK9Q0C5EvEF8IAokD_Q.jpg`" width="510" height="510" alt="Tobie Langel" loading="lazy"> </eleventy-image>
+<eleventy-image :src="`./src/assets/images/articles/1 3_ctK9Q0C5EvEF8IAokD_Q.jpg`" width="510" height="510" alt="Tobie Langel" loading="lazy"> </eleventy-image>
 
 “Gaius Maecenas Supporting the Arts”, Gerard de Lairesse, date unknown. Maecenas was a notable patron of poets, such as Horace and Virgil. Many languages still use the term “_mecenate”_—derived from Maecenas—for patronage.
 

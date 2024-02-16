@@ -5,7 +5,7 @@ intro: "Software foundations have increasingly started helping non-corporate bac
 ogImage:
 date: 2019-04-23
 image:
-  src: './src/assets/images/posts/Paper.Article_illustrations.9.png'
+  src: './src/assets/images/articles/Paper.Article_illustrations.9.png'
 	alt: "Illustration"
 ---
 

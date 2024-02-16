@@ -1,34 +1,34 @@
 <script webc:setup>
-  const posts = $data.collections.posts.sort((a, b) => b.data.date - a.data.date);
+  const articles = $data.collections.articles.sort((a, b) => b.data.date - a.data.date);
 </script>
 
 <div class="grid" role="list" webc:root="override" data-layout="50-50">
   <custom-card
-    :@headline="post.data.title"
-    :@link="post.url"
+    :@headline="article.data.title"
+    :@link="article.url"
     webc:if="!count || index < count"
-    webc:for="(post, index) of posts"
+    webc:for="(article, index) of articles"
   >
     <!-- <eleventy-image
-      webc:if="post.data.image"
+      webc:if="article.data.image"
       slot="image"
-      :src="post.data.image.src"
+      :src="article.data.image.src"
       width="600"
-      alt="post.data.image.alt"
+      alt="article.data.image.alt"
     ></eleventy-image> -->
 
     <time
       slot="date"
-      :datetime="toIsoString(post.data.date)"
-      @text="formatDate(post.data.date)"
+      :datetime="toIsoString(article.data.date)"
+      @text="formatDate(article.data.date)"
     ></time>
 
-    <x webc:nokeep webc:if="post.url" slot="link" @raw="post.url"></x>
+    <x webc:nokeep webc:if="article.url" slot="link" @raw="article.url"></x>
     <x
       webc:nokeep
-      webc:if="post.data.description"
+      webc:if="article.data.description"
       slot="content"
-      @raw="post.data.description"
+      @raw="article.data.description"
     ></x>
   </custom-card>
 </div>

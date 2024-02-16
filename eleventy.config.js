@@ -33,7 +33,7 @@ const {
 
 // module import collections
 const {
-  getAllPosts,
+  getAllArticles,
   onlyMarkdown,
   sgAtoms,
   sgComponents
@@ -59,7 +59,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addLayoutAlias('plain', 'plain.webc');
   eleventyConfig.addLayoutAlias('base', 'base.webc');
   eleventyConfig.addLayoutAlias('home', 'home.webc');
-  eleventyConfig.addLayoutAlias('post', 'post.webc');
+  eleventyConfig.addLayoutAlias('article', 'article.webc');
   eleventyConfig.addLayoutAlias('sg-wrapper', 'sg-wrapper.webc');
   eleventyConfig.addLayoutAlias('sg-atom', 'sg-atom.webc');
   eleventyConfig.addLayoutAlias('sg-component', 'sg-component.webc');
@@ -102,7 +102,7 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(eleventyImagePlugin, imageConfig);
 
   // 	--------------------- Custom collections -----------------------
-  eleventyConfig.addCollection('posts', getAllPosts);
+  eleventyConfig.addCollection('articles', getAllArticles);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
   eleventyConfig.addCollection('sgAtoms', sgAtoms);
   eleventyConfig.addCollection('sgComponents', sgComponents);
