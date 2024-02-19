@@ -1,0 +1,575 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_ZW2Cp8",
+            "attributes": {
+                "title": "Does open source need its own Priority of Constituencies?",
+                "slug": "does-open-source-need-its-own-priority-of-constituencies",
+                "blurb": {
+                    "html": "<p>From its inception, open source—and free software before it—was built around ethical notions: give people agency and power over their software so they could use, modify, and share it as they pleased to accomplish whatever it is that they wanted to do with it.</p>\n<p>In a world where running software required programming skills, there was a lot of overlap between users and developers of open source, and so this rather simple framework was sufficient to deal with open source’s different constituencies.</p>\n<p>Since then, open source has become ubiquitous. As a result, the number of constituencies has ballooned: there are indie and corporate contributors and maintainers, open source software vendors, developers building proprietary code on top of open source, end-users who don’t know anything about software, people impacted by open source software who are not even using it, cloud providers, etc., etc.</p>\n<p>When the interests of these different actors are in conflict, which one of them do we favor and why? Neither the Four Freedoms nor the Open Source Definition (OSD) really helps us answer that question.</p>\n<p>Faced with similar issues, other communities have designed really effective frameworks to guide their decision making processes. W3C’s “priority of constituencies” is such a framework.</p>\n<p>In this talk we’ll dig into what W3C’s priority of constituencies is, outline its benefits, but also its limits.</p>\n<p>We’ll then see how we could apply the priority of constituencies to open source, what that reveals about the complexity of the open source ecosystem, and in particular how the parts that are difficult to fit in such a framework are precisely those that have made the news in the past few years.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_7473",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_ZDoT6n",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen\nDoes open source need its own Priority of Constituencies?</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck7473/large-329465-11dbb50f0edcee3e.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_BXXGzC",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-1.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_nrG4rb",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-2.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_QAysk0",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-3.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_2UhgcP",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-4.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_eoQUUo",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-5.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_H89IND",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-6.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_tRs6Fc",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-7.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Vlau81",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Open source crisis\n● Maintainer burnt out. ● Cloud capturing too much value. ● Ethical concerns over impact on end-users.\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-8.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_85Ji0Q",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What’s going on? We’re witnessing the emergence of new constituencies.\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-9.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_kP2Vsp",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>The 4 freedoms &amp; the OSD\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-10.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_MilJlE",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>The 4 freedoms &amp; the OSD\nUsers\nDevelopers\nLarge overlap Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-11.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_z2U7dd",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>How do we handle this increased diversity of constituencies?\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-12.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_bMCvW2",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>W3C’s Priority of Constituencies\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-13.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_DfvjOR",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-14.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_pzeXGq",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-15.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_SJNL9F",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-16.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_4d691e",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-17.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_gwowu3",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>W3C priority of constituencies\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-18.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_JGXkmS",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Size of each constituency\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity Billions\nMillions\nThousands\nTens\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-19.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_vaGYer",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Cost of 1 hour of spec work\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity 1,000,000,000 h\n1,000,000 h\n100 h\n1h\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-20.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_XtzMXG",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Apache Software Foundation mantra\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck7473/large-329486-e08d0b75e25d490a.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ADiAPf",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Apache Software Foundation mantra\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck7473/large-329487-0521343a14b6df6e.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_mXQyI4",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Apache Software Foundation mantra\nCommunity &gt; Theoretical purity\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck7473/large-329488-92e310c73bb738be.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Or9mAT",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Apache Software Foundation mantra\nCommunity &gt; Code\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck7473/large-329489-a99ebb5c461290f3.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_1Asa2s",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What would an open source priority of constituencies look like?\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-25.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_dUbNvH",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Open source priority of constituencies\nPeople Contributors App devs\nEnd users\nMaintainers (Individuals &amp;\nCloud infra\ncorporations)\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-26.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_FoKBng",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Open source priority of constituencies\nPeople &gt; End users &gt; App devs &gt; Cloud infra &gt; Contributors &gt; Maintainers &gt; Theor. pur.\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-27.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_s82zg5",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>But is W3C’s priority of constituencies a silver bullet?\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-28.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_URlnYU",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Economic situation\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity\n💵\n💰💰\n💰💰💰💰💰\n💵\n💰💰💰💰💰\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-29.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_6lUbQt",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Economic situation\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity\n💵\n💰💰\n💰💰💰💰💰\n💵\n💰💰💰💰💰\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-30.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_j5DPJI",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Economic situation\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity\n💵\n💰💰\n💰💰💰💰💰\n💵\n💰💰💰💰💰\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-31.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_LOwDBh",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Economic situation\nEnd users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity\n💵\n💰💰\n💵\n💰💰💰💰💰 💰💰💰💰 `\n💰\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-32.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_xif146",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-33.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_a2NowV",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Let’s apply this to open source.\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-34.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_CM6cou",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>The canary in the coal mine\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-35.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ofpQhJ",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Open source priority of constituencies\nPeople &gt; End users &gt; App devs &gt; Cloud infra &gt; Contributors &gt; Maintainers &gt; Theor. pur.\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-36.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_QzYEZi",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<h2>Open source priority of constituencies\nPeople &gt; End users &gt; App devs &gt; Cloud infra &gt; Contributors &gt; Maintainers &gt; Theor. pur.\n💵\n💵\n💰💰\n💰💰💰\n💵\n💵\n💰💰💰</h2>\n<ul>\n<li></li>\n</ul>\n<p>💰💰\n💰💰\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-37.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_3JH2S7",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<h2>Open source priority of constituencies\nPeople &gt; End users &gt; App devs &gt; Cloud infra &gt; Contributors &gt; Maintainers &gt; Theor. pur.\n💵\n💵\n💰💰\n💰💰💰\n💵\n💵\n💰💰💰</h2>\n<ul>\n<li></li>\n</ul>\n<p>💰💰\n💰💰\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-38.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_fczqKW",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<h2>Open source priority of constituencies\n💰💰 People &gt; End users &gt; App devs &gt; Cloud infra &gt; Contributors &gt; Maintainers &gt; Theor. pur.\n💵\n💵\n💰\n💰💰💰\n💵\n💵\n💰💰</h2>\n<ul>\n<li></li>\n</ul>\n<p>💰💰\n💰💰\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-39.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_HwieCv",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Benefits of a priority of constituencies\n● Keeps focus on people &amp; downstream impact. ● Maximizes benefits to the commons by upstreaming work. ● Surfaces discrepancies between economic situation and work expectations.\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck6236/large-40.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_uGRS5K",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen\nThank you.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck7473/large-329506-93ea889165219874.png",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "https://on.notist.cloud/pdf/deck-9efe328a15e55ede.pdf",
+                "resources": {
+                    "data": [
+                        {
+                            "title": "Roads and Bridges (PDF)",
+                            "url": "https://www.fordfoundation.org/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf",
+                            "desc": {
+                                "html": "<p>Nadia Eghbal’s classic report for the Ford Foundation.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Why Open Source Failed",
+                            "url": "https://medium.com/@johnmark/why-open-source-failed-6cae5d6a9f6",
+                            "desc": {
+                                "html": "<p>John Mark’s “Why Open Source Failed” is one of the most thought-provoking pieces ever written in our industry. You can’t read it and come out unchanged. Here’s a sample:</p>\n<p><em>“It’s time to understand something about open source software development: it is not going to save us. Using or developing more open source software is not going to improve anyone’s lives. Developing open source software is not a public good. It’s not going to result in a fairer or more equitable society. In fact, as currently structured, open source development is part of the problem. If you work for one of the companies that stands in the way of intellectual property reform, and you say nothing in protest, then you are part of the problem. So many open source developers and advocates are gainfully employed and at very little risk of losing future work prospects, and yet I see so few speak out about their employers’ role in wealth inequality.”</em>\n—John Mark, Why Open Source Failed, July 30, 2018.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Save Open Source, Save the World",
+                            "url": "https://medium.com/@johnmark/save-open-source-save-the-world-f2b0bf6ec630",
+                            "desc": {
+                                "html": "<p>John Mark’s less sinister follow-up to his “Why Open Source Failed” piece.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Open Source Has Not Failed. Don’t Cover Up Corporate Abuse of Open Source",
+                            "url": "https://dev.to/lethargilistic/open-source-has-not-failed-dont-cover-up-corporate-abuse-of-open-source-3ffe",
+                            "desc": {
+                                "html": "<p>Mike Overby’s follow-up to John Mark’s article.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "The crusade against open-source abuse",
+                            "url": "https://techcrunch.com/2018/11/29/the-crusade-against-open-source-abuse/",
+                            "desc": {
+                                "html": "<p>Salil Deshpande’s 2018 piece against Cloud providers.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Keeping Open Source Open – Open Distro for Elasticsearch",
+                            "url": "https://aws.amazon.com/blogs/opensource/keeping-open-source-open-open-distro-for-elasticsearch/",
+                            "desc": {
+                                "html": "<p>Adrian Cockcroft’s post announcing the release of a separate distribution of Elasticsearch in response to the license changes decided by Elastic.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "A Six-Month Retrospective on Ethical Open Source",
+                            "url": "https://modelviewculture.com/pieces/a-six-month-retrospective-on-ethical-open-source",
+                            "desc": {
+                                "html": "<p>Coraline Ada Ehmke’s retrospective of the founding and first few months of the ethical open source movement.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "What comes after open source",
+                            "url": "https://www.youtube.com/watch?v=vTsc1m78BUk",
+                            "desc": {
+                                "html": "<p>Bruce Perens’ latest video in which he explores open source’s failings and suggests a number of solutions moving forward. This is also the video in which he admits being the creator of the Vaccine License, which he submitted to the OSI in order to make a point.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "HTML Working Group IRC Archives 2007-03-27",
+                            "url": "https://krijnhoetmer.nl/irc-logs/html-wg/20070327",
+                            "desc": {
+                                "html": "<p>First documented conversation about the Priority of Constituencies.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "W3C HTML Design Principles",
+                            "url": "https://www.w3.org/TR/html-design-principles/#priority-of-constituencies",
+                            "desc": {
+                                "html": "<p>This is the first official document published by W3C in which the Priority of Constituencies is defined.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Web Platform Design Principles",
+                            "url": "https://w3ctag.github.io/design-principles/#priority-of-constituencies",
+                            "desc": {
+                                "html": "<p>The new, updated version of the HTML Design Principles that includes are re-worded version of the Priority of Constituencies (now called “Put user needs first”), and a reference to the IETF IAB draft that has now become RFC 8890.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "IETF RFC 8890",
+                            "url": "https://tools.ietf.org/rfc/rfc8890.txt",
+                            "desc": {
+                                "html": "<p>A “Request for Comment” issued by the IETF Internet Architecture Board. This is the old-school, text only version. There’s a <a href=\"https://tools.ietf.org/html/rfc8890\" target=\"_blank\" rel=\"noopener\">slightly more modern version of RFC 8890</a> (with links!), for those who aren’t there just for the nostalgia.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "RFC8890: The Internet is for End Users",
+                            "url": "https://www.mnot.net/blog/2020/08/28/for_the_users",
+                            "desc": {
+                                "html": "<p>A great blog post by Mark Nottingham where he explains the thought process that went into writing RFC 8890. Highly recommended.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "W3C doesn’t help its invited experts. It should.",
+                            "url": "https://medium.com/@tobie/w3c-doesnt-help-its-invited-experts-it-should-2fb36ae9f720",
+                            "desc": {
+                                "html": "<p>An article I wrote in 2019 following a Twitter thread the year before raising the alarm on the very dire situation some W3C Invited Experts were experiencing.</p>\n"
+                            }
+                        }
+                    ]
+                }
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_nLZhMI",
+                        "attributes": {
+                            "title": "SeaGL",
+                            "slug": "seagl",
+                            "starts_on": "2021-11-05 08:00:00",
+                            "ends_on": "2021-11-06 18:00:00",
+                            "timezone": "GMT",
+                            "address": "Virtual",
+                            "latitude": null,
+                            "longitude": null,
+                            "country_code": null,
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/nLZhMI/seagl",
+                            "related": "https://noti.st/events/nLZhMI.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/ZW2Cp8/does-open-source-need-its-own-priority-of-constituencies"
+            }
+        }
+    ]
+}

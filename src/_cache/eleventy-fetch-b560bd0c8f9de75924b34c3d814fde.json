@@ -1,0 +1,353 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_SIgzTa",
+            "attributes": {
+                "title": "Open source contribution policies that don’t suck",
+                "slug": "open-source-contribution-policies-that-dont-suck",
+                "blurb": {
+                    "html": "<p>Open source contribution policies are long, boring, overlooked documents, that generally suck. They’re designed to protect the company at all costs. But in the process, end up hurting engineering productivity, and morale. Sometimes they even unknowingly put corporate IP at risk.</p>\n<p>But that’s not inevitable.</p>\n<p>It’s possible to write open source contribution policies that make engineers’ lives easier, boost morale and productivity, reduce attrition, and attract new talent. And it’s possible to do so while reducing the company’s IP risk, not increasing it.</p>\n<p>In this talk, we’ll look at the general structure of contribution policies, examples in the wild, and tactics to make them suck less.</p>\n<p>We’ll also look at how to turn these policies into self-service software, preventing the tedious email back and forth between engineering and legal in most cases and making open source contribution a breeze.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_9767",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_wjbgD4",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Open source contribution policies that don’t suck! Tobie Langel, Principal, UnlockOpen\ntobie@unlockopen.com</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-0.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Z3KU5T",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Do you have an open source policy? &lt; 250 employees\n28%\nNo 48%\nYes 39% Don’t know 13%\n61%\n11%</p>\n<blockquote>\n<p>10,000 employees\n25% 10%\n65%\nRemember this is a biased sample! Source: The New Stack &amp; Linux Foundation/TODO Group 2018 Open Source Program Management Survey (https://github.com/todogroup/survey)</p>\n</blockquote>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-1.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_BN3Hxs",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What does not having a policy mean? Contrary to popular belief, it does not mean that you don’t have an open source policy at all. It means that you don’t have a written one.\nYou have a policy, whether it is written down or not. It could range from “no open source at all” to “anything goes.” —Heather J. Meeker, Open Source Licensing Specialist, author of Open Source for Business.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-2.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ngm5qH",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What does having a policy mean? Think you’re in the right camp because you have an open source contribution policy? Think again!\n•\nYou can have a very restrictive open source policy.\n•\nYou can have a very bureaucratic process to obtain approval.\n•\nYou can have a very opaque process to obtain approval.\nNone of these are fun!</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-3.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Q0Utig",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Explicit\nTrend setters Old tech company\nTech companies\nRestrictive\nPermissive\nNon-tech enterprise\nSMEs\nStartups Implicit</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-4.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_2KDhb5",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What is a policy that doesn’t suck?\nEngineering perspective\nLegal perspective\nBusiness perspective</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-5.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_edwVTU",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What is a policy that doesn’t suck? Permissive. Allows open source contribution to be an integral part of the company’s engineering culture and best practices. Based on trust and autonomy.\nEngineering perspective\nExplicit. The decision making process is well documented and transparent. Informative. The policy explains the why an helps educate engineers. Frictionless. Avoid bureaucracy, red tape, lengthly back and forth with legal, etc.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-6.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_GxfJLt",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What is a policy that doesn’t suck?\nLegal perspective*\nMinimizes risk. Avoid: • giving away competitive advantage, • giving away IP that can be used defensively (or—shudders —o”ensively), • reputational damages and accidental infringements. Consistently followed across the company. Keep contribution under your radar. Avoid compliance issues. Savvy about written information. Sometimes you want a paper-trail (e.g. compliance), sometimes you don’t.</p>\n<ul>\n<li>IANAL (I am not a lawyer). Please talk to me if you are and want to help me improve this slide.\nDoesn’t drown critical problems in a sea of menial issues.</li>\n</ul>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-7.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_tHO7EI",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What is a policy that doesn’t suck? Engineering to be happy and productive. Risks minimized and well understood.\nBusiness perspective\nGood communication between legal and engineering. Alignment with Business goals.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-8.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Vb6v6h",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>At the heart is a tension\nLegal wants to minimize risk.\nEngineering wants to maximize velocity.\nPrefers oral communication.\nPrefers written communication.\nManager’s schedule.\nMaker’s schedule.\nFavors spectrum thinking.\nFavors binary thinking.\nConservative role.\nInnovative role.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-9.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_7upiz6",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Coming to agreement Acknowledge that this tension is normal. It’s just checks and balances. Listen to both sides. Remind them that their role is to help achieve common business goals. • Legal’s role is to minimize risk, but not at the expense of innovation. • Engineering’s needs can’t be fulfilled at the expense of the company’s survival. Find common ground. A good policy will improve the life of both sides. Align your open source activity with your business goals. If you are a patent troll, then don’t do open source. Accept that your open source policy will change with your business.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-10.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_kEYWrV",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What is a policy really about?\nUsing open source\nContributing open source</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-11.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_MYHKju",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Using open source\nWell understood problem, essentially:\n•\nUsing software with licenses that are compatible with your current and future business model.\n•\nCompliance.\nTip: a common issue is missing licenses. Equip engineering with a process (and issue or pull request templates) to request proper OSI-approved licenses.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-12.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ys08cJ",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Using open source\nContributing open source</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-13.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_bBiwUi",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing open source</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-14.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_DVRkN7",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing outside of work\nContributing at work</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-15.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ppAYFW",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing outside of work\nCan employees contribute to open source on their free time? •\nYes, without asking for permission.\n•\nYes, but must ask for permission. So that sometimes means “no”, right?\n•\nI don’t know.\n•\nNope.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-16.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_S8tM7v",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing outside of work “How does your employer’s IP agreement/policy a”ect your freetime contributions to open source unrelated to your work?”\nOther 4% Don’t know 37% Must ask 12%\nBut again… this is a highly biased sample.\nYes! 47%\n“Respondents were sampled randomly from tra!c and qualifying activity to licensed open source repositories on GitHub.com and invited to complete the survey through a dialog box. A smaller sample was recruited from open source communities sourced outside of GitHub, […]”\nSource: GitHub 2017 open source survey (http://opensourcesurvey.org/2017/).</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-17.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_4ScA0K",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing outside of work\nWhy so much confusion? •\nDepends on the jurisdiction, but not uncommon, especially in the USA, for companies to own employees’ production 24/7.\n•\nSometimes, extra criteria apply. For example, in California, IP developed with company equipment—even outside of work— belongs to the employer.\n•\nThis prevents employees from contributing to open source, unless they ask for, and are granted permission to do so.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-18.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_gmKxsj",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing outside of work\nThe common solution: ask for permission •\nMost companies have a process for this.\n•\nTends to focus on releasing open source or working on a limited set of pre-approved projects.\n•\nBreaks down when there’s a high number of dependencies (such as for Node.js projects).</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-19.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_J63ll8",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing outside of work\nThe better solution: BEIPA •\nBalanced Employee IP Agreement\n•\nhttps://github.com/github/balanced-employee-ip-agreement\n•\nProject created by GitHub, based on its own IP agreement.\n•\nBEIPA only claims control of creations made for or relating to the company’s business.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-20.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_vPmZdX",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing outside of work\nContributing at work</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-21.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_XjVNVw",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Releasing\nPatching</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-22.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_A3EBOL",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Releasing open source at work\n•\nDistinguish large open source projects you want to promote from smaller “day to day” modules. (E.g. Google’s &lt; 100 LoC rule.)\n•\nO”er well oiled and well documented processes, checklists, templates, and tooling (see: https://github.com/todogroup/policies).\n•\nO”er help.\n•\nPromote working in the open rather than releasing software once it’s done. (Consider README-driven development to avoid scope creep.)</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-23.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_mMwzGk",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Releasing\nPatching</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-24.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Ogfn99",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Patching open source at work\n•\nBy far the most common activity and the most important one.\n•\nThe experience must be as frictionless as possible for engineers.\n•\nSurface the process by which decisions are made and trust engineers to do the right thing. This let’s legal focus on the di#cult cases.\n•\nCache decisions (build approve- and deny- lists) so that the process gets faster as time goes by.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-25.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_10Ob1Y",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Contributing open source\nReleasing\nUsing open source\nOutside of work\nPatching\nAt work</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-26.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_dK7Otx",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Turn your policy into an app! •\nAutomatically approve requests that meet pre-established requirements (e.g. patch an MIT-licensed open source project on GitHub).\n•\nAutomatically reject requests that don’t meet your criteria (but allow motivated appeals).\n•\nManually handle other requests and cache the decision so more gets automated over time.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-27.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_FdqCmM",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Turn your policy into an app! Using such a system, Adobe was able to shorten it’s review time from 4.6 days to 4.6 hours. But there’s more. The data collected can help:\n• • • •\nunderstand your open source activity, promote it, connect engineers unknowingly contributing to the same projects, etc.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-28.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_rxZ0el",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Thank you!\nTobie Langel (@tobie) Principal, UnlockOpen tobie@unlockopen.com</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9767/large-29.png",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "https://on.notist.cloud/pdf/deck-f59f641ff575fa55.pdf"
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_J3Vjky",
+                        "attributes": {
+                            "title": "OSPOCon",
+                            "slug": "ospocon",
+                            "starts_on": "2021-09-27 08:00:00",
+                            "ends_on": "2021-09-29 18:00:00",
+                            "timezone": "America/Los_Angeles",
+                            "address": "Seattle, WA, USA",
+                            "latitude": "47.606210",
+                            "longitude": "-122.332071",
+                            "country_code": "US",
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/J3Vjky/ospocon",
+                            "related": "https://noti.st/events/J3Vjky.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/SIgzTa/open-source-contribution-policies-that-dont-suck"
+            }
+        }
+    ]
+}

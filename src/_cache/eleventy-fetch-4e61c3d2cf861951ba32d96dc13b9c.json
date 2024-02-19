@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_C2WBlF",
+            "attributes": {
+                "title": "Open Source Foundations, Dark Knights or Super Heroes?",
+                "slug": "open-source-foundations-dark-knights-or-super-heroes",
+                "blurb": {
+                    "html": "<p>In a world where innovation thrives on breaking free from constraints, are open source foundations standing out as the outdated shackles stifling progress? We dare to ask the provocative question: Are these foundations the heroes the Open Source deserves or the villains it can’t escape?</p>\n<p>Our panel of seasoned provocateurs will serve up spicy discourse on the relevance, or lack thereof, of open source foundations. We’ll dissect governance, scrutinise funding models and debate whether these foundations are the saviours of liberty or if they’ve donned the mask of the nefarious Harvey Two-Face. Prepare for a tongue-in-cheek showdown that will have you questioning everything you thought you knew about the free and open source landscape.</p>\n<h2>Panelists</h2>\n<ul>\n<li>Anne-Marie Scott - Open Source Initiative - Apereo Foundation</li>\n<li>Tobie Langel - Open ecosystem strategy consultant - UnlockOpen</li>\n<li>Gaël Blondelle - Vice President, Ecosystem Development Eclipse Foundation Europe</li>\n<li>JB Onofré - Apache Foundation</li>\n<li>Frederic Aatz</li>\n</ul>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_12240",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_DHZjaE",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck12240/large-418322-bac07f2f696ad884.jpg",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "/placeholder-12cb2c69acc9b4c2.jpg"
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_j5CIFh",
+                        "attributes": {
+                            "title": "Open Source Experience",
+                            "slug": "open-source-experience",
+                            "starts_on": "2023-12-06 08:00:00",
+                            "ends_on": "2023-12-07 18:00:00",
+                            "timezone": "Europe/Paris",
+                            "address": "Paris, France",
+                            "latitude": "48.856614",
+                            "longitude": "2.352222",
+                            "country_code": "FR",
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/j5CIFh/open-source-experience",
+                            "related": "https://noti.st/events/j5CIFh.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/C2WBlF/open-source-foundations-dark-knights-or-super-heroes"
+            }
+        }
+    ]
+}

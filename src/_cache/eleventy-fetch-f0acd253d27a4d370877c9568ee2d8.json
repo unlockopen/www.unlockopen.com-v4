@@ -1,0 +1,414 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_pOKhFb",
+            "attributes": {
+                "title": "Build and leverage your open source culture to recruit, retain, and foster top talent",
+                "slug": "build-and-leverage-your-open-source-culture-to-recruit-retain-and-foster-top-talent",
+                "blurb": {
+                    "html": "<p>In a recent Twitter poll which received over 2,000 responses, 65% of respondents claimed that being able to release and contribute to open source software as part of their full time job was somewhat or extremely important. Only 18% thought it was not important at all.</p>\n<p>Facebook ran a survey with its new engineering recruits in 2015—when it was still one of the most desirable Silicon Valley companies to work for—75% mentioned Facebook’s open source program as a key reason they had joined the company.</p>\n<p>In a market where there’s much more demand for software engineers than there is supply, building a strong open source culture is critical to recruit and retain top talent. And promoting it is just as important.</p>\n<p>In this talk, you’ll learn why software engineers care about open source so much, what you can do to foster a strong open source culture, and how you can make sure to effectively promote it to attract—and retain—top talent.</p>\n<p>We’ll then put some of you in the hot seat. We’ll have a look at your online presence from the perspective of a job seeking software engineer and compare it with what the best brands are doing.</p>\n<p>You’ll leave with actionable and personalized takeaways which will help you build a better engineering culture and become more attractive to the kind of candidates you really want to hire.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_4617",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_tPczcS",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-0.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_VjLnUr",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-1.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_834bNG",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-2.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_kMnPFf",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-3.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_MgWD84",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-4.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_z0F10T",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-5.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_bJxoss",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-6.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_DdgclH",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-7.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_pxPQdg",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-8.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_SH8EW5",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-9.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_4ar2OU",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-10.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_guZqGt",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-11.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_JEIe9I",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-12.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_vY1S1h",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-13.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_XrkFu6",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-14.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ABT3mV",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-15.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_mVBreu",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-16.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_OoufXJ",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-17.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_18dTPi",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-18.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_dSMHI7",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-19.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Fm55AW",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-20.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_s5nt2v",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-21.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_UPWgvK",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-22.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_6jFUnj",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-23.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_j2yIg8",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-24.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_LMh6YX",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-25.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_xgPuQw",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-26.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_a08iJL",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-27.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_CJrWBk",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-28.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_odaK49",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-29.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_QxJ7wY",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-30.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_3H1vox",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-31.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_fakjhM",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-32.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_HuTXZl",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-33.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_uECLSA",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4617/large-34.jpg",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "https://on.notist.cloud/pdf/deck-cb16cb6e7605d884.pdf",
+                "resources": {
+                    "data": [
+                        {
+                            "title": "Event page",
+                            "url": "https://www.finos.org/hosted-events/2020-01-15-open-source-readiness-guest-speaker-tobie-langel",
+                            "desc": {
+                                "html": ""
+                            }
+                        }
+                    ]
+                }
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_zvqnVu",
+                        "attributes": {
+                            "title": "FINOS Open Source Readiness",
+                            "slug": "finos-open-source-readiness",
+                            "starts_on": "2020-01-01 08:00:00",
+                            "ends_on": "2020-01-01 08:00:00",
+                            "timezone": "GMT",
+                            "address": "Virtual",
+                            "latitude": null,
+                            "longitude": null,
+                            "country_code": null,
+                            "url": "https://www.finos.org/hosted-events"
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/zvqnVu/finos-open-source-readiness",
+                            "related": "https://noti.st/events/zvqnVu.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/pOKhFb/build-and-leverage-your-open-source-culture-to-recruit-retain-and-foster-top-talent"
+            }
+        }
+    ]
+}

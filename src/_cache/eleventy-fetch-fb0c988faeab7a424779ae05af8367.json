@@ -1,0 +1,403 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_rEUIsu",
+            "attributes": {
+                "title": "Recruit, retain, foster",
+                "slug": "recruit-retain-foster",
+                "blurb": {
+                    "html": "<p>In a recent Twitter poll which received over 2,000 responses, 65% of respondents claimed that being able to release and contribute to open source software as part of their full time job was somewhat or extremely important. Only 18% thought it was not important at all.</p>\n<p>Facebook ran a survey with its new engineering recruits in 2015—when it was still one of the most desirable Silicon Valley companies to work for—75% mentioned Facebook’s open source program as a key reason they had joined the company.</p>\n<p>In a market where there’s much more demand for software engineers than there is supply, building a strong open source culture is critical to recruit and retain top talent. And promoting it is just as important.</p>\n<p>In this talk, you’ll learn why software engineers care about open source so much, what you can do to foster a strong open source culture, and how you can make sure to effectively promote it to attract—and retain—top talent.</p>\n<p>We’ll then put some of you in the hot seat. We’ll have a look at your online presence from the perspective of a job seeking software engineer and compare it with what the best brands are doing.</p>\n<p>You’ll leave with actionable and personalized takeaways which will help you build a better engineering culture and become more attractive to the kind of candidates you really want to hire.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_5988",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_3t7an9",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Recruit. Retain. Foster. Building a strong open source culture is your key to top software engineering talent.\nTobie Langel (@tobie) Principal, UnlockOpen tobie@unlockopen.com unlockopen.com</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-0.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_gCqOfY",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>First, a little bit of context.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-1.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_IWZCXx",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Consume\n96% Source: 2019 OSSRA Report</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-2.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_uqI0QM",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Contribute\n29% often: 10% — sometimes: 19% Industry: financial services\nSource: “Open Source Programs in the Enterprise - 2019” Survey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-3.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_XA0oIl",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Contribute\n56% often: 28% — sometimes: 28% Industry: tech\nSource: “Open Source Programs in the Enterprise - 2019” Survey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-4.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_9TjcBA",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Building a strong open source culture…</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-5.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_lnSQ3Z",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>…and leveraging it to recruit, retain, and foster top talent.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-6.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_O7BDvy",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Agenda 1. 2. 3. 4. 5.\nWhy care about building a strong open source culture? Why do developers care? How can you improve your open source culture? How can you make it more visible? How can you leverage that visbility?</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-7.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_0Qu1oN",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Agenda 1. 2. 3. 4. 5.\nWhy care about building a strong open source culture? Why do developers care? How can you improve your open source culture? How can you make it more visible? How can you leverage it?\nBonus: hot seat</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-8.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ckcpgm",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol>\n<li>Why care about building a strong open source culture?</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-9.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_F4LdZB",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-10.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_rO4RRa",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-11.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ThnFJz",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-12.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_61W3CO",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"2\">\n<li>Why do developers care? ● ● ● ● ●\nYour GitHub profile is your resume. Window into a company’s internal culture. Provides intrinsic motivation in jobs where it would otherwise be lacking. Bring your whole self to work. BYOT (Bring Your Own Tools).</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-13.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_iLEr4n",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"3\">\n<li>How can you improve your open source culture? ● ● ● ● ● ●\nPeople over communities over projects over company. Make your policies less of a hurdle. Make open source part of your whole eng culture. Align it with business goals. Measure it. Reward it.</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-14.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_KexexC",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"3\">\n<li>How can you improve your open source culture? ● ● ● ● ● ●\nPeople over communities over projects over company. Make your policies less of a hurdle. Make open source part of your whole eng culture. Align it with business goals. Measure it. Reward it.</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-15.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_wygSpb",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>“Let’s face it, great developers can take their pick of jobs right now. These same developers know the value of coding in the open and will want to build up a portfolio of projects they can show off to their friends and potential future employers. That’s right, a paradox! In order to keep a killer developer happy, you have to help them become more attractive to other employers. But that’s ok, because that’s exactly the kind of developer you want to have working for you. So relax and let them work on open source or they’ll go somewhere else where they can.” —Tom Preston-Werner, Co-founder, GitHub</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-16.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ZIPGi0",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Also attention to details…</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-17.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Bc84aP",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>…avoid things like these: ● ● ● ●\ntoblan20@company.com, @tobie-company GitHub handles, Huge legal disclaimers at the bottom of emails, etc.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-18.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_nvqsSo",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"3\">\n<li>How can you improve your open source culture? ● ● ● ● ● ●\nPeople over communities over projects over company. Make your policies less of a hurdle. Make open source part of your whole eng culture. Align it with business goals. Measure it. Reward it.</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-19.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_QFZgLD",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-20.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_2ZIUDc",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"3\">\n<li>How can you improve your open source culture? ● ● ● ● ● ●\nPeople over communities over projects over company. Make your policies less of a hurdle. Make open source part of your whole eng culture. Align it with business goals. Measure it. Reward it.</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-21.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_et1I61",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"3\">\n<li>How can you improve your open source culture? ● ● ● ● ● ●\nPeople over communities over projects over company. Make your policies less of a hurdle. Make open source part of your whole eng culture. Align it with business goals. Measure it. Reward it.</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-22.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_HCk5yQ",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"3\">\n<li>How can you improve your open source culture? ● ● ● ● ● ●\nPeople over communities over projects over company. Make your policies less of a hurdle. Make open source part of your whole eng culture. Align it with business goals. Measure it. Reward it.</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-23.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_tWStqp",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"3\">\n<li>How can you improve your open source culture? ● ● ● ● ● ●\nPeople over communities over projects over company. Make your policies less of a hurdle. Make open source part of your whole eng culture. Align it with business goals. Measure it. Reward it.</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-24.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_VqBhjE",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"4\">\n<li>How can you make it more visible?</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-25.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_89uVbd",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Open source culture</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-26.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_kTdJU2",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Open source culture</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-27.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_MnM7MR",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Open source culture</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-28.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_z74vEq",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Open source culture</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-29.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_bQnj7F",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Open source culture</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-30.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_DkWWze",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"4\">\n<li>How can you make it more visible? ● ● ● ● ● ● ●\nGitHub org (github.com/company) Dedicated website (opensource.company.com) company.github.io Engineering blog Fund dependencies (opencollective.org/company) Speak at conferences Sponsor conferences</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-31.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_q4FKs3",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<ol start=\"5\">\n<li>How can you leverage it? ● ● ●\nBrand vs. response marketing Organically (e.g. GitHub can just rely on its brand) Structured: ○ ○\nFunnel visitors to open positions Promotion during recruiting</li>\n</ol>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-32.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_SNy8kS",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Bonus: hot seat</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-33.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_4hgwcr",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Thank you.\nTobie Langel (@tobie) Principal, UnlockOpen tobie@unlockopen.com unlockopen.com</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5988/large-34.jpg",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "https://on.notist.cloud/pdf/deck-29477176d3fafd96.pdf"
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_ELcGgl",
+                        "attributes": {
+                            "title": "Online CTO Summit: Onboarding and retention",
+                            "slug": "online-cto-summit-onboarding-and-retention",
+                            "starts_on": "2020-10-28 08:00:00",
+                            "ends_on": "2020-10-28 18:00:00",
+                            "timezone": "GMT",
+                            "address": "Virtual",
+                            "latitude": null,
+                            "longitude": null,
+                            "country_code": null,
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/ELcGgl/online-cto-summit-onboarding-and-retention",
+                            "related": "https://noti.st/events/ELcGgl.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/rEUIsu/recruit-retain-foster"
+            }
+        }
+    ]
+}

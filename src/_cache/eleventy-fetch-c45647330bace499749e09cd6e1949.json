@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_bLWZqN",
+            "attributes": {
+                "title": "Round Table: Financing Critical Open Source Software",
+                "slug": "round-table-financing-critical-open-source-software",
+                "blurb": {
+                    "html": "<p>Recent events in the FLOSS economy have stresses the difficulties of some producers of key elements to be remunerated for their work and also the fragility of relaying on such types of projects to build complex offers.</p>\n<p>This round table, will bring together both specialist of Open Source Software Financing as well as Open Source developers having faced the need to finance their software, discussing about existing and potential solutions to bring sustainability to FLOSS critical software.</p>\n<ul>\n<li>\n<strong>Benjamin Piouffle</strong> - Software Engineer - Open Collective</li>\n<li>\n<strong>Tobie Langel</strong> - Principal - UnlockOpen</li>\n<li>\n<strong>Michiel Leenaars</strong> - Director of Strategy - NLnet Foundation</li>\n<li>\n<strong>Julien Dubois</strong> - JHipster creator and developper</li>\n<li>\n<strong>Miguel Diez Blanco</strong> - Project Lead Open Source Programme Office - Euroepan Commission - DIGIT</li>\n<li>\n<strong>Anca Luca</strong> - President Open Food Facts, Client CTO XWiki SAS - Open Food Facts &amp; XWiki SAS</li>\n<li>\n<strong>Elisa Nectoux</strong> - Sales and Marketing Manager - Belledonne Communication</li>\n</ul>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_9764",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_i6A4SG",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": null
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9764/large-f2e041e161e7898c.png",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "/placeholder-f2e041e161e7898c.png"
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_4Q480A",
+                        "attributes": {
+                            "title": "Open Source Experience",
+                            "slug": "open-source-experience",
+                            "starts_on": "2022-11-08 08:00:00",
+                            "ends_on": "2022-11-09 18:00:00",
+                            "timezone": "Europe/Paris",
+                            "address": "Paris, France",
+                            "latitude": "48.856614",
+                            "longitude": "2.352222",
+                            "country_code": "FR",
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/4Q480A/open-source-experience",
+                            "related": "https://noti.st/events/4Q480A.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/bLWZqN/round-table-financing-critical-open-source-software"
+            }
+        }
+    ]
+}

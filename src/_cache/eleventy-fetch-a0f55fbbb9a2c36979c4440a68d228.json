@@ -1,0 +1,565 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_0fCCXZ",
+            "attributes": {
+                "title": "Does open source need its own Priority of Constituencies?",
+                "slug": "does-open-source-need-its-own-priority-of-constituencies",
+                "blurb": {
+                    "html": "<p>From its inception, open source—and free software before it—was built around ethical notions: give people agency and power over their software so they could use, modify, and share it as they pleased to accomplish whatever it is that they wanted to do with it.</p>\n<p>In a world where running software required programming skills, there was a lot of overlap between users and developers of open source, and so this rather simple framework was sufficient to deal with open source’s different constituencies.</p>\n<p>Since then, open source has become ubiquitous. As a result, the number of constituencies has ballooned: there are indie and corporate contributors and maintainers, open source software vendors, developers building proprietary code on top of open source, end-users who don’t know anything about software, people impacted by open source software who are not even using it, cloud providers, etc., etc.</p>\n<p>When the interests of these different actors are in conflict, which one of them do we favor and why? Neither the Four Freedoms nor the Open Source Definition (OSD) really helps us answer that question.</p>\n<p>Faced with similar issues, other communities have designed really effective frameworks to guide their decision making processes. W3C’s “priority of constituencies” is such a framework.</p>\n<p>In this talk we’ll dig into what W3C’s priority of constituencies is, outline its benefits, but also its limits.</p>\n<p>We’ll then see how we could apply the priority of constituencies to open source, what that reveals about the complexity of the open source ecosystem, and in particular how the parts that are difficult to fit in such a framework are precisely those that have made the news in the past few years.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_5661",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_eZnd6b",
+                                    "type": "image",
+                                    "title": "Does open source need its own Priority of Constituencies?",
+                                    "desc": {
+                                        "html": "<p>Tobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-0.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_GtWQz0",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-1.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_tDFErP",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-2.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_VWy2jo",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-3.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_7qgqcD",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-4.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_kAPeUc",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-5.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_MU8SN1",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-6.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ynrGFQ",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-7.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_b7a47p",
+                                    "type": "image",
+                                    "title": "Open source crisis",
+                                    "desc": {
+                                        "html": "<ul>\n<li>Maintainer burnt out.</li>\n<li>Cloud capturing too much value.</li>\n<li>Ethical concerns over impact on end-users.</li>\n</ul>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-8.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_DRIs0E",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>What’s going on? We’re witnessing the emergence of new constituencies.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-9.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_pl1fsd",
+                                    "type": "image",
+                                    "title": "The 4 freedoms & the OSD",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-10.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_S4kTl2",
+                                    "type": "image",
+                                    "title": "The 4 freedoms & the OSD",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-11.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_4OTHdR",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>How do we handle this increased diversity of constituencies?</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-12.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_giC5Vq",
+                                    "type": "image",
+                                    "title": "W3C’s Priority of Constituencies",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-13.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_J1utOF",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-14.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_vLdhGe",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-15.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_XfMV93",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-16.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_9z5J1S",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-17.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_mIo6tr",
+                                    "type": "image",
+                                    "title": "W3C priority of constituencies",
+                                    "desc": {
+                                        "html": "<p>End users &gt; Authors &gt; Implementors &gt; Spec editors &gt; Theoretical purity</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-18.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_OcWumG",
+                                    "type": "image",
+                                    "title": "Size of each constituency",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-19.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_0wFief",
+                                    "type": "image",
+                                    "title": "Cost of 1 hour of spec work",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-20.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_dFyWX4",
+                                    "type": "image",
+                                    "title": "Apache Software Foundation mantra",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-21.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_FZhKPT",
+                                    "type": "image",
+                                    "title": "Apache Software Foundation mantra",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-22.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_rtQ8Hs",
+                                    "type": "image",
+                                    "title": "Apache Software Foundation mantra",
+                                    "desc": {
+                                        "html": "<p>End users &gt; Theoretical purity</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-23.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_UD8wAH",
+                                    "type": "image",
+                                    "title": "Apache Software Foundation mantra",
+                                    "desc": {
+                                        "html": "<p>People &gt; Code</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-24.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_6Wrk2g",
+                                    "type": "image",
+                                    "title": "What would an open source priority of constituencies look like?",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-25.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_iqaXv5",
+                                    "type": "image",
+                                    "title": "Open source priority of constituencies",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-26.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_LAJLnU",
+                                    "type": "image",
+                                    "title": "Open source priority of constituencies",
+                                    "desc": {
+                                        "html": "<p>People &gt; End users &gt; App devs &gt; Cloud infra &gt; Contributors &gt; Maintainers &gt; Theor. pur.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-27.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_xU29ft",
+                                    "type": "image",
+                                    "title": "But is W3C’s priority of constituencies a silver bullet?",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-28.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ZnkxYI",
+                                    "type": "image",
+                                    "title": "Economic situation",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-29.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_C7TlQh",
+                                    "type": "image",
+                                    "title": "Economic situation",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-30.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_oRCZJ6",
+                                    "type": "image",
+                                    "title": "Economic situation",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-31.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_QkvNBV",
+                                    "type": "image",
+                                    "title": "Economic situation",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-32.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_34eB3u",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-33.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_fOMywJ",
+                                    "type": "image",
+                                    "title": "",
+                                    "desc": {
+                                        "html": "<p>Let’s apply this to open source.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-34.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Hi5moi",
+                                    "type": "image",
+                                    "title": "The canary in the coal mine",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-35.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_u1oah7",
+                                    "type": "image",
+                                    "title": "Open source priority of constituencies",
+                                    "desc": {
+                                        "html": "<p>People &gt; End users &gt; App devs &gt; Cloud infra &gt; Contributors &gt; Maintainers &gt; Theor. pur.\n`</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-36.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_WLXOZW",
+                                    "type": "image",
+                                    "title": "Open source priority of constituencies",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-37.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_8fGCRv",
+                                    "type": "image",
+                                    "title": "Open source priority of constituencies",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-38.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_kyz0KK",
+                                    "type": "image",
+                                    "title": "Open source priority of constituencies",
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-39.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_NIhoCj",
+                                    "type": "image",
+                                    "title": "Benefits of a priority of constituencies",
+                                    "desc": {
+                                        "html": "<ul>\n<li>Keeps focus on people &amp; downstream impact.</li>\n<li>Maximizes benefits to the commons by upstreaming work.</li>\n<li>Surfaces discrepancies between economic situation and work expectations.</li>\n</ul>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5661/large-40.png",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "https://on.notist.cloud/pdf/deck-36b2d403184eeaf9.pdf",
+                "resources": {
+                    "data": [
+                        {
+                            "title": "Roads and Bridges (PDF)",
+                            "url": "https://www.fordfoundation.org/media/2976/roads-and-bridges-the-unseen-labor-behind-our-digital-infrastructure.pdf",
+                            "desc": {
+                                "html": "<p>Nadia Eghbal’s classic report for the Ford Foundation.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Why Open Source Failed",
+                            "url": "https://medium.com/@johnmark/why-open-source-failed-6cae5d6a9f6",
+                            "desc": {
+                                "html": "<p>John Mark’s “Why Open Source Failed” is one of the most thought-provoking pieces ever written in our industry. You can’t read it and come out unchanged. Here’s a sample:</p>\n<p><em>“It’s time to understand something about open source software development: it is not going to save us. Using or developing more open source software is not going to improve anyone’s lives. Developing open source software is not a public good. It’s not going to result in a fairer or more equitable society. In fact, as currently structured, open source development is part of the problem. If you work for one of the companies that stands in the way of intellectual property reform, and you say nothing in protest, then you are part of the problem. So many open source developers and advocates are gainfully employed and at very little risk of losing future work prospects, and yet I see so few speak out about their employers’ role in wealth inequality.”</em>\n—John Mark, Why Open Source Failed, July 30, 2018.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Save Open Source, Save the World",
+                            "url": "https://medium.com/@johnmark/save-open-source-save-the-world-f2b0bf6ec630",
+                            "desc": {
+                                "html": "<p>John Mark’s less sinister follow-up to his “Why Open Source Failed” piece.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Open Source Has Not Failed. Don’t Cover Up Corporate Abuse of Open Source",
+                            "url": "https://dev.to/lethargilistic/open-source-has-not-failed-dont-cover-up-corporate-abuse-of-open-source-3ffe",
+                            "desc": {
+                                "html": "<p>Mike Overby’s follow-up to John Mark’s article.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "The crusade against open-source abuse",
+                            "url": "https://techcrunch.com/2018/11/29/the-crusade-against-open-source-abuse/",
+                            "desc": {
+                                "html": "<p>Salil Deshpande’s 2018 piece against Cloud providers.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Keeping Open Source Open – Open Distro for Elasticsearch",
+                            "url": "https://aws.amazon.com/blogs/opensource/keeping-open-source-open-open-distro-for-elasticsearch/",
+                            "desc": {
+                                "html": "<p>Adrian Cockcroft’s post announcing the release of a separate distribution of Elasticsearch in response to the license changes decided by Elastic.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "A Six-Month Retrospective on Ethical Open Source",
+                            "url": "https://modelviewculture.com/pieces/a-six-month-retrospective-on-ethical-open-source",
+                            "desc": {
+                                "html": "<p>Coraline Ada Ehmke’s retrospective of the founding and first few months of the ethical open source movement.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "What comes after open source",
+                            "url": "https://www.youtube.com/watch?v=vTsc1m78BUk",
+                            "desc": {
+                                "html": "<p>Bruce Perens’ latest video in which he explores open source’s failings and suggests a number of solutions moving forward. This is also the video in which he admits being the creator of the Vaccine License, which he submitted to the OSI in order to make a point.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "HTML Working Group IRC Archives 2007-03-27",
+                            "url": "https://krijnhoetmer.nl/irc-logs/html-wg/20070327",
+                            "desc": {
+                                "html": "<p>First documented conversation about the Priority of Constituencies.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "W3C HTML Design Principles",
+                            "url": "https://www.w3.org/TR/html-design-principles/#priority-of-constituencies",
+                            "desc": {
+                                "html": "<p>This is the first official document published by W3C in which the Priority of Constituencies is defined.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "Web Platform Design Principles",
+                            "url": "https://w3ctag.github.io/design-principles/#priority-of-constituencies",
+                            "desc": {
+                                "html": "<p>The new, updated version of the HTML Design Principles that includes are re-worded version of the Priority of Constituencies (now called “Put user needs first”), and a reference to the IETF IAB draft that has now become RFC 8890.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "IETF RFC 8890",
+                            "url": "https://tools.ietf.org/rfc/rfc8890.txt",
+                            "desc": {
+                                "html": "<p>A “Request for Comment” issued by the IETF Internet Architecture Board. This is the old-school, text only version. There’s a <a href=\"https://tools.ietf.org/html/rfc8890\" target=\"_blank\" rel=\"noopener\">slightly more modern version of RFC 8890</a> (with links!), for those who aren’t there just for the nostalgia.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "RFC8890: The Internet is for End Users",
+                            "url": "https://www.mnot.net/blog/2020/08/28/for_the_users",
+                            "desc": {
+                                "html": "<p>A great blog post by Mark Nottingham where he explains the thought process that went into writing RFC 8890. Highly recommended.</p>\n"
+                            }
+                        },
+                        {
+                            "title": "W3C doesn’t help its invited experts. It should.",
+                            "url": "https://medium.com/@tobie/w3c-doesnt-help-its-invited-experts-it-should-2fb36ae9f720",
+                            "desc": {
+                                "html": "<p>An article I wrote in 2019 following a Twitter thread the year before raising the alarm on the very dire situation some W3C Invited Experts were experiencing.</p>\n"
+                            }
+                        }
+                    ]
+                }
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_hV82kQ",
+                        "attributes": {
+                            "title": "State of the Source Summit",
+                            "slug": "state-of-the-source-summit",
+                            "starts_on": "2020-09-09 08:00:00",
+                            "ends_on": "2020-09-11 18:00:00",
+                            "timezone": "GMT",
+                            "address": "Virtual",
+                            "latitude": null,
+                            "longitude": null,
+                            "country_code": null,
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/hV82kQ/state-of-the-source-summit",
+                            "related": "https://noti.st/events/hV82kQ.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/0fCCXZ/does-open-source-need-its-own-priority-of-constituencies"
+            }
+        }
+    ]
+}

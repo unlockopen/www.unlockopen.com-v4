@@ -1,0 +1,63 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_DfFNim",
+            "attributes": {
+                "title": "Does open source need its own Priority of Constituencies?",
+                "slug": "does-open-source-need-its-own-priority-of-constituencies",
+                "blurb": {
+                    "html": "<p>From its inception, open source—and free software before it—was built around ethical notions: give people agency and power over their software so they could use, modify, and share it as they pleased to accomplish whatever it is that they wanted to do with it.</p>\n<p>In a world where running software required programming skills, there was a lot of overlap between users and developers of open source, and so this rather simple framework was sufficient to deal with open source’s different constituencies.</p>\n<p>Since then, open source has become ubiquitous. As a result, the number of constituencies has ballooned: there are indie and corporate contributors and maintainers, open source software vendors, developers building proprietary code on top of open source, end-users who don’t know anything about software, people impacted by open source software who are not even using it, cloud providers, etc., etc.</p>\n<p>When the interests of these different actors are in conflict, which one of them do we favor and why? Neither the Four Freedoms nor the Open Source Definition (OSD) really helps us answer that question.</p>\n<p>Faced with similar issues, other communities have designed really effective frameworks to guide their decision-making processes. W3C’s “priority of constituencies” is such a framework.</p>\n<p>In this talk we’ll dig into what W3C’s priority of constituencies is, outline its benefits, but also its limits.</p>\n<p>We’ll then see how we could apply the priority of constituencies to open source, what that reveals about the complexity of the open source ecosystem, and in particular how the parts that are difficult to fit in such a framework are precisely those that have made the news in the past few years.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_9765",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_KPssKf",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": null
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck9765/large-1aa193d0006ae29f.png",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "/placeholder-1aa193d0006ae29f.png"
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_gjmvsZ",
+                        "attributes": {
+                            "title": "FOSS Backstage",
+                            "slug": "foss-backstage",
+                            "starts_on": "2022-03-17 08:00:00",
+                            "ends_on": "2022-03-18 18:00:00",
+                            "timezone": "GMT",
+                            "address": "Virtual",
+                            "latitude": null,
+                            "longitude": null,
+                            "country_code": null,
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/gjmvsZ/foss-backstage",
+                            "related": "https://noti.st/events/gjmvsZ.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/DfFNim/does-open-source-need-its-own-priority-of-constituencies"
+            }
+        }
+    ]
+}

@@ -1,0 +1,551 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_zpY6Nu",
+            "attributes": {
+                "title": "From laggard to open source power house—a transformative journey to successfully build a strong open source culture",
+                "slug": "from-laggard-to-open-source-power-house-a-transformative-journey-to-successfully-build-a-strong-open-source-culture",
+                "blurb": {
+                    "html": "<p>Contributing to open source is finally catching on. It’s climbing the Hype Curve, and everyone wants in. Predictably, Open Source Programs Office are springing up like mushrooms after the rain, and so are job offers for people to run them.</p>\n<p>And yet, tentatives to join the movement are fraught with desillusion. After an initial honeymoon, the desired outcomes too often fail to materialize. Few employees end up contributing. Communities don’t magically coalesce around hastily open sourced internal projects. Hiring pipelines don’t overflow with topnotch candidates. And despite what feels like a substantial investment, little value—if any—is captured.</p>\n<p>There’s a reason for that.</p>\n<p>Building a strong open source culture is transformative. And while grassroot support is key, you don’t obtain that kind of outcome without a top-down mandate hinged on a solid business strategy. But because we don’t get to see the upstream work involved, we often incorrectly assume there isn’t any. As a result we confuse visible tactics with the underpinning strategy and end-up launching open source programs offices out of fear of missing out.</p>\n<p>In this talk, we’ll look at what happened behind the scenes of companies which successfully transformed their culture to morph into open source power houses, and we’ll find out how you can do so too.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_4284",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_Seql0F",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>From laggard to open source powerhouse A transformative journey to successfully build a strong open source culture\nTobie Langel (@tobie) Principal, UnlockOpen</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-0.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_4yZYse",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The open source journey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-1.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_hIIMl3",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The open source journey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-2.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Jc1AdS",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The open source journey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-3.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_vvjyVr",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Technology adoption lifecycle</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-4.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_YFSmOG",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Innovators\n2.5%</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-5.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_AZBaGf",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Early adopters\n13.5%</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-6.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_msuO94",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Early majority\n34%</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-7.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_PCdC1T",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Late majority\n34%</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-8.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_1WLzts",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Laggards\n16%</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-9.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_dq4nmH",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Consume\n100% Industry: financial services\nSource: 2019 OSRAA Report</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-10.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_G9nbeg",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The open source journey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-11.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_sTWPX5",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The open source journey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-12.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_UnFDPU",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Comply (use in products)\n73% often: 58% — sometimes: 15% Industry: financial services\nSource: “Open Source Programs in the Enterprise - 2019” Survey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-13.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_76y1Ht",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Contribute\n29% often: 10% — sometimes: 19% Industry: financial services\nSource: “Open Source Programs in the Enterprise - 2019” Survey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-14.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_jQgpAI",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Contribute\n56% often: 28% — sometimes: 28% Industry: tech\nSource: “Open Source Programs in the Enterprise - 2019” Survey</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-15.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_LkPd2h",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Culture\nNo data</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-16.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_y48Qv6",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Why build a strong open source culture?</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-17.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_aNrEnV",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Why build a strong open source culture?</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-18.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Cha2fu",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>How do you build a strong open source culture?</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-19.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_p1IqYJ",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-20.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_RL1eQi",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-21.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_3ekSJ7",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-22.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_fyTGBW",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-23.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_IIC43v",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-24.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_uburwK",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-25.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Wvdfoj",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-26.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_9FMTh8",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-27.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_lZ5HZX",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-28.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Nso5Rw",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>“React was having this outsized impact on Facebook’s ability to attract and retain great talent and to establish itself as a well-known brand [in software engineering].”\n—Lee Byron, Software Engineer, Ex-Facebook</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-29.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_0CWtKL",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>“We started looking for other projects. The team had to be excited about open sourcing it, it had a good fit with the community, there was clear overlap between internal and community priorities.” —Lee Byron, Software Engineer, Ex-Facebook</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-30.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_cWFhCk",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-31.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_EpyV59",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Microsoft</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-32.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_r9hIxY",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-33.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_TTQ6px",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-34.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_5n8uiM",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-35.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_i6rial",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>“I tell my colleagues they get to own a customer scenario, not the code.” —Satya Nadella, CEO, Microsoft</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-36.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_KQaWTA",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-37.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_wkJKLZ",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-38.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Z428Dy",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-39.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_BNkw6N",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-40.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_nhTjym",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-41.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_Q1CXrB",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Recap</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-42.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_2KvLja",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Recap To build an open source culture you need: ● Grass root support ● One (or multiple) change agents (to light the fire and kindle it) ● Management support / Executive buy-in ● Lots of time OSPO can be there in support (Facebook) or be the change agent (Microsoft) Change can be top-down (Microsoft) or bottom-up (Facebook)</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-43.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_eee9bz",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Recap What makes it sustainable? Alignment with company goals (i.e. a strategy): ● Break silos @ Microsoft ● Improve the company’s image and drive recruiting @ Facebook</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-44.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_GyMxUO",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Open source isn’t a journey. It’s a practice.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-45.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_tI5lMn",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>“Because I’ve made culture change at Microsoft such a high priority, people often ask how it’s going. Well, I suppose my response is very Eastern: We’re making great progress, but we should never be done. It’s not a program with a start and an end. It’s a way of being.” —Satya Nadella, CEO, Microsoft</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-46.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_VboZFC",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Thank you.\nTobie Langel (@tobie) Principal, UnlockOpen tobie@unlockopen.com unlockopen.com</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck4284/large-47.jpg",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "https://on.notist.cloud/pdf/deck-8adfb8a71b6a2c76.pdf",
+                "resources": {
+                    "data": [
+                        {
+                            "title": "Event page",
+                            "url": "https://opensourcestrategyforum2019.sched.com/event/XLAP",
+                            "desc": {
+                                "html": ""
+                            }
+                        },
+                        {
+                            "title": "Why invest in open source?",
+                            "url": "https://medium.com/@tobie/why-invest-in-open-source-3b4ec8c0ab74",
+                            "desc": {
+                                "html": "<p>Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business.</p>\n"
+                            }
+                        }
+                    ]
+                }
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_guEpUf",
+                        "attributes": {
+                            "title": "Open Source Strategy Forum",
+                            "slug": "open-source-strategy-forum",
+                            "starts_on": "2019-11-20 08:00:00",
+                            "ends_on": "2019-11-20 18:00:00",
+                            "timezone": "America/New_York",
+                            "address": "New York, NY, USA",
+                            "latitude": "40.712775",
+                            "longitude": "-74.005973",
+                            "country_code": "US",
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/guEpUf/open-source-strategy-forum",
+                            "related": "https://noti.st/events/guEpUf.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/zpY6Nu/from-laggard-to-open-source-power-house-a-transformative-journey-to-successfully-build-a-strong-open-source-culture"
+            }
+        }
+    ]
+}

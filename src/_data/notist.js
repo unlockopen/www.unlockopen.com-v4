@@ -101,7 +101,6 @@ function toMarkdown(html) {
 }
 
 function clone(obj) {
-    console.log(obj)
     return JSON.parse(JSON.stringify(obj));
 }
 
@@ -143,7 +142,6 @@ module.exports = async function() {
     const presentations = [];
     for (const indexD of indexData) {
         let pres = await cachedFetch(indexD.links.related, "json");
-        console.log(pres)
         pres = pres.data[0];
         let event = pres.relationships.data[0].attributes;
         const notistID = pres.id.replace("pr_", "");

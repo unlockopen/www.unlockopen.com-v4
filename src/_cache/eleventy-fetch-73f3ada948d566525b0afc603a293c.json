@@ -1,0 +1,403 @@
+{
+    "data": [
+        {
+            "type": "presentations",
+            "id": "pr_w0WyRD",
+            "attributes": {
+                "title": "Making the business case for contributing to open source",
+                "slug": "making-the-business-case-for-contributing-to-open-source",
+                "blurb": {
+                    "html": "<p>Today, pretty much all companies have embraced open source. But while they’re all keen to use open source, at lot fewer actually contribute to it.</p>\n<p>And yet, there’s real value in doing so. Companies use their contribution to open source to boost recruiting (Facebook claims 75% of their new engineering recruit mention Facebook’s open source program as a key reason they accepted their offer), increase their market, build a moat around their business, or position themselves as leaders in their field.</p>\n<p>In this talk, we’ll look at the different ways contributing to open source can benefit a business and become a competitive advantage. We’ll look at the open source strategies of different companies, big and small, and provide you with the knowledge to start building a business case for open source in your own company.</p>\n"
+                },
+                "slidedeck": {
+                    "data": [
+                        {
+                            "id": "sd_5953",
+                            "type": "images",
+                            "slides": [
+                                {
+                                    "id": "sl_MmHN2U",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Making the business case for contributing to open source\nTobie Langel (@tobie) Principal, UnlockOpen tobie@unlockopen.com unlockopen.com</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-0.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_z60Aut",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>“In short, software is eating the world.”\nopen source\n—Marc Andreessen, WSJ, August 20, 2011.\n96% 57% OF APPS CONTAIN OPEN SOURCE COMPONENTS\nOF CODEBASE IS OPEN SOURCE\nSource: Black Duck 2018 OSSRA</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-1.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_bPiynI",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>And yet…</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-2.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_DjRmfh",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Why should companies contribute to open source?\nCommon good The Right Thing To Do™\nPaying it forward Etc.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-3.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_q3AaY6",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The Right Thing To Do™\nPaying it forward\nCommon good</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-4.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_SMtOQV",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Lack know-how\nThe Right Thing To Do™\nPaying it forward\nIncreased Risk\nWasted resources\nCommon good\nLost IP\nLost competitive advantage</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-5.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_4gcCIu",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The ROI of using open source is well understood. The ROI of contributing to open source: not so much.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-6.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_h0L0BJ",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>The risk of contributing to open source is:\n• •\nnot well understood, generally exaggerated.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-7.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_JK3o3i",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Understanding the value of contributing to open source</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-8.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_vdmbw7",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Understanding the value of contributing to open source 1. Strategic benefits 2. Operational benefits 3. Second-order benefits</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-9.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_XxVPoW",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Commoditize Your Complement Company\nFocus\nComplement</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-10.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_AHEDgv",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>On-ramp developers</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-11.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_max1ZK",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Understanding the value of contributing to open source 1. Strategic benefits 2. Operational benefits 3. Second-order benefits</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-12.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_OufpRj",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Photo: Pablo Andrés Rivero, 1997 (CC BY-NC-ND 2.0)\nPayback Technical Debt</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-13.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_1EOdK8",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Leverage external contributions\nReact Router\nRedux\nReact Ecosystem</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-14.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_dY7RCX",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Understanding the value of contributing to open source 1. Strategic benefits 2. Operational benefits 3. Second-order benefits</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-15.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_FrqF4w",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Problem Co!ee\nEngineer\nSarcasm (by-product)\nSolution</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-16.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_sBZ2xL",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Problem Co!ee\nSoftware Engineer Sarcasm (by-product)\nCODE</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-17.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_UVHqpk",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Problem Co!ee\nSoftware Engineer\nSarcasm (by-product)\nCommons OPEN SOURCE CODE</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-18.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_6p0ei9",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Problem Co!ee\nSoftware Engineer\nSarcasm (by-product)\nCommons OPEN SOURCE CODE\nSoftware Engineer\nSarcasm (by-product)\nProblem Co!ee</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-19.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_j8jSaY",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Problem Co!ee\nSoftware Engineer\nSarcasm (by-product)\nCommons OPEN SOURCE CODE Conversations Code reviews Mentoring Networking Etc.\nSoftware Engineer\nSarcasm (by-product)\nProblem Co!ee</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-20.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_LSSGSx",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Problem Co!ee\nCommons\nSoftware Engineer\nOPEN SOURCE CODE Conversations Code reviews Mentoring Networking Etc.\nSarcasm (by-product)\nAdopt best-prac tices\nIncrease code qua\nlity\nBY-PRODUCTS\nSoftware Engineer\nProblem Co!ee\nSarcasm (by-product)\ne l a r o m &amp; e r u t l u c d e v o Impr\ns l l i k s t f o s e v o r p m I Lower technical debt Improve documentation y l d Reduced churn n e i r f e t o Rem Innovation Influence project directi I n crease e!cie l o o p on Access to talent r e ncies d a e l y r t s u d n i s a ed v i e c r e P Level-up engineers y t i p i d n e Access to expert n “Knowledge spillover” r Se Better career opportunities etwork</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-21.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_xmB4LM",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>BY-PRODUCTS PROJECT\nINDIVIDUAL\nTEAM\nORGANIZATION\nImprove documentation\nLevel-up engineers\nIncrease e!ciencies\nImproved culture &amp; morale\nIncrease code quality\nAdopt best-practices\nSerendipity\nPerceived as industry leader\nLower technical debt\nImprove soft-skills\nInnovation\nAccess to talent pool\nInfluence project direction\nAccess to expert network\n“Knowledge spillover”\nRemote friendly\nBetter career opportunities\nReduced churn</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-22.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_a5tsDl",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>2×\nTWICE AS EFFICIENT\nContributing firms capture up to 100% more productive value from usage of open source than their free-riding peers.\nSource: Franck Nagle, Learning by Contributing, 2017.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-23.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_CPcg6A",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>75%\nOF FACEBOOK’S NEW ENGINEERING RECRUITS MENTION FACEBOOK’S OPEN SOURCE PROGRAM AS A KEY REASON THEY ACCEPTED THEIR OFFER</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-24.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_ojLTyZ",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>“But we also noticed some e!ect that we didn’t expect. All the public visibility [sponsoring Webpack] have given us lead to a situation where we suddenly became one of the most interesting companies to work for as a JavaScript developer. […]” “We’ve hired a lot of really great engineers who mentioned during their job interview that our sponsoring for Webpack was one of their primary motivations for applying, […]” —Patrick Gotthardt, Lead JavaScript Architect, Trivago, 9 July 2018.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-25.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_R34Hqy",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Lack know-how\nIncreased Risk\nLost IP\nWasted resources\nLost competitive advantage</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-26.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_3Mn5jN",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Mitigate the risk of contributing to open source</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-27.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_fgVtbm",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Lost competitive advantage\n“I skate to where the puck is going to be, not to where it has been.” —Wayne Gretzky\nPhoto: Rick Dikeman, 1997 (CC BY-SA 3.0)</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-28.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_I0EhUB",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Photo: O’Reilly AI Conference, 2016 (CC BY-NC 2.0)\nLost IP\n“In today’s world of fast-paced internet services deployment, owning IP has become considerably less important than turning research results into innovative products as quickly as possible, and deploying them at scale.” —Yann LeCun, Business Insider, Aug. 3, 2018.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-29.jpg",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_uJxVMa",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Increased Risk Wasted resources Lack know-how Etc.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-30.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_WdgJEz",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": ""
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-31.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_8xP77O",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Now it’s your turn! •\nFramework to think in terms of business tradeo!s.\n•\nA toolkit of benefits and mitigation strategies.\n•\nSee how it applies to your organization.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-32.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_lH7uzn",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Now it’s your turn! •\nBe reasonable.\n•\nShow empathy to other’s needs in the organization.\n•\nAim for small wins. Start small.\n•\nRemember it’s a mindset shift.</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-33.png",
+                                    "html": null
+                                },
+                                {
+                                    "id": "sl_NaqisC",
+                                    "type": "image",
+                                    "title": null,
+                                    "desc": {
+                                        "html": "<p>Thank you!\nTobie Langel (@tobie) Principal, UnlockOpen tobie@unlockopen.com unlockopen.com</p>\n"
+                                    },
+                                    "image": "https://on.notist.cloud/slides/deck5953/large-34.jpg",
+                                    "html": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "download": "https://on.notist.cloud/pdf/deck-45ea30091609d491.pdf"
+            },
+            "relationships": {
+                "data": [
+                    {
+                        "type": "events",
+                        "id": "ev_11zlVU",
+                        "attributes": {
+                            "title": "Open Infrastructure Summit",
+                            "slug": "open-infrastructure-summit",
+                            "starts_on": "2020-10-19 08:00:00",
+                            "ends_on": "2020-10-23 18:00:00",
+                            "timezone": "GMT",
+                            "address": "Virtual",
+                            "latitude": null,
+                            "longitude": null,
+                            "country_code": null,
+                            "url": null
+                        },
+                        "links": {
+                            "self": "https://noti.st/events/11zlVU/open-infrastructure-summit",
+                            "related": "https://noti.st/events/11zlVU.json"
+                        }
+                    }
+                ]
+            },
+            "links": {
+                "self": "https://speaking.unlockopen.com/w0WyRD/making-the-business-case-for-contributing-to-open-source"
+            }
+        }
+    ]
+}
