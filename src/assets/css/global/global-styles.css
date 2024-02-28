@@ -5,42 +5,15 @@
   project: https://cube.fyi/css.html
 */
 
-html {
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr repeat(3, clamp(1rem, 30vw, 25rem)) 1fr;
-  grid-template-rows: 1fr repeat(3, 1fr);
-}
-
-html > * {
-  grid-column: 2 / 5;
-  grid-row: 1 / -1;
-}
-
-body {
-  color: var(--color-text);
-  background-color: var(--color-bg);
-  font-size: var(--size-step-0);
-  font-family: var(--font-base);
-  line-height: 1.5;
-  letter-spacing: var(--tracking);
-  display: grid;
-  grid-template-columns: [logo-icon] min-content [logo-text] min-content [menu-space] repeat(
-      3,
-      1fr
-    );
-  grid-template-rows: [header] auto [main] 1fr [footer] auto;
-}
-
 @supports not (font-variation-settings: normal) {
   body {
-    font-weight: 400;
+    font-weight: var(--font-regular);
   }
 }
 
 @supports (font-variation-settings: normal) {
   body {
-    font-weight: 300;
+    font-weight: var(--font-light);
   }
 }
 
@@ -54,10 +27,10 @@ body {
 h1,
 h2,
 h3 {
-  line-height: 1;
+  line-height: var(--leading-flat);
   letter-spacing: var(--tracking-s);
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: var(--font-medium);
 }
 
 h1 {
@@ -86,27 +59,44 @@ h3 {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: var(--font-semi-bold);
 }
 
 em {
   font-style: italic;
   font-style: oblique 12deg;
-  background-color: color-mix(in oklab, var(--color-accent) 7%, var(--color-bg));
 }
 
 .heading-anchor {
   text-decoration: none;
 }
 
+blockquote {
+  --flow-space: var(--space-s-m);
+  border-inline-start: 0.8ex solid var(--color-accent);
+  font-size: var(--size-step-1);
+  padding-inline: var(--space-s-m);
+  padding-block: var(--space-xs);
+  background-color: color-mix(in oklab, var(--color-accent) 7%, var(--color-bg));
+}
+
+blockquote + * {
+  --flow-space: var(--space-s-m);
+}
+
+blockquote + blockquote {
+  --flow-space: 0;
+}
+
+blockquote :last-child {
+  font-style: normal;
+  font-size: var(--size-step-1);
+}
+
 svg {
   block-size: 2ex;
   inline-size: auto;
   flex: none;
-}
-
-[role='list'] {
-  padding: 0;
 }
 
 hr {
@@ -119,23 +109,24 @@ hr {
   transform: translateY(-1px);
 }
 
+[role='list'] {
+  padding: 0;
+}
+
 /* Base interactive elements */
 
 a {
   color: currentcolor;
+  text-decoration-thickness: 0.08em;
 }
 
 a:hover {
   text-decoration: none;
 }
 
-:focus {
+:focus-visible {
   outline: 3px solid;
   outline-offset: 0.3ch;
-}
-
-:target {
-  scroll-margin-top: 2ex;
 }
 
 main:focus {
@@ -150,4 +141,19 @@ main:focus {
 
 .preload-transitions * {
   transition: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  ::after,
+  ::before {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

@@ -1,0 +1,83 @@
+.article article > * {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 30em) {
+  .article article > * {
+    grid-column: 2 / -1;
+  }
+}
+
+.article article > :is(h1, h2, h3, .featured) {
+  grid-column: 1 / -1;
+}
+
+.article article .intro {
+  font-size: var(--size-step-2);
+  line-height: var(--leading-fine);
+  font-weight: var(--font-medium);
+}
+
+.article article .featured img {
+  block-size: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.article article .featured {
+  position: relative;
+  padding: var(--space-s);
+  max-inline-size: 46rem;
+}
+
+.article article .featured::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  inline-size: 50%;
+  block-size: 50%;
+  border-inline-start: 1px solid var(--color-accent);
+  border-block-end: 1px solid var(--color-accent);
+}
+
+.article article img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.article article :is(figure, picture) {
+  max-inline-size: 40rem;
+}
+
+.article article figure {
+  background-color: color-mix(in oklab, var(--color-accent) 10%, var(--color-bg));
+  border: 1px solid var(--color-accent);
+  padding: var(--space-xs);
+}
+
+.article article .date {
+  font-size: var(--size-step-1);
+}
+
+.article article .credit {
+  --flow-space: 0;
+  font-size: var(--size-step-min-1);
+  background-color: var(--color-bg);
+  padding: 0.1em var(--space-xs);
+  border-radius: var(--border-radius);
+  transform: translateY(-4ch) translateX(1ch);
+  max-inline-size: fit-content;
+}
+
+@media screen(sm) {
+  .article article .credit {
+    transform: translateY(-4ch) translateX(0);
+  }
+}
+
+.article article .meta {
+  font-size: var(--size-step-min-1);
+}

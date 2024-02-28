@@ -1,0 +1,9 @@
+.page .intro {
+  font-size: var(--size-step-3);
+  line-height: var(--leading-fine);
+  font-weight: var(--font-medium);
+}
+
+.page section picture {
+  filter: sepia(28%) grayscale(95%);
+}

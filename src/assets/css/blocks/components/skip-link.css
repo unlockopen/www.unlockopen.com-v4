@@ -17,8 +17,9 @@
   inline-size: auto;
   background-color: var(--color-text);
   color: var(--color-bg);
-  padding: var(--space-s-m);
-  line-height: 1;
+  padding: var(--space-xs) var(--space-s-m);
+  border-radius: var(--border-radius);
+  line-height: var(--leading-flat);
 }
 
 .skip-link:not(:focus) {

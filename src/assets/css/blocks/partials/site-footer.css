@@ -1,0 +1,34 @@
+.site-footer {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  margin-block-start: var(--space-l-xl);
+  color: var(--color-text);
+  align-items: center;
+}
+
+.site-footer > * {
+  grid-column: 1 / -1;
+}
+
+@media screen(md) {
+  .site-footer > p {
+    grid-column: 1 / 3;
+  }
+
+  .site-footer > nav {
+    grid-column: 3 / -1;
+  }
+}
+
+.site-footer nav a {
+  text-decoration: none;
+}
+
+.site-footer nav a[aria-current='page'] {
+  text-decoration: underline;
+}
+
+.site-footer .copyright {
+  padding-block: var(--space-s);
+}

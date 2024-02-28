@@ -1,4 +1,4 @@
-@media (min-width: 30em) {
+@media screen(sm) {
   .decorative {
     display: block;
     block-size: var(--decorative-height, 100%);

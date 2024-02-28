@@ -1,6 +1,0 @@
-.curve {
-  fill: var(--spot-color, var(--color-text));
-  block-size: 3.5em;
-  display: block;
-  inline-size: 100%;
-}

@@ -1,0 +1,13 @@
+.clients {
+  --flow-space: var(--space-m-l);
+  --gutter: 2ex;
+  color: var(--color-grey-dark);
+  align-items: center;
+  display: flex;
+  gap: var(--space-s);
+  align-items: center;
+}
+
+.clients svg {
+  block-size: 3.5ex;
+}

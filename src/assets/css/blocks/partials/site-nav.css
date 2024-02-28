@@ -1,0 +1,47 @@
+.site-nav {
+  --gutter: var(--space-s);
+  grid-column: 1 / -1;
+  justify-content: start;
+  align-self: end;
+  display: flex;
+}
+
+@media screen(md) {
+  .site-nav {
+    grid-column: span 3;
+    justify-content: end;
+  }
+}
+
+.site-nav > ul {
+  margin: 0;
+}
+
+.site-nav a {
+  border-block-end: 0.3em solid var(--border-color, transparent);
+  color: var(--nav-list-color, var(--color-text));
+  padding-block: 0.2em;
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  --border-color: var(
+    --nav-hover-color,
+    color-mix(in oklab, var(--color-accent) 90%, var(--color-text))
+  );
+  --text-color: var(--nav-hover-color, var(--color-text));
+}
+
+.site-nav a[aria-current='page'] {
+  --border-color: var(--nav-list-color, var(--color-text));
+  --text-color: var(--nav-list-color, var(--color-text));
+}
+/*
+@media screen(md) {
+  .site-nav {
+    --column-gap: clamp(var(--space-s), 5vw, var(--space-m));
+    --row-gap: var(--space-s);
+    --justify: space-between;
+    inline-size: 100%;
+  }
+} */
