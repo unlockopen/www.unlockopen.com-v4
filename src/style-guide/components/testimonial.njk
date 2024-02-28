@@ -1,28 +1,25 @@
 ---
 title: Testimonial
-variations:
-  - component: '<custom-testimonial class="custom classes" @source="Person who said this" image="./src/assets/images/pages/tobie-langel.jpg" alt="Tobie"> ... </custom-testimonial>'
-    description: 'wrapper for reusable social media list'
+usage: '<custom-testimonial class="custom classes" @source="Person who said this" image="./src/assets/images/pages/tobie-langel.jpg" alt="Tobie"> ... </custom-testimonial>'
 instructions: ''
 ---
 
-<h2>Demo with all options</h2>
+<p>{{ instructions }}</p>
+
+<pre><code>{{ usage | escapeHtml }}</code></pre>
 
 <custom-testimonial
   class="custom classes"
   @source="Person who said this"
-  image="./src/assets/images/pages/tobie-langel.jpg"
-  alt="Tobie"
 >
   I had the pleasure of working with Tobie. Their expertise and dedication are truly
   commendable. Their professionalism and attention to detail greatly contributed to the
   success of our project. I highly recommend their services!
 </custom-testimonial>
 
-<h2>Only slot content</h2>
-
 <custom-testimonial>
   I had the pleasure of working with Tobie. Their expertise and dedication are truly
   commendable. Their professionalism and attention to detail greatly contributed to the
   success of our project. I highly recommend their services!
 </custom-testimonial>
+

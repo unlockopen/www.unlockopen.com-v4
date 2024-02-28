@@ -1,22 +1,12 @@
 ---
-title: Pricing
-variations:
-  - component: '<custom-pricing @title="Coaching" @element="h2" @description="The description of this offering. Few words." @price="$1000" @conditions="per month / billed annually" @button="Get started" @link="#" > <ul> <li>This is a feature</li> <li>Something else this does</li> <li>Such a good deal</li> <li>Hello</li> </ul> </custom-pricing>'
-    description: 'single customizable pricing box'
-  - component: '<pricing-services></pricing-services>'
-    description: 'wrapper for fixed reusable pricing boxes'
+title: Pricing (raw)
+usage: '<custom-pricing @title="Coaching" @element="h2" @description="The description of this offering. Few words." @price="$1000" @conditions="per month / billed annually" @button="Get started" @link="#" > <ul> <li>This is a feature</li> <li>Something else this does</li> <li>Such a good deal</li> <li>Hello</li> </ul> </custom-pricing>'
 instructions: 'Usable as wrapper or as single pricing box (should be wrapped in layout class). Adding class="emphasize" adds a light background color in the current theme.'
 ---
 
-<h2>Wrapper for services</h2>
-<p>Reusable wrappers are stored in <code>components/reusable</code></p>
+<p>{{ instructions }}</p>
 
-<pricing-services></pricing-services>
-
-<h2>Single component</h2>
-<p class="mb-m-l">
-  Blocks are stored in <code>components/blocks</code>, they carry no default values.
-</p>
+<pre><code>{{ usage | escapeHtml }}</code></pre>
 
 <custom-pricing
   @title="Coaching"
@@ -35,7 +25,6 @@ instructions: 'Usable as wrapper or as single pricing box (should be wrapped in 
   </ul>
 </custom-pricing>
 
-<h2 class="mt-xl">Single components in 50/50 grid</h2>
 
 <div
   class="grid region"
@@ -75,7 +64,6 @@ instructions: 'Usable as wrapper or as single pricing box (should be wrapped in 
   </custom-pricing>
 </div>
 
-<h2 class="mt-xl">Single components in 3 columns</h2>
 
 <div class="grid region" data-layout="50-50" style="--grid-min-item-size: 15rem">
   <custom-pricing

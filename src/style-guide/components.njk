@@ -1,0 +1,14 @@
+---
+title: Components
+permalink: /components/index.html
+layout: base
+theme: lavender
+eleventyExcludeFromCollections: true
+---
+
+<div class="components | flow">
+  <h1>{{ title }}</h1>
+
+  {% set itemList = collections.components %}
+  {% include 'components/details.njk' %}
+</div>
