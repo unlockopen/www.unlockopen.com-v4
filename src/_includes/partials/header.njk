@@ -1,0 +1,10 @@
+<a href="#main" class="skip-link">{{ meta.skipContent }}</a>
+
+<header class="site-header | wrapper">
+  <a href="/" class="logo" {% if page.url == "/" %}aria-current="page"{% endif %}>
+    {% svg "logo/logo" %}
+
+    <span>{{ meta.siteName }}</span>
+  </a>
+  {% include "partials/main-nav.njk" %}
+</header>

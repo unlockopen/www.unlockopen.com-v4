@@ -1,0 +1,106 @@
+<div webc:root>
+  <div :class="`pricing-box | flow ${this.class ? `${this.class}` : ''}`">
+    <div class="pricing-contents | flow">
+      <h1 webc:if="title && element == 'h1' " slot="title" @raw="title"></h1>
+      <h3 webc:elseif="title && element == 'h3' " slot="title" @raw="title"></h3>
+      <h2 webc:elseif="title" slot="title" @raw="title"></h2>
+
+      <p slot="description" @raw="description"></p>
+      <div class="price-wrapper">
+        <p slot="price" @raw="price"></p>
+        <p slot="conditions" @raw="conditions"></p>
+      </div>
+
+      <slot></slot>
+    </div>
+
+    <a webc:if="button" class="button" :href="link"
+      ><slot name="button" @raw="button"></slot
+    ></a>
+  </div>
+</div>
+
+<style webc:scoped="pricing">
+  :host {
+    container-type: inline-size;
+    container-name: pricing-contents;
+  }
+
+  .pricing-box {
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    border-radius: var(--border-radius);
+    max-inline-size: unset;
+    padding: var(--space-s);
+    min-block-size: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-contents {
+    flex: auto;
+  }
+
+  :host::selection {
+    color: var(--color-dark);
+    background: var(--color-secondary);
+  }
+
+  [slot='description'] {
+    grid-column: 1;
+    font-size: var(--size-step-min-1);
+  }
+
+  .price-wrapper {
+    font-weight: var(--font-medium);
+  }
+
+  [slot='price'] {
+    font-size: var(--size-step-3);
+    white-space: nowrap;
+  }
+
+  [slot='conditions'] {
+    font-size: var(--size-step-min-1);
+    line-height: var(--leading-flat);
+  }
+
+  .button {
+    grid-column: 1;
+  }
+  ul,
+  li {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  li:before {
+    content: '\2713'; /* ASCII code for a checkmark */
+    padding-inline-end: 0.5rem;
+  }
+
+  @container (min-width: 25em) {
+    .pricing-contents {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      place-content: baseline;
+      column-gap: var(--space-s);
+    }
+
+    .price-wrapper {
+      grid-column: 1 / 2;
+      display: flex;
+      gap: var(--space-s);
+      justify-content: flex-start;
+    }
+
+    [slot='description'] {
+      grid-column: 1 / -1;
+      font-size: var(--size-step-0);
+    }
+
+    [slot='conditions'] {
+      margin-block-start: 1ch;
+    }
+  }
+</style>

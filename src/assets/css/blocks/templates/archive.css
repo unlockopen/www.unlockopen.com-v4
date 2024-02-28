@@ -1,0 +1,27 @@
+.archive section {
+  margin-block-start: var(--space-xl);
+}
+
+.archive h1 {
+  font-size: var(--size-step-9);
+  line-height: var(--leading-fine);
+  font-weight: var(--font-medium);
+}
+
+.archive h1 + p {
+  font-size: var(--size-step-1);
+  font-weight: var(--font-medium);
+}
+
+.archive picture {
+  filter: sepia(28%) grayscale(95%);
+}
+
+.archive img {
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.archive .grid.header {
+  align-items: center;
+}

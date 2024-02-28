@@ -1,0 +1,29 @@
+main {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  padding-block-start: var(--main-block-start, var(--space-l-2xl));
+  grid-template-rows: auto 1fr;
+}
+
+main > * {
+  grid-column: 1 / -1;
+}
+
+main > section {
+  grid-column: 1 / -1;
+  /* display: grid; */
+  column-gap: var(--section-column-gap, 0);
+}
+
+main > article {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+}
+
+@media screen(sm) {
+  main > section {
+    grid-column: 2 / -1;
+  }
+}

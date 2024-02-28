@@ -1,0 +1,27 @@
+.site-header {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  /* border-block-end: 1px solid var(--color-grey-dark); */
+  padding-block-start: var(--space-s-m);
+}
+
+.site-header:after {
+  content: '';
+  display: block;
+  border-block-end: 1px solid var(--color-text);
+  mix-blend-mode: soft-light;
+  grid-column: 1 / -1;
+}
+
+.site-header a {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  color: currentcolor;
+  text-decoration: none;
+}
+
+.site-header a:is(:hover, :focus-visible) {
+  color: var(--color-theme-offset);
+}

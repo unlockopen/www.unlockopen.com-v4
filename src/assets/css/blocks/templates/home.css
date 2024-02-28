@@ -1,0 +1,21 @@
+.home section {
+  --section-column-gap: var(--space-m-l);
+  --flow-space: var(--space-m-l);
+  display: grid;
+}
+
+.home section > div > * {
+  --flow-space: 1em;
+}
+
+.home img {
+  --flow-space: 0;
+  border-radius: var(--border-radius);
+  filter: sepia(28%) grayscale(95%);
+}
+
+@media screen(md) {
+  .home picture {
+    grid-column: 2;
+  }
+}

@@ -18,19 +18,19 @@ between the sidebar and main content.
 EXCEPTIONS
 .sidebar[data-direction='rtl']: flips the sidebar to be on the right
 */
+
 .sidebar {
   display: flex;
-  flex-wrap: var(--sidebar-wrap, wrap);
-  gap: var(--sidebar-gap, 0);
-  align-items: var(--sidebar-align, center);
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-s-l));
 }
 
-.sidebar > :first-child {
+.sidebar:not([data-direction]) > :first-child {
   flex-basis: var(--sidebar-target-width, 20rem);
   flex-grow: 1;
 }
 
-.sidebar > :last-child {
+.sidebar:not([data-direction]) > :last-child {
   flex-basis: 0;
   flex-grow: 999;
   min-inline-size: var(--sidebar-content-min-width, 50%);
@@ -39,6 +39,13 @@ EXCEPTIONS
 /*
 A flipped version where the sidebar is on the right
 */
-.sidebar[data-direction='rtl'] {
-  flex-direction: row-reverse;
+.sidebar[data-direction='rtl'] > :last-child {
+  flex-basis: var(--sidebar-target-width, 20rem);
+  flex-grow: 1;
+}
+
+.sidebar[data-direction='rtl'] > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: var(--sidebar-content-min-width, 50%);
 }

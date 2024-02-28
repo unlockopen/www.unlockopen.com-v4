@@ -1,0 +1,27 @@
+html {
+  position: relative;
+  display: grid;
+  /* 3 areas of 400px make the wrapper */
+  grid-template-columns: 1fr repeat(3, clamp(1rem, 30vw, 25rem)) 1fr;
+  grid-template-rows: 1fr repeat(3, 1fr);
+}
+
+html > * {
+  grid-column: 2 / 5;
+  grid-row: 1 / -1;
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-size: var(--size-step-0);
+  font-family: var(--font-base);
+  line-height: var(--leading-standard);
+  letter-spacing: var(--tracking);
+  display: grid;
+  grid-template-columns: [logo-icon] min-content [logo-text] min-content [menu-space] repeat(
+      3,
+      1fr
+    );
+  grid-template-rows: [header] auto [main] 1fr [footer] auto;
+}

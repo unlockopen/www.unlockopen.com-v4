@@ -15,13 +15,29 @@
       "label": "Articles",
       "url": "/articles/"
     },
+		{
+      "id": "presentations",
+      "label": "Presentations",
+      "url": "/presentations/"
+    },
     {
       "id": "services",
       "label": "Services",
       "url": "/services/"
     }
   ],
-  "bottom": [],
+  "bottom": [
+		{
+		"id": "styleguide",
+		"label": "Styleguide",
+		"url": "/styleguide/"
+	},
+	{
+		"id": "components",
+		"label": "Components",
+		"url": "/components/"
+	}
+],
   "social": [
     {
       "id": "twitter",

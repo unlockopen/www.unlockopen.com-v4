@@ -5,7 +5,9 @@
     font-style: normal;
     font-display: swap;
     font-weight: 700;
-    src: local(''), url('/assets/fonts/geologica/geologica-bold.woff2') format('woff2');
+    src:
+      local(''),
+      url('/assets/fonts/geologica/geologica-bold.woff2') format('woff2');
   }
 
   @font-face {
@@ -13,7 +15,8 @@
     font-style: normal;
     font-display: swap;
     font-weight: 600;
-    src: local(''),
+    src:
+      local(''),
       url('/assets/fonts/geologica/geologica-semibold.woff2') format('woff2');
   }
 
@@ -22,7 +25,9 @@
     font-style: normal;
     font-display: swap;
     font-weight: 500;
-    src: local(''), url('/assets/fonts/geologica/geologica-medium.woff2') format('woff2');
+    src:
+      local(''),
+      url('/assets/fonts/geologica/geologica-medium.woff2') format('woff2');
   }
 
   @font-face {
@@ -30,7 +35,9 @@
     font-style: normal;
     font-display: swap;
     font-weight: 400;
-    src: local(''), url('/assets/fonts/geologica/geologica-light.woff2') format('woff2');
+    src:
+      local(''),
+      url('/assets/fonts/geologica/geologica-light.woff2') format('woff2');
   }
 
   @font-face {
@@ -38,7 +45,8 @@
     font-style: italic;
     font-display: swap;
     font-weight: 400;
-    src: local(''),
+    src:
+      local(''),
       url('/assets/fonts/geologica/geologica-lightitalic.woff2') format('woff2');
   }
 }
@@ -47,7 +55,8 @@
 @supports (font-variation-settings: normal) {
   @font-face {
     font-family: 'Geologica';
-    src: url('/assets/fonts/geologica/Geologica[CRSV,SHRP,slnt,wght].woff2')
+    src:
+      url('/assets/fonts/geologica/Geologica[CRSV,SHRP,slnt,wght].woff2')
         format('woff2 supports variations'),
       url('/assets/fonts/geologica/Geologica[CRSV,SHRP,slnt,wght].woff2')
         format('woff2-variations');

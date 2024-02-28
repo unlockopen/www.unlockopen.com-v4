@@ -1,0 +1,36 @@
+.services h1 {
+  line-height: var(--leading-fine);
+  font-weight: var(--font-medium);
+  justify-self: center;
+}
+
+.services .intro {
+  font-size: var(--size-step-1);
+  font-weight: var(--font-medium);
+  text-align: center;
+  justify-self: center;
+}
+
+.services .video {
+  --section-padding: var(--space-s-l);
+}
+
+.services .cta {
+  --section-padding: var(--space-s-l);
+}
+
+.services .button {
+  --section-padding: var(--space-s-l);
+}
+
+@media screen(sm) {
+  .services .cta {
+    grid-column: 1 / 5;
+  }
+
+  .services .what-is {
+    column-count: 2;
+    gap: var(--gutter);
+    grid-column: 2 / -1;
+  }
+}

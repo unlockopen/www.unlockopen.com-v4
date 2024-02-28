@@ -1,0 +1,19 @@
+---
+layout: base
+decorative:
+  shape: rectangle
+---
+
+<h1 {% if h1class %}class="{{ h1class }}"{% endif %}>{{ title }}</h1>
+
+<section class="flow prose page">
+  {% if image %}
+    {% image image.src, image.alt, null, "eager", null, image.sizes, image.widths %}
+  {% endif %}
+
+  {% if intro %}
+    <p class="intro">{{ intro }}</p>
+  {% endif %}
+
+  {{ content | safe }}
+</section>

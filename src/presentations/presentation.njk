@@ -1,0 +1,23 @@
+---
+pagination:
+    data: notist.presentations
+    size: 1
+    alias: presentation
+permalink: "presentations/{{ presentation.slug }}/index.html"
+mainclass: 'presentation'
+layout: 'page'
+theme: 'tangerine'
+decorative:
+  shape: tilted
+  settings: '--decorative-height: 25%'
+---
+
+<h1>{{ presentation.title }} </h1>
+
+<p>date: {{ presentation.date }}</p>
+<p>desc: {{ presentation.desc }}</p>
+<p>event name: {{ presentation.event.name }}</p>
+<p>pdf: {{ presentation.pdf }}</p>
+<p>video url: {{ presentation.video.url }}</p>
+<p>slidedeck url: {{ presentation.slidedeck[0].url }}</p>
+<p>resources url: {{ presentation.resources[0].url }}</p>
