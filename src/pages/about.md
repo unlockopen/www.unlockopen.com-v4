@@ -1,15 +1,14 @@
 ---
+permalink: /about/index.html
 title: About
 description: About this page
-slugOverride: about
-theme: apple
 intro: 'Tobie Langel is a prominent figure in the open-source software community, known for his work on web development and open standards. He is the founder of UnlockOpen.'
-social: false
-titleHidden: true
+theme: apple
+h1class: visually-hidden
 image:
   src: './src/assets/images/pages/tobie-about.png'
   alt: 'Tobie Langel'
-	width: '400'
+	widths: [440, 650, 960]
 ---
 
 Tobie Langel is the founder of UnlockOpen, a boutique consulting firm that helps large organizations build a strong open source culture and leverage it to recruit, retain, and foster top software engineering talent, improve team efficiency, and boost innovation.

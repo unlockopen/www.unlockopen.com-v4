@@ -1,15 +1,16 @@
 ---
-title: 'Services'
-layout: base
-description: ''
-slugOverride: services
+permalink: /services/index.html
+title: Services
+description: 'Solutions that help large organizations build a strong open source culture and leverage it to recruit, retain, and foster top software engineering talent, improve team efficiency, and boost innovation.'
 theme: caribbean
-mainclass: 'services flow'
-decorative: 'tilted'
-decorativeHeight: '25%'
+layout: base
+mainclass: 'services | flow'
+decorative:
+  shape: tilted
+  settings: '--decorative-height: 25%'
 ---
 
-<h1 @text="title"></h1>
+<h1>{{ title }}</h1>
 <p class="intro">
   Solutions that help large organizations build a strong open source culture and leverage
   it to recruit, retain, and foster top software engineering talent, improve team
@@ -38,11 +39,11 @@ decorativeHeight: '25%'
   <div class="section__inner region">
     <div class="flow">
       <div>
-        <youtube-lite-player
+        <custom-youtube
           @slug="nLfJiFpU1Io"
           @label="A video"
           @subtitle="subtitle"
-        ></youtube-lite-player>
+        ></custom-youtube>
       </div>
     </div>
   </div>
@@ -58,45 +59,6 @@ decorativeHeight: '25%'
   @target="#"
 >
   Solutions that help large organizations build a strong open source culture and leverage
-  it to recruit, retain, and foster top software engineering talent, improve team
-  efficiency, and boost innovation.
+  > it to recruit, retain, and foster top software engineering talent, improve team >
+  efficiency, and boost innovation. >
 </custom-cta>
-
-<style webc:scoped="services">
-  h1 {
-    line-height: 1.2;
-    font-weight: 500;
-    justify-self: center;
-  }
-
-  .intro {
-    font-size: var(--size-step-1);
-    font-weight: 500;
-    text-align: center;
-    justify-self: center;
-  }
-
-  .video {
-    --section-padding: var(--space-s-l);
-  }
-
-  .cta {
-    --section-padding: var(--space-s-l);
-  }
-
-  .button {
-    --section-padding: var(--space-s-l);
-  }
-
-  @media (min-width: 30em) {
-    .cta {
-      grid-column: 1 / 5;
-    }
-
-    .what-is {
-      column-count: 2;
-      gap: var(--gutter);
-      grid-column: 2 / -1;
-    }
-  }
-</style>

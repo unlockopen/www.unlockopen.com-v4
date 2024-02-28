@@ -7,10 +7,10 @@
 
 @import 'global/variables.css';
 @import 'global/global-styles.css';
+@import 'global/grid-template.css';
 
-@import-glob 'blocks/*.css';
+@import-glob 'blocks/**/*.css';
 @import-glob 'compositions/*.css';
-@import-glob 'components/*.css';
 @import-glob 'utilities/*.css';
 
 @import 'tailwindcss/utilities';

@@ -5,8 +5,10 @@ intro: "Software foundations have increasingly started helping non-corporate bac
 ogImage:
 date: 2019-04-23
 image:
-  src: './src/assets/images/posts/Paper.Article_illustrations.9.png'
-	alt: "Illustration"
+  src: './src/assets/images/articles/Paper.Article_illustrations.9.png'
+  alt: 'Illustration'
+  credit: 'Tobie'
+tags: ['w3c', 'another large one']
 ---
 
 **The context:** across its different working groups, W3C has [over 150 invited experts](https://www.w3.org/participate/invited-experts/list) that contribute to spec work in various capacities, sometimes doing a lot of the heavy lifting. Unless these invited experts have a private arrangement with a client, which is rather rare (and needs to be disclosed to the working group), they work for free.
