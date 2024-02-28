@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <p class="copyright">© <strong>{{ meta.siteName }}</strong> &copy; {% year %}</p>
+
+  <nav class="cluster text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
+    {% for item in navigation.bottom %}
+      <a
+        href="{{ item.url }}"
+        {{
+          helpers.getLinkActiveState(item.url,
+          page.url)
+          |
+          safe
+        }}
+        >{{ item.label }}</a
+      >
+    {% endfor %}
+  </nav>
+</footer>

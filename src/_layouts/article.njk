@@ -1,0 +1,54 @@
+---
+layout: base
+schema: blog
+theme: 'golden'
+decorative:
+  shape: pizza
+  settings: '--decorative-height: 50rem'
+---
+
+<article class="flow prose">
+  <h1>{{ title }}</h1>
+
+  {% if image %}
+    {% image image.src, image.alt, null, "eager", "featured" %}
+  {% endif %}
+  {%
+    if
+    image.credit
+  %}
+    <!-- credit -->
+    <p class="credit feature | text-step-min-1">© {{ image.credit }}</p>
+  {% endif %}
+
+  <p class="meta | cluster" style="--gutter: var(--space-xs)">
+    <!-- date -->
+    {% set definedDate = date %} {% include "components/date.njk" %}
+    {%
+      if tags.length >
+      1
+    %}
+      <!-- tags -->
+      {% for tag in tags %}{% if tag != "posts" %}
+        <a class="button post-tag" href="/tags/{{ tag }}"> {{ tag }} </a>
+      {% endif %}{% endfor %}
+    {% endif %}
+  </p>
+
+  {% if intro %}
+    <p class="intro">{{ intro }}</p>
+  {% endif %}
+
+  {{ content | safe }}
+
+  <!--  h-card infos: https://indieweb.org/authorship -->
+  <div hidden class="h-entry">
+    <a class="u-url" href="{{ page.url | url | absoluteUrl(meta.url) }}">{{ title }}</a>
+    <a class="p-name u-url" rel="author" href="{{ meta.url }}">{{ meta.author.name }}</a>
+    <img
+      class="u-author h-card"
+      src="{{ meta.author.avatar | url | absoluteUrl(meta.url) }}"
+      alt="{{ meta.author.name }}"
+    />
+  </div>
+</article>

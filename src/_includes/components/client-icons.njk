@@ -1,0 +1,7 @@
+<aside class="clients">
+  <ul class="cluster | clients" role="list">
+    {% for item in navigation.clients %}
+      <li>{% svg "clients/" + item.id, item.label %}</li>
+    {% endfor %}
+  </ul>
+</aside>
