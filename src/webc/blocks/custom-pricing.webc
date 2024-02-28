@@ -52,7 +52,7 @@
   }
 
   .price-wrapper {
-    font-weight: 500;
+    font-weight: var(--font-medium);
   }
 
   [slot='price'] {
@@ -62,7 +62,7 @@
 
   [slot='conditions'] {
     font-size: var(--size-step-min-1);
-    line-height: 1.1;
+    line-height: var(--leading-flat);
   }
 
   .button {
