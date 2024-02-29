@@ -58,11 +58,13 @@ h3 {
   max-inline-size: 40ch;
 }
 
-strong {
+strong,
+b {
   font-weight: var(--font-semi-bold);
 }
 
-em {
+em,
+i {
   font-style: italic;
   font-style: oblique 12deg;
 }
