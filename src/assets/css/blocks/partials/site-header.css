@@ -1,8 +1,9 @@
 .site-header {
-  display: grid;
+  /* for parent grid */
   grid-column: 1 / -1;
+  /* own children */
+  display: grid;
   grid-template-columns: subgrid;
-  /* border-block-end: 1px solid var(--color-grey-dark); */
   padding-block-start: var(--space-s-m);
 }
 
@@ -22,6 +23,16 @@
   text-decoration: none;
 }
 
-.site-header a:is(:hover, :focus-visible) {
-  color: var(--color-theme-offset);
+@supports not (grid-template-columns: subgrid) {
+  .site-header {
+    /* for parent grid */
+    grid-column: 1 / -1;
+    /* own children */
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+    justify-content: space-between;
+  }
 }

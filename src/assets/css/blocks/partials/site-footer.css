@@ -7,6 +7,20 @@
   align-items: center;
 }
 
+@supports not (grid-template-columns: subgrid) {
+  .site-footer {
+    /* for parent grid */
+    grid-column: 1 / -1;
+    /* own children */
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+    justify-content: space-between;
+  }
+}
+
 .site-footer > * {
   grid-column: 1 / -1;
 }
