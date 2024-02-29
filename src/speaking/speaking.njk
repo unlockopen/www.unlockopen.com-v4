@@ -9,9 +9,7 @@ decorative:
   settings: '--decorative-height: 25%'
 ---
 
-<h2>Conferences</h2>
-
-<div class="flow grid" role="list" data-rows="masonry" data-layout="50-50">
+<div class="flow grid region" role="list" data-rows="masonry" data-layout="50-50">
   {% for conferenceKey, conferenceValues in notist.conferences %}
     {% set conference = conferenceValues[0].event %}
 
