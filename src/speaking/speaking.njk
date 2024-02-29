@@ -1,0 +1,36 @@
+---
+permalink: 'speaking/index.html'
+title: 'Speaking'
+mainclass: 'speaking'
+layout: 'page'
+theme: 'tangerine'
+decorative:
+  shape: tilted
+  settings: '--decorative-height: 25%'
+---
+
+<h2>Conferences</h2>
+
+<div class="flow grid" role="list" data-rows="masonry" data-layout="50-50">
+  {% for conferenceKey, conferenceValues in notist.conferences %}
+    {% set conference = conferenceValues[0].event %}
+
+    <div>
+      <h2>
+        <a href="/speaking/{{ conferenceKey }}/index.html">{{ conference.name }}</a>
+      </h2>
+      <p>Location: {{ conference.address }}</p>
+      <p>Date: {{ conference.startDate }} - {{ conference.endDate }}</p>
+      <!-- Add more properties as needed -->
+      <ul>
+        {% for presentation in conferenceValues %}
+          <li>
+            <a href="/speaking/{{ presentation.slug }}/index.html"
+              >{{ presentation.title }}</a
+            >
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+</div>

@@ -15,10 +15,10 @@
       "label": "Articles",
       "url": "/articles/"
     },
-		{
-      "id": "presentations",
-      "label": "Presentations",
-      "url": "/presentations/"
+    {
+      "id": "speaking",
+      "label": "Speaking",
+      "url": "/speaking/"
     },
     {
       "id": "services",
@@ -27,17 +27,17 @@
     }
   ],
   "bottom": [
-		{
-		"id": "styleguide",
-		"label": "Styleguide",
-		"url": "/styleguide/"
-	},
-	{
-		"id": "components",
-		"label": "Components",
-		"url": "/components/"
-	}
-],
+    {
+      "id": "styleguide",
+      "label": "Styleguide",
+      "url": "/styleguide/"
+    },
+    {
+      "id": "components",
+      "label": "Components",
+      "url": "/components/"
+    }
+  ],
   "social": [
     {
       "id": "twitter",

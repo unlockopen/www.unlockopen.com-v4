@@ -1,0 +1,35 @@
+---
+pagination:
+  data: notist.conferences
+  size: 1
+  alias: conference
+permalink: 'speaking/{{ conference }}/index.html'
+mainclass: 'conference'
+layout: 'page'
+theme: 'tangerine'
+decorative:
+  shape: tilted
+  settings: '--decorative-height: 25%'
+---
+
+{% set currentEvent = conference %}
+{% set conferenceData = notist.conferences[currentEvent] %}
+{% if conferenceData %}
+  {% for conference in conferenceData %}
+    <h1>{{ conference.event.name }}</h1>
+
+    <p>Event Start Date: {{ conference.event.startDate }}</p>
+    <p>Event End Date: {{ conference.event.endDate }}</p>
+    <p>Event Address: {{ conference.event.address }}</p>
+    <p>Event URL: <a href="{{ conference.event.url }}">{{ conference.event.url }}</a></p>
+
+    <hr />
+    {% if pagination.href.previous %}
+      <a href="{{ pagination.href.previous }}">Previous</a>
+    {% endif %}
+
+    {% if pagination.href.next %}
+      <a href="{{ pagination.href.next }}">Next</a>
+    {% endif %}
+  {% endfor %}
+{% endif %}

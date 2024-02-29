@@ -1,0 +1,54 @@
+---
+pagination:
+  data: notist.presentations
+  size: 1
+  alias: presentation
+permalink: 'speaking/{{ presentation.slug }}/index.html'
+mainclass: 'presentation'
+layout: 'page'
+theme: 'tangerine'
+decorative:
+  shape: tilted
+  settings: '--decorative-height: 25%'
+---
+
+<h1>{{ presentation.title }}</h1>
+
+<p><b>title:</b> {{ presentation.title }}</p>
+<p><b>date:</b> {{ presentation.date }}</p>
+
+<p><b>desc:</b> {{ presentation.desc | markdown | safe }}</p>
+
+<p><b>timezone:</b> {{ presentation.timezone }}</p>
+<p><b>image:</b> {{ presentation.image.src }}</p>
+<p><b>notistSlug:</b> {{ presentation.notistSlug }}</p>
+<p><b>notistID:</b> {{ presentation.notistID }}</p>
+<p><b>talkSlug:</b> {{ presentation.talkSlug }}</p>
+<p><b>slug:</b> {{ presentation.slug }}</p>
+<p><b>year:</b> {{ presentation.year }}</p>
+<p><b>notistUrls:</b>
+	<ul>
+		{% for url in presentation.notistUrls %}
+			<li>{{ url }}</li>
+		{% endfor %}
+	</ul>
+</p>
+
+<p><b>event:</b> {{ presentation.event.name }}</p>
+<p><b>address:</b> {{ presentation.event.address }}</p>
+<p><b>lat:</b> {{ presentation.event.lat }}</p>
+<p><b>long:</b> {{ presentation.event.long }}</p>
+<p><b>countryCode:</b> {{ presentation.event.countryCode }}</p>
+<p><b>url:</b> {{ presentation.event.url }}</p>
+<p><b>pdf:</b> {{ presentation.pdf }}</p>
+{% if presentation.video %}
+	<p><b>video:</b> {{ presentation.video.url }}</p>
+{% endif %}
+{% if presentation.slidedeck %}
+	<p><b>slidedeck:</b></p>
+	<ul>
+		{% for slide in presentation.slidedeck %}
+			<li><img src="{{ slide.url }}" alt="{{ slide.desc }}"></li>
+		{% endfor %}
+	</ul>
+{% endif %}
