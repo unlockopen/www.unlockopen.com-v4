@@ -1,6 +1,6 @@
 main {
-  display: grid;
   grid-column: 1 / -1;
+  display: grid;
   grid-template-columns: subgrid;
   padding-block-start: var(--main-block-start, var(--space-l-2xl));
   grid-template-rows: auto 1fr;
@@ -12,13 +12,12 @@ main > * {
 
 main > section {
   grid-column: 1 / -1;
-  /* display: grid; */
   column-gap: var(--section-column-gap, 0);
 }
 
 main > article {
-  display: grid;
   grid-column: 1 / -1;
+  display: grid;
   grid-template-columns: subgrid;
 }
 
