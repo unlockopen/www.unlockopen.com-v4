@@ -13,8 +13,6 @@ masonry: true
     <!-- loop posts -->
     {% set itemList = pagination.items %}
     {% for item in itemList %}
-      <!-- activate tags -->
-      {% set activateTags = true %}
       <!-- set date context -->
       {% set definedDate = item.date %}
       <!-- set heading context -->

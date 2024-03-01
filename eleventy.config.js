@@ -10,7 +10,7 @@ import {readFileSync} from 'node:fs';
 const pkg = JSON.parse(readFileSync('./package.json'));
 
 //  config import
-import {getAllArticles, onlyMarkdown, tagList} from './src/_eleventy/collections.js';
+import {getAllArticles, onlyMarkdown} from './src/_eleventy/collections.js';
 import events from './src/_eleventy/events.js';
 import filters from './src/_eleventy/filters.js';
 import plugins from './src/_eleventy/plugins.js';
@@ -22,12 +22,10 @@ export default async function (eleventyConfig) {
   eleventyConfig.addLayoutAlias('page', 'page.njk');
   eleventyConfig.addLayoutAlias('article', 'article.njk');
   eleventyConfig.addLayoutAlias('archive', 'archive.njk');
-  eleventyConfig.addLayoutAlias('tags', 'tags.njk');
 
   //	---------------------  Collections
   eleventyConfig.addCollection('articles', getAllArticles);
   eleventyConfig.addCollection('onlyMarkdown', onlyMarkdown);
-  eleventyConfig.addCollection('tagList', tagList);
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
