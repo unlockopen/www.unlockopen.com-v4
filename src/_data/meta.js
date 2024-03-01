@@ -26,7 +26,7 @@ export const themeBgColor = '#161717'; // Manifest: defines a placeholder backgr
 export const opengraph_default = '/assets/images/template/opengraph-default.jpg'; // fallback/default meta image
 export const opengraph_default_alt =
   'Visible content: UnlockOpen. Helping organizations thrive in open tech ecosystems.'; // alt text for default meta image
-export const blog = {
+export const articles = {
   // RSS feed
   name: 'Articles',
   description: '',

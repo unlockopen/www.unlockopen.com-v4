@@ -13,8 +13,6 @@ masonry: true
     <!-- loop posts -->
     {% set itemList = pagination.items %}
     {% for item in itemList %}
-      <!-- activate tags -->
-      {% set activateTags = true %}
       <!-- set date context -->
       {% set definedDate = item.date %}
       <!-- set heading context -->
@@ -25,9 +23,9 @@ masonry: true
   </ul>
 
   <!-- set collection to paginate -->
-  {% set collectionToPaginate = collections.posts %}
+  {% set collectionToPaginate = collections.articles %}
   <!-- set target pagination settings in meta.js -->
-  {% set metaKey = "blog" %}
+  {% set metaKey = "articles" %}
   <!-- if the number of items in the collection is greater than the number of items shown on one page -->
   {% if collectionToPaginate.length > pagination.size %}
     <!-- include pagination -->

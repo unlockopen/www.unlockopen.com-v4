@@ -1,14 +1,16 @@
 ---
 title: 'W3C doesn’t help its invited experts. It should.'
 description: 'The context: across its different working groups, W3C has over 150 invited experts that contribute to spec work in various capacities, sometimes doing a lot of the heavy lifting.'
-intro: "Software foundations have increasingly started helping non-corporate backed contributors with travel expenses. W3C has been lagging way behind. Until last year, 'invited experts'—W3C jargon for individual contributors—even had to pay to attend the technical conference in which they come work for free. It’s time for change."
 ogImage:
 date: 2019-04-23
 image:
   src: './src/assets/images/articles/Paper.Article_illustrations.9.png'
   alt: 'Illustration'
   credit: 'Tobie'
-tags: ['w3c', 'another large one']
+---
+
+Software foundations have increasingly started helping non-corporate backed contributors with travel expenses. W3C has been lagging way behind. Until last year, 'invited experts'—W3C jargon for individual contributors—even had to pay to attend the technical conference in which they come work for free. It’s time for change.
+
 ---
 
 **The context:** across its different working groups, W3C has [over 150 invited experts](https://www.w3.org/participate/invited-experts/list) that contribute to spec work in various capacities, sometimes doing a lot of the heavy lifting. Unless these invited experts have a private arrangement with a client, which is rather rare (and needs to be disclosed to the working group), they work for free.
