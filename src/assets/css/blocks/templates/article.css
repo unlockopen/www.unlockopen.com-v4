@@ -12,10 +12,14 @@
   grid-column: 1 / -1;
 }
 
-.article article .intro {
-  font-size: var(--size-step-2);
+.article article .meta + p {
+  font-size: var(--size-step-1);
   line-height: var(--leading-fine);
   font-weight: var(--font-medium);
+}
+
+.article article .meta + p + p {
+  --flow-space: var(--space-m);
 }
 
 .article article .featured img {
@@ -28,7 +32,7 @@
 .article article .featured {
   position: relative;
   padding: var(--space-s);
-  max-inline-size: 46rem;
+  max-inline-size: 50rem;
 }
 
 .article article .featured::before {

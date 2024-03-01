@@ -11,9 +11,5 @@ decorative:
     {% image image.src, image.alt, null, "eager", null, image.sizes, image.widths %}
   {% endif %}
 
-  {% if intro %}
-    <p class="intro">{{ intro }}</p>
-  {% endif %}
-
   {{ content | safe }}
 </section>
