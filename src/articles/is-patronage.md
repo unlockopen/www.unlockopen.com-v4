@@ -7,6 +7,8 @@ date: 2019-03-09
 
 A couple of years ago, [Heartbleed](http://heartbleed.com/) epitomized a massive [open source](https://hackernoon.com/tagged/open-source) sustainability problem for critical parts of the internet infrastructure. The bug, which affected the popular OpenSSL cryptographic software library, notably [compromised the confidentiality of 4.5 million US patient records](http://time.com/3148773/report-devastating-heartbleed-flaw-was-used-in-hospital-hack/) and [cost the industry an estimated $500M](http://www.eweek.com/security/heartbleed-ssl-flaw-s-true-cost-will-take-time-to-tally).
 
+---
+
 It was soon revealed that the root-cause of the issue was that the OpenSSL project was [precariously understaffed](http://blog.ssh.com/free-can-make-you-bleed).
 
 Open source sustainability became a major theme overnight. Stories of maintainer burn-out made the headlines. And tentative solutions started to emerge.

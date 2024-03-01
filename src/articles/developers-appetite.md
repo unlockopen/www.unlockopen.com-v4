@@ -1,12 +1,13 @@
 ---
 title: 'Developers’ appetite for open source fuels the cloud wars'
 description: 'Yesterday, Stratechery’s Ben Thompson wrote a thought provoking article about the current AWS / MongoDB kerfuffle that’s been keeping the open source community’s echo chamber humming for the past couple of weeks.'
-intro: ''
 ogImage:
 date: 2019-01-16
 ---
 
 Yesterday, Stratechery’s Ben Thompson wrote a [thought provoking article](https://stratechery.com/2019/aws-mongodb-and-the-economic-realities-of-open-source/) about the current AWS / MongoDB kerfuffle that’s been keeping the open source community’s echo chamber humming for the past couple of weeks.
+
+---
 
 It’s refreshing to have an outsider’s perspective on the topic.
 
@@ -25,7 +26,7 @@ Thompson then looks at Facebook’s attitude towards its platform ecosystem and 
 > Indeed, the truth is that while old-school Microsoft may indeed have only taken a minority of the money in its market, that was because its partners, from resellers to systems integrators to developers, were genuinely useful to the company, doing things Microsoft could not; they were earning their revenue, not being gifted it by Redmond (and certainly the company didn’t show much concern for those on its platform occupying niches Microsoft wanted for itself).
 
 > In other words, the reason why Facebook may be less generous to its ecosystem than old-school Microsoft may have less to do with Microsoft’s leadership being uniquely enlightened and more to do with it simply being the natural state of affairs in Facebook’s all-digital ecosystem that Facebook take all the rents.
-> 
+>
 > And, if that is true, it follows that AWS, absent a level of vision and concern for its suppliers that it frankly has never demonstrated, is unlikely to ever consider sharing.
 
 > Still, you could argue that it would be in the long-run interest of the public cloud providers to keep in mind the old Microsoft view of platforms: they are the most successful when everyone is making money, not simply the platform provider. […] AWS is better because software like Redis exists; is it in AWS’ long-run interest to effectively take away Redis Labs’ revenue?
