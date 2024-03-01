@@ -16,6 +16,6 @@
       </span>
     </div>
 
-    <p>{{ item.data.description }}</p>
+    <p>{{ item.page.excerpt | markdown | striptags | safe or item.data.description }}</p>
   </div>
 </li>
