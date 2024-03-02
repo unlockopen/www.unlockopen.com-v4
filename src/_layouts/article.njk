@@ -18,7 +18,7 @@ decorative:
     image.credit
   %}
     <!-- credit -->
-    <p class="credit feature | text-step-min-1">© {{ image.credit }}</p>
+    <p class="credit feature | text-step-min-1">{{ image.credit | inlineMarkdown | safe }}</p>
   {% endif %}
 
   <p class="meta | cluster" style="--gutter: var(--space-xs)">

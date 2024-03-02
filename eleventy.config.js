@@ -71,6 +71,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode('svg', shortcodes.svg);
   eleventyConfig.addShortcode('image', shortcodes.image);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  eleventyConfig.addFilter('inlineMarkdown', content => {
+      // TODO FIX THIS HACK
+      const md = plugins.markdown.render(content).trim();
+      return md.substring(3, md.length-4);
+  });
   eleventyConfig.addFilter('markdown', content => {
     return plugins.markdown.render(content);
   });
