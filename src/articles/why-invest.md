@@ -1,7 +1,6 @@
 ---
 title: Why invest in open source?
 date: 2019-09-12
-author: Tobie Langel
 ---
 
 "Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business."
