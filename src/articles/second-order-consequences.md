@@ -2,15 +2,18 @@
 title: Behold second-order consequences!
 date: 2019-03-05
 image:
-  src: './second-order-consequences/aoc.png'
+  src: "./src/assets/images/articles/aoc.png"
   alt: "Alexandria Ocasio-Cortez and Kerri Evelyn Harris talking together outside in a street during the 2018 general election."
-  legend: "Alexandria Ocasio-Cortez and Kerri Evelyn Harris photographed by Corey Torpie ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0))"
+  legend: "Alexandria Ocasio-Cortez and Kerri Evelyn Harris photographed by Corey Torpie"
+  credit: "Corey Torpie ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0))"
 ---
 
 In a [recent Huffington Post’s article][huffpost-article] about Ocasio-Cortez’s interrogation of Michael Cohen,
 the authors claimed that
 _“[o]ne advantage Ocasio-Cortez has over some colleagues is that she consistently attends even the most mundane committee hearings,
 since she does not spend any of her day calling donors for money.”_
+
+---
 
 That’s a second-order consequence.
 
