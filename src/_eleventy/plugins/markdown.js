@@ -13,7 +13,7 @@ import path from 'path';
 
 const markdownLib = markdownIt({
   html: true,
-  breaks: true,
+  breaks: false,
   linkify: true,
   typographer: true
 })
