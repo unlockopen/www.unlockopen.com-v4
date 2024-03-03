@@ -20,11 +20,7 @@ Open source sustainability became a major theme overnight. Stories of maintainer
 
 A few key projects received direct funding from top industry players, notably through the [Core Infrastructure Initiative](https://www.coreinfrastructure.org/) which was formed as a response to the Heartbleed crisis.
 
-{% image "./src/assets/images/articles/Lairesse_Maecenas.jpg", "", "'Gaius Maecenas Supporting the Arts', Gerard de Lairesse, date unknown. Maecenas was a notable patron of poets, such as Horace and Virgil. Many languages still use the term 'mecenate'—derived from Maecenas—for patronage." %}
-
-{% image "./src/assets/images/articles/Lairesse_Maecenas.jpg", "aius Maecenas Supporting the Arts" %}
-
-“Gaius Maecenas Supporting the Arts”, Gerard de Lairesse, date unknown. Maecenas was a notable patron of poets, such as Horace and Virgil. Many languages still use the term “_mecenate”_—derived from Maecenas—for patronage.
+![Representation of the painting “Gaius Maecenas Supporting the Arts” by Gerard de Lairesse.](./assets/images/articles/Lairesse_Maecenas.jpg "“Gaius Maecenas Supporting the Arts”, Gerard de Lairesse, date unknown. Maecenas was a notable patron of poets, such as Horace and Virgil. Many languages still use the term “mecenate”—derived from Maecenas—for patronage.")
 
 But for the vast majority, charity-based contributions (patronage) was the only available option. [A](https://www.henryzoo.com/blog/2018/03/02/in-pursuit-of-open-source-part-1.html) [few](https://hueniverse.com/giving-thanks-on-making-my-open-source-work-sustainable-aa4fa48ae4d2) [smart](https://marijnhaverbeke.nl/fund/) [developers](https://medium.freecodecamp.org/between-the-wires-an-interview-with-vue-js-creator-evan-you-e383cbf57cc4) were able to leverage their [network](https://hackernoon.com/tagged/network) to carve out a revenue stream large enough to work on open source part time or even full time. But these were few and far between.
 
