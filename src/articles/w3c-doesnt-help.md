@@ -7,6 +7,7 @@ image:
   alt: "Photo of a piggy bank."
   credit: "Photo by [Fabian Blank](https://unsplash.com/@blankerwahnsinn) on [Unsplash](https://unsplash.com/photos/pink-pig-figurine-on-white-surface-pElSkGRA2NU)"
 lede: "Software foundations have increasingly started helping non-corporate backed contributors with travel expenses. W3C has been lagging way behind. Until last year, 'invited experts'—W3C jargon for individual contributors—even had to pay to attend the technical conference in which they come work for free. It’s time for change."
+disclaimer: "Full disclosure: I was a W3C Advisory Committee Representative for a number of years. I have been a W3C fellow. I have been an invited expert in a number of W3C working groups editing specifications on clients’ behalf (so I was paid, this is not common). I am still listed as an invited expert for the WebApps WG, but have stopped editing the WebIDL spec for over a year. I joined TPAC this year and paid the full onsite price for my TPAC ticket out of pocket. I opted-out of the 5% surcharge to cover for invited expert tickets because I believe funding invited experts should be at the core of W3C’s mission, not charity members can opt out of."
 ---
 
 **The context:** across its different working groups, W3C has [over 150 invited experts](https://www.w3.org/participate/invited-experts/list) that contribute to spec work in various capacities, sometimes doing a lot of the heavy lifting. Unless these invited experts have a private arrangement with a client, which is rather rare (and needs to be disclosed to the working group), they work for free.
@@ -36,7 +37,3 @@ Overall other software foundations are **much more generous with non-corporate b
 Alternatively, increasing the membership fee by only $200 a year would create a $90K fund overnight! Of course, you’d want that as percentage increase instead. But I can’t tell you what that percentage would be without divulging W3C’s budget. Let’s just say that I doubt any member would notice the difference.
 
 The reason W3C hasn’t invested in its invited experts more so far isn’t because it doesn’t have the money, it’s because it prioritizes other things. That’s a choice, not a fatality.
-
----
-
-_Full disclosure: I was a W3C Advisory Committee Representative for a number of years. I have been a W3C fellow. I have been an invited expert in a number of W3C working groups editing specifications on clients’ behalf (so I was paid, this is not common). I am still listed as an invited expert for the WebApps WG, but have stopped editing the WebIDL spec for over a year. I joined TPAC this year and paid the full onsite price for my TPAC ticket out of pocket. I opted-out of the 5% surcharge to cover for invited expert tickets because I believe funding invited experts should be at the core of W3C’s mission, not charity members can opt out of._
