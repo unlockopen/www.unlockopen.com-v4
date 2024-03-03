@@ -15,6 +15,7 @@ import events from './src/_eleventy/events.js';
 import filters from './src/_eleventy/filters.js';
 import plugins from './src/_eleventy/plugins.js';
 import shortcodes from './src/_eleventy/shortcodes.js';
+import embedTwitter from "eleventy-plugin-embed-twitter";
 
 export default async function (eleventyConfig) {
   // --------------------- layout aliases
@@ -48,13 +49,13 @@ export default async function (eleventyConfig) {
     }
   });
 
+  eleventyConfig.addPlugin(embedTwitter, {
+    cacheText: true,
+    doNotTrack: true
+  });
+
   // 	--------------------- Library
   eleventyConfig.setLibrary('md', plugins.markdown);
-
-  // 	---------------------  Parse excerpts from content
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true
-  });
 
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
@@ -79,6 +80,8 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter('markdown', content => {
     return plugins.markdown.render(content);
   });
+  
+  
 
   // --------------------- Events ---------------------
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
