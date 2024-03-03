@@ -6,7 +6,7 @@
   "author": "Lene Saile",
   "license": "ISC",
   "engines": {
-    "node": ">=18.x.x"
+    "node": "20.6.1"
   },
   "scripts": {
     "clean": "rimraf dist",
