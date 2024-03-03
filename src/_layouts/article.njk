@@ -8,8 +8,22 @@ decorative:
 ---
 
 <article class="flow prose">
-  <h1>{{ title }}</h1>
+  <h1>{{ title | inlineMarkdown | safe }}</h1>
 
+  {% if lede %}
+    <p class="lede">{{ lede | inlineMarkdown | safe }}</p>
+  {% endif %}
+  
+  <p class="meta | cluster" style="--gutter: var(--space-xs)">
+    <!-- date -->
+    {% set definedDate = date %} {% include "components/date.njk" %}
+    {%
+      if tags.length >
+      1
+    %}
+    {% endif %}
+  </p>
+  
   {% if image %}
     {% image image.src, image.alt, null, "eager", "featured" %}
   {% endif %}
@@ -21,21 +35,13 @@ decorative:
     <p class="credit feature | text-step-min-1">{{ image.credit | inlineMarkdown | safe }}</p>
   {% endif %}
 
-  <p class="meta | cluster" style="--gutter: var(--space-xs)">
-    <!-- date -->
-    {% set definedDate = date %} {% include "components/date.njk" %}
-    {%
-      if tags.length >
-      1
-    %}
-    {% endif %}
-  </p>
-
-  {% if intro %}
-    <p class="intro">{{ intro }}</p>
-  {% endif %}
-
   {{ content | safe }}
+  
+  {% if disclaimer %}  
+    <hr /> 
+    <p class="disclaimer">{{ disclaimer | inlineMarkdown | safe }}</p>
+  {% endif %}
+  
 
   <!--  h-card infos: https://indieweb.org/authorship -->
   <div hidden class="h-entry">

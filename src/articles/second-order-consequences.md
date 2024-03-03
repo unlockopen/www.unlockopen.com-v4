@@ -6,14 +6,10 @@ image:
   alt: "Alexandria Ocasio-Cortez and Kerri Evelyn Harris talking together outside in a street during the 2018 general election."
   legend: "Alexandria Ocasio-Cortez and Kerri Evelyn Harris photographed by Corey Torpie"
   credit: "Corey Torpie ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0))"
+lede: "Alexandria Ocasio-Cortez's unique approach to fundraising not only sets her apart in Congress but also highlights the unexpected benefits of second-order consequences—a concept that proves equally transformative in the realm of open source software, where the true value lies beyond the code itself."
 ---
 
-In a [recent Huffington Post’s article][huffpost-article] about Ocasio-Cortez’s interrogation of Michael Cohen,
-the authors claimed that
-_“[o]ne advantage Ocasio-Cortez has over some colleagues is that she consistently attends even the most mundane committee hearings,
-since she does not spend any of her day calling donors for money.”_
-
----
+In a [recent Huffington Post’s article][huffpost-article] about Ocasio-Cortez’s interrogation of Michael Cohen, the authors claimed that _"one advantage Ocasio-Cortez has over some colleagues is that she consistently attends even the most mundane committee hearings, since she does not spend any of her day calling donors for money."_
 
 That’s a second-order consequence.
 

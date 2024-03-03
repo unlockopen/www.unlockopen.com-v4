@@ -1,10 +1,7 @@
 ---
 title: Why invest in open source?
 date: 2019-09-12
----
-
-"Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business."
-
+lede: "Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business."
 ---
 
 **Open source is everywhere.** It’s in your phone and in your car.

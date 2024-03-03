@@ -12,14 +12,11 @@
   grid-column: 1 / -1;
 }
 
-.article article .meta + p {
+.article article .lede {
   font-size: var(--size-step-1);
   line-height: var(--leading-fine);
-  font-weight: var(--font-medium);
-}
-
-.article article .meta + p + p {
-  --flow-space: var(--space-m);
+  font-weight: var(--font-light);
+  grid-column: 1 / -1;
 }
 
 .article article .featured img {
@@ -84,4 +81,11 @@
 
 .article article .meta {
   font-size: var(--size-step-min-1);
+}
+
+.article .disclaimer {
+  margin-top: 0;
+  font-size: var(--size-step-min-1);
+  font-weight: var(--font-light);
+  font-style: oblique;
 }

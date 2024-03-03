@@ -57,11 +57,6 @@ export default async function (eleventyConfig) {
   // 	--------------------- Library
   eleventyConfig.setLibrary('md', plugins.markdown);
 
-  // 	---------------------  Parse excerpts from content
-  eleventyConfig.setFrontMatterParsingOptions({
-    excerpt: true
-  });
-
   // --------------------- Filters
   eleventyConfig.addFilter('toIsoString', filters.toISOString);
   eleventyConfig.addFilter('formatDate', filters.formatDate);

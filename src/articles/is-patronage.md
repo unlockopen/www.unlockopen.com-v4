@@ -1,13 +1,16 @@
 ---
 title: 'Is patronage a sustainable solution to open source sustainability?'
-description: 'A couple of years ago, Heartbleed epitomized a massive open source sustainability problem for critical parts of the internet infrastructure. The bug, which affected the popular OpenSSL cryptographic software library, notably compromised the confidentiality of 4.5 million US patient records and cost the industry an estimated $500M.'
 ogImage:
 date: 2019-03-09
+image:
+    alt: "Detail of a painting by Ottavio Vannini which depicts Michelangelo presening a faun bust to the renaissance patron Lorenzo il Magnifico."
+    src: "./src/assets/images/articles/ottavio-vannini.webp"
+    legend: "Michelangelo Presents Lorenzo il Magnifico his Faun Bust” (detail) by Ottavio Vannini, 1635. Lorenzo de' Medici was a powerful magnate, politician, and patron of the Italian Renaissance, especially known for supporting the work of Botticelli and Michelangelo."
+    credit: "\"Michelangelo Presents Lorenzo il Magnifico his Faun Bust\" (detail) by Ottavio Vannini, 1635"
+lede: "The Heartbleed bug underscored the fragility of relying solely on patronage for open source sustainability. The real breakthrough will come from businesses understanding how _they_ can benefit from contributing to open source and aligning their efforts accordingly."
 ---
 
 A couple of years ago, [Heartbleed](http://heartbleed.com/) epitomized a massive [open source](https://hackernoon.com/tagged/open-source) sustainability problem for critical parts of the internet infrastructure. The bug, which affected the popular OpenSSL cryptographic software library, notably [compromised the confidentiality of 4.5 million US patient records](http://time.com/3148773/report-devastating-heartbleed-flaw-was-used-in-hospital-hack/) and [cost the industry an estimated $500M](http://www.eweek.com/security/heartbleed-ssl-flaw-s-true-cost-will-take-time-to-tally).
-
----
 
 It was soon revealed that the root-cause of the issue was that the OpenSSL project was [precariously understaffed](http://blog.ssh.com/free-can-make-you-bleed).
 
