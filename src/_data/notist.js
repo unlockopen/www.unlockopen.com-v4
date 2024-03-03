@@ -5,10 +5,11 @@ const { JSDOM } = jsdom;
 const td = new Turndown();
 
 async function cachedFetch(url, type) {
+	// Version notist data
 	return eleventyFetch(url, {
 		duration: "*",
 		type: type,
-		directory: ".cache"
+		directory: "src/_cache"
 	});
 }
 
