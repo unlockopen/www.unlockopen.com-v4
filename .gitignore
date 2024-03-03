@@ -7,10 +7,7 @@ src/_includes/css
 src/_includes/scripts
 
 # cache
-.cache
+# .cache
 
 # secret data
 .env
-
-# env-specific
-.DS_Store

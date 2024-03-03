@@ -1,7 +1,10 @@
 ---
 title: Why invest in open source?
 date: 2019-09-12
-lede: "Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business."
+---
+
+"Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business."
+
 ---
 
 **Open source is everywhere.** It’s in your phone and in your car.
@@ -33,13 +36,15 @@ Secondly, contributing to open source has proven to be a **catalyst to attract d
 Still wondering why Microsoft or IBM spent billions on companies based around open source? Wonder no longer.
 Both are hoping to capitalize on these to generate developer goodwill and onramp developers onto their paid offerings once they need scale and reliability.
 Even AWS is feeling the heat of this intense competition for developer mindshare and has started to up its open source contribution game.
-You might not be fighting for mindshare in the cloud wars, but if your offering includes anything developers might need to integrate, how you’re perceived in relation to open source might make or break your service offering.
+You might not be fighting for mindshare in the cloud wars, but if your offering includes anything developers might need to integrate,
+how you’re perceived in relation to open source might make or break your service offering.
 
 Thirdly, it is increasingly demonstrated that teams that contribute to open source **gain a net competitive advantage** over teams that don’t.
 
 At the individual level, engineers improve both their technical abilities and their soft skills.
 They build external networks they can tap into to help them solve work-related problems or recruit new team members.
-At the team level, this translates into increased efficiencies, with **open source contributing teams twice(!) as efficient as freeloading ones**, according to new research by Harvard Business School.
+At the team level, this translates into increased efficiencies, with **open source contributing teams twice(!) as efficient as freeloading ones**,
+according to new research by Harvard Business School.
 And at the organisation level, this leads to better public perception, improved company culture, higher employee morale, and lower churn.
 
 What’s not to like?
