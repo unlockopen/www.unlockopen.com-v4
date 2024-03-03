@@ -46,7 +46,7 @@ When we think about the value of open source, we often focus on the code itself,
 
 This process trains developers. Spreads good practices. Keeps them up to date on current technology. Creates networks. Fosters leadership and empathy. It is so unique in its ability to level-up developers that the single most asked question to potential hires is:
 
-<custom-pullquote>What’s your GitHub handle?</custom-pullquote>
+> What’s your GitHub handle?
 
 And while it’s obvious to companies that open source experience is paramount, the same companies are often oblivious to its corollary: Being able to practice open source _as part of their day job_ is critical to the very developers they want to hire. How else can they stay competitive? Burning the midnight oil only goes so far.
 
