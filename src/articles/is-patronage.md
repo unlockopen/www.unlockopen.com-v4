@@ -44,6 +44,8 @@ To find a solution to open source sustainability, we have to better understand t
 
 When we think about the value of open source, we often focus on the code itself, on the program that can be run. In doing so, we forget that this program is the output of a process. An extremely complex process that brings together people of competing companies; of different race, ethnicity, and gender; and of varying abilities and experience; to build software.
 
+https://twitter.com/polotek/status/936703835661144065
+
 This process trains developers. Spreads good practices. Keeps them up to date on current technology. Creates networks. Fosters leadership and empathy. It is so unique in its ability to level-up developers that the single most asked question to potential hires is:
 
 > What’s your GitHub handle?
@@ -53,6 +55,7 @@ And while it’s obvious to companies that open source experience is paramount, 
 In April 2016, a [Twitter survey](https://twitter.com/tobie/status/725094755068186624) I created on the topic got more than 2000 replies (my surveys barely attract 100 respondents, generally). 65% percent of respondents answered that being able to release and contribute to open source software as part of their full time job was extremely or somewhat important against only 18% who said it was not important at all. More recently, Cory House ran a similar poll and got similar numbers.
 
 Cory House’s Twitter poll on contributing to open source as a full-time employee.
+https://twitter.com/housecor/status/964921816690122752
 
 Yet, few companies leverage the ability of open source to make them more desirable to candidates, help them retain and foster their existing talent, and drive a better engineering culture. Those who do reap the benefits, while others simply leave money on the table.
 
