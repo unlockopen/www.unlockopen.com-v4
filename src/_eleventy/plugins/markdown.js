@@ -4,7 +4,7 @@ import markdownItAnchor from 'markdown-it-anchor';
 import markdownItClass from '@toycode/markdown-it-class';
 import markdownItLinkAttributes from 'markdown-it-link-attributes';
 import {full as markdownItEmoji} from 'markdown-it-emoji';
-import markdownItEleventyImg from 'markdown-it-eleventy-img';
+import markdownFigcaption from 'markdown-it-image-figures';
 import markdownItFootnote from 'markdown-it-footnote';
 import markdownitMark from 'markdown-it-mark';
 import markdownitAbbr from 'markdown-it-abbr';
@@ -44,25 +44,11 @@ const markdownLib = markdownIt({
     }
   ])
   .use(markdownItEmoji)
-  .use(markdownItEleventyImg, {
-    imgOptions: {
-      widths: [440, 880, 1024],
-      urlPath: '/assets/images/',
-      outputDir: './dist/assets/images/',
-      formats: ['webp', 'jpeg']
-    },
-    globalAttributes: {
-      loading: 'lazy',
-      decoding: 'async',
-      sizes: '90vw'
-    },
-    // prepend src for markdown images
-    resolvePath: (filepath, env) => {
-      return path.join('src', filepath);
-    }
-  })
   .use(markdownItFootnote)
   .use(markdownitMark)
-  .use(markdownitAbbr);
+  .use(markdownitAbbr)
+  .use(markdownFigcaption, {
+    figcaption: true
+  });
 
 export default markdownLib;
