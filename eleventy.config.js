@@ -15,7 +15,7 @@ import events from './src/_eleventy/events.js';
 import filters from './src/_eleventy/filters.js';
 import plugins from './src/_eleventy/plugins.js';
 import shortcodes from './src/_eleventy/shortcodes.js';
-import embedTwitter from "eleventy-plugin-embed-twitter";
+import embedTwitter from 'eleventy-plugin-embed-twitter';
 
 export default async function (eleventyConfig) {
   // --------------------- layout aliases
@@ -73,15 +73,13 @@ export default async function (eleventyConfig) {
   eleventyConfig.addShortcode('image', shortcodes.image);
   eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
   eleventyConfig.addFilter('inlineMarkdown', content => {
-      // TODO FIX THIS HACK
-      const md = plugins.markdown.render(content).trim();
-      return md.substring(3, md.length-4);
+    // TODO FIX THIS HACK
+    const md = plugins.markdown.render(content).trim();
+    return md.substring(3, md.length - 4);
   });
   eleventyConfig.addFilter('markdown', content => {
     return plugins.markdown.render(content);
   });
-  
-  
 
   // --------------------- Events ---------------------
   if (process.env.ELEVENTY_RUN_MODE === 'serve') {
@@ -91,9 +89,12 @@ export default async function (eleventyConfig) {
   // --------------------- Passthrough File Copy
 
   // -- same path
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(
-    path => eleventyConfig.addPassthroughCopy(path)
-  );
+  [
+    'src/assets/fonts/',
+    'src/assets/images/template',
+    'src/assets/og-images',
+    'src/assets/images/articles'
+  ].forEach(path => eleventyConfig.addPassthroughCopy(path));
 
   // -- to root
   eleventyConfig.addPassthroughCopy({
