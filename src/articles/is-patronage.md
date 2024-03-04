@@ -3,11 +3,11 @@ title: 'Is patronage a sustainable solution to open source sustainability?'
 ogImage:
 date: 2019-03-09
 image:
-    alt: "Detail of a painting by Ottavio Vannini which depicts Michelangelo presening a faun bust to the renaissance patron Lorenzo il Magnifico."
-    src: "./src/assets/images/articles/Ottavio_Vannini.jpg"
-    legend: "Michelangelo Presents Lorenzo il Magnifico his Faun Bust” (detail) by Ottavio Vannini, 1635. Lorenzo de' Medici was a powerful magnate, politician, and patron of the Italian Renaissance, especially known for supporting the work of Botticelli and Michelangelo."
-    credit: "\"Michelangelo Presents Lorenzo il Magnifico his Faun Bust\" (detail) by Ottavio Vannini, 1635"
-lede: "The Heartbleed bug underscored the fragility of relying solely on patronage for open source sustainability. The real breakthrough will come from businesses understanding how _they_ can benefit from contributing to open source and aligning their efforts accordingly."
+  alt: 'Detail of a painting by Ottavio Vannini which depicts Michelangelo presening a faun bust to the renaissance patron Lorenzo il Magnifico.'
+  src: './src/assets/images/articles/Ottavio_Vannini.jpg'
+  legend: "Michelangelo Presents Lorenzo il Magnifico his Faun Bust” (detail) by Ottavio Vannini, 1635. Lorenzo de' Medici was a powerful magnate, politician, and patron of the Italian Renaissance, especially known for supporting the work of Botticelli and Michelangelo."
+  credit: '"Michelangelo Presents Lorenzo il Magnifico his Faun Bust" (detail) by Ottavio Vannini, 1635'
+lede: 'The Heartbleed bug underscored the fragility of relying solely on patronage for open source sustainability. The real breakthrough will come from businesses understanding how _they_ can benefit from contributing to open source and aligning their efforts accordingly.'
 ---
 
 A couple of years ago, [Heartbleed](http://heartbleed.com/) epitomized a massive [open source](https://hackernoon.com/tagged/open-source) sustainability problem for critical parts of the internet infrastructure. The bug, which affected the popular OpenSSL cryptographic software library, notably [compromised the confidentiality of 4.5 million US patient records](http://time.com/3148773/report-devastating-heartbleed-flaw-was-used-in-hospital-hack/) and [cost the industry an estimated $500M](http://www.eweek.com/security/heartbleed-ssl-flaw-s-true-cost-will-take-time-to-tally).
@@ -20,7 +20,7 @@ Open source sustainability became a major theme overnight. Stories of maintainer
 
 A few key projects received direct funding from top industry players, notably through the [Core Infrastructure Initiative](https://www.coreinfrastructure.org/) which was formed as a response to the Heartbleed crisis.
 
-![Painting of Gaius Maecenas by Gerard de Lairesse](./assets/images/articles/Lairesse_Maecenas.jpg)
+![Painting of Gaius Maecenas by Gerard de Lairesse](/assets/images/articles/Lairesse_Maecenas.jpg)
 
 But for the vast majority, charity-based contributions (patronage) was the only available option. [A](https://www.henryzoo.com/blog/2018/03/02/in-pursuit-of-open-source-part-1.html) [few](https://hueniverse.com/giving-thanks-on-making-my-open-source-work-sustainable-aa4fa48ae4d2) [smart](https://marijnhaverbeke.nl/fund/) [developers](https://medium.freecodecamp.org/between-the-wires-an-interview-with-vue-js-creator-evan-you-e383cbf57cc4) were able to leverage their [network](https://hackernoon.com/tagged/network) to carve out a revenue stream large enough to work on open source part time or even full time. But these were few and far between.
 
