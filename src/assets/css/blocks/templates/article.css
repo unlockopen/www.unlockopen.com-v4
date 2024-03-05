@@ -89,4 +89,5 @@
   font-weight: var(--font-light);
   font-style: italic;
   font-style: oblique 12deg;
+  max-inline-size: 62ch;
 }
