@@ -19,10 +19,6 @@
   --flow-space: var(--space-m-l);
 }
 
-.prose figure > * + * {
-  margin-block-start: var(--flow-space, 1em);
-}
-
 .prose figcaption {
   --flow-space: var(--space-s);
   font-size: var(--size-step-min-1);
