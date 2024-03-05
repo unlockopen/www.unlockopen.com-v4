@@ -15,8 +15,8 @@
         {% include "components/date.njk" %}
       </span>
     </div>
-    {% if item.page.lede %}
-      <p>{{ item.data.lede | markdown | striptags | safe }}</p>
+    {% if item.data.lede %}
+      <p>{{ item.data.lede | markdown | safe }}</p>
     {% endif %}
   </div>
 </li>
