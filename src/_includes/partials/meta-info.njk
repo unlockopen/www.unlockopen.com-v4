@@ -50,7 +50,7 @@
 />
 <meta
   property="og:image"
-  content="{% if (layout == 'post') %}
+  content="{% if (layout == 'article') %}
     {{ meta.url }}/assets/og-images/{{ title | slugify }}-preview.jpeg
   {% else %}
     {{ meta.url }}{{ meta.opengraph_default }}
