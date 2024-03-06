@@ -1,4 +1,4 @@
-import svgToJpeg from './events/svgToJpeg.js';
+import svgToJpeg from "./events/svgToJpeg.js";
 
 export default {
   svgToJpeg

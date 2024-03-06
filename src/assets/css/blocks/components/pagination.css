@@ -29,7 +29,7 @@
   --pagination-border: var(--color-accent);
 }
 
-.pagination li:has(a[aria-current='page']) {
+.pagination li:has(a[aria-current="page"]) {
   --pagination-bg: var(--color-accent);
   --pagination-border: var(--color-text);
   --pagination-text: var(--color-text);

@@ -1,20 +1,20 @@
 /* © Andy Bell - https://buildexcellentwebsit.es/ */
 
-import plugin from 'tailwindcss/plugin';
-import postcss from 'postcss';
-import postcssJs from 'postcss-js';
+import plugin from "tailwindcss/plugin";
+import postcss from "postcss";
+import postcssJs from "postcss-js";
 
-import clampGenerator from './src/utilities/clamp-generator.js';
-import tokensToTailwind from './src/utilities/tokens-to-tailwind.js';
+import clampGenerator from "./src/utilities/clamp-generator.js";
+import tokensToTailwind from "./src/utilities/tokens-to-tailwind.js";
 
 // Raw design tokens
-import colorTokens from './src/_data/designTokens/colors.json';
-import fontTokens from './src/_data/designTokens/fonts.json';
-import spacingTokens from './src/_data/designTokens/spacing.json';
-import textSizeTokens from './src/_data/designTokens/textSizes.json';
-import textLeadingTokens from './src/_data/designTokens/textLeading.json';
-import textWeightTokens from './src/_data/designTokens/textWeights.json';
-import viewportTokens from './src/_data/designTokens/viewports.json';
+import colorTokens from "./src/_data/designTokens/colors.json";
+import fontTokens from "./src/_data/designTokens/fonts.json";
+import spacingTokens from "./src/_data/designTokens/spacing.json";
+import textSizeTokens from "./src/_data/designTokens/textSizes.json";
+import textLeadingTokens from "./src/_data/designTokens/textLeading.json";
+import textWeightTokens from "./src/_data/designTokens/textWeights.json";
+import viewportTokens from "./src/_data/designTokens/viewports.json";
 
 // Process design tokens
 const colors = tokensToTailwind(colorTokens.items);
@@ -25,7 +25,7 @@ const fontLeading = tokensToTailwind(textLeadingTokens.items);
 const spacing = tokensToTailwind(clampGenerator(spacingTokens.items));
 
 export default {
-  content: ['./src/**/*.{html,js,md,njk,liquid,webc}'],
+  content: ["./src/**/*.{html,js,md,njk,liquid,webc}"],
   presets: [],
   theme: {
     screens: {
@@ -39,31 +39,31 @@ export default {
     fontSize,
     fontWeight,
     fontLeading,
-    backgroundColor: ({theme}) => theme('colors'),
-    textColor: ({theme}) => theme('colors'),
+    backgroundColor: ({theme}) => theme("colors"),
+    textColor: ({theme}) => theme("colors"),
     margin: ({theme}) => ({
-      auto: 'auto',
-      ...theme('spacing')
+      auto: "auto",
+      ...theme("spacing")
     }),
-    padding: ({theme}) => theme('spacing')
+    padding: ({theme}) => theme("spacing")
   },
   variantOrder: [
-    'first',
-    'last',
-    'odd',
-    'even',
-    'visited',
-    'checked',
-    'empty',
-    'read-only',
-    'group-hover',
-    'group-focus',
-    'focus-within',
-    'hover',
-    'focus',
-    'focus-visible',
-    'active',
-    'disabled'
+    "first",
+    "last",
+    "odd",
+    "even",
+    "visited",
+    "checked",
+    "empty",
+    "read-only",
+    "group-hover",
+    "group-focus",
+    "focus-within",
+    "hover",
+    "focus",
+    "focus-visible",
+    "active",
+    "disabled"
   ],
 
   // Disables Tailwind's reset etc
@@ -75,7 +75,7 @@ export default {
   },
 
   // Prevents Tailwind's core components
-  blocklist: ['container'],
+  blocklist: ["container"],
 
   // Prevents Tailwind from generating that wall of empty custom properties
   experimental: {
@@ -85,17 +85,17 @@ export default {
   plugins: [
     // Generates custom property values from tailwind config
     plugin(function ({addComponents, config}) {
-      let result = '';
+      let result = "";
 
       const currentConfig = config();
 
       const groups = [
-        {key: 'colors', prefix: 'color'},
-        {key: 'spacing', prefix: 'space'},
-        {key: 'fontSize', prefix: 'size'},
-        {key: 'fontLeading', prefix: 'leading'},
-        {key: 'fontFamily', prefix: 'font'},
-        {key: 'fontWeight', prefix: 'font'}
+        {key: "colors", prefix: "color"},
+        {key: "spacing", prefix: "space"},
+        {key: "fontSize", prefix: "size"},
+        {key: "fontLeading", prefix: "leading"},
+        {key: "fontFamily", prefix: "font"},
+        {key: "fontWeight", prefix: "font"}
       ];
 
       groups.forEach(({key, prefix}) => {
@@ -111,7 +111,7 @@ export default {
       });
 
       addComponents({
-        ':root': postcssJs.objectify(postcss.parse(result))
+        ":root": postcssJs.objectify(postcss.parse(result))
       });
     }),
 
@@ -119,8 +119,8 @@ export default {
     plugin(function ({addUtilities, config}) {
       const currentConfig = config();
       const customUtilities = [
-        {key: 'spacing', prefix: 'flow-space', property: '--flow-space'},
-        {key: 'colors', prefix: 'spot-color', property: '--spot-color'}
+        {key: "spacing", prefix: "flow-space", property: "--flow-space"},
+        {key: "colors", prefix: "spot-color", property: "--spot-color"}
       ];
 
       customUtilities.forEach(({key, prefix, property}) => {

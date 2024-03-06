@@ -38,7 +38,7 @@
 }
 .card a:after {
   bottom: 0;
-  content: '';
+  content: "";
   left: 0;
   position: absolute;
   right: 0;
@@ -47,7 +47,7 @@
 
 .card::before {
   z-index: -1;
-  content: '';
+  content: "";
   position: absolute;
   inset-block-start: 0;
   inset-inline-start: 0;

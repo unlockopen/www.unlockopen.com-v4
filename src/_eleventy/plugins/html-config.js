@@ -1,9 +1,9 @@
-import htmlmin from 'html-minifier-terser';
-const isProduction = process.env.ELEVENTY_ENV === 'production';
+import htmlmin from "html-minifier-terser";
+const isProduction = process.env.ELEVENTY_ENV === "production";
 
 export default function configureHtml(eleventyConfig) {
-  eleventyConfig.addTransform('html-minify', (content, path) => {
-    if (path && path.endsWith('.html') && isProduction) {
+  eleventyConfig.addTransform("html-minify", (content, path) => {
+    if (path && path.endsWith(".html") && isProduction) {
       return htmlmin.minify(content, {
         collapseBooleanAttributes: true,
         collapseWhitespace: true,

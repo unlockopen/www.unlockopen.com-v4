@@ -20,19 +20,19 @@ pre {
   background-color: var(--dark-bg);
   padding: var(--space-xs);
   border-radius: var(--border-radius);
-	overflow: auto; /* Add this line */
+  overflow: auto; /* Add this line */
 }
 
-pre[class*='language-'] {
+pre[class*="language-"] {
   padding: var(--space-m-l);
 }
 
-code[class*='language-'] {
+code[class*="language-"] {
   padding: 0;
 }
 
-code[class*='language-'],
-pre[class*='language-'] {
+code[class*="language-"],
+pre[class*="language-"] {
   text-align: left;
   white-space: pre;
   word-spacing: normal;

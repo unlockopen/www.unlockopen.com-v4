@@ -16,52 +16,52 @@
   --color-info: var(--color-blue);
 }
 
-[data-theme='pink'] {
+[data-theme="pink"] {
   --color-bg: var(--color-pink-light);
   --color-accent: var(--color-pink);
 }
 
-[data-theme='blush'] {
+[data-theme="blush"] {
   --color-bg: var(--color-blush-light);
   --color-accent: var(--color-blush);
 }
 
-[data-theme='salmon'] {
+[data-theme="salmon"] {
   --color-bg: var(--color-salmon-light);
   --color-accent: var(--color-salmon);
 }
 
-[data-theme='tangerine'] {
+[data-theme="tangerine"] {
   --color-bg: var(--color-tangerine-light);
   --color-accent: var(--color-tangerine);
 }
 
-[data-theme='golden'] {
+[data-theme="golden"] {
   --color-bg: var(--color-golden-light);
   --color-accent: var(--color-golden);
 }
 
-[data-theme='apple'] {
+[data-theme="apple"] {
   --color-bg: var(--color-apple-light);
   --color-accent: var(--color-apple);
 }
 
-[data-theme='caribbean'] {
+[data-theme="caribbean"] {
   --color-bg: var(--color-caribbean-light);
   --color-accent: var(--color-caribbean);
 }
 
-[data-theme='aqua'] {
+[data-theme="aqua"] {
   --color-bg: var(--color-aqua-light);
   --color-accent: var(--color-aqua);
 }
 
-[data-theme='blue'] {
+[data-theme="blue"] {
   --color-bg: var(--color-blue-light);
   --color-accent: var(--color-blue);
 }
 
-[data-theme='lavender'] {
+[data-theme="lavender"] {
   --color-bg: var(--color-lavender-light);
   --color-accent: var(--color-lavender);
 }

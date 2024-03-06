@@ -1,11 +1,11 @@
 export const getLinkActiveState = (itemUrl, pageUrl) => {
-  let response = '';
+  let response = "";
 
   if (itemUrl === pageUrl) {
     response = ' aria-current="page"';
   }
 
-  if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl.replace('/page-0/', '')) === 0) {
+  if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl.replace("/page-0/", "")) === 0) {
     response += 'data-state="active"';
   }
 

@@ -1,11 +1,11 @@
 // ----- masonry fallback if CSS masonry not supported, solution by Ana Tudor: https://codepen.io/thebabydino/pen/yLYppjK
 
-const supportMasonry = CSS.supports('grid-template-rows', 'masonry');
+const supportMasonry = CSS.supports("grid-template-rows", "masonry");
 
 if (!supportMasonry) {
   let grids = [...document.querySelectorAll('.grid[data-rows="masonry"]')];
 
-  if (grids.length && getComputedStyle(grids[0]).gridTemplateRows !== 'masonry') {
+  if (grids.length && getComputedStyle(grids[0]).gridTemplateRows !== "masonry") {
     grids = grids.map(grid => ({
       _el: grid,
       gap: parseFloat(getComputedStyle(grid).rowGap),
@@ -17,10 +17,10 @@ if (!supportMasonry) {
 
     function layout() {
       grids.forEach(grid => {
-        let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(' ').length;
+        let ncol = getComputedStyle(grid._el).gridTemplateColumns.split(" ").length;
         if (grid.ncol !== ncol) {
           grid.ncol = ncol;
-          grid.items.forEach(c => c._el.style.removeProperty('margin-block-start'));
+          grid.items.forEach(c => c._el.style.removeProperty("margin-block-start"));
           if (grid.ncol > 1) {
             grid.items.slice(ncol).forEach((c, i) => {
               let prev_fin = grid.items[i]._el.getBoundingClientRect().bottom,
@@ -33,10 +33,10 @@ if (!supportMasonry) {
     }
 
     addEventListener(
-      'load',
+      "load",
       e => {
         layout();
-        addEventListener('resize', layout, false);
+        addEventListener("resize", layout, false);
       },
       false
     );

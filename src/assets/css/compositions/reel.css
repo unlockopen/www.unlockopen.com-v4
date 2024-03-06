@@ -32,10 +32,10 @@
 
 /* SCROLL TYPE EXCEPTION
    Sets the reel to snap on each item on scroll */
-.reel[data-scroll='snap'] {
+.reel[data-scroll="snap"] {
   scroll-snap-type: x mandatory;
 }
 
-.reel[data-scroll='snap'] > * {
+.reel[data-scroll="snap"] > * {
   scroll-snap-align: start;
 }

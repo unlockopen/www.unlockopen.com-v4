@@ -1,6 +1,6 @@
 /** © Andy Bell - https://buildexcellentwebsit.es/ */
 
-const slugify = require('slugify');
+const slugify = require("slugify");
 
 /**
  * Converts human readable tokens into tailwind config friendly ones

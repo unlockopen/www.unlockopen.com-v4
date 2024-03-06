@@ -1,15 +1,15 @@
-import markdownIt from 'markdown-it';
-import markdownItPrism from 'markdown-it-prism';
-import markdownItAnchor from 'markdown-it-anchor';
-import markdownItClass from '@toycode/markdown-it-class';
-import markdownItLinkAttributes from 'markdown-it-link-attributes';
-import {full as markdownItEmoji} from 'markdown-it-emoji';
-import markdownItEleventyImg from 'markdown-it-eleventy-img';
-import markdownItFootnote from 'markdown-it-footnote';
-import markdownitMark from 'markdown-it-mark';
-import markdownitAbbr from 'markdown-it-abbr';
-import {slugifyString} from '../filters/slugify.js';
-import path from 'path';
+import markdownIt from "markdown-it";
+import markdownItPrism from "markdown-it-prism";
+import markdownItAnchor from "markdown-it-anchor";
+import markdownItClass from "@toycode/markdown-it-class";
+import markdownItLinkAttributes from "markdown-it-link-attributes";
+import {full as markdownItEmoji} from "markdown-it-emoji";
+import markdownItEleventyImg from "markdown-it-eleventy-img";
+import markdownItFootnote from "markdown-it-footnote";
+import markdownitMark from "markdown-it-mark";
+import markdownitAbbr from "markdown-it-abbr";
+import {slugifyString} from "../filters/slugify.js";
+import path from "path";
 
 const markdownLib = markdownIt({
   html: true,
@@ -17,20 +17,20 @@ const markdownLib = markdownIt({
   linkify: true,
   typographer: true
 })
-  .disable('code')
+  .disable("code")
   .use(markdownItPrism, {
-    defaultLanguage: 'plaintext'
+    defaultLanguage: "plaintext"
   })
   .use(markdownItAnchor, {
     slugify: slugifyString,
     tabIndex: false,
     permalink: markdownItAnchor.permalink.headerLink({
-      class: 'heading-anchor'
+      class: "heading-anchor"
     })
   })
   .use(markdownItClass, {
-    ol: 'list',
-    ul: 'list'
+    ol: "list",
+    ul: "list"
   })
   .use(markdownItLinkAttributes, [
     {
@@ -39,7 +39,7 @@ const markdownLib = markdownIt({
         return href.match(/^https?:\/\//);
       },
       attrs: {
-        rel: 'noopener'
+        rel: "noopener"
       }
     }
   ])
@@ -47,18 +47,18 @@ const markdownLib = markdownIt({
   .use(markdownItEleventyImg, {
     imgOptions: {
       widths: [440, 880, 1024],
-      urlPath: '/assets/images/',
-      outputDir: './dist/assets/images/',
-      formats: ['webp', 'jpeg']
+      urlPath: "/assets/images/",
+      outputDir: "./dist/assets/images/",
+      formats: ["webp", "jpeg"]
     },
     globalAttributes: {
-      loading: 'lazy',
-      decoding: 'async',
-      sizes: '90vw'
+      loading: "lazy",
+      decoding: "async",
+      sizes: "90vw"
     },
     // prepend src for markdown images
     resolvePath: (filepath, env) => {
-      return path.join('src', filepath);
+      return path.join("src", filepath);
     },
     renderImage(image, attributes) {
       const [Image, options] = image;
@@ -68,7 +68,7 @@ const markdownLib = markdownIt({
 
       const metadata = Image.statsSync(src, options);
       const imageMarkup = Image.generateHTML(metadata, attrs, {
-        whitespaceMode: 'inline'
+        whitespaceMode: "inline"
       });
 
       const imageElement = attrs.title

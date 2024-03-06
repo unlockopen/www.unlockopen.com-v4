@@ -1,9 +1,9 @@
-import slugify from 'slugify';
+import slugify from "slugify";
 
 /** Converts string to a slug form. */
 const slugifyString = str => {
   return slugify(str, {
-    replacement: '-',
+    replacement: "-",
     remove: /[#,&,+()$~%.'":*¿?¡!<>{}]/g,
     lower: true
   });

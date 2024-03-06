@@ -111,7 +111,7 @@ hr {
   transform: translateY(-1px);
 }
 
-[role='list'] {
+[role="list"] {
   padding: 0;
 }
 

@@ -1,19 +1,19 @@
 // CSS and JavaScript as first-class citizens in Eleventy: https://pepelsbey.dev/articles/eleventy-css-js/
 
-import postcss from 'postcss';
-import postcssImport from 'postcss-import';
-import postcssImportExtGlob from 'postcss-import-ext-glob';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
+import postcss from "postcss";
+import postcssImport from "postcss-import";
+import postcssImportExtGlob from "postcss-import-ext-glob";
+import tailwindcss from "tailwindcss";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
 
 export default function configureEleventyCSS(eleventyConfig) {
-  eleventyConfig.addTemplateFormats('css');
+  eleventyConfig.addTemplateFormats("css");
 
-  eleventyConfig.addExtension('css', {
-    outputFileExtension: 'css',
+  eleventyConfig.addExtension("css", {
+    outputFileExtension: "css",
     compile: async (content, path) => {
-      if (path !== './src/assets/css/global.css') {
+      if (path !== "./src/assets/css/global.css") {
         return;
       }
 
