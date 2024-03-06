@@ -34,7 +34,7 @@ summary:focus-visible {
 }
 
 summary::before {
-  content: '+';
+  content: "+";
   display: block;
   color: var(--color-accent);
   font-family: var(--font-mono);
@@ -47,13 +47,13 @@ summary::before {
 }
 
 [open] summary::before {
-  content: '-';
+  content: "-";
 }
 
 /* Hide default marker */
 summary::-webkit-details-marker,
 summary::marker {
-  content: '';
+  content: "";
   display: none;
 }
 

@@ -1,5 +1,5 @@
-import CleanCSS from 'clean-css';
-import esbuild from 'esbuild';
+import CleanCSS from "clean-css";
+import esbuild from "esbuild";
 
 const minifyCss = code => new CleanCSS({}).minify(code).styles;
 
@@ -21,7 +21,7 @@ const minifyJs = async (code, ...rest) => {
       callback(null, (await minified).code);
     }
   } catch (err) {
-    console.error('jsmin error: ', err);
+    console.error("jsmin error: ", err);
     callback(null, code);
   }
 };

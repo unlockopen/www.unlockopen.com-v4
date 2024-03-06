@@ -1,17 +1,14 @@
 ---
 title: Testimonial
 usage: '<custom-testimonial class="custom classes" @source="Person who said this" image="./src/assets/images/pages/tobie-langel.jpg" alt="Tobie"> ... </custom-testimonial>'
-instructions: ''
+instructions: ""
 ---
 
 <p>{{ instructions }}</p>
 
 <pre><code>{{ usage | escapeHtml }}</code></pre>
 
-<custom-testimonial
-  class="custom classes"
-  @source="Person who said this"
->
+<custom-testimonial class="custom classes" @source="Person who said this">
   I had the pleasure of working with Tobie. Their expertise and dedication are truly
   commendable. Their professionalism and attention to detail greatly contributed to the
   success of our project. I highly recommend their services!
@@ -22,4 +19,3 @@ instructions: ''
   commendable. Their professionalism and attention to detail greatly contributed to the
   success of our project. I highly recommend their services!
 </custom-testimonial>
-

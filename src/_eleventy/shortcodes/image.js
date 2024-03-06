@@ -1,31 +1,31 @@
-import Image from '@11ty/eleventy-img';
-import path from 'path';
-import htmlmin from 'html-minifier-terser';
+import Image from "@11ty/eleventy-img";
+import path from "path";
+import htmlmin from "html-minifier-terser";
 
 const stringifyAttributes = attributeMap => {
   return Object.entries(attributeMap)
     .map(([attribute, value]) => {
-      if (typeof value === 'undefined') return '';
+      if (typeof value === "undefined") return "";
       return `${attribute}="${value}"`;
     })
-    .join(' ');
+    .join(" ");
 };
 
 const eleventyImage = async (
   src,
-  alt = '',
+  alt = "",
   caption,
-  loading = 'lazy',
+  loading = "lazy",
   className,
-  sizes = '90vw',
+  sizes = "90vw",
   widths = [440, 650, 960, 1200],
-  formats = ['avif', 'webp', 'jpeg']
+  formats = ["avif", "webp", "jpeg"]
 ) => {
   const metadata = await Image(src, {
     widths: [...widths],
     formats: [...formats],
-    urlPath: '/assets/images/',
-    outputDir: './dist/assets/images/',
+    urlPath: "/assets/images/",
+    outputDir: "./dist/assets/images/",
     filenameFormat: (id, src, width, format, options) => {
       const extension = path.extname(src);
       const name = path.basename(src, extension);
@@ -37,20 +37,20 @@ const eleventyImage = async (
 
   // Getting the URL to use
   let imgSrc = src;
-  if (!imgSrc.startsWith('.')) {
+  if (!imgSrc.startsWith(".")) {
     const inputPath = this.page.inputPath;
-    const pathParts = inputPath.split('/');
+    const pathParts = inputPath.split("/");
     pathParts.pop();
-    imgSrc = `${pathParts.join('/')}/${src}`;
+    imgSrc = `${pathParts.join("/")}/${src}`;
   }
 
   const imageSources = Object.values(metadata)
     .map(imageFormat => {
       return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat
         .map(entry => entry.srcset)
-        .join(', ')}" sizes="${sizes}">`;
+        .join(", ")}" sizes="${sizes}">`;
     })
-    .join('\n');
+    .join("\n");
 
   const imgageAttributes = stringifyAttributes({
     src: lowsrc.url,
@@ -58,11 +58,11 @@ const eleventyImage = async (
     height: lowsrc.height,
     alt,
     loading,
-    decoding: 'async'
+    decoding: "async"
   });
 
   const imageElement = caption
-    ? `<figure class="flow ${className ? `${className}` : ''}">
+    ? `<figure class="flow ${className ? `${className}` : ""}">
 				<picture>
 					${imageSources}
 					<img
@@ -70,7 +70,7 @@ const eleventyImage = async (
 				</picture>
 				<figcaption>${caption}</figcaption>
 			</figure>`
-    : `<picture class="${className ? `${className}` : ''}">
+    : `<picture class="${className ? `${className}` : ""}">
 				${imageSources}
 				<img
 				${imgageAttributes}>

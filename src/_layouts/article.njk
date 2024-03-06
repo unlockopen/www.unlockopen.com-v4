@@ -1,10 +1,10 @@
 ---
 layout: base
 schema: blog
-theme: 'golden'
+theme: "golden"
 decorative:
   shape: pizza
-  settings: '--decorative-height: 50rem'
+  settings: "--decorative-height: 50rem"
 ---
 
 <article class="flow prose">
@@ -13,7 +13,7 @@ decorative:
   {% if lede %}
     <p class="lede">{{ lede | inlineMarkdown | safe }}</p>
   {% endif %}
-  
+
   <p class="meta | cluster" style="--gutter: var(--space-xs)">
     <!-- date -->
     {% set definedDate = date %} {% include "components/date.njk" %}
@@ -23,7 +23,7 @@ decorative:
     %}
     {% endif %}
   </p>
-  
+
   {% if image %}
     {% image image.src, image.alt, null, "eager", "featured" %}
   {% endif %}
@@ -32,16 +32,17 @@ decorative:
     image.credit
   %}
     <!-- credit -->
-    <p class="credit feature | text-step-min-1">{{ image.credit | inlineMarkdown | safe }}</p>
+    <p class="credit feature | text-step-min-1">
+      {{ image.credit | inlineMarkdown | safe }}
+    </p>
   {% endif %}
 
   {{ content | safe }}
-  
-  {% if disclaimer %}  
-    <hr /> 
+
+  {% if disclaimer %}
+    <hr />
     <p class="disclaimer">{{ disclaimer | inlineMarkdown | safe }}</p>
   {% endif %}
-  
 
   <!--  h-card infos: https://indieweb.org/authorship -->
   <div hidden class="h-entry">

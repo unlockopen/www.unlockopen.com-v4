@@ -32,7 +32,7 @@
   --text-color: var(--nav-hover-color, var(--color-text));
 }
 
-.site-nav a[aria-current='page'] {
+.site-nav a[aria-current="page"] {
   --border-color: var(--nav-list-color, var(--color-text));
   --text-color: var(--nav-list-color, var(--color-text));
 }
