@@ -96,6 +96,61 @@ const slugs = {
   "y-a-t-il-de-la-place-pour-lethique-dans-lopen-source": "ethics-fr"
 };
 
+const assetIndex = {
+    "2024/state-of-open/1-billion": "1-billion.webp", 
+    "2024/fosdem/cra-standards": "cra-standard.jpg", 
+    "2024/ospo-onramp/ospo": "ospo.jpg", 
+    "2023/osxp/dark-knights-or-super-heroes": "", 
+    "2023/w3c-workshop/secure-the-web-forward": "secure-the-web-forward.jpg", 
+    "2023/upstream/as-is": "as-is.jpg", 
+    "2022/eu-commission/measuring-contributions": null, 
+    "2022/osxp/financing-critical-infrastructure": null, 
+    "2022/contributing-today/oss-funding": null, 
+    "2022/upstream/connect-the-dots": "connect-the-dots.jpg", 
+    "2022/open-edx/open-edx-keynote": "open-edx-keynote.jpg", 
+    "2022/foss-backstage/priority-of-constituencies": "priority-of-constituencies/default.png", 
+    "2021/seagl/priority-of-constituencies": "priority-of-constituencies/default.png", 
+    "2021/ato/contribution-policies": null, 
+    "2021/ospocon/contribution-policies": null, 
+    "2021/posi/contribution-policies": null, 
+    "2021/europython/sustainability": "sustainability.jpg", 
+    "2021/ow2con/laggard-to-powerhouse": null, 
+    "2021/openjs-world/what-is-open-source": "what-is-open-source.png", 
+    "2021/contributing-today/oss-funding": null, 
+    "2021/fossasia/sustainability": "sustainability.jpg", 
+    "2021/foss-backstage/sustainability": "sustainability.jpg", 
+    "2021/fosdem/priority-of-constituencies": "priority-of-constituencies/default.png", 
+    "2020/kubecon/business-case": "business-case/kubecon.jpeg", 
+    "2020/sfscon/business-case": "business-case/default.jpg", 
+    "2020/cto-summit/recruit-retain-foster": null, 
+    "2020/ossummit/home": null, 
+    "2020/dinacon/sustainability": "sustainability.jpg", 
+    "2020/openinfra/business-case": "business-case/default.jpg", 
+    "2020/ansiblefest/business-case": "business-case/ansiblefest.jpg", 
+    "2020/paris-web/ethics-fr": null, 
+    "2020/state-of-the-source/priority-of-constituencies": "priority-of-constituencies/state-of-the-source.png", 
+    "2020/openjs-world/sustainability": "sustainability.jpg", 
+    "2020/open-source-101/why-contribute": null, 
+    "2020/openchain/contribution-policies": null, 
+    "2020/ato-meetup/why-contribute": null, 
+    "2020/openexpo/laggard-to-powerhouse": null, 
+    "2020/finos/contribution-policies": null, 
+    "2020/fosdem/ethics": null, 
+    "2020/finos/recruit-retain-foster": null, 
+    "2019/ossf/laggard-to-powerhouse": null, 
+    "2019/ato/business-case": "business-case/raleigh.jpg", 
+    "2019/amp-contributor-summit/amp-update": null, 
+    "2019/openexpo/business-case": "business-case/madrid.jpg", 
+    "2019/ow2con/business-case": "business-case/paris.jpg", 
+    "2019/innersource-commons/business-case": "business-case/innersource-commons.jpg", 
+    "2019/genevaweb/sustainability": "sustainability.jpg", 
+    "2019/fosdem/sustainability": "sustainability.jpg", 
+    "2018/ossf/business-case": "business-case/canary-warf.jpg", 
+    "2018/ossf/management-consultants": null, 
+    "2018/ossummit/contribution-policies": null, 
+    "2017/decision-making-in-sdos/do-ocracies": null
+};
+
 const videoIndex = {};
 
 async function getDocument(url) {
@@ -111,7 +166,7 @@ function clone(obj) {
   return JSON.parse(JSON.stringify(obj));
 }
 
-export default async function () {
+export default async function() {
   const videos = [];
   const conferences = {};
   const index = await getDocument("https://noti.st/tobie/videos");
@@ -143,6 +198,7 @@ export default async function () {
     videoIndex[video.notistId] = video;
   }
 
+
   const json = await cachedFetch("https://noti.st/tobie.json", "json");
   const indexData = json.data[0].relationships.data;
   const presentations = [];
@@ -166,7 +222,7 @@ export default async function () {
     const eventObj = {
       name: event.title,
       notistSlug: event.slug,
-      slug: `${year}/${eventSlug}`,
+      slug: `${ year }/${ eventSlug }`,
       startDate: event.starts_on,
       endDate: event.ends_on,
       address: event.address,
@@ -175,15 +231,18 @@ export default async function () {
       countryCode: event.country_code,
       url: event.url
     };
+
+    const objSlug = `${ year }/${ eventSlug }/${ slug }`
     const obj = {
       title: indexD.attributes.title,
       date: indexD.attributes.presented_on,
       timezone: indexD.attributes.timezone,
       image: indexD.attributes.image,
+      rawImage: assetIndex[objSlug] ? `./src/assets/images/speaking/${assetIndex[objSlug]}` : undefined,
       notistSlug: notistSlug,
       notistID: notistID,
       talkSlug: slug,
-      slug: `${year}/${eventSlug}/${slug}`,
+      slug: objSlug,
       year: year,
       notistUrls: [
         pres.links.self,
@@ -195,7 +254,7 @@ export default async function () {
       pdf: pres.attributes.download,
       video: videoIndex[notistID] ? clone(videoIndex[notistID]) : undefined,
       slidedeck: pres.attributes.slidedeck?.data[0].slides.map(s => {
-        const obj = {url: s.image};
+        const obj = { url: s.image };
         if (s.title) {
           obj.title = s.title;
         }
@@ -205,7 +264,7 @@ export default async function () {
         return obj;
       }),
       resources: pres.attributes.resources?.data.map(r => {
-        const obj = {url: r.url};
+        const obj = { url: r.url };
         if (r.title) {
           obj.title = r.title;
         }
@@ -220,9 +279,10 @@ export default async function () {
     presentations.push(obj);
     if (videoIndex[notistID]) {
       videoIndex[notistID].event = clone(eventObj);
-      videoIndex[notistID].slug = `${event.slug}/${slug}`;
+      videoIndex[notistID].slug = `${ event.slug }/${ slug }`;
       videos.push(videoIndex[notistID]);
     }
+
   }
 
   return {
@@ -230,4 +290,4 @@ export default async function () {
     videos,
     conferences
   };
-}
+};
