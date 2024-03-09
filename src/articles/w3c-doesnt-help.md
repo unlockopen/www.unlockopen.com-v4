@@ -4,8 +4,6 @@ ogImage:
 date: 2019-04-23
 image:
   src: "./src/assets/images/articles/piggy-bank.jpg"
-  alt: "Photo of a piggy bank."
-  credit: "Photo by [Fabian Blank](https://unsplash.com/@blankerwahnsinn) on [Unsplash](https://unsplash.com/photos/pink-pig-figurine-on-white-surface-pElSkGRA2NU)"
 lede: "Software foundations have increasingly started helping non-corporate backed contributors with travel expenses. W3C has been lagging way behind. Until last year, 'invited experts'—W3C jargon for individual contributors—even had to pay to attend the technical conference in which they come work for free. It’s time for change."
 disclaimer: "Full disclosure: I was a W3C Advisory Committee Representative for a number of years. I have been a W3C fellow. I have been an invited expert in a number of W3C working groups editing specifications on clients’ behalf (so I was paid, this is not common). I am still listed as an invited expert for the WebApps WG, but have stopped editing the WebIDL spec for over a year. I joined TPAC this year and paid the full onsite price for my TPAC ticket out of pocket. I opted-out of the 5% surcharge to cover for invited expert tickets because I believe funding invited experts should be at the core of W3C’s mission, not charity members can opt out of."
 ---

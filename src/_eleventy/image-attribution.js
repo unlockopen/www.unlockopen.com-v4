@@ -42,26 +42,14 @@ async function readYamlFile(filePath) {
   }
 }
 
-const ATTRIBUTION_NOT_REQUIRED = new Set(["unsplash license", "public domain"]);
-
-function attributionRequired(data) {
-    // assumes UnlockOpen copyright unless otherwise-mentioned
-    if (data.license && data.license.name) {
-        const license = data.license.name.toLowerCase();
-        if (ATTRIBUTION_NOT_REQUIRED.has(license)) {
-            return false;
-        } else {
-            return true;
-        }
-    } else {
-        return false;
-    }
-}
-
-function attribution(data) {
+function creditText(data) {
     const attr = [];
     let type = data.type;
-    type = type.charAt(0).toUpperCase() + type.slice(1);
+    
+    if (data.creditText) {
+        return `${type} credit: ${data.creditText}`;
+    }
+    
     if (data.url) {
         type = `[${type}](${data.url})`;
     }
@@ -71,21 +59,22 @@ function attribution(data) {
         if (author.url) {
             author = `[${data.author.name}](${data.author.url})`;
         }
-        attr.push(type, "by", author);
+        attr.push(`${type} by ${author}`);
     }
     
     let license = data.license;
-    if (license && license.name) {
-        license = license.url ? `([${license.name}](${license.url}))` : `(${license.name})`;
+    if (license && license.name && license.name.toLowerCase() != "unsplash license") {
+        license = license.url ? `[${license.name}](${license.url})` : `${license.name}`;
         attr.push(license);
     }
     
     if (attr.length > 0) {
-        return attr.join(" ") + ".";
+        return attr.join(", ");
     }
 
     return "";
 }
+
 
 async function buildIndexWithYamlData(images) {
   const index = {};
@@ -94,18 +83,62 @@ async function buildIndexWithYamlData(images) {
     const ymlPath = `${imagePath}.yml`;
     const yamlData = await readYamlFile(ymlPath) || {};
     if (yamlData) {
-        yamlData.type = yamlData.type || "photo";
+        yamlData.type = yamlData.type || "Photo";
         yamlData.src = imagePath;
-        yamlData.attributionRequired = attributionRequired(yamlData);
-        yamlData.attribution = attribution(yamlData);
     }
     index[imagePath] = yamlData;
   }
   return index;
 }
 
-export default async function(data) {
+async function main() {
   let images = await findImages("./src/assets/images/");
   let index = await buildIndexWithYamlData(images);
-  return index;
-};
+  let md;
+  function normalizePath(path) {
+      if (path.startsWith(".")) {
+          path = path.substring(1);
+      }
+      if (path.startsWith("/")) {
+          path = path.substring(1);
+      }
+      return path;
+  }  
+  function getData(path) {
+      path = normalizePath(path)
+      return index[path];
+  }
+  
+  function getCaption(path, customCaptionText) {
+      const data = getData(path);
+      const caption = customCaptionText || data.caption;
+      const creditTxt = creditText(data);
+      return md(caption ? `${caption} (${creditTxt})` : `(${creditTxt})`);
+  }
+  
+  function getCreditText(path) {
+      const data = getData(path);
+      const creditTxt = creditText(data);
+      return md(creditTxt);
+  }
+  
+  function getAlt(path) {
+      const data = getData(path);
+      return md(data.alt || "");
+  }
+
+  function setMarkdownEngine(engine) {
+      md = engine;
+  }
+  return {
+      data: index,
+      setMarkdownEngine,
+      getCaption,
+      getAlt,
+      getData,
+      getCreditText
+  }
+}
+ 
+export default main;
+

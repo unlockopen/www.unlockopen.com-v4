@@ -25,16 +25,7 @@ decorative:
   </p>
 
   {% if image %}
-    {% image image.src, image.alt, null, "eager", "featured" %}
-  {% endif %}
-  {%
-    if
-    image.credit
-  %}
-    <!-- credit -->
-    <p class="credit feature | text-step-min-1">
-      {{ image.credit | inlineMarkdown | safe }}
-    </p>
+    {% image image.src, image.alt, image.caption, "eager", "featured" %}
   {% endif %}
 
   {{ content | safe }}

@@ -3,10 +3,8 @@ title: 'Is patronage a sustainable solution to open source sustainability?'
 ogImage:
 date: 2019-03-09
 image:
-    alt: "Detail of a painting by Ottavio Vannini which depicts Michelangelo presening a faun bust to the renaissance patron Lorenzo il Magnifico."
     src: "./src/assets/images/articles/Ottavio_Vannini.jpg"
     legend: "Michelangelo Presents Lorenzo il Magnifico his Faun Bust” (detail) by Ottavio Vannini, 1635. Lorenzo de' Medici was a powerful magnate, politician, and patron of the Italian Renaissance, especially known for supporting the work of Botticelli and Michelangelo."
-    credit: "\"Michelangelo Presents Lorenzo il Magnifico his Faun Bust\" (detail) by Ottavio Vannini, 1635"
 lede: "The Heartbleed bug underscored the fragility of relying solely on patronage for open source sustainability. The real breakthrough will come from businesses understanding how _they_ can benefit from contributing to open source and aligning their efforts accordingly."
 ---
 

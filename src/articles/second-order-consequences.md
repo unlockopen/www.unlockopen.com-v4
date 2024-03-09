@@ -3,9 +3,7 @@ title: Behold second-order consequences!
 date: 2019-03-05
 image:
   src: "./src/assets/images/articles/aoc.png"
-  alt: "Alexandria Ocasio-Cortez and Kerri Evelyn Harris talking together outside in a street during the 2018 general election."
-  legend: "Alexandria Ocasio-Cortez and Kerri Evelyn Harris photographed by Corey Torpie"
-  credit: "Corey Torpie ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0))"
+  caption: "Alexandria Ocasio-Cortez's unique approach to fundraising also allows her to spend more time supporting fellow democrat candidtes like Kerri Evelyn Harris pictured here."
 lede: "Alexandria Ocasio-Cortez's unique approach to fundraising not only sets her apart in Congress but also highlights the unexpected benefits of second-order consequences—a concept that proves equally transformative in the realm of open source software, where the true value lies beyond the code itself."
 ---
 

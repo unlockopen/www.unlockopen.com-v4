@@ -10,7 +10,10 @@ import markdownitMark from "markdown-it-mark";
 import markdownitAbbr from "markdown-it-abbr";
 import {slugifyString} from "../filters/slugify.js";
 import path from "path";
-
+function main(imageAttribution) {
+    
+    
+    
 const markdownLib = markdownIt({
   html: true,
   breaks: false,
@@ -65,16 +68,18 @@ const markdownLib = markdownIt({
       const [src, attrs] = attributes;
 
       Image(src, options);
+      
+      const caption = imageAttribution.getCaption(src, attrs.title);
 
       const metadata = Image.statsSync(src, options);
       const imageMarkup = Image.generateHTML(metadata, attrs, {
         whitespaceMode: "inline"
       });
 
-      const imageElement = attrs.title
+      const imageElement = caption
         ? `<figure class="flow">
 			${imageMarkup}
-					<figcaption>${attrs.title}</figcaption>
+					<figcaption>${caption}</figcaption>
 				</figure>`
         : `${imageMarkup}`;
 
@@ -84,5 +89,7 @@ const markdownLib = markdownIt({
   .use(markdownItFootnote)
   .use(markdownitMark)
   .use(markdownitAbbr);
-
-export default markdownLib;
+  
+  return markdownLib;
+}
+export default main;
