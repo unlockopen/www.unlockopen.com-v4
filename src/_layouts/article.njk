@@ -17,11 +17,6 @@ decorative:
   <p class="meta | cluster" style="--gutter: var(--space-xs)">
     <!-- date -->
     {% set definedDate = date %} {% include "components/date.njk" %}
-    {%
-      if tags.length >
-      1
-    %}
-    {% endif %}
   </p>
 
   {% if image %}
