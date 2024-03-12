@@ -1,6 +1,5 @@
 ---
 title: 'W3C doesn’t help its invited experts. It should.'
-ogImage:
 date: 2019-04-23
 image:
   src: "./src/assets/images/articles/piggy-bank.jpg"

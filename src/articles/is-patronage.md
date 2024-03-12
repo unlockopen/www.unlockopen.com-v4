@@ -1,6 +1,5 @@
 ---
 title: 'Is patronage a sustainable solution to open source sustainability?'
-ogImage:
 date: 2019-03-09
 image:
     src: "./src/assets/images/articles/Ottavio_Vannini.jpg"
