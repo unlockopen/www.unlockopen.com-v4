@@ -41,10 +41,6 @@
   max-inline-size: 40rem;
 }
 
-.article article figure {
-  color: var(--color-grey-dark);
-}
-
 .article article .date {
   font-size: var(--size-step-1);
 }
