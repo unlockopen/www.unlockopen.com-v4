@@ -32,7 +32,7 @@ async function readYamlFile(filePath) {
     console.log(`Missing metadata for image "${ filePath.replace(".yml", "") }".` );
     return null;
   }
-  
+
   try {
       const content = await readFile(filePath, 'utf8');
       return yaml.load(content);
@@ -45,15 +45,15 @@ async function readYamlFile(filePath) {
 function creditText(data) {
     const attr = [];
     let type = data.type;
-    
+
     if (data.creditText) {
         return `${type} credit: ${data.creditText}`;
     }
-    
+
     if (data.url) {
         type = `[${type}](${data.url})`;
     }
-    
+
     let author = data.author;
     if (author) {
         if (author.url) {
@@ -61,13 +61,13 @@ function creditText(data) {
         }
         attr.push(`${type} by ${author}`);
     }
-    
+
     let license = data.license;
     if (license && license.name && license.name.toLowerCase() != "unsplash license") {
         license = license.url ? `[${license.name}](${license.url})` : `${license.name}`;
         attr.push(license);
     }
-    
+
     if (attr.length > 0) {
         return attr.join(", ");
     }
@@ -103,25 +103,26 @@ async function main() {
           path = path.substring(1);
       }
       return path;
-  }  
+  }
   function getData(path) {
       path = normalizePath(path)
       return index[path];
   }
-  
+
   function getCaption(path, customCaptionText) {
       const data = getData(path);
       const caption = customCaptionText || data.caption;
       const creditTxt = creditText(data);
+			if (!caption && !creditTxt) return null;
       return md(caption ? `${caption} (${creditTxt})` : `(${creditTxt})`);
   }
-  
+
   function getCreditText(path) {
       const data = getData(path);
       const creditTxt = creditText(data);
       return md(creditTxt);
   }
-  
+
   function getAlt(path) {
       const data = getData(path);
       return md(data.alt || "");
@@ -139,6 +140,6 @@ async function main() {
       getCreditText
   }
 }
- 
+
 export default main;
 
