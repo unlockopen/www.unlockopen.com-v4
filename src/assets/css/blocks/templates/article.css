@@ -32,18 +32,6 @@
   max-inline-size: 50rem;
 }
 
-.article article .featured::before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  inset-block-end: 0;
-  inset-inline-start: 0;
-  inline-size: 50%;
-  block-size: 50%;
-  border-inline-start: 1px solid var(--color-accent);
-  border-block-end: 1px solid var(--color-accent);
-}
-
 .article article img {
   object-fit: cover;
   object-position: center;
