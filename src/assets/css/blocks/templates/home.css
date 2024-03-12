@@ -15,7 +15,7 @@
 }
 
 @media screen(md) {
-  .home picture {
+  .home :is(figure, picture) {
     grid-column: 2;
   }
 }

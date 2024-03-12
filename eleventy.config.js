@@ -14,10 +14,19 @@ import {getAllArticles, onlyMarkdown} from "./src/_eleventy/collections.js";
 import events from "./src/_eleventy/events.js";
 import filters from "./src/_eleventy/filters.js";
 import plugins from "./src/_eleventy/plugins.js";
+import createImgAttr from "./src/_eleventy/image-attribution.js";
 import shortcodes from "./src/_eleventy/shortcodes.js";
 import embedTwitter from "eleventy-plugin-embed-twitter";
 
 export default async function (eleventyConfig) {
+  const imgAttr = await createImgAttr(eleventyConfig);
+  const markdownPlugin = plugins.markdown(imgAttr);
+  function inlineMarkdown(content) {
+      // TODO FIX THIS HACK
+      const md = markdownPlugin.render(content).trim();
+      return md.substring(3, md.length - 4);
+  }
+  imgAttr.setMarkdownEngine(inlineMarkdown);
   // --------------------- layout aliases
   eleventyConfig.addLayoutAlias("base", "base.njk");
   eleventyConfig.addLayoutAlias("page", "page.njk");
@@ -55,7 +64,7 @@ export default async function (eleventyConfig) {
   });
 
   // 	--------------------- Library
-  eleventyConfig.setLibrary("md", plugins.markdown);
+  eleventyConfig.setLibrary("md", markdownPlugin);
 
   // --------------------- Filters
   eleventyConfig.addFilter("toIsoString", filters.toISOString);
@@ -70,15 +79,11 @@ export default async function (eleventyConfig) {
 
   // --------------------- Shortcodes
   eleventyConfig.addShortcode("svg", shortcodes.svg);
-  eleventyConfig.addShortcode("image", shortcodes.image);
+  eleventyConfig.addShortcode("image", shortcodes.image(imgAttr));
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-  eleventyConfig.addFilter("inlineMarkdown", content => {
-    // TODO FIX THIS HACK
-    const md = plugins.markdown.render(content).trim();
-    return md.substring(3, md.length - 4);
-  });
+  eleventyConfig.addFilter("inlineMarkdown", inlineMarkdown);
   eleventyConfig.addFilter("markdown", content => {
-    return plugins.markdown.render(content);
+    return markdownPlugin.render(content);
   });
 
   // --------------------- Events ---------------------

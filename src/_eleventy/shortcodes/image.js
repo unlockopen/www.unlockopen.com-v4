@@ -11,10 +11,11 @@ const stringifyAttributes = attributeMap => {
     .join(" ");
 };
 
+function main(imgAttr) {
 const eleventyImage = async (
   src,
   alt = "",
-  caption,
+  caption = "",
   loading = "lazy",
   className,
   sizes = "90vw",
@@ -51,6 +52,9 @@ const eleventyImage = async (
         .join(", ")}" sizes="${sizes}">`;
     })
     .join("\n");
+    
+  caption = imgAttr.getCaption(imgSrc, caption);
+  alt = alt || imgAttr.getAlt(imgSrc);
 
   const imgageAttributes = stringifyAttributes({
     src: lowsrc.url,
@@ -60,6 +64,7 @@ const eleventyImage = async (
     loading,
     decoding: "async"
   });
+  
 
   const imageElement = caption
     ? `<figure class="flow ${className ? `${className}` : ""}">
@@ -78,5 +83,7 @@ const eleventyImage = async (
 
   return htmlmin.minify(imageElement, {collapseWhitespace: true});
 };
+return eleventyImage;
+}
 
-export default eleventyImage;
+export default main;

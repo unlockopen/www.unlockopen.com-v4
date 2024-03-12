@@ -4,6 +4,6 @@
   font-weight: var(--font-medium);
 }
 
-.page section picture {
+.page section :is(picture, figure) {
   filter: sepia(28%) grayscale(95%);
 }
