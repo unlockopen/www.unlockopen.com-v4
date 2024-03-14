@@ -6,7 +6,7 @@
   font-size: var(--size-step-min-1);
   vertical-align: super;
   margin-inline-start: 0.1ch;
-  color: var(--color-text-accent);
+  color: var(--color-accent);
 }
 
 .footnote-ref a {
@@ -16,7 +16,7 @@
 
 .footnote-backref {
   text-decoration: none;
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-accent);
   border-radius: var(--border-radius);
   padding-inline: var(--space-xs);
 }
