@@ -9,11 +9,6 @@
   border-end-end-radius: var(--space-xl);
 }
 
-.card ::selection {
-  color: var(--color-dark);
-  background: var(--color-secondary);
-}
-
 .card h2,
 .card h3 {
   font-size: var(--size-step-3);

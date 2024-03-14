@@ -1,12 +1,3 @@
-code {
-  --color-code-orange: hsl(30, 70%, 60%);
-  --color-code-blue: var(--color-secondary);
-  --color-code-indigo: hsl(260, 48%, 56%);
-  --color-code-violet: hsl(314, 70%, 60%);
-  --color-code-pink: hsl(350, 70%, 60%);
-  --color-code-gray: hsl(0, 0%, 58%);
-}
-
 pre {
   --dark-bg: color-mix(in oklab, var(--color-bg) 92%, black);
   grid-column: popout !important;
