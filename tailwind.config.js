@@ -31,7 +31,8 @@ export default {
     screens: {
       ltsm: {max: `${viewportTokens.sm}px`},
       sm: `${viewportTokens.sm}px`,
-      md: `${viewportTokens.md}px`
+      md: `${viewportTokens.md}px`,
+      drawer: `${viewportTokens.drawer}px`
     },
     colors,
     spacing,

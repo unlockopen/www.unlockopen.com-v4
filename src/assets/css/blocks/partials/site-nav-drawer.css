@@ -1,8 +1,4 @@
 /* set on parent div to get the right z-index context */
-.ontop {
-  z-index: 1;
-  position: relative;
-}
 
 .site-nav-drawer {
   position: var(--nav-position, absolute);
@@ -12,7 +8,9 @@
 /* Remove default list styling and create layout for list */
 .site-nav-drawer ul {
   --cluster-vertical-alignment: normal;
-  --gutter: var(--space-xs);
+  --gutter: var(--space-s);
+  z-index: 1;
+  position: relative;
   list-style: none;
   margin: 0;
   line-height: 0.5em;
@@ -54,22 +52,21 @@
   text-decoration: none;
   display: block;
   border-radius: var(--border-radius);
-  border: 1px solid var(--border-color);
 }
 
 /* Change the border-color on :hover and :focus */
 .site-nav-drawer a:where(:hover, :focus) {
-  --background-color: var(--color-bg-accent);
-  --text-color: var(--color-text-accent);
-  --border-color: var(--color-bg-accent);
+  --background-color: var(--color-accent);
+  --text-color: var(--color-text);
+  --border-color: var(--color-bg);
 }
 
 /* Change border-color and color for the active page */
 .site-nav-drawer [aria-current="page"],
 .site-nav-drawer [data-state="active"] {
-  --background-color: var(--color-bg-accent);
+  --background-color: var(--color-accent);
   --text-color: var(--color-text);
-  --border-color: var(--color-bg-accent);
+  --border-color: var(--color-bg);
 }
 
 /* Reset button styling */
@@ -82,10 +79,11 @@
   cursor: pointer;
   align-items: center;
   padding: var(--space-xs) 0;
+  margin-inline-end: var(--space-xs);
 }
 
 .site-nav-drawer span {
-  font-size: var(--size-step-min-1);
+  font-size: var(--size-step-0);
   font-weight: var(--font-bold);
   text-transform: uppercase;
   padding-inline-end: var(--space-2xs);
@@ -102,13 +100,18 @@
   transform: var(--nav-list-rotate, rotate(45deg));
 }
 
-@media screen(sm) {
+@media screen(drawer) {
   .site-nav-drawer {
     --nav-button-display: none;
     --nav-position: static;
+    --gutter: var(--space-s);
+    grid-column: span 3;
+    justify-content: end;
+    align-self: end;
+    display: flex;
   }
 
-  .site-nav-drawer ul {
+  .site-nav-drawer > ul {
     --nav-list-background: transparent;
     --nav-list-layout: row;
     --nav-list-position: static;
@@ -118,33 +121,32 @@
     --nav-list-shadow: none;
     --nav-list-transform: none;
     --nav-list-visibility: visible;
+    --nav-list-width: auto;
   }
 
   .site-nav-drawer a {
-    --anchor-padding: var(--space-xs) 0.2em;
-    --text-color: var(--color-text);
+    --anchor-padding: var(--space-xs) 0;
+    --text-color: var(--nav-list-color, var(--color-text));
     --background-color: transparent;
     --border-color: transparent;
-    --text-decoration: transparent;
-    text-decoration-line: underline;
-    text-decoration-color: var(--text-decoration, transparent);
-    text-decoration-thickness: 3px;
-    text-underline-offset: 0.2em;
+    --text-decoration: none;
+    border-block-end: 0.3em solid var(--border-color, transparent);
   }
 
   .site-nav-drawer a:where(:hover, :focus) {
     --text-color: var(--color-text);
     --background-color: transparent;
-    --border-color: transparent;
-    --text-decoration: var(--color-text-accent);
+    --border-color: var(
+      --nav-hover-color,
+      color-mix(in oklab, var(--color-accent) 90%, var(--color-text))
+    );
   }
 
   /* Change border-color and color for the active page */
   .site-nav-drawer [aria-current="page"],
   .site-nav-drawer [data-state="active"] {
-    --text-color: var(--color-accent);
+    --border-color: var(--nav-list-color, var(--color-text));
+    --text-color: var(--nav-list-color, var(--color-text));
     --background-color: transparent;
-    --border-color: transparent;
-    --text-decoration: var(--color-accent);
   }
 }
