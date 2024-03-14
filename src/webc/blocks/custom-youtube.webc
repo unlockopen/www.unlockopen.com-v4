@@ -4,7 +4,6 @@
     return `https://i.ytimg.com/vi/${slug}/hqdefault.jpg`;
   }
 </script>
-<script type="module" src="/assets/scripts/browser-window.js" webc:keep></script>
 <figure>
   <is-land on:visible class="video-wrapper">
     <lite-youtube
