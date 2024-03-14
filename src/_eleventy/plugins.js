@@ -5,6 +5,9 @@ import bundler from "@11ty/eleventy-plugin-bundle";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import webc from "@11ty/eleventy-plugin-webc";
 
+// vendor
+import embedTwitter from "eleventy-plugin-embed-twitter";
+
 // custom
 import markdown from "./plugins/markdown.js";
 
@@ -21,6 +24,7 @@ export default {
   bundler,
   syntaxHighlight,
   webc,
+  embedTwitter,
   markdown,
   htmlConfig,
   cssConfig,
