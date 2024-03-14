@@ -1,4 +1,4 @@
-<div :class="this.class ? this.class : ''" webc:root="override">
+<div :class="this.class ? this.class : ''" webc:root>
   <figure class="flow flow-space-s ml-l">
     <blockquote>
       <p><slot>Fallback slot content</slot></p>
@@ -6,49 +6,3 @@
     <figcaption webc:if="source" slot="source" @raw="source" />
   </figure>
 </div>
-
-<style webc:scoped="blockquote">
-  :host {
-    border: 0;
-    border-radius: var(--border-radius);
-    max-inline-size: 60ch;
-    position: relative;
-    border: 1px solid var(--color-grey);
-    padding: var(--space-xs);
-  }
-  :host:before,
-  :host:after {
-    color: var(--color-accent);
-    font-size: var(--size-step-9);
-    line-height: var(--leading-flat);
-    position: absolute;
-  }
-
-  :host:before {
-    content: '“';
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    background-size: var(--space-s) var(--space-m);
-    display: inline-block;
-    inline-size: var(--space-s);
-    block-size: var(--space-m);
-  }
-
-	blockquote {
-  --flow-space: var(--space-s-m);
-	background-color: transparent;
-  border-inline-start: none;
-  padding-inline: 0;
-}
-
-  figcaption {
-		--flow-space: var(--space-xs);
-    font-weight: var(--font-medium);
-  }
-
-  figcaption:before {
-    content: '— ';
-    inset-block-start: 0;
-    inset-inline-start: 0;
-  }
-</style>

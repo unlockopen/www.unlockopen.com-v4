@@ -1,0 +1,43 @@
+custom-quote {
+  display: block;
+  border-radius: var(--border-radius);
+  max-inline-size: 60ch;
+  position: relative;
+  border: 1px solid var(--color-grey);
+  padding: var(--space-xs);
+}
+custom-quote:before,
+custom-quote:after {
+  color: var(--color-accent);
+  font-size: var(--size-step-9);
+  line-height: var(--leading-flat);
+  position: absolute;
+}
+
+custom-quote:before {
+  content: "“";
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  background-size: var(--space-s) var(--space-m);
+  display: inline-block;
+  inline-size: var(--space-s);
+  block-size: var(--space-m);
+}
+
+custom-quote blockquote {
+  --flow-space: var(--space-s-m);
+  background-color: transparent;
+  border-inline-start: none;
+  padding-inline: 0;
+}
+
+custom-quote figcaption {
+  --flow-space: var(--space-xs);
+  font-weight: var(--font-medium);
+}
+
+custom-quote figcaption:before {
+  content: "— ";
+  inset-block-start: 0;
+  inset-inline-start: 0;
+}
