@@ -14,17 +14,16 @@ import {getAllArticles, onlyMarkdown} from "./src/_eleventy/collections.js";
 import events from "./src/_eleventy/events.js";
 import filters from "./src/_eleventy/filters.js";
 import plugins from "./src/_eleventy/plugins.js";
-import createImgAttr from "./src/_eleventy/image-attribution.js";
+import utils from "./src/_eleventy/utils.js";
 import shortcodes from "./src/_eleventy/shortcodes.js";
-import embedTwitter from "eleventy-plugin-embed-twitter";
 
 export default async function (eleventyConfig) {
-  const imgAttr = await createImgAttr(eleventyConfig);
+  const imgAttr = await utils.createImgAttr(eleventyConfig);
   const markdownPlugin = plugins.markdown(imgAttr);
   function inlineMarkdown(content) {
-      // TODO FIX THIS HACK
-      const md = markdownPlugin.render(content).trim();
-      return md.substring(3, md.length - 4);
+    // TODO FIX THIS HACK
+    const md = markdownPlugin.render(content).trim();
+    return md.substring(3, md.length - 4);
   }
   imgAttr.setMarkdownEngine(inlineMarkdown);
   // --------------------- layout aliases
@@ -58,7 +57,7 @@ export default async function (eleventyConfig) {
     }
   });
 
-  eleventyConfig.addPlugin(embedTwitter, {
+  eleventyConfig.addPlugin(plugins.embedTwitter, {
     cacheText: true,
     doNotTrack: true
   });
