@@ -1,4 +1,4 @@
-import {default as createImgAttr} from "./utils/image-attribution.js";
+import createImageMetadataIndex from "./utils/image-metadata-index.js";
 import {throwIfNotType} from "./utils/throwIfNotType.js";
 
-export default {createImgAttr, throwIfNotType};
+export default {createImageMetadataIndex, throwIfNotType};
