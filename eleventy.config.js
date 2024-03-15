@@ -18,7 +18,7 @@ import utils from "./src/_eleventy/utils.js";
 import shortcodes from "./src/_eleventy/shortcodes.js";
 
 export default async function (eleventyConfig) {
-  const imgAttr = await utils.createImgAttr(eleventyConfig);
+  const imgAttr = await utils.createImageMetadataIndex(eleventyConfig);
   const markdownPlugin = plugins.markdown(imgAttr);
   function inlineMarkdown(content) {
     // TODO FIX THIS HACK
@@ -44,10 +44,6 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(plugins.EleventyRenderPlugin);
   eleventyConfig.addPlugin(plugins.rss);
   eleventyConfig.addPlugin(plugins.syntaxHighlight);
-
-  eleventyConfig.addPlugin(plugins.bundler, {
-    hoistDuplicateBundlesFor: ["css", "js"]
-  });
 
   eleventyConfig.addPlugin(plugins.webc, {
     components: ["./src/webc/**/*.webc"],
