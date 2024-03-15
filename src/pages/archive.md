@@ -8,7 +8,7 @@ pagination:
   size: 6
 theme: golden
 decorative:
-  shape: pizza
+  shape: sun
   settings: '--decorative-height: 50rem'
 ---
 
