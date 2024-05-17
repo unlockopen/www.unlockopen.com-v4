@@ -3,13 +3,11 @@
 <meta
   name="description"
   content="
-  {% if discover.description %}
-    {{ discover.description }}
-  {% elif description %}
-    {{ description }}
-  {% else %}
-    {{ meta.siteDescription }}
-  {% endif %}
+  {%- if lede -%}
+    {{- lede -}}
+  {%- else -%}
+    {{- meta.siteDescription -}}
+  {%- endif -%}
   "
 />
 
@@ -74,7 +72,7 @@
 <meta property="og:image:height" content="630" />
 <meta
   property="og:description"
-  content="{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}"
+  content="{% if lede %}{{- lede -}}{%- else -%}{{- meta.siteDescription -}}{%- endif -%}"
 />
 <meta property="og:site_name" content="{{ meta.siteName }}" />
 <meta property="og:locale" content="{{ meta.locale }}" />
