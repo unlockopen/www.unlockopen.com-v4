@@ -103,7 +103,7 @@ export default async function (eleventyConfig) {
 
   // -- node_modules
   eleventyConfig.addPassthroughCopy({
-    "node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `assets/scripts/`
+    "node_modules/lite-youtube-embed/src/lite-yt-embed.{css,js}": `assets/components/`
   });
 
   // --------------------- Build Settings
