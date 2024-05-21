@@ -101,19 +101,14 @@ svg {
   flex: none;
 }
 
-:is(
-	figure,
-	figure + *,
-	picture,
-	picture + *:not(figcaption),
-) {
---flow-space: var(--space-m-l);
+:is(figure, figure + *, picture, picture + *:not(figcaption), ) {
+  --flow-space: var(--space-m-l);
 }
 
 figcaption {
---flow-space: var(--space-s);
-font-size: var(--size-step-min-1);
-color: var(--color-grey-dark);
+  --flow-space: var(--space-s);
+  font-size: var(--size-step-min-1);
+  color: var(--color-grey-dark);
 }
 
 hr {
