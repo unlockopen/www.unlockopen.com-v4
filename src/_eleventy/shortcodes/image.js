@@ -12,62 +12,61 @@ const stringifyAttributes = attributeMap => {
 };
 
 function main(imgAttr) {
-const eleventyImage = async (
-  src,
-  alt = "",
-  caption = "",
-  loading = "lazy",
-  className,
-  sizes = "90vw",
-  widths = [440, 650, 960, 1200],
-  formats = ["avif", "webp", "jpeg"]
-) => {
-  const metadata = await Image(src, {
-    widths: [...widths],
-    formats: [...formats],
-    urlPath: "/assets/images/",
-    outputDir: "./dist/assets/images/",
-    filenameFormat: (id, src, width, format, options) => {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension);
-      return `${name}-${width}w.${format}`;
+  const eleventyImage = async (
+    src,
+    alt = "",
+    caption = "",
+    loading = "lazy",
+    className,
+    sizes = "90vw",
+    widths = [440, 650, 960, 1200],
+    formats = ["avif", "webp", "jpeg"]
+  ) => {
+    const metadata = await Image(src, {
+      widths: [...widths],
+      formats: [...formats],
+      urlPath: "/assets/images/",
+      outputDir: "./dist/assets/images/",
+      filenameFormat: (id, src, width, format, options) => {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension);
+        return `${name}-${width}w.${format}`;
+      }
+    });
+
+    const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];
+
+    // Getting the URL to use
+    let imgSrc = src;
+    if (!imgSrc.startsWith(".")) {
+      const inputPath = this.page.inputPath;
+      const pathParts = inputPath.split("/");
+      pathParts.pop();
+      imgSrc = `${pathParts.join("/")}/${src}`;
     }
-  });
 
-  const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];
+    const imageSources = Object.values(metadata)
+      .map(imageFormat => {
+        return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat
+          .map(entry => entry.srcset)
+          .join(", ")}" sizes="${sizes}">`;
+      })
+      .join("\n");
 
-  // Getting the URL to use
-  let imgSrc = src;
-  if (!imgSrc.startsWith(".")) {
-    const inputPath = this.page.inputPath;
-    const pathParts = inputPath.split("/");
-    pathParts.pop();
-    imgSrc = `${pathParts.join("/")}/${src}`;
-  }
+    caption = imgAttr.getCaption(imgSrc, caption);
+    alt = alt || imgAttr.getAlt(imgSrc);
 
-  const imageSources = Object.values(metadata)
-    .map(imageFormat => {
-      return `  <source type="${imageFormat[0].sourceType}" srcset="${imageFormat
-        .map(entry => entry.srcset)
-        .join(", ")}" sizes="${sizes}">`;
-    })
-    .join("\n");
-    
-  caption = imgAttr.getCaption(imgSrc, caption);
-  alt = alt || imgAttr.getAlt(imgSrc);
+    const imgageAttributes = stringifyAttributes({
+      src: lowsrc.url,
+      width: lowsrc.width,
+      height: lowsrc.height,
+      alt,
+      loading,
+      decoding: "async"
+    });
 
-  const imgageAttributes = stringifyAttributes({
-    src: lowsrc.url,
-    width: lowsrc.width,
-    height: lowsrc.height,
-    alt,
-    loading,
-    decoding: "async"
-  });
-  
-
-  const imageElement = caption
-    ? `<figure class="flow ${className ? `${className}` : ""}">
+    const imageElement = caption
+      ? `<figure slot="image" class="flow ${className ? `${className}` : ""}">
 				<picture>
 					${imageSources}
 					<img
@@ -75,15 +74,15 @@ const eleventyImage = async (
 				</picture>
 				<figcaption>${caption}</figcaption>
 			</figure>`
-    : `<picture class="${className ? `${className}` : ""}">
+      : `<picture slot="image" class="${className ? `${className}` : ""}">
 				${imageSources}
 				<img
 				${imgageAttributes}>
 			</picture>`;
 
-  return htmlmin.minify(imageElement, {collapseWhitespace: true});
-};
-return eleventyImage;
+    return htmlmin.minify(imageElement, {collapseWhitespace: true});
+  };
+  return eleventyImage;
 }
 
 export default main;
