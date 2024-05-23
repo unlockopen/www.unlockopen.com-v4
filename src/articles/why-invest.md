@@ -1,6 +1,7 @@
 ---
 title: Why invest in open source?
 date: 2019-09-12
+lastEdit: 2020-05-01
 lede: "Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business."
 image:
   src: "./src/assets/images/articles/rover-selfie.jpg"

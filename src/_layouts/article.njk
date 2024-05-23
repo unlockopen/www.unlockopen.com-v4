@@ -18,6 +18,12 @@ decorative:
     <!-- date -->
     {% set definedDate = date %} {% include "components/date.njk" %}
 
+    <!-- last edit -->
+    {% if lastEdit %}
+      {% set definedDate = lastEdit %}
+      {% include "components/date.njk" %}
+    {% endif %}
+
     <!-- reading Time -->
     <span>{{ content | readingTime }} {{ meta.articles.readingTime }}</span>
   </div>
