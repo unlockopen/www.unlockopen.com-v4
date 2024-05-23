@@ -14,10 +14,13 @@ decorative:
     <p class="lede">{{ lede | inlineMarkdown | safe }}</p>
   {% endif %}
 
-  <p class="meta | cluster" style="--gutter: var(--space-xs)">
+  <div class="meta | cluster">
     <!-- date -->
     {% set definedDate = date %} {% include "components/date.njk" %}
-  </p>
+
+    <!-- reading Time -->
+    <span>{{ content | readingTime }} {{ meta.articles.readingTime }}</span>
+  </div>
 
   {% if image %}
     {% image image.src, image.alt, image.caption, "eager", "featured" %}
