@@ -1,6 +1,8 @@
 ---
 layout: base
 schema: blog
+readingTimeString: "min read",
+updatedOnString: "Last updated",
 theme: "golden"
 decorative:
   shape: sun
@@ -29,12 +31,12 @@ decorative:
       <p>
         {% if updatedOn %}
           {% set definedDate = updatedOn %}
-          {{ meta.articles.lastUpdated }}
+          {{ updatedOnString }}
           {% include "components/date.njk" %}
         {% endif %}
 
         <!-- reading Time -->
-        <span>{{ content | readingTime }} {{ meta.articles.readingTime }}</span>
+        <span>{{ content | readingTime }} {{ readingTimeString }}</span>
       </p>
     </div>
   </div>

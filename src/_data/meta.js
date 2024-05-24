@@ -30,8 +30,6 @@ export const articles = {
   // RSS feed
   name: "Articles",
   description: "",
-  readingTime: "min read",
-  lastUpdated: "Last updated",
   // feed links are looped over in the head. You may add more to the array.
   feedLinks: [
     {
