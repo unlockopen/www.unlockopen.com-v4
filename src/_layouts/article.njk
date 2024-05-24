@@ -27,8 +27,8 @@ decorative:
 
       <!-- last edit -->
       <p>
-        {% if lastEdit %}
-          {% set definedDate = lastEdit %}
+        {% if updatedOn %}
+          {% set definedDate = updatedOn %}
           {{ meta.articles.lastUpdated }}
           {% include "components/date.njk" %}
         {% endif %}
