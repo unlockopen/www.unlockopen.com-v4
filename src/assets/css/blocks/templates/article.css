@@ -20,7 +20,7 @@
   font-weight: var(--font-light);
 }
 .article article .featured {
-  --flow-space: var(--space-m-l);
+  --flow-space: var(--space-m);
   position: relative;
   max-inline-size: 50rem;
 }
