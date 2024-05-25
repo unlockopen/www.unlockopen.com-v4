@@ -50,7 +50,7 @@
   color: var(--color-accent);
 }
 
-.prose img {
+.prose .featured img {
   border-radius: var(--border-radius);
 }
 

@@ -14,10 +14,29 @@ decorative:
     <p class="lede">{{ lede | inlineMarkdown | safe }}</p>
   {% endif %}
 
-  <p class="meta | cluster" style="--gutter: var(--space-xs)">
-    <!-- date -->
-    {% set definedDate = date %} {% include "components/date.njk" %}
-  </p>
+  <div class="meta">
+    <!-- author -->
+    {%- include "components/avatar.njk" -%}
+
+    <div>
+      <p>
+        {{ authors[author].name }} on
+        <!-- date -->
+        {%- set definedDate = date -%} {%- include "components/date.njk" -%}
+      </p>
+
+      <!-- last edit -->
+      <p>
+        {% if updatedOn %}
+          {% set definedDate = updatedOn %}
+          Last updated {% include "components/date.njk" %}
+        {% endif %}
+
+        <!-- reading Time -->
+        <span>{{ content | readingTime }} min read</span>
+      </p>
+    </div>
+  </div>
 
   {% if image %}
     {% image image.src, image.alt, image.caption, "eager", "featured" %}
