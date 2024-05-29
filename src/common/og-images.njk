@@ -1,87 +1,170 @@
 ---
 font: "Geologica, Ubuntu, sans-serif" # These get created in development, you must have the font installed on your system.
-background: '#343434'
-text: '#FBFBFB'
-colors: ['#dd4462', '#c73d58', '#b1364e', '#9a3044']
+colorDark: "#161717"
+colorAccent: "#FFD164"
+colorAccentLight: "#FFFAF0"
+logoString: "unlockopen.com"
+xOffset: 550
 pagination:
   data: collections.articles
   size: 1
   alias: article
-permalink: '/assets/og-images/{{ article.data.title | slugify }}-preview.svg'
+permalink: "/assets/og-images/{{ article.data.title | slugify }}-preview.svg"
 eleventyExcludeFromCollections: true
 ---
+
 <svg
-    width="1200"
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+  fill="{{ colorAccentLight }}"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+	<!-- title settings -->
+  {% set titleInLines = article.data.title | splitlines(22) %}
+  {% set titleNumberOfLines = titleInLines.length %}
+  {% if titleNumberOfLines == 1 %}
+    {% set titleVerticalStartingPoint = 165 %}
+    {% elseif titleNumberOfLines == 2 %}
+    {% set titleVerticalStartingPoint = 105 %}
+    {% elseif titleNumberOfLines == 3 %}
+    {% set titleVerticalStartingPoint = 90 %}
+    {% elseif titleNumberOfLines == 4 %}
+    {% set titleVerticalStartingPoint = 120 %}
+    {% elseif titleNumberOfLines == 5 %}
+    {% set titleVerticalStartingPoint = 105 %}
+  {% endif %}
+
+	<!-- lede settings -->
+  {% set ledeInLines = article.data.lede | truncate(100, true, "...") | splitlines(40) %}
+  {% set numberOfLines = ledeInLines.length %}
+  {% if titleNumberOfLines >= 1 and titleNumberOfLines <= 2 %}
+    {% set ledeVerticalStartingPoint = 240 %}
+    {% elseif titleNumberOfLines == 3 %}
+    {% set ledeVerticalStartingPoint = 280 %}
+  {% endif %}
+
+	<!-- button settings -->
+	{% if titleNumberOfLines == 2 %}
+		{% set buttonVerticalStartingPoint = 390 %}
+	{% elseif titleNumberOfLines == 3 %}
+		{% set buttonVerticalStartingPoint = 430 %}
+		{% elseif titleNumberOfLines == 4 %}
+		{% set buttonVerticalStartingPoint = 380 %}
+	{% endif %}
+
+  <!-- shape -->
+  <g
+    width="745"
     height="630"
-    viewBox="0 0 1200 630"
-    version="1.1"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink">
+    fill="{{ colorAccent }}"
+    transform="translate(455, 0)"
+  >
+    <path
+      d="M56.269 0H745v630H172.943C63.464 535.024-4.449 387.412.753 223.13 3.304 142.624 23.134 66.893 56.27 0Z"
+    />
+  </g>
 
-		{% set titleInLines = article.data.title | splitlines(22) %}
-		{% set numberOfLines = titleInLines.length %}
-		{% if numberOfLines == 1 %}
-		{% set verticalStartingPoint = 340 %}
-		{% elseif numberOfLines == 2 %}
-		{% set verticalStartingPoint = 290 %}
-		{% elseif numberOfLines == 3 %}
-		{% set verticalStartingPoint = 250 %}
-		{% elseif numberOfLines == 4 %}
-		{% set verticalStartingPoint = 210 %}
-		{% elseif numberOfLines == 5 %}
-		{% set verticalStartingPoint = 170 %}
-		{% endif %}
+  <!-- title -->
+  <text
+    id="text"
+    font-family="{{ font }}, sans-serif"
+    font-size="50"
+    font-weight="500"
+    fill="{{ colorDark }}"
+    letter-spacing="-2"
+  >
+    {% for line in titleInLines %}
+      <tspan
+        x="{{ xOffset }}"
+        y="{{ titleVerticalStartingPoint + 40 + loop.index0 * 55 }}"
+      >
+        {{ line }}
+      </tspan>
+    {% endfor %}
+  </text>
 
-		<!-- SVG background, generate your own on: https://app.haikei.app/ or  https://pattern.monster/ -->
-		<svg id="visual" viewBox="0 0 1200 630" width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-			<path d="M0 114L100 114L100 385L200 385L200 177L300 177L300 203L400 203L400 234L500 234L500 373L600 373L600 70L700 70L700 272L800 272L800 146L900 146L900 159L1000 159L1000 64L1100 64L1100 253L1200 253L1200 58L1200 0L1200 0L1100 0L1100 0L1000 0L1000 0L900 0L900 0L800 0L800 0L700 0L700 0L600 0L600 0L500 0L500 0L400 0L400 0L300 0L300 0L200 0L200 0L100 0L100 0L0 0Z" fill="{{ colors[0] }}"></path>
-			<path d="M0 442L100 442L100 499L200 499L200 366L300 366L300 398L400 398L400 404L500 404L500 467L600 467L600 329L700 329L700 455L800 455L800 341L900 341L900 310L1000 310L1000 366L1100 366L1100 392L1200 392L1200 348L1200 56L1200 251L1100 251L1100 62L1000 62L1000 157L900 157L900 144L800 144L800 270L700 270L700 68L600 68L600 371L500 371L500 232L400 232L400 201L300 201L300 175L200 175L200 383L100 383L100 112L0 112Z" fill="{{ colors[1] }}"></path>
-			<path d="M0 600L100 600L100 606L200 606L200 537L300 537L300 511L400 511L400 549L500 549L500 574L600 574L600 555L700 555L700 562L800 562L800 562L900 562L900 474L1000 474L1000 612L1100 612L1100 480L1200 480L1200 455L1200 346L1200 390L1100 390L1100 364L1000 364L1000 308L900 308L900 339L800 339L800 453L700 453L700 327L600 327L600 465L500 465L500 402L400 402L400 396L300 396L300 364L200 364L200 497L100 497L100 440L0 440Z" fill="{{ colors[2] }}"></path>
-			<path d="M0 631L100 631L100 631L200 631L200 631L300 631L300 631L400 631L400 631L500 631L500 631L600 631L600 631L700 631L700 631L800 631L800 631L900 631L900 631L1000 631L1000 631L1100 631L1100 631L1200 631L1200 631L1200 453L1200 478L1100 478L1100 610L1000 610L1000 472L900 472L900 560L800 560L800 560L700 560L700 553L600 553L600 572L500 572L500 547L400 547L400 509L300 509L300 535L200 535L200 604L100 604L100 598L0 598Z" fill="{{ colors[3] }}"></path>
-		</svg>
+  <!-- lede -->
+	{% if titleNumberOfLines >= 1 and titleNumberOfLines <= 3 %}
+  <text
+    id="text"
+    font-family="{{ font }}, sans-serif"
+    font-size="25"
+    font-weight="400"
+    fill="{{ colorDark }}"
+  >
+    {% for line in ledeInLines %}
+      <tspan
+        x="{{ xOffset }}"
+        y="{{ ledeVerticalStartingPoint + 20 + loop.index0 * 35 }}"
+      >
+        {{ line }}
+      </tspan>
+    {% endfor %}
+  </text>
+  {% endif %}
 
-		<!-- if you need to darken or lighten your bg -->
-		<rect id="bg" width="100%" height="100%" opacity="0.1" fill="{{ background }}"/>
-		<rect id="name-bg" width="100%" height="42px" fill="{{ background }}" transform="translate(150,550)" />
 
-		<!-- date -->
+	<!-- button group -->
+	<g transform="translate({{ xOffset }}, {{ buttonVerticalStartingPoint }})">
+
+	<!-- button bg -->
+	<rect x="0" y="0" width="196" height="56" fill="{{ colorDark }}" rx="2" />
+
+	<!-- button -->
+  <text
+    id="text"
+    font-family="{{ font }}, sans-serif"
+    font-size="30"
+    font-weight="500"
+    fill="{{ colorAccentLight }}"
+  >
+    <tspan x="20" y="35">read more</tspan>
+  </text>
+
+  <!-- arrow -->
+  <path
+    transform="translate(210, 10)"
+    stroke="{{ colorDark }}"
+    fill="{{ colorAccent }}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="4"
+    d="M7.917 19h22.167M19 7.917 30.083 19 19 30.083"
+  />
+
+</g>
+
+ <!-- Logo group -->
+	<g
+	transform="translate(766, 495)">
+
+		<!-- Logo Text -->
 		<text
 			font-family="{{ font }}, sans-serif"
-			font-size="24"
+			font-size="30"
 			font-weight="500"
-			fill="{{ text }}"
-			letter-spacing="-1"
+			fill="{{ colorDark }}"
 		>
-			<tspan x="160" y="{{ verticalStartingPoint - 120 }}">
-				{{ article.date | formatDate('DD / MM / YYYY') }}
-			</tspan>
+			<tspan x="0" y="45">{{ logoString }}</tspan>
 		</text>
 
-		<!-- title -->
-		<text
-			id="text"
-			font-family="{{ font }}, sans-serif"
-			font-size="80"
-			font-weight="500"
-			fill="{{ text }}"
-			letter-spacing="-3"
-		>
-			{% for line in titleInLines %}
-			<tspan x="160" y="{{ verticalStartingPoint - 20 + loop.index0 * 85 }}">
-				{{ line }}
-			</tspan>
-			{% endfor %}
-		</text>
+		<!-- Logo graphic -->
 
-		<!-- sitename / url -->
-		<text
-		font-family="{{ font }}, sans-serif"
-			font-size="24"
-			font-weight="500"
-			fill="{{ text }}"
-			letter-spacing="-0.5"
-		>
-			<!-- <tspan x="160" y="580">{{ meta.siteName }} · {{ meta.url | replace("https://", "") | replace("http://", "") }}</tspan> -->
-			<tspan x="160" y="580">{{ meta.siteName }}</tspan>
-		</text>
+		<g transform="translate(255, 0)">
+				<path fill="{{ colorDark }}" d="M0 4a4 4 0 0 1 4-4h175v73H4a4 4 0 0 1-4-4V4Z" />
+				<path fill="{{ colorAccent }}"
+				d="M75.95 37.457c-.112 2.184-.49 4.226-1.147 6.117-.865 2.31-2.206 4.393-4.017 6.243-2.183 2.231-4.704 3.716-7.561 4.45-2.903.692-5.817.628-8.74-.184-2.919-.813-5.544-2.356-7.87-4.632-2.328-2.276-3.93-4.867-4.808-7.767-.877-2.905-1.003-5.765-.378-8.593.672-2.873 2.076-5.399 4.215-7.584a18.218 18.218 0 0 1 6.364-4.228c2.433-.966 5.08-1.394 7.947-1.284l-.596-9.224c-3.712-.004-7.342.762-10.895 2.304a28.544 28.544 0 0 0-9.301 6.373c-3.386 3.466-5.618 7.458-6.697 11.979-1.079 4.428-1.006 8.863.217 13.313 1.176 4.402 3.522 8.32 7.035 11.76 3.512 3.439 7.485 5.743 11.913 6.914 4.474 1.126 8.938 1.077 13.383-.148 4.45-1.223 8.369-3.569 11.76-7.035a27.622 27.622 0 0 0 6.027-9.295 27.56 27.56 0 0 0 1.978-9.397c-2.98.187-5.818.301-8.832-.082h.003Z" />
+				<path fill="#{{ colorAccentLight }}"
+				d="M76.46 31.112c.923-4.46 3.039-8.508 6.35-12.142 3.311-3.634 7.145-6.16 11.498-7.583 2.452-.768 3.695-.9 6.182-.941-.416 3.233-.108 6.281-.44 9.465-.789.155-1.574.36-2.358.628-2.871.979-5.402 2.67-7.593 5.075-2.194 2.405-3.466 4.117-4.486 6.97-.264.737-.625 2.628-.707 3.395-3.504.169-5.57.189-8.707-.1.056-1.568-.08-3.18.26-4.767Z" />
+		</g>
+
+	</g>
+
 </svg>
+
+
+
