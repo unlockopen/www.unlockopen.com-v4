@@ -36,6 +36,8 @@ eleventyExcludeFromCollections: true
     {% set titleVerticalStartingPoint = 120 %}
     {% elseif titleNumberOfLines == 5 %}
     {% set titleVerticalStartingPoint = 105 %}
+		{% elseif titleNumberOfLines == 6 %}
+    {% set titleVerticalStartingPoint = 50 %}
   {% endif %}
 
 	<!-- lede settings -->
@@ -48,13 +50,19 @@ eleventyExcludeFromCollections: true
   {% endif %}
 
 	<!-- button settings -->
-	{% if titleNumberOfLines == 2 %}
+	{% if titleNumberOfLines >= 1 and titleNumberOfLines <= 2 %}
 		{% set buttonVerticalStartingPoint = 390 %}
 	{% elseif titleNumberOfLines == 3 %}
 		{% set buttonVerticalStartingPoint = 430 %}
-		{% elseif titleNumberOfLines == 4 %}
+	{% elseif titleNumberOfLines == 4 %}
 		{% set buttonVerticalStartingPoint = 380 %}
+	{% elseif titleNumberOfLines >= 5 %}
+	{% set buttonVerticalStartingPoint = 430 %}
 	{% endif %}
+
+	<!-- image -->
+	{% set base64Image = article.data.image.src | base64Format %}
+	<image x="0%" y="0%" width="630" height="630" style="filter: grayscale(1);" href="{{ base64Image }}"></image>
 
   <!-- shape -->
   <g
@@ -111,32 +119,32 @@ eleventyExcludeFromCollections: true
 	<!-- button group -->
 	<g transform="translate({{ xOffset }}, {{ buttonVerticalStartingPoint }})">
 
-	<!-- button bg -->
-	<rect x="0" y="0" width="196" height="56" fill="{{ colorDark }}" rx="2" />
+		<!-- button bg -->
+		<rect x="0" y="0" width="196" height="56" fill="{{ colorDark }}" rx="2" />
 
-	<!-- button -->
-  <text
-    id="text"
-    font-family="{{ font }}, sans-serif"
-    font-size="30"
-    font-weight="500"
-    fill="{{ colorAccentLight }}"
-  >
-    <tspan x="20" y="35">read more</tspan>
-  </text>
+		<!-- button text -->
+		<text
+			id="text"
+			font-family="{{ font }}, sans-serif"
+			font-size="30"
+			font-weight="500"
+			fill="{{ colorAccentLight }}"
+		>
+			<tspan x="20" y="37">read more</tspan>
+		</text>
 
-  <!-- arrow -->
-  <path
-    transform="translate(210, 10)"
-    stroke="{{ colorDark }}"
-    fill="{{ colorAccent }}"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    stroke-width="4"
-    d="M7.917 19h22.167M19 7.917 30.083 19 19 30.083"
-  />
+		<!-- button arrow -->
+		<path
+			transform="translate(210, 10)"
+			stroke="{{ colorDark }}"
+			fill="{{ colorAccent }}"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			stroke-width="4"
+			d="M7.917 19h22.167M19 7.917 30.083 19 19 30.083"
+		/>
 
-</g>
+	</g>
 
  <!-- Logo group -->
 	<g
