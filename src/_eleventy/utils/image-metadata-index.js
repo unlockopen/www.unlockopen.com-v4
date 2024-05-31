@@ -8,21 +8,24 @@ function isImage(filename) {
     return IMG_EXTENSIONS.has(extname(filename).toLowerCase());
 }
 
-async function findImages(dir) {
-    const images = [];
-    const entries = await readdir(dir, { withFileTypes: true });
+async function findImages(directories) {
+  const images = [];
 
+  for (const dir of directories) {
+    const entries = await readdir(dir, { withFileTypes: true });
     for (const entry of entries) {
       const filename = entry.name;
       const fullPath = join(dir, filename);
       if (entry.isDirectory()) {
-          const subentries = await findImages(fullPath);
-          images.push(...subentries);
+        const subentries = await findImages([fullPath]);
+        images.push(...subentries);
       } else if (isImage(filename)) {
-          images.push(fullPath);
+        images.push(fullPath);
       }
     }
-    return images;
+  }
+
+  return images;
 }
 
 async function readYamlFile(filePath) {
@@ -92,7 +95,8 @@ async function buildIndexWithYamlData(images) {
 }
 
 async function main() {
-  let images = await findImages("./src/assets/images/");
+  const directories = ["./src/assets/images/", "./src/articles/"];
+  let images = await findImages(directories);
   let index = await buildIndexWithYamlData(images);
   let md;
   function normalizePath(path) {
