@@ -2,7 +2,7 @@
 title: Behold second-order consequences!
 date: 2019-03-05
 image:
-  src: "./src/assets/images/articles/aoc.png"
+  extension: ".png"
   caption: "Alexandria Ocasio-Cortez's unique approach to fundraising also allows her to spend more time supporting fellow democrat candidtes like Kerri Evelyn Harris pictured here."
 lede: "Alexandria Ocasio-Cortez's unique approach to fundraising not only sets her apart in Congress but also highlights the unexpected benefits of second-order consequences—a concept that proves equally transformative in the realm of open source software, where the true value lies beyond the code itself."
 ---

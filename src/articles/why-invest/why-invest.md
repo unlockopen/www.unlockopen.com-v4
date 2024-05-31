@@ -4,7 +4,6 @@ date: 2019-09-12
 updatedOn: 2020-05-01
 lede: "Tech giants aren’t philanthropies. There’s a reason they’re betting on open source: it’s good for business."
 image:
-  src: "./src/assets/images/articles/rover-selfie.jpg"
   caption: "Open source is truly everywhere. Even on Mars!"
 ---
 
