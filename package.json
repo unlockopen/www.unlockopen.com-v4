@@ -10,6 +10,7 @@
   },
   "scripts": {
     "clean": "rimraf dist",
+    "dev:clean": "rimraf src/assets/og-images",
     "dev:11ty": "eleventy --serve --watch",
     "build:11ty": "eleventy",
     "start": "run-p dev:*",
