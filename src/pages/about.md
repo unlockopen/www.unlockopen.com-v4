@@ -6,7 +6,7 @@ intro: 'Tobie Langel is a prominent figure in the open-source software community
 theme: apple
 h1class: visually-hidden
 image:
-  src: './src/assets/images/pages/tobie-about.png'
+  src: '/assets/images/pages/tobie-about.png'
   alt: 'Tobie Langel'
 	widths: [440, 650, 960]
 ---
