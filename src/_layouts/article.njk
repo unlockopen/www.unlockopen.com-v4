@@ -38,8 +38,7 @@ decorative:
     </div>
   </div>
 
-  {% set imagePath = page.inputPath | replace(".md", image.extension or ".jpg") %}
-  {% image imagePath, image.alt, page.data.image.caption, "eager", "featured" %}
+  {% image image.src, image.alt, page.data.image.caption, "eager", "featured" %}
 
   {{ content | safe }}
 
