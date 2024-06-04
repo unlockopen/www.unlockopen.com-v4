@@ -63,6 +63,7 @@ export default async function (eleventyConfig) {
 
   // --------------------- Filters
   eleventyConfig.addFilter("appendSuffixToFilename", filters.appendSuffixToFilename);
+  eleventyConfig.addFilter("getInputDir", filters.getInputDir);
   eleventyConfig.addFilter("base64Format", filters.base64Format);
   eleventyConfig.addFilter("toIsoString", filters.toISOString);
   eleventyConfig.addFilter("formatDate", filters.formatDate);

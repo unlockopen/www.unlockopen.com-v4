@@ -1,4 +1,5 @@
 import {appendSuffixToFilename} from "./filters/appendSuffixToFilename.js";
+import {getInputDir} from "./filters/getInputDir.js";
 import {base64Format} from "./filters/base64.js";
 import {toISOString, formatDate} from "./filters/dates.js";
 import {minifyCss, minifyJs} from "./filters/minify.js";
@@ -11,6 +12,7 @@ import {escapeHtml} from "./filters/escapeHtml.js";
 
 export default {
   appendSuffixToFilename,
+  getInputDir,
   base64Format,
   toISOString,
   formatDate,
