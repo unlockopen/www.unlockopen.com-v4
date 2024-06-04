@@ -12,7 +12,7 @@ const stringifyAttributes = attributeMap => {
 };
 
 function main(imgAttr) {
-  const eleventyImage = async (
+  return async function eleventyImage(
     src,
     alt = "",
     caption = "",
@@ -21,8 +21,17 @@ function main(imgAttr) {
     sizes = "90vw",
     widths = [440, 650, 960, 1200],
     formats = ["avif", "webp", "jpeg"]
-  ) => {
-    const metadata = await Image(src, {
+  ) {
+    // set correct path to image src
+    let imgSrc = src;
+    if (src.startsWith("/assets")) {
+      imgSrc = `./src${src}`;
+    } else {
+      const dir = path.dirname(this.page.inputPath);
+      imgSrc = path.join(dir, src);
+    }
+
+    const metadata = await Image(imgSrc, {
       widths: [...widths],
       formats: [...formats],
       urlPath: "/assets/images/",
@@ -35,15 +44,6 @@ function main(imgAttr) {
     });
 
     const lowsrc = metadata.jpeg[metadata.jpeg.length - 1];
-
-    // Getting the URL to use
-    let imgSrc = src;
-    if (!imgSrc.startsWith(".")) {
-      const inputPath = this.page.inputPath;
-      const pathParts = inputPath.split("/");
-      pathParts.pop();
-      imgSrc = `${pathParts.join("/")}/${src}`;
-    }
 
     const imageSources = Object.values(metadata)
       .map(imageFormat => {
@@ -62,7 +62,7 @@ function main(imgAttr) {
       height: lowsrc.height,
       alt,
       loading,
-      decoding: "async"
+      decoding: loading === "eager" ? "sync" : "async"
     });
 
     const imageElement = caption
@@ -82,7 +82,6 @@ function main(imgAttr) {
 
     return htmlmin.minify(imageElement, {collapseWhitespace: true});
   };
-  return eleventyImage;
 }
 
 export default main;
