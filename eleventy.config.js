@@ -62,6 +62,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownPlugin);
 
   // --------------------- Filters
+  eleventyConfig.addFilter("appendSuffixToFilename", filters.appendSuffixToFilename);
   eleventyConfig.addFilter("base64Format", filters.base64Format);
   eleventyConfig.addFilter("toIsoString", filters.toISOString);
   eleventyConfig.addFilter("formatDate", filters.formatDate);
