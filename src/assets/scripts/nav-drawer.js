@@ -1,6 +1,6 @@
 // © Manuel Matuzović: https://web.dev/website-navigation/
 
-const nav = document.querySelector("nav");
+const nav = document.querySelector("#mainnav");
 const list = nav.querySelector("ul");
 const burgerClone = document.querySelector("#burger-template").content.cloneNode(true);
 const svg = nav.querySelector("svg");

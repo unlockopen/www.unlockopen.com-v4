@@ -58,15 +58,7 @@ export const navigation = {
   ariaTop: "Main",
   ariaBottom: "Complementary",
   ariaPlatforms: "Platforms",
-  // activate alternative mobile menu with drawer
-  drawerNav: false,
   navLabel: "Menu"
-};
-export const themeSwitch = {
-  title: "Theme",
-  light: "light",
-  dark: "dark",
-  initial: "select"
 };
 export const greenweb = {
   // this goues into src/common/greenweb.njk
