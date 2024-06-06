@@ -35,7 +35,7 @@
 @media (scripting: enabled) {
   .site-nav-drawer {
     position: var(--nav-position, absolute);
-    inset-inline-end: 1rem;
+    inset-inline-end: 0.5rem;
   }
 
   .site-nav-drawer ul {
@@ -54,7 +54,7 @@
   }
 
   .site-nav-drawer a {
-    --item-block-padding: var(--space-xs);
+    --item-block-padding: var(--space-2xs) calc(var(--space-2xs) - 0.1em);
     --item-color: var(--color-text);
   }
 
@@ -90,13 +90,12 @@
   padding-block-start: var(--space-2xl);
 }
 
-/* Reset button styling */
 .site-nav-drawer button {
   display: var(--nav-button-display, flex);
   align-items: center;
   position: relative;
   z-index: 2;
-  padding: var(--space-xs) 0;
+  padding: var(--space-2xs) 0;
 }
 
 .site-nav-drawer span {
