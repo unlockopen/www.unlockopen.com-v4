@@ -87,7 +87,11 @@
 }
 
 .site-nav-drawer [aria-expanded="true"] + ul {
-  padding-block-start: var(--space-2xl);
+  padding-block-start: var(--space-xl);
+}
+
+body:has(.site-nav-drawer [aria-expanded="true"]) {
+  overflow-y: hidden;
 }
 
 .site-nav-drawer button {
