@@ -7,14 +7,6 @@
   padding-block-start: var(--space-s-m);
 }
 
-.site-header:after {
-  content: "";
-  display: block;
-  border-block-end: 1px solid var(--color-text);
-  mix-blend-mode: soft-light;
-  grid-column: 1 / -1;
-}
-
 .site-header a {
   display: grid;
   place-items: center;
@@ -34,5 +26,15 @@
     flex-wrap: wrap;
     gap: var(--gutter);
     justify-content: space-between;
+  }
+}
+
+@media screen(drawer) {
+  .site-header:after {
+    content: "";
+    display: block;
+    border-block-end: 1px solid var(--color-text);
+    mix-blend-mode: soft-light;
+    grid-column: 1 / -1;
   }
 }
