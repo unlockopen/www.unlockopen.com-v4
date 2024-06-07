@@ -34,10 +34,7 @@
     {% include "partials/preloads.njk" %}
 
     <!-- defered js  -->
-    {% if meta.navigation.drawerNav %}
-      <!-- menu drawer js, if true in meta -->
-      <script src="/assets/scripts/nav-drawer.js?{{ assetHash }}" defer></script>
-    {% endif %}
+    <script src="/assets/scripts/nav-drawer.js?{{ assetHash }}" defer></script>
 
     <!-- everything else: meta tags, icons, open graph etc.  -->
     {% include "partials/meta-info.njk" %}

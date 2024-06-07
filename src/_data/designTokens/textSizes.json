@@ -39,6 +39,11 @@
       "name": "Step 9",
       "min": 83,
       "max": 142
+    },
+    {
+      "name": "Step logo",
+      "min": 23,
+      "max": 37
     }
   ]
 }

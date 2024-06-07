@@ -2,7 +2,7 @@
   text-decoration: none;
   justify-self: start;
   font-weight: bold;
-  font-size: var(--size-step-3);
+  font-size: var(--size-step-logo);
   letter-spacing: var(--tracking-s);
   display: grid;
   grid-column: 1 / 3;

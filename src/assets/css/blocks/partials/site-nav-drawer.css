@@ -1,20 +1,45 @@
 /* set on parent div to get the right z-index context */
 
 .site-nav-drawer {
-  position: var(--nav-position, absolute);
-  inset-inline-end: 0.1rem;
+  --gutter: var(--space-s);
+  --grid-column: 1 / -1;
+  --color-accent-lighter: color-mix(in oklab, var(--color-accent) 20%, var(--color-bg));
+  --color-accent-darker: color-mix(in oklab, var(--color-accent) 90%, var(--color-text));
+  grid-column: var(--grid-column);
+  display: flex;
 }
 
-/* Remove default list styling and create layout for list */
 .site-nav-drawer ul {
-  --cluster-vertical-alignment: normal;
-  --gutter: var(--space-s);
-  z-index: 1;
-  position: relative;
-  list-style: none;
   margin: 0;
-  line-height: 0.5em;
-  padding: var(--nav-list-padding, var(--space-2xl) var(--space-s));
+}
+
+.site-nav-drawer a {
+  border-block-end: 0.3em solid var(--item-border-color, transparent);
+  color: var(--item-color, var(--color-text));
+  padding-block: var(--item-block-padding, 0.2em 0);
+  text-decoration: none;
+  background-color: var(--item-background-color, transparent);
+  font-weight: var(--item-font-weight, var(--font-normal));
+}
+
+.site-nav-drawer a:hover {
+  --item-border-color: var(--color-accent-darker);
+}
+
+.site-nav-drawer [aria-current="page"],
+.site-nav-drawer [data-state="active"] {
+  --item-border-color: var(--color-text);
+}
+
+.site-nav-drawer {
+  position: var(--nav-position, absolute);
+  inset-inline-end: 0.5rem;
+}
+
+.site-nav-drawer ul {
+  --gutter: 0;
+  --cluster-vertical-alignment: normal;
+  z-index: 1;
   background: var(--nav-list-background, var(--color-bg));
   box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
   flex-direction: var(--nav-list-layout, column);
@@ -22,8 +47,25 @@
   position: var(--nav-list-position, fixed);
   inset-block-start: 0;
   inset-inline-end: 0;
-  inline-size: var(--nav-list-width, min(22rem, 100vw));
+  inline-size: var(--nav-list-width, min(18rem, 100vw));
   visibility: var(--nav-list-visibility, visible);
+}
+
+.site-nav-drawer a {
+  --item-block-padding: var(--space-2xs) calc(var(--space-2xs) - 0.1em);
+  --item-color: var(--color-text);
+}
+
+.site-nav-drawer a:hover {
+  --item-background-color: var(--color-accent-lighter);
+  --item-border-color: transparent;
+}
+
+.site-nav-drawer [aria-current="page"],
+.site-nav-drawer [data-state="active"] {
+  --item-background-color: var(--color-accent);
+  --item-border-color: transparent;
+  --item-font-weight: var(--font-semi-bold);
 }
 
 .site-nav-drawer [aria-expanded="false"] + ul {
@@ -41,59 +83,33 @@
   }
 }
 
-/* Basic link styling */
-.site-nav-drawer a {
-  --text-color: var(--color-text);
-  --background-color: var(--color-bg);
-  --border-color: transparent;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  padding: var(--anchor-padding, var(--space-s));
-  text-decoration: none;
-  display: block;
-  border-radius: var(--border-radius);
+.site-nav-drawer [aria-expanded="true"] + ul {
+  padding-block-start: var(--space-xl);
 }
 
-/* Change the border-color on :hover and :focus */
-.site-nav-drawer a:where(:hover, :focus) {
-  --background-color: var(--color-accent);
-  --text-color: var(--color-text);
-  --border-color: var(--color-bg);
+body:has(.site-nav-drawer [aria-expanded="true"]) {
+  overflow: hidden;
 }
 
-/* Change border-color and color for the active page */
-.site-nav-drawer [aria-current="page"],
-.site-nav-drawer [data-state="active"] {
-  --background-color: var(--color-accent);
-  --text-color: var(--color-text);
-  --border-color: var(--color-bg);
-}
-
-/* Reset button styling */
 .site-nav-drawer button {
-  all: unset;
   display: var(--nav-button-display, flex);
   align-items: center;
   position: relative;
   z-index: 2;
-  cursor: pointer;
-  align-items: center;
-  padding: var(--space-xs) 0;
-  margin-inline-end: var(--space-xs);
+  padding: var(--space-2xs) 0;
 }
 
 .site-nav-drawer span {
-  font-size: var(--size-step-0);
   font-weight: var(--font-bold);
   text-transform: uppercase;
   padding-inline-end: var(--space-2xs);
 }
 
 .site-nav-drawer svg {
-  block-size: 100%;
+  block-size: 2.5ex;
   inline-size: auto;
-  transform: translateY(-0.1em);
   color: var(--color-text);
+  stroke-width: 2.5;
 }
 
 .site-nav-drawer [aria-expanded="true"] svg {
@@ -105,17 +121,16 @@
     --nav-button-display: none;
     --nav-position: static;
     --gutter: var(--space-s);
-    grid-column: span 3;
+    --grid-column: span 3;
     justify-content: end;
     align-self: end;
-    display: flex;
   }
 
   .site-nav-drawer > ul {
+    --gutter: var(--space-s);
     --nav-list-background: transparent;
     --nav-list-layout: row;
     --nav-list-position: static;
-    --nav-list-padding: 0;
     --nav-list-height: auto;
     --nav-list-width: 100%;
     --nav-list-shadow: none;
@@ -125,28 +140,20 @@
   }
 
   .site-nav-drawer a {
-    --anchor-padding: var(--space-xs) 0;
-    --text-color: var(--nav-list-color, var(--color-text));
-    --background-color: transparent;
-    --border-color: transparent;
-    --text-decoration: none;
-    border-block-end: 0.3em solid var(--border-color, transparent);
+    --item-border-color: transparent;
+    --item-block-padding: 0.2em 0;
+    --item-background-color: transparent;
   }
 
-  .site-nav-drawer a:where(:hover, :focus) {
-    --text-color: var(--color-text);
-    --background-color: transparent;
-    --border-color: var(
-      --nav-hover-color,
-      color-mix(in oklab, var(--color-accent) 90%, var(--color-text))
-    );
+  .site-nav-drawer a:hover {
+    --item-border-color: var(--color-accent-darker);
+    --item-background-color: transparent;
   }
 
-  /* Change border-color and color for the active page */
   .site-nav-drawer [aria-current="page"],
   .site-nav-drawer [data-state="active"] {
-    --border-color: var(--nav-list-color, var(--color-text));
-    --text-color: var(--nav-list-color, var(--color-text));
-    --background-color: transparent;
+    --item-border-color: var(--color-text);
+    --item-background-color: transparent;
+    --item-font-weight: var(--font-normal);
   }
 }
