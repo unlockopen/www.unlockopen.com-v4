@@ -91,7 +91,7 @@
 }
 
 body:has(.site-nav-drawer [aria-expanded="true"]) {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .site-nav-drawer button {
