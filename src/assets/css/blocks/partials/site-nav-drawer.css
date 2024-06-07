@@ -31,44 +31,41 @@
   --item-border-color: var(--color-text);
 }
 
-/* drawer if JS enabled */
-@media (scripting: enabled) {
-  .site-nav-drawer {
-    position: var(--nav-position, absolute);
-    inset-inline-end: 0.5rem;
-  }
+.site-nav-drawer {
+  position: var(--nav-position, absolute);
+  inset-inline-end: 0.5rem;
+}
 
-  .site-nav-drawer ul {
-    --gutter: 0;
-    --cluster-vertical-alignment: normal;
-    z-index: 1;
-    background: var(--nav-list-background, var(--color-bg));
-    box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
-    flex-direction: var(--nav-list-layout, column);
-    block-size: var(--nav-list-height, 100vh);
-    position: var(--nav-list-position, fixed);
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    inline-size: var(--nav-list-width, min(18rem, 100vw));
-    visibility: var(--nav-list-visibility, visible);
-  }
+.site-nav-drawer ul {
+  --gutter: 0;
+  --cluster-vertical-alignment: normal;
+  z-index: 1;
+  background: var(--nav-list-background, var(--color-bg));
+  box-shadow: var(--nav-list-shadow, -5px 0 11px 0 rgb(0 0 0 / 0.2));
+  flex-direction: var(--nav-list-layout, column);
+  block-size: var(--nav-list-height, 100vh);
+  position: var(--nav-list-position, fixed);
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inline-size: var(--nav-list-width, min(18rem, 100vw));
+  visibility: var(--nav-list-visibility, visible);
+}
 
-  .site-nav-drawer a {
-    --item-block-padding: var(--space-2xs) calc(var(--space-2xs) - 0.1em);
-    --item-color: var(--color-text);
-  }
+.site-nav-drawer a {
+  --item-block-padding: var(--space-2xs) calc(var(--space-2xs) - 0.1em);
+  --item-color: var(--color-text);
+}
 
-  .site-nav-drawer a:hover {
-    --item-background-color: var(--color-accent-lighter);
-    --item-border-color: transparent;
-  }
+.site-nav-drawer a:hover {
+  --item-background-color: var(--color-accent-lighter);
+  --item-border-color: transparent;
+}
 
-  .site-nav-drawer [aria-current="page"],
-  .site-nav-drawer [data-state="active"] {
-    --item-background-color: var(--color-accent);
-    --item-border-color: transparent;
-    --item-font-weight: var(--font-semi-bold);
-  }
+.site-nav-drawer [aria-current="page"],
+.site-nav-drawer [data-state="active"] {
+  --item-background-color: var(--color-accent);
+  --item-border-color: transparent;
+  --item-font-weight: var(--font-semi-bold);
 }
 
 .site-nav-drawer [aria-expanded="false"] + ul {
