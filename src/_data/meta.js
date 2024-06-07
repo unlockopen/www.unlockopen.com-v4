@@ -23,7 +23,7 @@ export const creator = {
 };
 export const themeColor = "#E6F3F6"; //  Manifest: defines the default theme color for the application
 export const themeBgColor = "#161717"; // Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
-export const opengraph_default = "/assets/images/template/opengraph-default.jpg"; // fallback/default meta image
+export const opengraph_default = "/assets/og-images/global-fallback.jpeg"; // fallback/default meta image
 export const opengraph_default_alt =
   "Visible content: UnlockOpen. Helping organizations thrive in open tech ecosystems."; // alt text for default meta image
 export const articles = {
