@@ -1,0 +1,72 @@
+---
+font: "Geologica, Ubuntu, sans-serif" # These get created in development, you must have the font installed on your system.
+colorDark: "#161717"
+colorAccent: "#0084A3"
+colorAccentLight: "#E6F3F6"
+logoString: "UnlockOpen"
+contentString: "Helping organizations thrive in open tech ecosystems"
+xOffset: 200
+permalink: "/assets/og-images/global-fallback.svg"
+eleventyExcludeFromCollections: true
+---
+
+<svg
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+  fill="{{ colorAccentLight }}"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+
+	<!-- title settings -->
+  {% set titleInLines = contentString | splitlines(22) %}
+  {% set titleNumberOfLines = titleInLines.length %}
+	{% set titleVerticalStartingPoint = 300 %}
+
+  <rect viewBox="0 0 1200 630" width="1200" height="630" fill="{{ fill }}" />
+
+  <!-- title -->
+  <text
+    id="text"
+    font-family="{{ font }}, sans-serif"
+    font-size="75"
+    font-weight="500"
+    fill="{{ colorDark }}"
+    letter-spacing="-2"
+  >
+    {% for line in titleInLines %}
+      <tspan
+        x="{{ xOffset }}"
+        y="{{ titleVerticalStartingPoint + loop.index0 * 90 }}"
+      >
+        {{ line }}
+      </tspan>
+    {% endfor %}
+  </text>
+
+ <!-- Logo group -->
+	<g
+	transform="translate(105, 100)">
+
+		<!-- Logo graphic -->
+		<g>
+			<path fill="{{ colorAccent }}"
+			d="M75.95 37.457c-.112 2.184-.49 4.226-1.147 6.117-.865 2.31-2.206 4.393-4.017 6.243-2.183 2.231-4.704 3.716-7.561 4.45-2.903.692-5.817.628-8.74-.184-2.919-.813-5.544-2.356-7.87-4.632-2.328-2.276-3.93-4.867-4.808-7.767-.877-2.905-1.003-5.765-.378-8.593.672-2.873 2.076-5.399 4.215-7.584a18.218 18.218 0 0 1 6.364-4.228c2.433-.966 5.08-1.394 7.947-1.284l-.596-9.224c-3.712-.004-7.342.762-10.895 2.304a28.544 28.544 0 0 0-9.301 6.373c-3.386 3.466-5.618 7.458-6.697 11.979-1.079 4.428-1.006 8.863.217 13.313 1.176 4.402 3.522 8.32 7.035 11.76 3.512 3.439 7.485 5.743 11.913 6.914 4.474 1.126 8.938 1.077 13.383-.148 4.45-1.223 8.369-3.569 11.76-7.035a27.622 27.622 0 0 0 6.027-9.295 27.56 27.56 0 0 0 1.978-9.397c-2.98.187-5.818.301-8.832-.082h.003Z" />
+			<path fill="{{ colorDark }}"
+			d="M76.46 31.112c.923-4.46 3.039-8.508 6.35-12.142 3.311-3.634 7.145-6.16 11.498-7.583 2.452-.768 3.695-.9 6.182-.941-.416 3.233-.108 6.281-.44 9.465-.789.155-1.574.36-2.358.628-2.871.979-5.402 2.67-7.593 5.075-2.194 2.405-3.466 4.117-4.486 6.97-.264.737-.625 2.628-.707 3.395-3.504.169-5.57.189-8.707-.1.056-1.568-.08-3.18.26-4.767Z" />
+	</g>
+
+		<!-- Logo Text -->
+		<text transform="translate(97, 20)"
+			font-family="{{ font }}, sans-serif"
+			font-size="40"
+			font-weight="700"
+			fill="{{ colorDark }}"
+		>
+			<tspan x="0" y="45">{{ logoString }}</tspan>
+		</text>
+	</g>
+</svg>
+
